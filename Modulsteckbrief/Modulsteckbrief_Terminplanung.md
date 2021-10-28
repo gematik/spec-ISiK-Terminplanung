@@ -47,7 +47,7 @@ Dies schließt Leistungen der spezialärztlichen Versorgung (ASV) im Krankenhaus
 ### neue Datenobjekte
 
 * Appointment (Termin den ein Patient/Leistungserbringer buchen kann)
-* AppointmentResponse (Antwort auf eine Terminanfrage)
+* ~~AppointmentResponse (Antwort auf eine Terminanfrage)~~ (AppointmentResponse wird nicht weiter betrachtet, da dies nur system-intern für das bestätigungsrelevante System notwendig wäre)
 * Slot (Verfügbare Zeiteinheit in der Termine gebucht werden können)
 * Schedule (Container für Slots)
 * HealthcareService (Behandlungsleistung verfügbar an Standort X)
