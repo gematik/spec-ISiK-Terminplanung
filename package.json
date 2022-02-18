@@ -1,0 +1,8 @@
+{
+    "name": "de.gematik.isik-terminplanung",
+    "version": "1.0.0 CC1",
+    "description": "Package Release des ISiK Modul Terminplanung",
+    "fhirVersions": [
+        "4.0.1"
+    ]
+}

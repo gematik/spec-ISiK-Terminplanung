@@ -1,0 +1,7 @@
+canonical: https://gematik.de/fhir/ISiK
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: Implementierungsleitfaden ISiK-Modul Terminplanung
+name: Implementierungsleitfaden ISiK-Modul Terminplanung
+status: draft
