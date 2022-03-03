@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ISiKTerminServiceTypeMock",
+  "id": "ISiKTerminServiceTypeMock",
+  "version": "2.0.0",
+  "url": "https://gematik.de/fhir/ISiK/ValueSet/ISiKTerminServiceTypeMock",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2022-02-17"
+}
