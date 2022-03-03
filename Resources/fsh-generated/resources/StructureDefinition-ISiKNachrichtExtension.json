@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ISiKTerminKommentarExtension",
-  "url": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKTerminKommentarExtension",
-  "name": "ISiKTerminKommentarExtension",
+  "id": "ISiKNachrichtExtension",
+  "url": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachrichtExtension",
+  "name": "ISiKNachrichtExtension",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -33,14 +33,17 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKTerminKommentarExtension"
+        "fixedUri": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachrichtExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "Reference",
+            "targetProfile": [
+              "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachricht"
+            ]
           }
         ]
       }

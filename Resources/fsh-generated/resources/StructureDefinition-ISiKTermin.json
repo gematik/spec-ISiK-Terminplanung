@@ -93,6 +93,22 @@
         }
       },
       {
+        "id": "Appointment.extension:Nachricht",
+        "path": "Appointment.extension",
+        "sliceName": "Nachricht",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachrichtExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.identifier",
         "path": "Appointment.identifier",
         "mustSupport": true
