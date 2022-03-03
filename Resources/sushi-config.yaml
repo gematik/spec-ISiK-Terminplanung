@@ -5,3 +5,5 @@ applyExtensionMetadataToRoot: false
 id: Implementierungsleitfaden ISiK-Modul Terminplanung
 name: Implementierungsleitfaden ISiK-Modul Terminplanung
 status: draft
+dependencies:
+  de.basisprofil.r4: 1.3.0-alpha1
