@@ -1,6 +1,7 @@
 Profile: ISiKTermin
 Parent: Appointment
 Id: ISiKTermin
+* obeys ISiK-app-1
 * meta.
   * tag 0..* MS
     * ^slicing.discriminator.type = #pattern
@@ -30,3 +31,19 @@ Id: ISiKTermin
 * specialty[AuthorSpecialty] from $authorSpecialty (required)
 * serviceType 1..* MS
 * serviceType from ISiKTerminServiceTypeMock (extensible)
+* priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
+
+Extension: ISiKTerminKommentarExtension
+Id: ISiKTerminKommentarExtension
+* value[x] only string
+
+Extension: ISiKTerminPriorityExtension
+Id: ISiKTerminPriorityExtension
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept from ISiKTerminPriority (extensible)
+
+Invariant: ISiK-app-1
+Description: "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen"
+Severity: #error
+Expression: "start <= end"

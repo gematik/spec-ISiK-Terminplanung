@@ -54,6 +54,19 @@
   "differential": {
     "element": [
       {
+        "id": "Appointment",
+        "path": "Appointment",
+        "constraint": [
+          {
+            "key": "ISiK-app-1",
+            "severity": "error",
+            "human": "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen",
+            "expression": "start <= end",
+            "source": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKTermin"
+          }
+        ]
+      },
+      {
         "id": "Appointment.meta.tag",
         "path": "Appointment.meta.tag",
         "slicing": {
@@ -138,6 +151,22 @@
           "strength": "required",
           "valueSet": "http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality"
         }
+      },
+      {
+        "id": "Appointment.priority.extension:Priority",
+        "path": "Appointment.priority.extension",
+        "sliceName": "Priority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKTerminPriorityExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Appointment.start",
