@@ -28,7 +28,7 @@ Id: ISiKTermin
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
-* specialty[Fachrichtung] from $authorSpecialty (required)
+* specialty[Fachrichtung] from $authorSpecialtyVS (required)
 * serviceType 1..* MS
 * serviceType from ISiKTerminServiceTypeMock (extensible)
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS

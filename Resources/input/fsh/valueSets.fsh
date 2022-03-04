@@ -28,6 +28,7 @@ Id: ISiKTerminSourceMock
 ValueSet: ISiKTerminServiceTypeMock
 Id: ISiKTerminServiceTypeMock
 * insert Meta
+* http://terminology.hl7.org/CodeSystem/service-type#1
 
 ValueSet: ISiKTerminPriority
 Id: ISiKTerminPriority
