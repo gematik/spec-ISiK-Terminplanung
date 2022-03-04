@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ISiKTerminCancelationReason",
+  "id": "ISiKTerminCancelationReason",
+  "description": "Enthaelt alle erlaubten Gruende fuer eine Stornierung eines ISiKTermins",
+  "version": "2.0.0",
+  "url": "https://gematik.de/fhir/ISiK/ValueSet/ISiKTerminCancelationReason",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2022-02-17",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
+        "concept": [
+          {
+            "code": "pat"
+          },
+          {
+            "code": "prov"
+          },
+          {
+            "code": "maint"
+          },
+          {
+            "code": "meds-inc"
+          },
+          {
+            "code": "other"
+          }
+        ]
+      }
+    ]
+  }
+}
