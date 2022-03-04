@@ -28,7 +28,7 @@ Id: ISiKTermin
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
-* specialty[Fachrichtung] from $authorSpecialty (required)
+* specialty[Fachrichtung] from $authorSpecialtyVS (required)
 * serviceType 1..* MS
 * serviceType from ISiKTerminServiceTypeMock (extensible)
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
@@ -48,3 +48,16 @@ Invariant: ISiK-app-1
 Description: "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen"
 Severity: #error
 Expression: "start <= end"
+
+Instance: ISiKTerminExample
+InstanceOf: ISiKTermin
+Usage: #example
+* status = $appointmentStatus#booked
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T11:00:00Z"
+* slot = Reference(ISiKSlotExample)
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#1
+* specialty = urn:oid:1.2.276.0.76.5.114#010
+* participant
+  * actor.reference = "Patient/example"
+  * status = #accepted

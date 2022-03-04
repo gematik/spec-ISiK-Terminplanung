@@ -10,7 +10,7 @@ Id: ISiKKalender
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
-* specialty[Fachrichtung] from $authorSpecialty (required)
+* specialty[Fachrichtung] from $authorSpecialtyVS (required)
 * actor 1..* MS
   * display 1..1 MS
   * ^slicing.discriminator.type = #type
@@ -25,3 +25,12 @@ Extension: ISiKKalenderNameExtension
 Id: ISiKKalenderNameExtension
 * value[x] only string
 * valueString 1..1 MS
+
+Instance: ISiKKalenderExample
+InstanceOf: ISiKKalender
+Usage: #example
+* active = true
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#1
+* specialty = urn:oid:1.2.276.0.76.5.114#010
+* actor.reference = "Practitioner/example"
+* actor.display = "Dr. Fleming"

@@ -7,5 +7,17 @@
   "url": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminServiceTypeMock",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2022-02-17"
+  "date": "2022-02-17",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+        "concept": [
+          {
+            "code": "1"
+          }
+        ]
+      }
+    ]
+  }
 }

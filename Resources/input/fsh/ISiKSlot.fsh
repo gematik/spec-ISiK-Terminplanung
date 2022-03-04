@@ -8,3 +8,11 @@ Id: ISiKSlot
 * status 1..1 MS
 * start 1..1 MS
 * end 1..1 MS
+
+Instance: ISiKSlotExample
+InstanceOf: ISiKSlot
+Usage: #example
+* schedule = Reference(ISiKKalenderExample)
+* status = #busy
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T11:00:00Z"
