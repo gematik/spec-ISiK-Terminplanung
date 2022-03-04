@@ -5,7 +5,7 @@
   "id": "ISiKTerminStatus",
   "description": "Enthaelt alle erlaubten Status für einen ISiKTermin",
   "version": "2.0.0",
-  "url": "https://gematik.de/fhir/ISiK/ValueSet/ISiKTerminStatus",
+  "url": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminStatus",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2022-02-17",

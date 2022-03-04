@@ -1,7 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKNachrichtExtension",
-  "url": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachrichtExtension",
+  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachrichtExtension",
+  "version": "1.0.0",
   "name": "ISiKNachrichtExtension",
   "status": "active",
   "fhirVersion": "4.0.1",
@@ -33,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachrichtExtension"
+        "fixedUri": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachrichtExtension"
       },
       {
         "id": "Extension.value[x]",
@@ -42,7 +43,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKNachricht"
+              "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht"
             ]
           }
         ]
