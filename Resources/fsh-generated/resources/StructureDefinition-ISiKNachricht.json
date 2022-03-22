@@ -60,6 +60,49 @@
       {
         "id": "Communication.recipient",
         "path": "Communication.recipient",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.recipient.identifier",
+        "path": "Communication.recipient.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.recipient.display",
+        "path": "Communication.recipient.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.recipient:ISiKRecipient",
+        "path": "Communication.recipient",
+        "sliceName": "ISiKRecipient",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.recipient:ISiKRecipient.reference",
+        "path": "Communication.recipient.reference",
         "min": 1,
         "mustSupport": true
       },
