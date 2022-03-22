@@ -2,12 +2,17 @@ Profile: ISiKSlot
 Parent: Slot
 Id: ISiKSlot
 * insert Meta
-* obeys ISiK-app-1
+* obeys ISiK-slot-1
 * schedule 1..1 MS
 * schedule only Reference(ISiKKalender)
 * status 1..1 MS
 * start 1..1 MS
 * end 1..1 MS
+
+Invariant: ISiK-slot-1
+Description: "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen"
+Severity: #error
+Expression: "start <= end"
 
 Instance: ISiKSlotExample
 InstanceOf: ISiKSlot
