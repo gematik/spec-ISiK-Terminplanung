@@ -74,11 +74,7 @@
         "id": "Schedule.serviceType",
         "path": "Schedule.serviceType",
         "min": 1,
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminServiceTypeMock"
-        }
+        "mustSupport": true
       },
       {
         "id": "Schedule.specialty",
