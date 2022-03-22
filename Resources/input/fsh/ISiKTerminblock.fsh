@@ -1,6 +1,6 @@
-Profile: ISiKSlot
+Profile: ISiKTerminblock
 Parent: Slot
-Id: ISiKSlot
+Id: ISiKTerminblock
 * insert Meta
 * obeys ISiK-slot-1
 * schedule 1..1 MS
@@ -14,8 +14,8 @@ Description: "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunk
 Severity: #error
 Expression: "start <= end"
 
-Instance: ISiKSlotExample
-InstanceOf: ISiKSlot
+Instance: ISiKTerminblockExample
+InstanceOf: ISiKTerminblock
 Usage: #example
 * schedule = Reference(ISiKKalenderExample)
 * status = #busy
