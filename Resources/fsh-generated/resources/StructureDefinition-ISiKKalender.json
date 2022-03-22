@@ -44,6 +44,11 @@
   "differential": {
     "element": [
       {
+        "id": "Schedule.extension",
+        "path": "Schedule.extension",
+        "mustSupport": true
+      },
+      {
         "id": "Schedule.extension:Name",
         "path": "Schedule.extension",
         "sliceName": "Name",
