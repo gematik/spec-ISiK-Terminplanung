@@ -117,6 +117,11 @@
         "mustSupport": true
       },
       {
+        "id": "Schedule.actor.identifier",
+        "path": "Schedule.actor.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "Schedule.actor.display",
         "path": "Schedule.actor.display",
         "min": 1,
