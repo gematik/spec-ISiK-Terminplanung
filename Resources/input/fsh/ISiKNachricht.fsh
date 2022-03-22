@@ -11,8 +11,8 @@ Id: ISiKNachricht
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * recipient contains ISiKRecipient 1.. MS
-* actor[ISiKRecipient] only Reference(Practitioner or HealthcareService)
-* actor[ISiKRecipient].reference 1..1 MS
+* recipient[ISiKRecipient] only Reference(Practitioner or HealthcareService)
+* recipient[ISiKRecipient].reference 1..1 MS
 * payload 1..* MS
   * content[x] MS
   * contentString MS
