@@ -17,7 +17,7 @@ Id: ISiKTermin
 * cancelationReason from ISiKTerminCancelationReason (required)
 * start 1..1 MS
 * end 1..1 MS
-* slot 1..* MS
+* slot 0..* MS
 * comment 0..1 MS
 * patientInstruction 0..1 MS
 * participant 1..* MS

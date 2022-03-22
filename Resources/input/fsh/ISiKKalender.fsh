@@ -11,7 +11,8 @@ Id: ISiKKalender
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
 * specialty[Fachrichtung] from $authorSpecialtyVS (required)
-* actor 1..* MS
+* actor 1..* MS  
+  * identifier 0..1 MS
   * display 1..1 MS
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this"
