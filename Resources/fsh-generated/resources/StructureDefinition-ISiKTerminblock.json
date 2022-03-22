@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ISiKSlot",
+  "id": "ISiKTerminblock",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,9 +11,9 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKSlot",
+  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock",
   "version": "2.0.0",
-  "name": "ISiKSlot",
+  "name": "ISiKTerminblock",
   "status": "draft",
   "experimental": false,
   "date": "2022-02-17",
@@ -52,7 +52,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKSlot"
+            "source": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock"
           }
         ]
       },

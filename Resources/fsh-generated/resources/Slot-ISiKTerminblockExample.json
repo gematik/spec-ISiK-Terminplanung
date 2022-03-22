@@ -1,9 +1,9 @@
 {
   "resourceType": "Slot",
-  "id": "ISiKSlotExample",
+  "id": "ISiKTerminblockExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKSlot"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock"
     ]
   },
   "schedule": {
