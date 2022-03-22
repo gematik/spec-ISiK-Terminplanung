@@ -6,3 +6,6 @@ Id: ISiKNachricht
 * subject only Reference(Patient)
 * recipient 1..* MS
 * payload 1..* MS
+  * content[x] MS
+  * contentString MS
+  * contentAttachment MS
