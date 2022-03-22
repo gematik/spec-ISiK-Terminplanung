@@ -20,6 +20,7 @@ Id: ISiKKalender
 * actor contains Akteur 1..1 MS
 * actor[Akteur] only Reference(Practitioner or HealthcareService)
 * actor[Akteur].reference 1..1 MS
+* extension MS
 * extension contains ISiKKalenderNameExtension named Name 0..1 MS
 
 Extension: ISiKKalenderNameExtension
