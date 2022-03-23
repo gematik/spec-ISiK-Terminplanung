@@ -24,5 +24,6 @@ InstanceOf: ISiKNachricht
 Usage: #example
 * status = #completed
 * subject.reference = "Patient/ISiKPatientExample"
+* recipient.display = "Dr. Martina Musterfrau"
 * recipient.reference = "Practitioner/ISiKPractitionerExample"
 * payload.contentString = "Dies ist eine Testnachricht!"
