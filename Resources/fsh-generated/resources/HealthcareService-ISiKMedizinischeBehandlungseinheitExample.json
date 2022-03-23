@@ -1,13 +1,13 @@
 {
-  "resourceType": "Schedule",
-  "id": "ISiKKalenderExample",
+  "resourceType": "HealthcareService",
+  "id": "ISiKMedizinischeBehandlungseinheitExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender"
+      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
     ]
   },
   "active": true,
-  "serviceType": [
+  "type": [
     {
       "coding": [
         {
@@ -27,10 +27,5 @@
       ]
     }
   ],
-  "actor": [
-    {
-      "reference": "Practitioner/example",
-      "display": "Dr. Fleming"
-    }
-  ]
+  "name": "Allgemeine Beratungsstelle der Fachabteilung 0100"
 }

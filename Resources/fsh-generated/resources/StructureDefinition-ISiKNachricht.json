@@ -44,6 +44,11 @@
   "differential": {
     "element": [
       {
+        "id": "Communication.status",
+        "path": "Communication.status",
+        "mustSupport": true
+      },
+      {
         "id": "Communication.subject",
         "path": "Communication.subject",
         "min": 1,
