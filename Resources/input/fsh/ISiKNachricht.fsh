@@ -17,3 +17,10 @@ Id: ISiKNachricht
   * content[x] MS
   * contentString MS
   * contentAttachment MS
+
+Instance: ISiKNachrichtExample
+InstanceOf: ISiKNachricht
+Usage: #example
+* subject.reference = "Patient/ISiKPatientExample"
+* recipient.reference = "Practitioner/ISiKPractitionerExample"
+* payload.contentString = "Dies ist eine Testnachricht!"
