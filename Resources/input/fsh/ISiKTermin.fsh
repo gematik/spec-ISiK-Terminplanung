@@ -10,6 +10,7 @@ Id: ISiKTermin
   * tag contains Source 0..1 MS
   * tag[Source] from ISiKTerminSourceMock (required)
 * insert Meta
+* extension MS
 * identifier 0..* MS
 * status 1..1 MS
 * status from ISiKTerminStatus (required)
