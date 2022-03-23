@@ -2,6 +2,7 @@ Profile: ISiKNachricht
 Parent: Communication
 Id: ISiKNachricht
 * insert Meta
+* status MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * recipient 1..* MS
@@ -21,6 +22,7 @@ Id: ISiKNachricht
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
 Usage: #example
+* status = #completed
 * subject.reference = "Patient/ISiKPatientExample"
 * recipient.reference = "Practitioner/ISiKPractitionerExample"
 * payload.contentString = "Dies ist eine Testnachricht!"
