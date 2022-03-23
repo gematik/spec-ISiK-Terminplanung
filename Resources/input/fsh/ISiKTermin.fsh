@@ -56,7 +56,7 @@ Usage: #example
 * start = "2022-12-10T09:00:00Z"
 * end = "2022-12-10T11:00:00Z"
 * slot = Reference(ISiKSlotExample)
-* serviceType = http://terminology.hl7.org/CodeSystem/service-type#1
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
 * specialty = urn:oid:1.2.276.0.76.5.114#010
 * participant
   * actor.reference = "Patient/example"
