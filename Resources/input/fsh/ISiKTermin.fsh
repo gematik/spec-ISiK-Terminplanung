@@ -22,15 +22,16 @@ Id: ISiKTermin
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
+  * actor.display 1..1 MS
   * status 1..1 MS
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "actor"
   * ^slicing.rules = #open
 * participant contains AkteurPatient 1.. MS
-* participant[AkteurPatient].actor only Reference(Patient)
+* participant[AkteurPatient].actor only Reference(Patient) MS
 * participant[AkteurPatient].actor.reference 1..1 MS
 * participant contains AkteurLeistungserbringer 0.. MS
-* participant[AkteurLeistungserbringer].actor only Reference(Practitioner or HealthcareService)
+* participant[AkteurLeistungserbringer].actor only Reference(Practitioner or HealthcareService) MS
 * participant[AkteurLeistungserbringer].actor.reference 1..1 MS
 * specialty 1..* MS
   * ^slicing.discriminator.type = #pattern
@@ -75,5 +76,6 @@ Usage: #example
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
 * specialty = urn:oid:1.2.276.0.76.5.114#010
 * participant
+  * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
   * status = #accepted
