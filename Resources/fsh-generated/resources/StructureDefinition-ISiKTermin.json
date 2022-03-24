@@ -165,6 +165,16 @@
         }
       },
       {
+        "id": "Appointment.priority",
+        "path": "Appointment.priority",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.priority.extension",
+        "path": "Appointment.priority.extension",
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.priority.extension:Priority",
         "path": "Appointment.priority.extension",
         "sliceName": "Priority",
