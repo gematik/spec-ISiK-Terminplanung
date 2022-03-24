@@ -42,7 +42,7 @@ Id: ISiKTermin
 * serviceType 1..* MS
 * serviceType from ISiKTerminServiceTypeMock (extensible)
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
-* extension contains ISiKNachrichtExtension named Nachricht 0..1 MS
+* extension contains ISiKNachrichtExtension named Nachricht 0..* MS
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension
