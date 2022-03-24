@@ -67,6 +67,11 @@
         ]
       },
       {
+        "id": "Appointment.meta",
+        "path": "Appointment.meta",
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.meta.tag",
         "path": "Appointment.meta.tag",
         "slicing": {

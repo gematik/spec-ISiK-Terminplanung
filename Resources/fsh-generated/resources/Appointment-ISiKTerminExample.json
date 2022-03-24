@@ -2,10 +2,24 @@
   "resourceType": "Appointment",
   "id": "ISiKTerminExample",
   "meta": {
+    "tag": [
+      {
+        "code": "external",
+        "system": "http://fhir.de/CodeSystem/common-meta-tag-de"
+      }
+    ],
     "profile": [
       "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin"
     ]
   },
+  "extension": [
+    {
+      "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachrichtExtension",
+      "valueReference": {
+        "reference": "Communication/ISiKNachrichtExample"
+      }
+    }
+  ],
   "status": "booked",
   "start": "2022-12-10T09:00:00Z",
   "end": "2022-12-10T11:00:00Z",
@@ -14,6 +28,7 @@
       "reference": "ISiKSlotExample"
     }
   ],
+  "comment": "Dies ist ein Test Kommentar!",
   "serviceType": [
     {
       "coding": [
@@ -39,7 +54,22 @@
       "actor": {
         "reference": "Patient/example"
       },
-      "status": "accepted"
+      "status": "proposed"
     }
-  ]
+  ],
+  "_priority": {
+    "extension": [
+      {
+        "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminPriorityExtension",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "25876001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
