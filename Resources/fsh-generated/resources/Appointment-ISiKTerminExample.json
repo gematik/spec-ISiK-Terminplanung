@@ -52,6 +52,7 @@
   "participant": [
     {
       "actor": {
+        "display": "Test Patient",
         "reference": "Patient/example"
       },
       "status": "accepted"
