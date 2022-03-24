@@ -11,4 +11,4 @@ publisher:
   url: https://www.gematik.de/
   email: ISiK@gematik.de
 dependencies:
-  de.basisprofil.r4: 1.3.0
+  de.basisprofil.r4: 1.3.1
