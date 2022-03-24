@@ -1,8 +1,8 @@
 Instance: Book
 InstanceOf: OperationDefinition
-Id: ISiKAppointmentBookOperation
 Usage: #example
 * insert Meta-Inst
+* id = "ISiKAppointmentBookOperation"
 * url = "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook"
 * name = "ISiKAppointmentBookOperation"
 * kind = #operation
@@ -12,4 +12,4 @@ Usage: #example
 * system = false
 * type = true
 * instance = false
-* idempotent = false
+* affectsState = true
