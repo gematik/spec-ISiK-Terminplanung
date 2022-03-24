@@ -1,0 +1,20 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ISiKAppointmentBookOperation",
+  "status": "draft",
+  "experimental": false,
+  "version": "2.0.0",
+  "publisher": "gematik GmbH",
+  "date": "2022-02-17",
+  "url": "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook",
+  "name": "book",
+  "kind": "operation",
+  "code": "book",
+  "resource": [
+    "Appointment"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "affectsState": true
+}
