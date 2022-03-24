@@ -19,17 +19,6 @@ Description: "Enthaelt alle erlaubten Gruende fuer eine Stornierung eines ISiKTe
 * $cancelationReason#meds-inc
 * $cancelationReason#other
 
-// This ValueSet is a mock and should be removed as soon as the actual ValueSet is finished
-ValueSet: ISiKTerminSourceMock
-Id: ISiKTerminSourceMock
-* insert Meta
-
-// This ValueSet is a mock and should be removed as soon as the actual ValueSet is finished
-ValueSet: ISiKTerminServiceTypeMock
-Id: ISiKTerminServiceTypeMock
-* insert Meta
-* http://terminology.hl7.org/CodeSystem/service-type#1
-
 ValueSet: ISiKTerminPriority
 Id: ISiKTerminPriority
 Description: "Enthaelt alle SNOMED Codes, die eine valide Priorität für den ISiKTermin sind"
