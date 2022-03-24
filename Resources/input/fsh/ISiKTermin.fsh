@@ -65,7 +65,7 @@ Usage: #example
 * meta
   * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
 * extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
-* status = $appointmentStatus#booked
+* status = $appointmentStatus#proposed
 * start = "2022-12-10T09:00:00Z"
 * end = "2022-12-10T11:00:00Z"
 * slot = Reference(ISiKSlotExample)
@@ -76,4 +76,4 @@ Usage: #example
 * specialty = urn:oid:1.2.276.0.76.5.114#010
 * participant
   * actor.reference = "Patient/example"
-  * status = #proposed
+  * status = #accepted
