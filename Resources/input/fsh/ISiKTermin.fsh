@@ -39,6 +39,8 @@ Id: ISiKTermin
 * specialty contains Fachrichtung 1..1 MS
 * specialty[Fachrichtung] from $authorSpecialtyVS (required)
 * serviceType 1..* MS
+* priority MS
+* priority.extension MS
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
 * extension contains ISiKNachrichtExtension named Nachricht 0..* MS
 
