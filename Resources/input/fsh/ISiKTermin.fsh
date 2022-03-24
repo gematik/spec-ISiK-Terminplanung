@@ -8,7 +8,7 @@ Id: ISiKTermin
     * ^slicing.discriminator.path = "$this"
     * ^slicing.rules = #open
   * tag contains Source 0..1 MS
-  * tag[Source] from ISiKTerminSourceMock (required)
+  * tag[Source] from http://fhir.de/ValueSet/common-meta-tag-de (required)
 * insert Meta
 * extension MS
 * identifier 0..* MS
@@ -29,7 +29,7 @@ Id: ISiKTermin
   * ^slicing.rules = #open
 * participant contains AkteurPatient 1.. MS
 * participant[AkteurPatient].actor only Reference(Patient)
-* participant[AkteurPatient].reference 1..1 MS
+* participant[AkteurPatient].actor.reference 1..1 MS
 * participant contains AkteurLeistungserbringer 0.. MS
 * participant[AkteurLeistungserbringer].actor only Reference(Practitioner or HealthcareService)
 * participant[AkteurLeistungserbringer].actor.reference 1..1 MS
