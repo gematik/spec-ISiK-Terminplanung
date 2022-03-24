@@ -89,8 +89,13 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminSourceMock"
+          "valueSet": "http://fhir.de/ValueSet/common-meta-tag-de"
         }
+      },
+      {
+        "id": "Appointment.extension",
+        "path": "Appointment.extension",
+        "mustSupport": true
       },
       {
         "id": "Appointment.extension:Nachricht",
@@ -214,6 +219,15 @@
       {
         "id": "Appointment.participant",
         "path": "Appointment.participant",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "actor"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -225,6 +239,59 @@
       {
         "id": "Appointment.participant.status",
         "path": "Appointment.participant.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurPatient",
+        "path": "Appointment.participant",
+        "sliceName": "AkteurPatient",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurPatient.actor",
+        "path": "Appointment.participant.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Appointment.participant:AkteurPatient.actor.reference",
+        "path": "Appointment.participant.actor.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurLeistungserbringer",
+        "path": "Appointment.participant",
+        "sliceName": "AkteurLeistungserbringer",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurLeistungserbringer.actor",
+        "path": "Appointment.participant.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Appointment.participant:AkteurLeistungserbringer.actor.reference",
+        "path": "Appointment.participant.actor.reference",
+        "min": 1,
         "mustSupport": true
       }
     ]
