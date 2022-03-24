@@ -13,3 +13,22 @@ Usage: #example
 * type = true
 * instance = false
 * affectsState = true
+* parameter[+]
+  * name = #appt-resource
+  * use = #in
+  * min = 1
+  * max = "1"
+  * type = #Appointment
+  * targetProfile = Canonical(ISiKTermin)
+* parameter[+]
+  * name = #cancelled-appt-id
+  * use = #in
+  * min = 0
+  * max = "1"
+  * type = #uri
+* parameter[+]
+  * name = #return
+  * use = #out
+  * min = 0
+  * max = "1"
+  * type = #Bundle
