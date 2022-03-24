@@ -11,7 +11,6 @@ Id: ISiKTermin
   * tag[Source] from http://fhir.de/ValueSet/common-meta-tag-de (required)
 * insert Meta
 * extension MS
-* identifier 0..* MS
 * status 1..1 MS
 * status from ISiKTerminStatus (required)
 * cancelationReason 0..1 MS
