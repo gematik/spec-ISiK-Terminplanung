@@ -28,11 +28,11 @@ Id: ISiKTermin
   * ^slicing.discriminator.path = "actor"
   * ^slicing.rules = #open
 * participant contains AkteurPatient 1.. MS
-* participant[AkteurPatient] only Reference(Patient)
+* participant[AkteurPatient].actor only Reference(Patient)
 * participant[AkteurPatient].reference 1..1 MS
 * participant contains AkteurLeistungserbringer 0.. MS
-* participant[AkteurLeistungserbringer] only Reference(Practitioner or HealthcareService)
-* participant[AkteurLeistungserbringer].reference 1..1 MS
+* participant[AkteurLeistungserbringer].actor only Reference(Practitioner or HealthcareService)
+* participant[AkteurLeistungserbringer].actor.reference 1..1 MS
 * specialty 1..* MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
