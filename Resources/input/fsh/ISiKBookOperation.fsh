@@ -13,6 +13,7 @@ Usage: #example
 * type = true
 * instance = false
 * affectsState = true
+* description = "OperationDefinition für die Buchung eines Termins. Die Operation überprüft ob der Termin noch verfügbar ist im Termin-Repository."
 * parameter[+]
   * name = #appt-resource
   * use = #in
