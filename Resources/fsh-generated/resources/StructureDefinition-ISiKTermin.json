@@ -280,28 +280,53 @@
         "mustSupport": true
       },
       {
-        "id": "Appointment.participant:AkteurLeistungserbringer",
+        "id": "Appointment.participant:AkteurPersonImGesundheitsberuf",
         "path": "Appointment.participant",
-        "sliceName": "AkteurLeistungserbringer",
+        "sliceName": "AkteurPersonImGesundheitsberuf",
         "min": 0,
         "max": "*",
         "mustSupport": true
       },
       {
-        "id": "Appointment.participant:AkteurLeistungserbringer.actor",
+        "id": "Appointment.participant:AkteurPersonImGesundheitsberuf.actor",
         "path": "Appointment.participant.actor",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Appointment.participant:AkteurPersonImGesundheitsberuf.actor.reference",
+        "path": "Appointment.participant.actor.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurMedizinischeBehandlungseinheit",
+        "path": "Appointment.participant",
+        "sliceName": "AkteurMedizinischeBehandlungseinheit",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant:AkteurMedizinischeBehandlungseinheit.actor",
+        "path": "Appointment.participant.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/HealthcareService"
             ]
           }
         ]
       },
       {
-        "id": "Appointment.participant:AkteurLeistungserbringer.actor.reference",
+        "id": "Appointment.participant:AkteurMedizinischeBehandlungseinheit.actor.reference",
         "path": "Appointment.participant.actor.reference",
         "min": 1,
         "mustSupport": true
