@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/gematik/api-ISiK/master/images/Gematik_Logo_Flag.jpg" alt="gematik logo" width="400"/>
 
 ----
-Version: 1.0.0 CC1
+Version: 1.0.0-ballot1
 
-Datum: 18.02.2022
+Datum: 31.03.2022
 
-Status: Release-Kandidat zur Besprechung in den Arbeitsgruppen.
+Status: Arbeitsversion
 
 Realm: Deutschland
 
