@@ -12,7 +12,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
+        "system": "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
         "concept": [
           {
             "code": "pat"
