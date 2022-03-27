@@ -17,8 +17,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* instantiates[0] = Canonical(ISiKCapabilityStatementTerminplanungServer)
-* instantiates[1] = Canonical(ISiKCapabilityStatementBasisServer)
+* instantiates = Canonical(ISiKCapabilityStatementTerminplanungServer)
 * rest.mode = #server
 * rest.resource[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
