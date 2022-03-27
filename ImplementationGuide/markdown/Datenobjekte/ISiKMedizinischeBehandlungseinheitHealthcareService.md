@@ -10,7 +10,7 @@ Unter einer Medizinische Behandlungseinheit wird innerhalb dieser Spezifikation 
 
 ### Kompabilität
 
-Siehe {{pagelink:kompatibilitaet, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
 
 ---
 

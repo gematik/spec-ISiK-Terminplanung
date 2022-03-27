@@ -10,7 +10,7 @@ Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene 
 
 ### Kompabilität
 
-Siehe {{pagelink:kompatibilitaet, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
 
 ---
 

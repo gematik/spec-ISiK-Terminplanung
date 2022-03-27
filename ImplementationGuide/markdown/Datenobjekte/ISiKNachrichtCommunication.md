@@ -10,7 +10,7 @@ Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachric
 
 ### Kompabilität
 
-Siehe {{pagelink:kompatibilitaet, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
 
 ---
 
