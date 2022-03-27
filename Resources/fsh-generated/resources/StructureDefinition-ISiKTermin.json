@@ -229,7 +229,7 @@
           "discriminator": [
             {
               "type": "type",
-              "path": "actor"
+              "path": "actor.resolve()"
             }
           ],
           "rules": "open"
