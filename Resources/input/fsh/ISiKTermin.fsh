@@ -31,10 +31,14 @@ Id: ISiKTermin
 * participant[AkteurPatient].actor only Reference(Patient)
 * participant[AkteurPatient].actor MS
 * participant[AkteurPatient].actor.reference 1..1 MS
-* participant contains AkteurLeistungserbringer 0.. MS
-* participant[AkteurLeistungserbringer].actor only Reference(Practitioner or HealthcareService)
-* participant[AkteurLeistungserbringer].actor MS
-* participant[AkteurLeistungserbringer].actor.reference 1..1 MS
+* participant contains AkteurPersonImGesundheitsberuf 0.. MS
+* participant[AkteurPersonImGesundheitsberuf].actor only Reference(Practitioner)
+* participant[AkteurPersonImGesundheitsberuf].actor MS
+* participant[AkteurPersonImGesundheitsberuf].actor.reference 1..1 MS
+* participant contains AkteurMedizinischeBehandlungseinheit 0.. MS
+* participant[AkteurMedizinischeBehandlungseinheit].actor only Reference(HealthcareService)
+* participant[AkteurMedizinischeBehandlungseinheit].actor MS
+* participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
 * specialty 1..* MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
