@@ -1,6 +1,10 @@
 # Bestätigungsrelevante Systeme
 
-Bestätigungsrelevant im Kontext des Moduls Terminplanung der ISiK Stufe 2 sind alle Softwareprodukte, die mindestens eine der in Liste 1 angegebenen Artifakte der Terminplanung verarbeiten und dauerhaft speichern. Die Verarbeitung schließt in diesem Kontext die Organisation, die Erhebung, die Erfassung, die Anpassung, die Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, die Verbreitung oder eine andere Form der Bereitstellung ein. Ausgenommen sind Softwareprodukte, die ausschließlich zur redundanten Datenspeicherung und -Wiederherstellung eingesetzt werden.
+Bestätigungsrelevant im Kontext des Moduls Terminplanung der ISiK Stufe 2 sind alle Softwareprodukte, die mindestens eine der in nachfolgenden Liste angegebenen Artifakte der Terminplanung verarbeiten und dauerhaft speichern. Die Verarbeitung schließt in diesem Kontext die Organisation, die Erhebung, die Erfassung, die Anpassung, die Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, die Verbreitung oder eine andere Form der Bereitstellung ein. Ausgenommen sind Softwareprodukte, die ausschließlich zur redundanten Datenspeicherung und -Wiederherstellung eingesetzt werden.
 
-**Liste 1:**
-* ...
+**Artifakte der Terminplanung:**
+* Informationen zu angebotenen Behandlungsleistungen durch Leistungserbringer:innen im Krankenhaus
+* Informationen zu vereinbarten und/oder geplanten Terminen für einen Besuch / Kontakt mit einer Gesundheitseinrichtung
+* Informationen relevant auf die Terminplanung von Leistungserbringer:innen im Krankenhaus (inbesondere aber nicht beschränkt auf die verfügbaren Termineinheiten, Sprechzeiten, Kalendar für Behandler:innen, Fachabteilungen oder Kliniken)
+
+Dies umfasst explizit auch Patientenportale oder Ähnliche externe Systeme die mit einem krankenhausinternen System Termine austauschen.
