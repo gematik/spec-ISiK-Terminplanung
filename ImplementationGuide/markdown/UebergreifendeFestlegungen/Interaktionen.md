@@ -22,7 +22,7 @@ Siehe {{pagelink:ISiKMedizinischeBehandlungseinheitHealthcareService.md, text: I
 
 ---
 
-{{render:3.verfugbareterminlistenabrufen}}
+{{render:ImplementationGuide/images/Interaktionen/3. Verfügbare Terminlisten abrufen.png}}
 
 Der Termin Requestor kann im Anschluss an die Auswahl einer Behandlungsleistung dafür verfügbare Terminlisten (Schedules) im Termin Repository abrufen. Die Terminlisten repräsentieren somit den "Kalender" in dem Termine gebucht werden können.
 
@@ -30,7 +30,7 @@ Siehe {{pagelink:ISiKKalenderSchedule.md, text: ISiKKalender (Schedule) - Intera
 
 ---
 
-{{render:4.abfragevonverfubarenterminblocken}}
+{{render:ImplementationGuide/images/Interaktionen/4. Abfrage von (verfübaren) Terminblöcken.png}}
 
 Für einen jeweiligen Kalendar kann der Termin Requestor die darin definierten Terminblöcke abfragen. Diese können entsprechend eines Zeitraums und/oder Status (verfügbar, belegt) gefiltert werden.
 
@@ -38,7 +38,7 @@ Siehe {{pagelink:ISiKTerminblockSlot.md, text: ISiKTerminblock (Slot) - Interakt
 
 ---
 
-{{render:5.terminneubuchen-buchungsmanagemnentvonverfugbarenterminen}}
+{{render:ImplementationGuide/images/Interaktionen/5. Termin neu buchen - Buchungsmanagemnent von verfügbaren Terminen}}
 
 Für einen durch die Benutzer:in ausgewählten Terminblock bzw. mehreren aufeinander folgenden Terminblöcken kann durch den Termin Requestor ein Termin angefragt werden. Dieser kann direkt oder erst nach manueller Bestätigung durch das Termin Repository freigegeben werden.
 
@@ -48,10 +48,10 @@ Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Um
 
 ---
 
-{{render:6.1terminabsagenausgehendvomclient}}
+{{render:ImplementationGuide/images/Interaktionen/6.1 Termin absagen (ausgehend vom Client).png}}
 
 
-{{render:6.2terminabsagenausgehendvomterminfuhrendensystem}}
+{{render:ImplementationGuide/images/Interaktionen/6.2 Termin absagen (ausgehend vom terminführenden System).png}}
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System abgesagt werden.
 
@@ -59,11 +59,9 @@ Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für d
 
 ---
 
-{{render:7.1terminverschiebenausgehendvomclient}}
+{{render:ImplementationGuide/images/Interaktionen/7.1 Termin verschieben (ausgehend vom Client).png}}
 
-
-
-{{render:7.2terminverschiebenausgehendvomterminrepository}}
+{{render:ImplementationGuide/images/Interaktionen/7.2 Termin verschieben (ausgehend vom Termin Repository).png}}
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System verschoben werden.
 
@@ -71,9 +69,9 @@ Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Um
 
 ---
 
-{{render:8.1terminzusatzinformationenaktualisierenausgehendvomclient}}
+{{render:ImplementationGuide/images/Interaktionen/8.1 Terminzusatzinformationen aktualisieren (ausgehend vom Client).png}}
 
-{{render:8.2terminzusatzinformationenaktualisierenausgehendvomterminr}}
+{{render:ImplementationGuide/images/Interaktionen/8.2 Terminzusatzinformationen aktualisieren (ausgehend vom Termin Repository).png}}
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System durch Zusatzinformationen (z.B. welche Teilnehmer oder Ressourcen sind Teil des Termins) erweitert werden.
 
@@ -81,7 +79,7 @@ Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für d
 
 ---
 
-{{render:9.abfragevonverinbartenterminen}}
+{{render:ImplementationGuide/images/Interaktionen/9. Abfrage von (verinbarten) Terminen.png}}
 
 Der Termin Requestor oder Termin Consumer kann einen, mehrere oder alle Termine eines Termin Repository abfragen.
 
