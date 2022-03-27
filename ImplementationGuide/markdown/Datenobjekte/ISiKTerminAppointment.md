@@ -1,0 +1,196 @@
+## ISiKTermin [(Appointment)](http://hl7.org/fhir/appointment.html)
+
+---
+
+### Motivation
+
+Das Datenobjekte ISiKTermin repräsentiert einen bebuchten Termin, sowie einen Terminvorschlag.
+
+---
+
+### Kompabilität
+
+Siehe {{pagelink:kompatibilitaet, text:Kompabilität}}.
+
+---
+
+### FHIR-Profil
+
+@```
+from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
+```
+
+{{tree:https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin, hybrid}}
+
+Folgende FHIRPath-Constraints sind im Profil zu beachten:
+
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
+
+---
+
+**Terminology Bindings**
+
+@```
+from StructureDefinition
+where url in ('https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' )
+for differential.element
+select
+Path: path,
+join binding.where(valueSet.exists())
+{
+  Name: valueSet.substring((9 + valueSet.indexOf('ValueSet/'))),
+  Strength: strength,
+  URL: valueSet
+}
+```
+
+---
+
+### Anmerkungen zu Must-Support-Feldern
+
+### `Appointment.meta.tag`
+
+**Bedeutung** Herkunft der Termnins
+
+**Hinweis** Angabe ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
+
+### `Appointment.extension:Nachricht`
+
+**Bedeutung** Kommunikation mit der Patient:in
+
+**Hinweis** Das Element "comment" dient auschließlich für die Kommunikation zwischen den Leistungserbringer:innen. Für die Kommunikation mit der Patient:in sind Communication-Ressourcen zu verwenden. Für den Termin relevante Referenzen MÜSSEN angegeben werden.
+
+### `Appointment.status`
+
+**Bedeutung** Differenzierung zwischen Terminwunsch und gebuchten Termin
+
+**Hinweis** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
+
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, inbesondere der Status 'proposed' und 'booked'. 
+
+### `Appointment.cancelationReason`
+
+**Bedeutung** Grund für die Absage eines Termin
+
+**Hinweis** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
+
+### `Appointment.serviceType`
+
+**Bedeutung** Kodierung der Behandlungsleistung des Termins
+
+**Hinweis** Dies SOLLTE der Kodierung des serviceType des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+
+### `Appointment.specialty`
+
+**Bedeutung** Kodierung der Fachrichtung des Termins
+
+**Hinweis** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+
+### `Appointment.priority.extension:Priority`
+
+**Bedeutung** Kodierte Angabe der Priorität des Termins
+
+**Hinweis** Anstelle der numerischen Priorität MUSS in ISiK eine kodierte Priorität angegeben werden.
+
+### `Appointment.start`
+
+**Bedeutung** Startzeitpunkt des Termin
+
+**Hinweis** Dies MUSS dem Startzeitpunkt des ersten Slots des Termins entsprechen
+
+### `Appointment.end`
+
+**Bedeutung** Endzeitpunkt des Termin
+
+**Hinweis** Dies MUSS dem Endzeitpunkt des letzten Slots des Termins entsprechen
+
+### `Appointment.slot`
+
+**Bedeutung** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
+
+**Hinweis** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgelietet werden.
+
+### `Appointment.comment`
+
+**Bedeutung** Interner Kommentar der Leistungserbinger:in
+
+**Hinweis** Diese Kommentare KÖNNEN potentiell sensitive Angaben enthalten und SOLLTEN vor der Herausgabe an die Patient:in gefiltert werden.
+
+### `Appointment.patientInstruction`
+
+**Beduetung** Handlungsanweisungen für die Patient:in in Vorbereitun auf den Termin
+
+### `Appointment.participant`
+
+**Bedeutung** Teilnehmer:innen des Termin
+
+**Hinweis** Mindestens eine Patient-Referenz MUSS angegeben werden. Dies MUSS durch das Termin-Repository während der Buchung des Termin geprüft werden. Weitere Leistungserbriner KÖNNEN angegeben werden.
+
+---
+
+### Interaktionen
+
+Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert werden.
+
+1. Der Suchparameter "_id" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Appointment?_id=103270```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. Der Suchparameter "status" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?status=booked```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. Der Suchparameter "service-type" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. Der Suchparameter "specialty" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+
+1. Der Suchparameter "date" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?date=2022-12-10T09:00:00Z```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. Der Suchparameter "slot" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?slot=Slot/ISiKSlotExample```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.slot" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+1. Der Suchparameter "actor" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Appointment?actor=Patient/ISiKPatientExample```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.participant.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+---
+
+### Beispiele
+
+{{json:ISiKTerminExample}}

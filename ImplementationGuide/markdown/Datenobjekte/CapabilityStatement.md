@@ -24,5 +24,3 @@ Canonical: https://gematik.de/fhir/ISiK/v2/CapabilityStatement/core-server
 [Link Simplifier Profil Übersicht](https://simplifier.net/isik/isik-capabilitystatement-terminplanung-server)
 
 {{render:https://gematik.de/fhir/ISiK/v2/CapabilityStatement/terminplanung-server}}
-
-
