@@ -25,7 +25,7 @@ Id: ISiKTermin
   * actor.display 1..1 MS
   * status 1..1 MS
   * ^slicing.discriminator.type = #type
-  * ^slicing.discriminator.path = "actor"
+  * ^slicing.discriminator.path = "actor.resolve()"
   * ^slicing.rules = #open
 * participant contains AkteurPatient 1.. MS
 * participant[AkteurPatient].actor only Reference(Patient)
