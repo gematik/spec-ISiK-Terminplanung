@@ -38,7 +38,7 @@ Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKTerminblockSlot.m
 
 ---
 
-{{render:ImplementationGuide/images/Interaktionen/5. Termin neu buchen - Buchungsmanagemnent von verfügbaren Terminen}}
+{{render:ImplementationGuide/images/Interaktionen/5. Termin neu buchen - Buchungsmanagemnent von verfügbaren Terminen.png}}
 
 Für einen durch die Benutzer:in ausgewählten Terminblock bzw. mehreren aufeinander folgenden Terminblöcken kann durch den Termin Requestor ein Termin angefragt werden. Dieser kann direkt oder erst nach manueller Bestätigung durch das Termin Repository freigegeben werden.
 
