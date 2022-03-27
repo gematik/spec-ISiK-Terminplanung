@@ -10,7 +10,7 @@ Für die Auswahl eines verfügbaren Terminblocks kann es notwendig sein, dass da
 
 Gleichermaßen können Informationen zur Patient:in vorab übermittelt werden, sodass gewisse Basisangaben bereits im Terminrepository vorliegen.
 
-Siehe {{pagelink:Operations, text:Anlage einer Patient-Ressource}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Anlage einer Patient-Ressource}} für die technische Umsetzung.
 
 ---
 
@@ -26,7 +26,7 @@ Siehe {{pagelink:ISiKMedizinischeBehandlungseinheitHealthcareService.md, text: I
 
 Der Termin Requestor kann im Anschluss an die Auswahl einer Behandlungsleistung dafür verfügbare Terminlisten (Schedules) im Termin Repository abrufen. Die Terminlisten repräsentieren somit den "Kalender" in dem Termine gebucht werden können.
 
-Siehe {{pagelink:ISiKKalenderSchedule.md, text: ISiKKalender (Schedule) - Interaktionen}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKKalenderSchedule.md, text: ISiKKalender (Schedule) - Interaktionen}} für die technische Umsetzung.
 
 ---
 
@@ -34,7 +34,7 @@ Siehe {{pagelink:ISiKKalenderSchedule.md, text: ISiKKalender (Schedule) - Intera
 
 Für einen jeweiligen Kalendar kann der Termin Requestor die darin definierten Terminblöcke abfragen. Diese können entsprechend eines Zeitraums und/oder Status (verfügbar, belegt) gefiltert werden.
 
-Siehe {{pagelink:ISiKTerminblockSlot.md, text: ISiKTerminblock (Slot) - Interaktionen}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKTerminblockSlot.md, text: ISiKTerminblock (Slot) - Interaktionen}} für die technische Umsetzung.
 
 ---
 
@@ -44,7 +44,7 @@ Für einen durch die Benutzer:in ausgewählten Terminblock bzw. mehreren aufeina
 
 Es ist zu beachten, dass innerhalb dieser Aktion ein terminführendes Termin Repository die Rolle des Termin Requestors übernehmen kann und den neu-angelegten Termin in ein weiteres Terminrepository spiegelt.
 
-Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Buchung eines Termins}} für die technische Umsetzung.
 
 ---
 
@@ -55,7 +55,7 @@ Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Um
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System abgesagt werden.
 
-Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Aktualisierung / Absage eines Termins}} für die technische Umsetzung.
 
 ---
 
@@ -65,7 +65,7 @@ Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für d
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System verschoben werden.
 
-Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Buchung eines Termins}} für die technische Umsetzung.
 
 ---
 
@@ -75,7 +75,7 @@ Siehe {{pagelink:Operations, text:Buchung eines Termins}} für die technische Um
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System durch Zusatzinformationen (z.B. welche Teilnehmer oder Ressourcen sind Teil des Termins) erweitert werden.
 
-Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Aktualisierung / Absage eines Termins}} für die technische Umsetzung.
 
 ---
 
@@ -83,4 +83,4 @@ Siehe {{pagelink:Operations, text:Aktualisierung / Absage eines Termins}} für d
 
 Der Termin Requestor oder Termin Consumer kann einen, mehrere oder alle Termine eines Termin Repository abfragen.
 
-Siehe {{pagelink:ISiKTerminAppointment.md, text: ISiKTermin (Appointment) - Interaktionen}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKTerminAppointment.md, text: ISiKTermin (Appointment) - Interaktionen}} für die technische Umsetzung.
