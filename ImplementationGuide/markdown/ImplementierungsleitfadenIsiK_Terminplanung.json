@@ -8,13 +8,6 @@
   ],
   "packageId": "0.0.1",
   "definition": {
-    "resource": [
-      {
-        "reference": {
-          "reference": "Patient/test"
-        }
-      }
-    ],
     "page": {
       "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
       "title": "Einführung",
@@ -31,52 +24,27 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/UebergreifendeFestlegungen.md",
           "title": "Übergreifende Festlegungen",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/Methodik.md",
-              "title": "Methodik",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/BestaetigungsrelevanteSysteme.md",
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/BestaetigungsrelevanteSysteme.md",
               "title": "Bestätigungsrelevante Systeme",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/Kompatibilitaet.md",
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md",
               "title": "Kompatibilität",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/MustSupportFlags.md",
-              "title": "Must-Support-Flags",
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Akteure.md",
+              "title": "Akteure",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/Repraesentationsformate.md",
-              "title": "Repräsentationsformate",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Suchparameter.md",
-              "title": "Suchparameter",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/RestApi.md",
-              "title": "REST-API",
-              "generation": "markdown"
-            },
-           {
-              "nameUrl": "ImplementationGuide/markdown/AnmerkungenMS.md",
-              "title": "Anmerkungen zu Must-Support-Feldern",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Interaktionen.md",
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Interaktionen.md",
               "title": "Interaktionen",
               "generation": "markdown"
             }
@@ -88,8 +56,38 @@
           "title": "Datenobjekte",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/CapabilityStatement.md",
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md",
               "title": "CapabilityStatement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Operations.md",
+              "title": "Operations",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKKalenderSchedule.md",
+              "title": "ISiKKalender (Schedule)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKTerminblockSlot.md",
+              "title": "ISiKTerminblock (Slot)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKTerminAppointment.md",
+              "title": "ISiKTermin (Appointment)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKNachrichtCommunication.md",
+              "title": "ISiKNachricht (Communication)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKMedizinischeBehandlungseinheitHealthcareService.md",
+              "title": "ISiKMedizinischeBehandlungseinheit (HealthcareService)",
               "generation": "markdown"
             }
           ]
