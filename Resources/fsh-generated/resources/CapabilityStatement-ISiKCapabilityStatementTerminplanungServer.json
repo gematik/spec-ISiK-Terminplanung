@@ -384,6 +384,18 @@
               "type": "reference"
             }
           ],
+          "operation": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "book",
+              "definition": "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook"
+            }
+          ],
           "searchInclude": [
             "Appointment:slot",
             "Appointment:actor"
