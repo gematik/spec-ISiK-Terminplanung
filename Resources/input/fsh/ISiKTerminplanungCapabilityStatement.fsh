@@ -26,6 +26,9 @@ Usage: #definition
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
 * rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #search-type
@@ -181,6 +184,10 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "actor"
 * rest.resource[=].searchParam[=].definition = "http://fhir.de/SearchParameter/Condition-related"
 * rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].operation[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].operation[=].extension.valueCode = #SHALL
+* rest.resource[=].operation[=].name = "book"
+* rest.resource[=].operation[=].definition = Canonical(ISiKAppointmentBookOperation)
 * rest.resource[=].searchInclude = "Appointment:slot"
 * rest.resource[=].searchInclude[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
