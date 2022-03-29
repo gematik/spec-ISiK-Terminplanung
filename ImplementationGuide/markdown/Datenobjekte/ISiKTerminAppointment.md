@@ -60,6 +60,12 @@ join binding.where(valueSet.exists())
 
 **Hinweis** Das Element "comment" dient auschließlich für die Kommunikation zwischen den Leistungserbringer:innen. Für die Kommunikation mit der Patient:in sind Communication-Ressourcen zu verwenden. Für den Termin relevante Referenzen MÜSSEN angegeben werden.
 
+### `Appointment.extension:replaces`
+
+**Bedeutung** Angabe eines abgesagten / verschobenen Termins
+
+**Hinweis** Im Falle, dass per $book-Operation ein verschobener / abgesagter Termin angegeben wird, MUSS dieser für die Rückverfolgbarkeit referenziert werden.
+
 ### `Appointment.status`
 
 **Bedeutung** Differenzierung zwischen Terminwunsch und gebuchten Termin
