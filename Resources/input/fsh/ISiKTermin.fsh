@@ -11,6 +11,8 @@ Id: ISiKTermin
   * tag[Source] from http://fhir.de/ValueSet/common-meta-tag-de (required)
 * insert Meta
 * extension MS
+* extension contains ISiKNachrichtExtension named Nachricht 0..* MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces named replaces 0..1 MS
 * status 1..1 MS
 * status from ISiKTerminStatus (required)
 * cancelationReason 0..1 MS
@@ -49,7 +51,6 @@ Id: ISiKTermin
 * priority MS
 * priority.extension MS
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
-* extension contains ISiKNachrichtExtension named Nachricht 0..* MS
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension
@@ -85,3 +86,9 @@ Usage: #example
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
   * status = #accepted
+
+// This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
+Extension: AppointmentReplaces
+Id: AppointmentReplaces
+* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces"
+* value[x] only Reference(Appointment)
