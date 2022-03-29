@@ -130,6 +130,17 @@
               "name": "actor",
               "definition": "http://hl7.org/fhir/SearchParameter/individual-birthdate",
               "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "gender",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-gender",
+              "type": "token"
             }
           ],
           "searchRevInclude": [
