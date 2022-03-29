@@ -18,6 +18,10 @@ Id: ISiKNachricht
   * content[x] MS
   * contentString MS
   * contentAttachment MS
+    * contentType 1.. MS
+    * data 0..0
+    * url 1.. MS
+    * creation 1.. MS
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
