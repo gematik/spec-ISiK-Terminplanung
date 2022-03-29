@@ -16,7 +16,7 @@ Id: ISiKKalender
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* actor contains Akteur 1..1 MS
+* actor contains Akteur 0..1 MS
 * actor[Akteur] only Reference(Practitioner or HealthcareService)
 * actor[Akteur].reference 1..1 MS
 * extension MS
