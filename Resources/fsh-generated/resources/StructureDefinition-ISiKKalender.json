@@ -132,7 +132,7 @@
         "id": "Schedule.actor:Akteur",
         "path": "Schedule.actor",
         "sliceName": "Akteur",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
