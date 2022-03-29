@@ -155,6 +155,29 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Communication.payload.contentAttachment.contentType",
+        "path": "Communication.payload.contentAttachment.contentType",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.payload.contentAttachment.data",
+        "path": "Communication.payload.contentAttachment.data",
+        "max": "0"
+      },
+      {
+        "id": "Communication.payload.contentAttachment.url",
+        "path": "Communication.payload.contentAttachment.url",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.payload.contentAttachment.creation",
+        "path": "Communication.payload.contentAttachment.creation",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }
