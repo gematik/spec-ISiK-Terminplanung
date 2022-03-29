@@ -269,3 +269,12 @@ Usage: #definition
 * rest.resource[=].searchRevInclude[+] = "Appointment:actor"
 * rest.resource[=].searchRevInclude[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
+* rest.resource[+]
+  * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+  * extension.valueCode = #SHALL
+  * type = #Binary
+  * supportedProfile = "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBinary"
+  * interaction[+]
+    * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * extension.valueCode = #SHALL
+    * code = #read   
