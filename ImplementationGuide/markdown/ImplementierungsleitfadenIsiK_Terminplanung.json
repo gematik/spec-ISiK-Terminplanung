@@ -89,6 +89,11 @@
               "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKMedizinischeBehandlungseinheitHealthcareService.md",
               "title": "ISiKMedizinischeBehandlungseinheit (HealthcareService)",
               "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKBinary.md",
+              "title": "ISiKBinary (Binary)",
+              "generation": "markdown"
             }
           ]
         }
