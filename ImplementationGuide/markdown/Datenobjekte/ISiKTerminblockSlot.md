@@ -40,19 +40,19 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Indikator ob ein Slot verwendbar ist für die Buchung eines Appointments.
 
-**Hinweise:** Inbesondere eine Differenzierung des Status "busy" ermöglicht es einem Termin Requestor passende Termine einer Benutzer:in zur Verfügung zu stellen. Durch entsprechende Kombinationen können somit Termine in einer passenden Länge gebucht werden.
+**Hinweise:** Inbesondere eine Differenzierung des Status "busy" ermöglicht es einem Termin Requestor passende Termine einer BenutzerIn zur Verfügung zu stellen. Durch entsprechende Kombinationen können somit Termine in einer passenden Länge gebucht werden.
 
 ### `Slot.start`
 
 **Bedeutung:** Startdatum des Slots (sekundengenau).
 
-**Hinweise:** Im Falle das ein Appoinment sich über mehrere Slots erstreckt, kann mit Hilfe des Startdatums der Beginn eines zu vereinbarenden Termins gefunden werden.
+**Hinweise:** Falls sich ein Appoinment über mehrere Slots erstreckt, kann mit Hilfe des Startdatums der Beginn eines zu vereinbarenden Termins gefunden werden.
 
 ### `Slot.end`
 
 **Bedeutung:** Enddatum des Slots (sekundengenau).
 
-**Hinweise:** Im Falle das ein Appoinment sich über mehrere Slots erstreckt, kann mit Hilfe des Enddatums der Slot gefunden werden, welcher als nächste innerhalb einer Reihe gebucht werden muss sodass das Appointment eine gewünschte Länge erreicht.
+**Hinweise:** Falls sich ein Appoinment über mehrere Slots erstreckt, kann mit Hilfe des Enddatums der Slot gefunden werden, welcher als nächste innerhalb einer Reihe gebucht werden muss, sodass das Appointment eine gewünschte Länge erreicht.
 
 ---
 
@@ -70,7 +70,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
 1. Der Suchparameter "schedule" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
@@ -78,7 +78,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
 1. Der Suchparameter "status" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Slot?status=busy```
 
@@ -86,7 +86,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
 1. Der Suchparameter "start" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Slot?start=2022-12-10T09:00:00Z```
 

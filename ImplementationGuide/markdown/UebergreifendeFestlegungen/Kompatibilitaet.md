@@ -7,10 +7,10 @@ Die vorliegende Spezifikation orientiert sich teilweise an bereits vorhandenen (
 Bei folgenden FHIR-Ressourcen existiert zum Zeitpunkt der Veröffentlichung eine inhatliche Überschneidung mit dem [eTerminService der KBV](https://simplifier.net/eTerminservice-R4/~introduction):
 
 * [Patient](https://simplifier.net/eterminservice-r4/patientets) - Jede ISiK "Patient"-Instanz ist auch valide gegen das entsprechende KBV ETS Profil falls:
-  * Falls auf Elemente die auf eine Kardinalität von 0..0 beschränkt sind entfernt werden
+  * Elemente, die auf eine Kardinalität von 0..0 beschränkt sind, entfernt werden
 
 * [Appointment](https://simplifier.net/eterminservice-r4/appointmentets-duplicate-2) - Jede ISiK "Appointment"-Instanz ist auch valide gegen das entsprechende KBV ETS Profil falls:
-  * Falls auf Elemente die auf eine Kardinalität von 0..0 beschränkt sind entfernt werden
-  * Eine PractitonerRole Referenz als Akteur angegeben wird
+  * Elemente, die auf eine Kardinalität von 0..0 beschränkt sind, entfernt werden
+  * Eine PractitionerRole Referenz als Akteur angegeben wird
 
 Aufgrund von fachlichen Unterschieden in den zu unterstützenden Arbeitsabläufen sind die OperationDefinitions für die Buchung eines Termins nicht vergleichbar.
