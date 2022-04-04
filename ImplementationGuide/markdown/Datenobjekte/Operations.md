@@ -137,9 +137,9 @@ Antwort:
 
 ### Aktualisierung / Absage eines Termins
 
-Es ist zu beachten, dass es aus Effizienzgründen für bestimmte Implementierungen sinnvoll sein kann, dass Updates einer Appointment-Ressource ausgelöst durch das Termin-Repository mittels eines Push-Mechanismus an Termin-Consumer / Termin-Requestor übermittelt werden. Im Standard-Fall müssen diese Akteure die Ressourcen eigenständig mittels des entsprechenden Endpunktes eingeständig abfragen und auf Updates hin überprüfen. Für einen Push-Mechanismus wird auf [FHIR Subscriptions](https://www.hl7.org/fhir/subscription.html). Die vorliegende Spezifikation macht jedoch KEINE Vorgaben für die Verwendung dieses Mechanismus.
+Es ist zu beachten, dass es aus Effizienzgründen für bestimmte Implementierungen sinnvoll sein kann, dass Updates einer Appointment-Ressource ausgelöst durch das Termin-Repository mittels eines Push-Mechanismus an Termin-Consumer / Termin-Requestor übermittelt werden. Im Standard-Fall müssen diese Akteure die Ressourcen mittels des entsprechenden Endpunktes eigenständig abfragen und auf Updates überprüfen. Für einen Push-Mechanismus wird auf [FHIR Subscriptions](https://www.hl7.org/fhir/subscription.html) verwiesen. Die vorliegende Spezifikation macht jedoch KEINE Vorgaben für die Verwendung dieses Mechanismus.
 
-Ein eine Aktualisierung der Ressource erfolgt mittels einer [HTTP PATCH-Interaktion](https://www.hl7.org/fhir/http.html#patch). Updates einer Appointment-Ressource MUSS das Termin Repository untersützen. Es MUSS mindestens die PATCH-Interaktion auf Basis einer FHIRPath-Patch-Parameter Ressource unterstüzt werden.
+Eine Aktualisierung der Ressource erfolgt mittels einer [HTTP PATCH-Interaktion](https://www.hl7.org/fhir/http.html#patch). Updates einer Appointment-Ressource MUSS das Termin Repository untersützen. Es MUSS mindestens die PATCH-Interaktion auf Basis einer FHIRPath-Patch-Parameter Ressource unterstüzt werden.
 
 Folgende Elemente DÜRFEN NICHT durch ein Update der Ressourcen verändert werden:
 
@@ -148,7 +148,7 @@ Folgende Elemente DÜRFEN NICHT durch ein Update der Ressourcen verändert werde
 - Appointment.end
 - Appointment.participant.actor.where(resolve() is Patient)
 
-Sollte die PATCH-Parameter-Ressource eins dieser Elemente verändern, MUSS die Operation mit einem Status Code HTTP 400 - Bad Request zurückzuweisen. Eine OperationOutcome Ressource MUSS zurückgegeben werden, die in kodierter Form den entsprechenden Fehler beschreibt.
+Sollte die PATCH-Parameter-Ressource eins dieser Elemente verändern, MUSS die Operation mit einem Status Code "HTTP 400 - Bad Request" zurückgewiesen werden. Eine OperationOutcome Ressource MUSS zurückgegeben werden, die in kodierter Form den entsprechenden Fehler beschreibt.
 
 Beispiel: Absage eines Termin
 
