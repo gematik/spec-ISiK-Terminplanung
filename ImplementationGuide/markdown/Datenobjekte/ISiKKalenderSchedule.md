@@ -50,33 +50,33 @@ join binding.where(valueSet.exists())
 
 ### `Schedule.extension:name`
 
-**Bedeutung** Gebräuchlicher Name des Kalenders
+**Bedeutung:** Gebräuchlicher Name des Kalenders
 
-**Hinweis** Im alltäglichen Kontext besitzen Kalender neben der Zugehörigkeit zu einer Ressource teilweise einen Namen. Dieser muss nicht zwingend ein eineindeutiger Identifier sein. Aufgrund dessen kann dieser dieser Name zusätzlich abgebildet werden.
+**Hinweis:** Im alltäglichen Kontext besitzen Kalender neben der Zugehörigkeit zu einer Ressource teilweise einen Namen. Dieser muss nicht zwingend ein eineindeutiger Identifier sein. Aufgrund dessen kann dieser dieser Name zusätzlich abgebildet werden.
 
 ### `Schedule.active`
 
-**Bedeutung** Ist der Kalender in aktiver Verwendung?
+**Bedeutung:** Ist der Kalender in aktiver Verwendung?
 
-**Hinweis** Historische Kalender können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese drüfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.
+**Hinweis:** Historische Kalender können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese dürfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.
 
 ### `Schedule.serviceType`
 
-**Bedeutung** Welche Besuchsgründe / Behandlungsleistungen werden durch diesen Kalender erfasst? 
+**Bedeutung:** Welche Besuchsgründe / Behandlungsleistungen werden durch diesen Kalender erfasst? 
 
-**Hinweis** Die Besuchsgründe / Behandlungsleistungen sollten im Schedule angegeben werden, falls als unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
+**Hinweis:** Die Besuchsgründe / Behandlungsleistungen sollten im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
 
 ### `Schedule.specialty`
 
-**Bedeutung** Welche Fachrichtung(en) führen die Behandlungsleistungen die werden durch diesen Kalender erfasst werden aus?
+**Bedeutung:** Welche Fachrichtung(en) führen die Behandlungsleistungen, die durch diesen Kalender erfasst werden, aus?
 
-**Hinweis** Die Fachrichtung(en) sollte(n) im Schedule angegeben werden, falls als unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
+**Hinweis:** Die Fachrichtung(en) sollte(n) im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
 
 ### `Schedule.actor`
 
-**Bedeutung** Für welche Akteure wird der Kalender geführt?
+**Bedeutung:** Für welche Akteure wird der Kalender geführt?
 
-**Hinweis** Nicht alle Traget-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen sollte ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden. 
+**Hinweis:** Nicht alle Target-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen sollte ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden. 
 
 ---
 
@@ -94,7 +94,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
 1. Der Suchparameter "active" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Schedule?active=true```
 
@@ -102,7 +102,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Schedule?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
@@ -110,7 +110,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Schedule?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
@@ -119,7 +119,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Schedule?actor=Practitioner/ISiKPractitionerExample```
 

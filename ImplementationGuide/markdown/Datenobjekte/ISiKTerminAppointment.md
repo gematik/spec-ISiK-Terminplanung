@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Das Datenobjekte ISiKTermin repräsentiert einen bebuchten Termin, sowie einen Terminvorschlag.
+Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen Terminvorschlag.
 
 ---
 
@@ -50,87 +50,87 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.meta.tag`
 
-**Bedeutung** Herkunft der Termnins
+**Bedeutung:** Herkunft der Termnins
 
-**Hinweis** Angabe ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
+**Hinweis:** Angabe ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
 
 ### `Appointment.extension:Nachricht`
 
-**Bedeutung** Kommunikation mit der Patient:in
+**Bedeutung:** Kommunikation mit der PatientIn
 
-**Hinweis** Das Element "comment" dient auschließlich für die Kommunikation zwischen den Leistungserbringer:innen. Für die Kommunikation mit der Patient:in sind Communication-Ressourcen zu verwenden. Für den Termin relevante Referenzen MÜSSEN angegeben werden.
+**Hinweis:** Das Element "comment" dient auschließlich für die Kommunikation zwischen den LeistungserbringerInnen. Für die Kommunikation mit der PatientIn sind Communication-Ressourcen zu verwenden. Für den Termin relevante Referenzen MÜSSEN angegeben werden.
 
 ### `Appointment.extension:replaces`
 
-**Bedeutung** Angabe eines abgesagten / verschobenen Termins
+**Bedeutung:** Angabe eines abgesagten / verschobenen Termins
 
-**Hinweis** Im Falle, dass per $book-Operation ein verschobener / abgesagter Termin angegeben wird, MUSS dieser für die Rückverfolgbarkeit referenziert werden.
+**Hinweis:** Im Falle, dass per $book-Operation ein verschobener / abgesagter Termin angegeben wird, MUSS dieser für die Rückverfolgbarkeit referenziert werden.
 
 ### `Appointment.status`
 
-**Bedeutung** Differenzierung zwischen Terminwunsch und gebuchten Termin
+**Bedeutung:** Differenzierung zwischen Terminwunsch und gebuchten Termin
 
-**Hinweis** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
+**Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
 
-Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, inbesondere der Status 'proposed' und 'booked'. 
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, inbesondere der Status "proposed" und "booked". 
 
 ### `Appointment.cancelationReason`
 
-**Bedeutung** Grund für die Absage eines Termin
+**Bedeutung:** Grund für die Absage eines Termin
 
-**Hinweis** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
+**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
 
 ### `Appointment.serviceType`
 
-**Bedeutung** Kodierung der Behandlungsleistung des Termins
+**Bedeutung:** Kodierung der Behandlungsleistung des Termins
 
-**Hinweis** Dies SOLLTE der Kodierung des serviceType des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+**Hinweis:** Dies SOLLTE der Kodierung des serviceType des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
 
 ### `Appointment.specialty`
 
-**Bedeutung** Kodierung der Fachrichtung des Termins
+**Bedeutung:** Kodierung der Fachrichtung des Termins
 
-**Hinweis** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+**Hinweis:** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
 
 ### `Appointment.priority.extension:Priority`
 
-**Bedeutung** Kodierte Angabe der Priorität des Termins
+**Bedeutung:** Kodierte Angabe der Priorität des Termins
 
-**Hinweis** Anstelle der numerischen Priorität MUSS in ISiK eine kodierte Priorität angegeben werden.
+**Hinweis:** Anstelle der numerischen Priorität MUSS in ISiK eine kodierte Priorität angegeben werden.
 
 ### `Appointment.start`
 
-**Bedeutung** Startzeitpunkt des Termin
+**Bedeutung:** Startzeitpunkt des Termin
 
-**Hinweis** Dies MUSS dem Startzeitpunkt des ersten Slots des Termins entsprechen
+**Hinweis:** Dies MUSS dem Startzeitpunkt des ersten Slots des Termins entsprechen
 
 ### `Appointment.end`
 
-**Bedeutung** Endzeitpunkt des Termin
+**Bedeutung:** Endzeitpunkt des Termin
 
-**Hinweis** Dies MUSS dem Endzeitpunkt des letzten Slots des Termins entsprechen
+**Hinweis:** Dies MUSS dem Endzeitpunkt des letzten Slots des Termins entsprechen
 
 ### `Appointment.slot`
 
-**Bedeutung** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
+**Bedeutung:** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
 
-**Hinweis** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgelietet werden.
+**Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehrere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
 
 ### `Appointment.comment`
 
-**Bedeutung** Interner Kommentar der Leistungserbinger:in
+**Bedeutung:** Interner Kommentar der LeistungserbingerIn
 
-**Hinweis** Diese Kommentare KÖNNEN potentiell sensitive Angaben enthalten und SOLLTEN vor der Herausgabe an die Patient:in gefiltert werden.
+**Hinweis:** Diese Kommentare KÖNNEN potentiell sensitive Angaben enthalten und SOLLTEN vor der Herausgabe an die PatientIn gefiltert werden.
 
 ### `Appointment.patientInstruction`
 
-**Beduetung** Handlungsanweisungen für die Patient:in in Vorbereitun auf den Termin
+**Bedeutung:** Handlungsanweisungen für die PatientIn in Vorbereitung auf den Termin
 
 ### `Appointment.participant`
 
-**Bedeutung** Teilnehmer:innen des Termin
+**Bedeutung:** TeilnehmerInnen des Termins
 
-**Hinweis** Mindestens eine Patient-Referenz MUSS angegeben werden. Dies MUSS durch das Termin-Repository während der Buchung des Termin geprüft werden. Weitere Leistungserbriner KÖNNEN angegeben werden.
+**Hinweis:** Mindestens eine Patient-Referenz MUSS angegeben werden. Dies MUSS durch das Termin-Repository während der Buchung des Termin geprüft werden. Weitere Leistungserbringer KÖNNEN angegeben werden.
 
 ---
 
@@ -148,7 +148,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "status" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?status=booked```
 
@@ -156,7 +156,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
@@ -164,7 +164,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
@@ -173,7 +173,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "date" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?date=2022-12-10T09:00:00Z```
 
@@ -181,7 +181,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "slot" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?slot=Slot/ISiKSlotExample```
 
@@ -189,7 +189,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert we
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
 
-    Beispiele
+    Beispiele:
 
     ```GET [base]/Appointment?actor=Patient/ISiKPatientExample```
 

@@ -8,7 +8,7 @@ Grundsätzlich wird als Terminblock eine für einen Termin buchbare Zeiteinheit 
 
 **Definition:**
 
-Als Termin Repository werden alle Systeme definiert, welche Informationen zu verfügbaren Termineinheiten von Ressourcen (vgl. zuvor genannte Definition) vorhalten und die dafür vereinbarten Termine als führendes System verwalten.
+Als Termin Repository werden alle Systeme definiert, die Informationen zu verfügbaren Termineinheiten von Ressourcen (vgl. zuvor genannte Definition) vorhalten und die dafür vereinbarten Termine als führendes System verwalten.
 
 Das Termin Repository kann intern in ein Repository für die Termine und ein separates Repository für die buchbaren Terminblöcke (Terminblock Repository) geteilt werden.
 
@@ -21,7 +21,7 @@ Das Termin Repository kann intern in ein Repository für die Termine und ein sep
 
 **Definition:**
 
-Als Termin Requestor (in Anlehnung an die IHE Terminologie auch als Termin Source zu bezeichnen) werden alle Systeme definiert, welche zur Erhebung, Erfassung, Anpassung oder Veränderung von Termininformationen dienen. Ein Termin Requestor verfügt über keine permanente Persistierung der verarbeiteten Informationen. Der Termin Requestor übernimmt die Koordination der Schnittstellenaufrufe, um einen Termin zu buchen. 
+Als Termin Requestor (in Anlehnung an die IHE Terminologie auch als Termin Source zu bezeichnen) werden alle Systeme definiert, die zur Erhebung, Erfassung, Anpassung oder Veränderung von Termininformationen dienen. Ein Termin Requestor verfügt über keine permanente Persistierung der verarbeiteten Informationen. Der Termin Requestor übernimmt die Koordination der Schnittstellenaufrufe, um einen Termin zu buchen. 
 
 **Beispielsysteme:**
 
@@ -31,7 +31,7 @@ Als Termin Requestor (in Anlehnung an die IHE Terminologie auch als Termin Sourc
 
 **Definition:**
 
-Als Termin Consumer werden alle System definiert, welche Termininformationen abfragen, um diese einer Benutzer:in zu präsentieren. Ein Termin Consumer verfügt über keine permanente Persistierung der abgefragten Informationen. Durch den Termin Consumer erfolgt explizit nur die Aufbereitung und Präsentation der Termininformationen. Eine anderweitige Verarbeitung der Termininformationen fällt in die Kategorie der anderen Akteure.
+Als Termin Consumer werden alle System definiert, die Termininformationen abfragen, um diese einer BenutzerIn zu präsentieren. Ein Termin Consumer verfügt über keine permanente Persistierung der abgefragten Informationen. Durch den Termin Consumer erfolgt explizit nur die Aufbereitung und Präsentation der Termininformationen. Eine anderweitige Verarbeitung der Termininformationen fällt in die Kategorie der anderen Akteure.
 
 **Beispielsysteme:**
 
@@ -41,9 +41,9 @@ Als Termin Consumer werden alle System definiert, welche Termininformationen abf
 
 ### Übersicht der Akteure
 
-Es sei zu beachten, dass in vielen Fällen ein Terminmangementsystem aus unterschiedlichen Modulen besteht, welche mehreren oder allen der genannten Akteure entsprechen:
+Es sei zu beachten, dass in vielen Fällen ein Terminmangementsystem aus unterschiedlichen Modulen besteht, die mehreren oder allen der genannten Akteure entsprechen:
 1. Ein Termin Repository, da das System das terminführende System ist
-2. Ein Termin Requestor, um intern im System ein Termin zu vereinbaren
+2. Ein Termin Requestor, um intern im System einen Termin zu vereinbaren
 3. Ein Termin Consumer um eine Übersicht der vereinbarten Termine anzuzeigen
 
 {{render:ImplementationGuide/images/Übersicht Termin Akteure (1).drawio.png}}
