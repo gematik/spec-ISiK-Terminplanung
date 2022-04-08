@@ -157,6 +157,9 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].searchParam[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #patch
+* rest.resource[=].searchParam[0].extension.url = $capabilitystatement-expectation
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[=].name = "_id"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
