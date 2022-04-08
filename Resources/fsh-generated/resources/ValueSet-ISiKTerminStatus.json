@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "ISiKTerminStatus",
   "id": "ISiKTerminStatus",
   "description": "Enthaelt alle erlaubten Status für einen ISiKTermin",
