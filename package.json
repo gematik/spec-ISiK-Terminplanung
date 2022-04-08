@@ -6,6 +6,6 @@
         "4.0.1"
     ],
     "dependencies": {
-        "de.basisprofil.r4": "1.3.2"
+        "de.gematik.isik-basismodul": "2.0.0-ballot2"
       }
 }
