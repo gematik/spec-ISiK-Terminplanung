@@ -12,7 +12,7 @@
     }
   ],
   "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin",
-  "version": "2.0.0",
+  "version": "2.0.0-ballot",
   "name": "ISiKTermin",
   "status": "active",
   "experimental": false,
