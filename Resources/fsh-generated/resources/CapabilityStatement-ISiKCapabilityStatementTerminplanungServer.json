@@ -104,7 +104,7 @@
                 }
               ],
               "name": "active",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Schedule-active",
               "type": "token"
             },
             {
@@ -115,7 +115,7 @@
                 }
               ],
               "name": "service-type",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-family",
+              "definition": "http://hl7.org/fhir/SearchParameter/Schedule-service-type",
               "type": "token"
             },
             {
@@ -126,7 +126,7 @@
                 }
               ],
               "name": "specialty",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-given",
+              "definition": "http://hl7.org/fhir/SearchParameter/Schedule-specialty",
               "type": "token"
             },
             {
@@ -137,7 +137,7 @@
                 }
               ],
               "name": "actor",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+              "definition": "http://hl7.org/fhir/SearchParameter/Schedule-actor",
               "type": "reference"
             },
             {
@@ -230,7 +230,7 @@
                 }
               ],
               "name": "schedule",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Slot-schedule",
               "type": "reference"
             },
             {
@@ -241,7 +241,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/Encounter-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Slot-status",
               "type": "token"
             },
             {
@@ -252,7 +252,7 @@
                 }
               ],
               "name": "start",
-              "definition": "http://hl7.org/fhir/SearchParameter/Encounter-class",
+              "definition": "http://hl7.org/fhir/SearchParameter/Slot-start",
               "type": "date"
             }
           ],
@@ -334,7 +334,7 @@
                 }
               ],
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-status",
               "type": "token"
             },
             {
@@ -345,7 +345,7 @@
                 }
               ],
               "name": "service-type",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-service-type",
               "type": "token"
             },
             {
@@ -356,7 +356,7 @@
                 }
               ],
               "name": "specialty",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-service-type",
               "type": "token"
             },
             {
@@ -367,7 +367,7 @@
                 }
               ],
               "name": "date",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-date",
               "type": "date"
             },
             {
@@ -378,7 +378,7 @@
                 }
               ],
               "name": "slot",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-slot",
               "type": "reference"
             },
             {
@@ -389,7 +389,7 @@
                 }
               ],
               "name": "actor",
-              "definition": "http://fhir.de/SearchParameter/Condition-related",
+              "definition": "http://hl7.org/fhir/SearchParameter/Appointment-actor",
               "type": "reference"
             }
           ],
@@ -479,7 +479,7 @@
                 }
               ],
               "name": "subject",
-              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-subject",
               "type": "reference"
             },
             {
@@ -490,7 +490,7 @@
                 }
               ],
               "name": "recipient",
-              "definition": "http://hl7.org/fhir/SearchParameter/Procedure-category",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-recipient",
               "type": "reference"
             }
           ],
@@ -568,7 +568,7 @@
                 }
               ],
               "name": "active",
-              "definition": "http://hl7.org/fhir/SearchParameter/Coverage-identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/HealthcareService-active",
               "type": "token"
             },
             {
@@ -579,7 +579,7 @@
                 }
               ],
               "name": "service-type",
-              "definition": "http://hl7.org/fhir/SearchParameter/Coverage-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/HealthcareService-service-type",
               "type": "token"
             },
             {
@@ -590,7 +590,7 @@
                 }
               ],
               "name": "specialty",
-              "definition": "http://hl7.org/fhir/SearchParameter/Coverage-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/HealthcareService-specialty",
               "type": "token"
             },
             {
@@ -601,7 +601,7 @@
                 }
               ],
               "name": "name",
-              "definition": "http://hl7.org/fhir/SearchParameter/Coverage-beneficiary",
+              "definition": "http://hl7.org/fhir/SearchParameter/HealthcareService-name",
               "type": "string"
             }
           ],
