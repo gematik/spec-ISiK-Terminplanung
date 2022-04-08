@@ -4,7 +4,7 @@
   "name": "ISiKTerminStatus",
   "id": "ISiKTerminStatus",
   "description": "Enthaelt alle erlaubten Status für einen ISiKTermin",
-  "version": "2.0.0",
+  "version": "2.0.0-ballot",
   "url": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminStatus",
   "experimental": false,
   "publisher": "gematik GmbH",
