@@ -1,3 +1,0 @@
-# Datenobjekte
-
-{{index:current}}
