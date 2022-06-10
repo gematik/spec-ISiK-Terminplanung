@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKKalenderNameExtension",
   "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalenderNameExtension",
-  "version": "1.0.0",
+  "version": "2.0.0-ballot",
   "name": "ISiKKalenderNameExtension",
   "status": "active",
   "fhirVersion": "4.0.1",
