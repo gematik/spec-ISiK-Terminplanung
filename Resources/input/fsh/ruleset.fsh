@@ -1,7 +1,7 @@
 RuleSet: Meta
 * ^status = #active
 * ^experimental = false
-* ^version = "2.0.0-ballot"
+* ^version = "2.0.0-ballot3"
 * ^publisher = "gematik GmbH"
 * ^date = "2022-03-31"
 
