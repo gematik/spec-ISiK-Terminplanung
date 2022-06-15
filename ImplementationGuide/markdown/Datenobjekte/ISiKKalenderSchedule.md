@@ -52,7 +52,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Gebräuchlicher Name des Kalenders
 
-**Hinweis:** Im alltäglichen Kontext besitzen Kalender neben der Zugehörigkeit zu einer Ressource teilweise einen Namen. Dieser muss nicht zwingend ein eineindeutiger Identifier sein. Aufgrund dessen kann dieser dieser Name zusätzlich abgebildet werden.
+**Hinweis:** Im alltäglichen Kontext besitzen Kalender neben der Zugehörigkeit zu einer Ressource teilweise einen Namen. Dieser muss nicht zwingend ein eineindeutiger Identifier sein. Aufgrund dessen kann dieser Name zusätzlich abgebildet werden.
 
 ### `Schedule.active`
 

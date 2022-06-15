@@ -68,7 +68,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
 
-1. Der Suchparameter "schedule" MUSS unterstützt werden:
+2. Der Suchparameter "schedule" MUSS unterstützt werden:
 
     Beispiele:
 
@@ -76,7 +76,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
 
-1. Der Suchparameter "status" MUSS unterstützt werden:
+3. Der Suchparameter "status" MUSS unterstützt werden:
 
     Beispiele:
 
@@ -84,7 +84,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "start" MUSS unterstützt werden:
+4. Der Suchparameter "start" MUSS unterstützt werden:
 
     Beispiele:
 
@@ -92,7 +92,11 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
 
+5. Abfrage aller verfügbaren Slots für einen Kalender: 
 
+    ```GET https://example.org/fhir/Slot?schedule=<Scheudule/ISiKKalenderExampple>```
+
+    Anwendungshinweise: In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 ---
 
 ### Beispiele

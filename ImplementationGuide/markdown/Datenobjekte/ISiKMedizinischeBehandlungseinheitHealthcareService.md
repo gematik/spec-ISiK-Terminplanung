@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfüfung stehenden Ressourcen (z.B. Räume / Geräte) zum Zweck der Ausübung einer Behandlungsleistung verstanden. Hierfür können von der Fachabteilung (Organization) unabhänige Kalender gepflegt werden.
+Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfügung stehenden Ressourcen (z.B. Räume / Geräte), zum Zweck der Ausübung einer Behandlungsleistung, verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden.
 
 ---
 
@@ -52,7 +52,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Ist der HealthcareService in aktiver Verwendung.
 
-**Hinweis:** Historische HealthcareServices können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese drüfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.
+**Hinweis:** Historische HealthcareServices können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese dürfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.
 
 ### `HealthcareService.type`
 
@@ -70,7 +70,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Informeller Name der Behandlungseinheit
 
-**Hinweis:** Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller jedoch identifizierender Bezeichner vergeben werden. 
+**Hinweis:** Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller, jedoch identifizierender Bezeichner vergeben werden. 
 
 ---
 
@@ -98,7 +98,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     Beispiele:
 
-    ```GET [base]/Schedule?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
+    ```GET [base]/HealthcareService?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.type" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
@@ -106,7 +106,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     Beispiele:
 
-    ```GET [base]/Schedule?specialty=urn:oid:1.2.276.0.76.5.114|535```
+    ```GET [base]/HealthcareService?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 

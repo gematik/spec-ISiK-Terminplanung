@@ -9,7 +9,7 @@ Angelehnt an diese Vorgaben soll mittels ISiK die Grundlage geschaffen werden, u
 Durch ISiK Terminplanung sollen folgende Möglichkeiten eröffnet werden:
 
 * Abruf von Abbildungen von verfügbaren teil- und voll- stationären Behandlungsleistungen durch ein Krankenhaus
-* Abfrage von verfügbaren Terminen
+* Abfrage von Terminen und Verfügbarkeiten
 * Buchungsmanagement von verfügbaren Terminen
 * Benachrichtigungen bei Terminänderungen
 * Anlage eines neues Patienten im terminführenden System (Übermittelung Patient/Versicherungsinformationen)

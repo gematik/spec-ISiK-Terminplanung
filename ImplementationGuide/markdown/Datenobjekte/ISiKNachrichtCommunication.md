@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einer LeistunserbringerIn und einer PatientIn. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
+Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einer LeistungserbringerIn und einer PatientIn. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
 
 ---
 
