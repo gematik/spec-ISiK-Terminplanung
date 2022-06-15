@@ -112,6 +112,11 @@
         "mustSupport": true
       },
       {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "mustSupport": true
+      },
+      {
         "id": "Communication.payload",
         "path": "Communication.payload",
         "min": 1,
