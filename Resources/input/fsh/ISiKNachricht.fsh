@@ -22,6 +22,7 @@ Id: ISiKNachricht
     * data 0..0
     * url 1.. MS
     * creation 1.. MS
+* sender 0..1 MS
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
