@@ -52,7 +52,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Herkunft der Termnins
 
-**Hinweis:** Angabe ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
+**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
 
 ### `Appointment.extension:Nachricht`
 
@@ -72,11 +72,11 @@ join binding.where(valueSet.exists())
 
 **Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
 
-Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, inbesondere der Status "proposed" und "booked". 
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, insbesondere der Status "proposed" und "booked". 
 
 ### `Appointment.cancelationReason`
 
-**Bedeutung:** Grund für die Absage eines Termin
+**Bedeutung:** Grund für die Absage eines Termins
 
 **Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
 
@@ -84,13 +84,13 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** Kodierung der Behandlungsleistung des Termins
 
-**Hinweis:** Dies SOLLTE der Kodierung des serviceType des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+**Hinweis:** Dies SOLLTE der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
 
 ### `Appointment.specialty`
 
 **Bedeutung:** Kodierung der Fachrichtung des Termins
 
-**Hinweis:** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend innerhalb dessen der Termin bebucht wird.
+**Hinweis:** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend, der innerhalb des Termins gebucht wird.
 
 ### `Appointment.priority.extension:Priority`
 
@@ -100,21 +100,23 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 ### `Appointment.start`
 
-**Bedeutung:** Startzeitpunkt des Termin
+**Bedeutung:** Startzeitpunkt des Termins
 
-**Hinweis:** Dies MUSS dem Startzeitpunkt des ersten Slots des Termins entsprechen
+**Hinweis:** Dies MUSS dem Startzeitpunkt des ersten Slots eines Termins entsprechen
 
 ### `Appointment.end`
 
-**Bedeutung:** Endzeitpunkt des Termin
+**Bedeutung:** Endzeitpunkt des Termins
 
-**Hinweis:** Dies MUSS dem Endzeitpunkt des letzten Slots des Termins entsprechen
+**Hinweis:** Dies MUSS dem Endzeitpunkt des letzten Slots eines Termins entsprechen
 
 ### `Appointment.slot`
 
 **Bedeutung:** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
 
 **Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehrere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
+
+**Hinweis:** In der Vergangenheit liegende Slots, welche nicht verknüpft wurden, dürfen nicht mehr abrufbar sein. Jegliche andere Slots müssen auch per id, herausgegeben werden. Sobald die id einmalig per Search herausgeben wurde, müssen diese gleichbleibend abrufbar sein.
 
 ### `Appointment.comment`
 
@@ -130,7 +132,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** TeilnehmerInnen des Termins
 
-**Hinweis:** Mindestens eine Patient-Referenz MUSS angegeben werden. Dies MUSS durch das Termin-Repository während der Buchung des Termin geprüft werden. Weitere Leistungserbringer KÖNNEN angegeben werden.
+**Hinweis:** Mindestens eine Patient-Referenz MUSS angegeben werden. Dies MUSS durch das Termin-Repository während der Buchung des Termins geprüft werden. Weitere Leistungserbringer KÖNNEN angegeben werden.
 
 ---
 
