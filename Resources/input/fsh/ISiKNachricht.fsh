@@ -2,9 +2,11 @@ Profile: ISiKNachricht
 Parent: Communication
 Id: ISiKNachricht
 * insert Meta
+* inResponseTo MS
 * status MS
 * subject 1..1 MS
 * subject only Reference(Patient)
+* sent MS
 * recipient 1..* MS
   * identifier 0..1 MS
   * display 1..1 MS
@@ -22,7 +24,15 @@ Id: ISiKNachricht
     * data 0..0
     * url 1.. MS
     * creation 1.. MS
-* sender 0..1 MS
+* sender 1.. MS
+  * identifier 0..1 MS
+  * display 1..1 MS
+  * ^slicing.discriminator.type = #type
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* recipient contains ISiKSender 1.. MS
+* recipient[ISiKSender] only Reference(Patient or Practitioner or HealthcareService)
+* recipient[ISiKSender].reference 1..1 MS
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
