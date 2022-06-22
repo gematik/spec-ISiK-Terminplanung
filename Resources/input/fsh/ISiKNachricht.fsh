@@ -30,9 +30,9 @@ Id: ISiKNachricht
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* recipient contains ISiKSender 1.. MS
-* recipient[ISiKSender] only Reference(Patient or Practitioner or HealthcareService)
-* recipient[ISiKSender].reference 1..1 MS
+* sender contains ISiKSender 1.. MS
+* sender[ISiKSender] only Reference(Patient or Practitioner or HealthcareService)
+* sender[ISiKSender].reference 1..1 MS
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
@@ -41,5 +41,6 @@ Usage: #example
 * subject.reference = "Patient/ISiKPatientExample"
 * recipient.display = "Dr. Martina Musterfrau"
 * recipient.reference = "Practitioner/ISiKPractitionerExample"
+* sender.display = "Dr. Erika Gabler"
 * sender.reference = "Patient/ISiKPatientExample"
 * payload.contentString = "Dies ist eine Testnachricht!"
