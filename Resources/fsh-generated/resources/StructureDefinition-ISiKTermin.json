@@ -229,11 +229,6 @@
         "mustSupport": true
       },
       {
-        "id": "Appointment.comment",
-        "path": "Appointment.comment",
-        "mustSupport": true
-      },
-      {
         "id": "Appointment.patientInstruction",
         "path": "Appointment.patientInstruction",
         "mustSupport": true
