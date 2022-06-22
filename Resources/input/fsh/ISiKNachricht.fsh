@@ -41,4 +41,5 @@ Usage: #example
 * subject.reference = "Patient/ISiKPatientExample"
 * recipient.display = "Dr. Martina Musterfrau"
 * recipient.reference = "Practitioner/ISiKPractitionerExample"
+* sender.reference = "Patient/ISiKPatientExample"
 * payload.contentString = "Dies ist eine Testnachricht!"
