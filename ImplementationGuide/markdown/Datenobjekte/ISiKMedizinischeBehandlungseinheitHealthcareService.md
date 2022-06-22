@@ -114,7 +114,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     Beispiele:
 
-    ```GET [base]/Schedule?name=Medizinische Behandlungseinheit Des Fachbereichs 0100```
+    ```GET [base]/HealthcareService?name=Medizinische Behandlungseinheit Des Fachbereichs 0100```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "string"](https://www.hl7.org/fhir/search.html#string).
 
