@@ -132,7 +132,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert werden.
+Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 
