@@ -18,7 +18,7 @@ Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:A
 
 Als Einstiegspunkt in die Terminvereinbarung können durch den Termin Requester alle verfügbaren Behandlungsleistungen (HealthcareServices) abgerufen werden, für die das Termin Repository Informationen zu notwendigen Ressourcen (Räume, Personen, Geräte, etc.) bereitstellt.
 
-Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKMedizinischeBehandlungseinheitHealthcareService.md, text: ISiKMedizinischeBehandlungseinheit (HealthcareService) - Interaktionen}} für die technische Umsetzung.
+Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKMedizinischeBehandlungseinheitHealthcareService.md, text: ISiKMedizinischeBehandlungseinheit (HealthcareService) - Interaktionen}} für die technische Umsetzung. Es sind die Hinweise zum Abruf der ValueSets für die Kodierung der Medizinischen Behandlungseinheit zu beachten.
 
 ---
 

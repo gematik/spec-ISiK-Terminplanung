@@ -58,7 +58,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Klassifikation der Behandlungsleistung welche durch den HealthcareService erbracht wird
 
-**Hinweis:** Diese Klassifikation sollte stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
+**Hinweis:** Diese Klassifikation sollte stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "content-mode" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current).
 
 ### `HealthcareService.specialty`
 
