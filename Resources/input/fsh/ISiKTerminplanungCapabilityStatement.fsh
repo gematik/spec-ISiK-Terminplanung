@@ -257,7 +257,15 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "recipient"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Communication-recipient"
 * rest.resource[=].searchParam[=].type = #reference
+* rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].name = "sender"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Communication-sender"
+* rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchInclude = "Communication:recipient"
+* rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
+* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+* rest.resource[=].searchInclude = "Communication:sender"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Communication:subject"
