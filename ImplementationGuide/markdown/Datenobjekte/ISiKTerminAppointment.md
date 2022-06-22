@@ -58,7 +58,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Kommunikation mit der PatientIn
 
-**Hinweis:** Das Element "comment" dient auschließlich für die Kommunikation zwischen den LeistungserbringerInnen. Für die Kommunikation mit der PatientIn sind Communication-Ressourcen zu verwenden. Für den Termin relevante Referenzen MÜSSEN angegeben werden.
+**Hinweis:** Für die Kommunikation mit der PatientIn sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer:innen verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -117,12 +117,6 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 **Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehrere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
 
 **Hinweis:** In der Vergangenheit liegende Slots, welche nicht verknüpft wurden, dürfen nicht mehr abrufbar sein. Jegliche andere Slots müssen auch per id, herausgegeben werden. Sobald die id einmalig per Search herausgeben wurde, müssen diese gleichbleibend abrufbar sein.
-
-### `Appointment.comment`
-
-**Bedeutung:** Interner Kommentar der LeistungserbingerIn
-
-**Hinweis:** Diese Kommentare KÖNNEN potentiell sensitive Angaben enthalten und SOLLTEN vor der Herausgabe an die PatientIn gefiltert werden.
 
 ### `Appointment.patientInstruction`
 
