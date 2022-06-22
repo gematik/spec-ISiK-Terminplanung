@@ -52,7 +52,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### Interaktionen
 
-Für die Ressource Communication MUSS die REST-Interaktion "READ" implementiert werden.
+Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", "UPDATE" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 
