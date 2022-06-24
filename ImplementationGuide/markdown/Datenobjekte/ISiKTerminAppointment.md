@@ -56,9 +56,9 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.extension:Nachricht`
 
-**Bedeutung:** Kommunikation mit der PatientIn
+**Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit der PatientIn sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer:innen verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -120,7 +120,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 ### `Appointment.patientInstruction`
 
-**Bedeutung:** Handlungsanweisungen für die PatientIn in Vorbereitung auf den Termin
+**Bedeutung:** Handlungsanweisungen für die Patienten in Vorbereitung auf den Termin
 
 ### `Appointment.participant`
 

@@ -8,7 +8,7 @@ Für folgende Interaktionen werden im vorliegenden Implementierungsleitfaden Vor
 
 Für die Auswahl eines verfügbaren Terminblocks kann es notwendig sein, dass das Termin Repository vorab durch den Termin Requestor Vorabinformationen (z.B. für die Krankenversicherung) erhält. Diese können über eine schreibende Schnittstelle an das Terminrepository übermittelt werden. Es ist zu beachten, dass das Termin Repository gegebenenfalls diese Informationen separat von eigens erstellten Datenobjekten vorhält und/oder die Information dauerhaft erst nach einer manuellen Überprüfung durch eine BenutzerIn freigibt.
 
-Gleichermaßen können Informationen zur PatientIn vorab übermittelt werden, sodass gewisse Basisangaben bereits im Terminrepository vorliegen.
+Gleichermaßen können Informationen zum Patienten vorab übermittelt werden, sodass gewisse Basisangaben bereits im Terminrepository vorliegen.
 
 Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Anlage einer Patient-Ressource}} für die technische Umsetzung.
 
