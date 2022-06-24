@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einer LeistungserbringerIn und einer PatientIn. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
+Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### `Communication.subject`
 
-**Bedeutung:** Patient-Referenz als Aussage für welche PatientIn die Communication verfasst wird
+**Bedeutung:** Patient-Referenz als Aussage für welche Patienten die Communication verfasst wird
 
 **Hinweis:** Ein Patientenbezug muss stets gegeben sein, soweit möglich.
 
