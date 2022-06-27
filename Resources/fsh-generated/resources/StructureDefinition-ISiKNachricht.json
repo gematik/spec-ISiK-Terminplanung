@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht",
   "version": "2.0.0-ballot",
   "name": "ISiKNachricht",
   "status": "active",

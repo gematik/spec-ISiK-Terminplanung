@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
   "version": "2.0.0-ballot",
   "name": "ISiKTerminKontaktMitGesundheitseinrichtung",
   "status": "active",

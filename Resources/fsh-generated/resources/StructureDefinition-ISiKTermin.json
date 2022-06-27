@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin",
   "version": "2.0.0-ballot",
   "name": "ISiKTermin",
   "status": "active",
@@ -62,7 +62,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin"
+            "source": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin"
           }
         ]
       },
@@ -112,7 +112,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachrichtExtension"
+              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
             ]
           }
         ],
@@ -145,7 +145,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminCancelationReason"
+          "valueSet": "https://gematik.de/fhir/isik/v2/Terminplanung/ValueSet/ISiKTerminCancelationReason"
         }
       },
       {
@@ -201,7 +201,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminPriorityExtension"
+              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
             ]
           }
         ],
