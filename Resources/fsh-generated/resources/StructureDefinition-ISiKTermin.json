@@ -137,11 +137,7 @@
       {
         "id": "Appointment.status",
         "path": "Appointment.status",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/ISiK/v2/ValueSet/ISiKTerminStatus"
-        }
+        "mustSupport": true
       },
       {
         "id": "Appointment.cancelationReason",
