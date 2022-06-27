@@ -3,7 +3,7 @@
   "id": "ISiKKalenderExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender"
+      "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender"
     ]
   },
   "active": true,

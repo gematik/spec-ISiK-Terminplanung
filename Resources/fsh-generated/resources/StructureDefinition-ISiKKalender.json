@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender",
   "version": "2.0.0-ballot",
   "name": "ISiKKalender",
   "status": "active",
@@ -58,7 +58,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalenderNameExtension"
+              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalenderNameExtension"
             ]
           }
         ],
