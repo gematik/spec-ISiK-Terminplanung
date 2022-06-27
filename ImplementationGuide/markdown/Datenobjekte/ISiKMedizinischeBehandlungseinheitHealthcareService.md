@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit' )
+where url in ('https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' )
 for differential.element
 select
 Path: path,

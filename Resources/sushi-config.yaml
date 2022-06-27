@@ -1,4 +1,4 @@
-canonical: https://gematik.de/fhir/ISiK/v2
+canonical: https://gematik.de/fhir/isik/v2/Terminplanung
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
