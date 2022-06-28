@@ -3,7 +3,6 @@ InstanceOf: OperationDefinition
 Usage: #example
 * insert Meta-Inst
 * id = "ISiKAppointmentBookOperation"
-* url = "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook"
 * name = "ISiKAppointmentBookOperation"
 * kind = #operation
 * name = "book"
