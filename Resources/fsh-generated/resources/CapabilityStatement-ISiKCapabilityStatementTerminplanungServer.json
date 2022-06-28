@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementTerminplanungServer",
-  "url": "https://gematik.de/fhir/ISiK/v2/CapabilityStatement/terminplanung-server",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server",
   "version": "2.0.0",
   "name": "ISiKCapabilityStatementTerminplanungServer",
   "title": "ISiK CapabilityStatement Terminplanung Server",
@@ -38,7 +38,7 @@
     "application/fhir+json"
   ],
   "instantiates": [
-    "https://gematik.de/fhir/ISiK/v2/CapabilityStatement/terminplanung-server"
+    "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server"
   ],
   "rest": [
     {
@@ -53,7 +53,7 @@
           ],
           "type": "Schedule",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender"
           ],
           "interaction": [
             {
@@ -188,7 +188,7 @@
           ],
           "type": "Slot",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock"
           ],
           "interaction": [
             {
@@ -292,7 +292,7 @@
           ],
           "type": "Appointment",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin"
           ],
           "interaction": [
             {
@@ -402,7 +402,7 @@
                 }
               ],
               "name": "book",
-              "definition": "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook"
+              "definition": "https://gematik.de/fhir/isik/v2/Terminplanung/OperationDefinition/AppointmentBook"
             }
           ],
           "searchInclude": [
@@ -437,7 +437,7 @@
           ],
           "type": "Communication",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht"
           ],
           "interaction": [
             {
@@ -526,7 +526,7 @@
           ],
           "type": "HealthcareService",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
           ],
           "interaction": [
             {
@@ -646,7 +646,7 @@
           ],
           "type": "Binary",
           "supportedProfile": [
-            "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKBinary"
+            "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKBinary"
           ],
           "interaction": [
             {

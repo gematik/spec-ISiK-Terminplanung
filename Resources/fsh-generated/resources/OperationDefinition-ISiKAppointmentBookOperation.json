@@ -6,8 +6,8 @@
   "version": "2.0.0",
   "publisher": "gematik GmbH",
   "date": "2022-02-17",
-  "url": "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook",
   "name": "book",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/OperationDefinition/AppointmentBook",
   "kind": "operation",
   "code": "book",
   "resource": [
