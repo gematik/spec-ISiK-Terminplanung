@@ -22,7 +22,7 @@ Usage: #definition
 * rest.resource[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #Patient
-* rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKPatient"
+* rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPatient"
 * rest.resource[=].interaction[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #read
@@ -71,7 +71,7 @@ Usage: #definition
 * rest.resource[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #Practitioner
-* rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKPersonImGesundheitsberuf"
+* rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf"
 * rest.resource[=].interaction[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #read
@@ -317,7 +317,7 @@ Usage: #definition
   * extension.url = $capabilitystatement-expectation
   * extension.valueCode = #SHALL
   * type = #Binary
-  * supportedProfile = "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKBinary"
+  * supportedProfile = "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKBinary"
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
     * extension.valueCode = #SHALL
