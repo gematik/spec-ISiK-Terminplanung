@@ -177,6 +177,21 @@ Beispiel: Absage eines Termins
 }
 ```
 
+---
+
 ### Anlage einer Patient-Ressource
 
 Ein Termin Repository MUSS die Anlage (Create-Interaktion) einer Patient-Ressource entsprechend der Vorgaben des [ISiK-Basismoduls](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/I-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current) unterstützen.
+
+
+---
+
+### Asynchrone Ausführung $book
+
+Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werden können, für den Fall, dass ein Terminrepository keine Terminbestätigung als direkte Antwort versenden kann. Beispielsweise kann dies der Fall sein, falls ein Termin zunächst manuell im Terminrepository bestätigt werden muss. Es gelten die Regeln der [FHIR Kernspezifikation - Abschnitt 3.2.0.7 Executing an Operation Asynchronously](https://www.hl7.org/fhir/r4/operations.html):
+
+- Der Aufruf der $book-Operation erfolgte auch im asynchronen Fall durch einen POST-Request
+- Ein HTTP-Header mit dem Namen "Prefer" und dem Inhalt "respond-async" MUSS im Aufruf der Operation enthalten sein
+- Als HTTP-Status-Code MUSS das Terminrepository 202 - Accepted zurückgeben
+- Im Fehlerfall MUSS ein 4XX- oder 5XX-HTTP-Status-Code zurückgeben werden
+- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufe werden kann
