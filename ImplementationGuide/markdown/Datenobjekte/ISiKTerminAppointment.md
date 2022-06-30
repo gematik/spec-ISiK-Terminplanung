@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTermin' )
+where url in ('https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' )
 for differential.element
 select
 Path: path,
@@ -56,9 +56,9 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.extension:Nachricht`
 
-**Bedeutung:** Kommunikation mit der PatientIn
+**Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit der PatientIn sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer:innen verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -120,7 +120,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 ### `Appointment.patientInstruction`
 
-**Bedeutung:** Handlungsanweisungen für die PatientIn in Vorbereitung auf den Termin
+**Bedeutung:** Handlungsanweisungen für die Patienten in Vorbereitung auf den Termin
 
 ### `Appointment.participant`
 
@@ -132,7 +132,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert werden.
+Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 

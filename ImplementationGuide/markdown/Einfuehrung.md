@@ -28,3 +28,10 @@ Weitere Informationen siehe [§373 SGB V](https://www.gesetze-im-internet.de/sgb
 gematik GmbH
 
 [Impressum](https://www.gematik.de/impressum/)
+
+**Gender-Hinweis**
+
+Zugunsten des Leseflusses wird in dieser Publikation meist die
+männliche Form verwendet. Wir bitten, dies nicht als Zeichen einer
+geschlechtsspezifischen Wertung zu deuten. Diese Variante deckt auch alle
+weiteren Geschlechter, neben männlich und weiblich, ab.

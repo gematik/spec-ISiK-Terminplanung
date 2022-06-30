@@ -1,6 +1,6 @@
 # Motivation
 
-Die Vereinbarung von Terminen für Behandlungsleistungen repräsentiert oftmals für PatientInnen oder für sie zuständige LeistungserbringerInnen den Einstieg in den Versorgungsablauf im Krankenhaus. Die Terminplanung argiert somit als kritische Schnittstelle zwischen diversen Akteueren im Gesundheitswesen, inkl. der zu behandelnden Personen. Informationen zu notwendigen und/oder gewünschten Behandlungen, Verfügbarkeiten der involvierten Personen und abrechnungsreleveante Details zur Krankenversicherung müssen potenziell ausgetauscht werden um einen optimierten Ablauf des Aufenthaltes im Krankenhaus zu ermöglichen.
+Die Vereinbarung von Terminen für Behandlungsleistungen repräsentiert oftmals für Patienten oder für sie zuständige Leistungserbringer den Einstieg in den Versorgungsablauf im Krankenhaus. Die Terminplanung argiert somit als kritische Schnittstelle zwischen diversen Akteueren im Gesundheitswesen, inkl. der zu behandelnden Personen. Informationen zu notwendigen und/oder gewünschten Behandlungen, Verfügbarkeiten der involvierten Personen und abrechnungsreleveante Details zur Krankenversicherung müssen potenziell ausgetauscht werden um einen optimierten Ablauf des Aufenthaltes im Krankenhaus zu ermöglichen.
 
 Das Krankenhauszukunftsgesetz (KHZG) hebt die zentrale Rolle der Terminvereinbarung hervor in dem in den dazugehörigen Fördertatbeständen Vorgaben für die Terminplanung im digitalen Aufnahmemanagement bzw. für die Terminplanung mittels Patientenportalen gemacht werden (vgl. §19 Abs. 1 Satz 1 Nr. 2 KHSFV bzw. §21 Abs. 2 KHSFV).
 

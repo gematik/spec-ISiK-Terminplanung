@@ -19,8 +19,8 @@ Die Bereitstellung des CapabilityStatements für das Modul "Terminplanung" erfol
 
 Für Systeme, die das Modul "Terminplanung" implementieren, ist außerdem die Erfüllung der Mindestanforderungen des [Moduls "Basis"](https://simplifier.net/guide/ImplementierungsleitfadenISiK-Basismodul/Einfuehrung) erfoderlich:
 
-Canonical: https://gematik.de/fhir/ISiK/v2/CapabilityStatement/core-server
+Canonical: https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/core-server
 
-[Link Simplifier Profil Übersicht](https://gematik.de/fhir/ISiK/v2/CapabilityStatement/terminplanung-server)
+[Link Simplifier Profil Übersicht](https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server)
 
-{{render:https://gematik.de/fhir/ISiK/v2/CapabilityStatement/terminplanung-server}}
+{{render:https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server}}

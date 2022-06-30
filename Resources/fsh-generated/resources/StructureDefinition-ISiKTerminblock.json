@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock",
   "version": "2.0.0-ballot",
   "name": "ISiKTerminblock",
   "status": "active",
@@ -52,7 +52,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKTerminblock"
+            "source": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock"
           }
         ]
       },
@@ -63,7 +63,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender"
+              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender"
             ]
           }
         ],

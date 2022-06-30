@@ -14,7 +14,6 @@ Id: ISiKTermin
 * extension contains ISiKNachrichtExtension named Nachricht 0..* MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces named replaces 0..1 MS
 * status 1..1 MS
-* status from ISiKTerminStatus (required)
 * cancelationReason 0..1 MS
 * cancelationReason from ISiKTerminCancelationReason (required)
 * start 1..1 MS

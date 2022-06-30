@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einer LeistungserbringerIn und einer PatientIn. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
+Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
 
 ---
 
@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -36,7 +36,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### `Communication.subject`
 
-**Bedeutung:** Patient-Referenz als Aussage für welche PatientIn die Communication verfasst wird
+**Bedeutung:** Patient-Referenz als Aussage für welche Patienten die Communication verfasst wird
 
 **Hinweis:** Ein Patientenbezug muss stets gegeben sein, soweit möglich.
 
@@ -54,13 +54,13 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Inhalt der Communication
 
-**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen.
+**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
 
 ---
 
 ### Interaktionen
 
-Für die Ressource Communication MUSS die REST-Interaktion "READ" implementiert werden.
+Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", "UPDATE" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 

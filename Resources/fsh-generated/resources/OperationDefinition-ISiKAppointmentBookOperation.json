@@ -6,8 +6,8 @@
   "version": "2.0.0",
   "publisher": "gematik GmbH",
   "date": "2022-02-17",
-  "url": "https://gematik.de/fhir/ISiK/v2/OperationDefinition/AppointmentBook",
   "name": "book",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/OperationDefinition/AppointmentBook",
   "kind": "operation",
   "code": "book",
   "resource": [
@@ -43,7 +43,7 @@
       "type": "Reference",
       "documentation": "Im Falle das ein Appointment keine Referenz auf ein oder mehrere Slots enthält MUSS der Server die benötigten Slots auf Basis der Referenz auf Schedule, sowie dem Start- und Endzeitpunkt im Appointment ermitteln.",
       "targetProfile": [
-        "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKalender"
+        "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender"
       ]
     },
     {
