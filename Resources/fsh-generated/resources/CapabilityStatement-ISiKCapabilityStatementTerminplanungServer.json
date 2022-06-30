@@ -492,10 +492,21 @@
               "name": "recipient",
               "definition": "http://hl7.org/fhir/SearchParameter/Communication-recipient",
               "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "sender",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-sender",
+              "type": "reference"
             }
           ],
           "searchInclude": [
-            "Communication:recipient",
+            "Communication:sender",
             "Communication:subject"
           ],
           "_searchInclude": [
