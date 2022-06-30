@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminPriorityExtension",
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
-  "version": "2.0.0-ballot3",
+  "version": "2.0.0",
   "name": "ISiKTerminPriorityExtension",
   "status": "active",
   "fhirVersion": "4.0.1",
