@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Encounter",
-  "baseDefinition": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
+  "baseDefinition": "https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
   "derivation": "constraint",
   "differential": {
     "element": [
