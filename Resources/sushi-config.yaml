@@ -11,5 +11,5 @@ publisher:
   url: https://www.gematik.de/
   email: ISiK@gematik.de
 dependencies:
-  de.gematik.isik-basismodul: 2.0.0-ballot3
+  de.gematik.isik-basismodul: 2.0.0
   hl7.fhir.extensions.r5: 4.0.1
