@@ -16,6 +16,10 @@
       "reference": "Practitioner/ISiKPractitionerExample"
     }
   ],
+  "sender": {
+    "display": "Dr. Erika Gabler",
+    "reference": "Patient/ISiKPatientExample"
+  },
   "payload": [
     {
       "contentString": "Dies ist eine Testnachricht!"

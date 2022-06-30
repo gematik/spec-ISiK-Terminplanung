@@ -44,6 +44,11 @@
   "differential": {
     "element": [
       {
+        "id": "Communication.inResponseTo",
+        "path": "Communication.inResponseTo",
+        "mustSupport": true
+      },
+      {
         "id": "Communication.status",
         "path": "Communication.status",
         "mustSupport": true
@@ -60,6 +65,11 @@
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
         "mustSupport": true
       },
       {
@@ -114,6 +124,13 @@
       {
         "id": "Communication.sender",
         "path": "Communication.sender",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.sender.reference",
+        "path": "Communication.sender.reference",
+        "min": 1,
         "mustSupport": true
       },
       {

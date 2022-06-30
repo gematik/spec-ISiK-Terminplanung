@@ -30,6 +30,10 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### Anmerkungen zu Must-Support-Feldern
 
+### `Communication.inResponseTo`
+
+**Bedeutung:** Falls die Communication-Ressource in einen zeitlichen Zusammenhang mit weiteren Nachrichten gebracht werden muss, KÖNNEN die Nachrichten miteinander verknüpft werden. Neue Nachrichten MÜSSEN auf die bereits zurvor existierenden Nachrichten zeigen.
+
 ### `Communication.subject`
 
 **Bedeutung:** Patient-Referenz als Aussage für welche Patienten die Communication verfasst wird
@@ -41,6 +45,10 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 **Bedeutung:** Empfänger der Communication
 
 **Hinweis:** Für Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
+
+### `Communication.sender`
+
+**Hinweis:** Für Patient, Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
 
 ### `Communication.payload`
 
@@ -75,6 +83,14 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
     Beispiele
 
     ```GET [base]/Slot?recipient=Practitioner/ISiKPractitionerExample```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+
+1. Der Suchparameter "sender" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Slot?sender=Practitioner/ISiKPractitionerExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
