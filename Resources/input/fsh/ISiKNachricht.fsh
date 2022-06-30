@@ -25,14 +25,7 @@ Id: ISiKNachricht
     * url 1.. MS
     * creation 1.. MS
 * sender 1.. MS
-  * identifier 0..1 MS
-  * display 1..1 MS
-  * ^slicing.discriminator.type = #type
-  * ^slicing.discriminator.path = "$this"
-  * ^slicing.rules = #open
-* sender contains ISiKSender 1.. MS
-* sender[ISiKSender] only Reference(Patient or Practitioner or HealthcareService)
-* sender[ISiKSender].reference 1..1 MS
+  * reference 1..1 MS
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
