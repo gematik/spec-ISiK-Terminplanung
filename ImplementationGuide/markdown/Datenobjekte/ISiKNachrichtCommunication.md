@@ -74,7 +74,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     Beispiele
 
-    ```GET [base]/Slot?subject=Patient/ISiKPatientExample```
+    ```GET [base]/Communication?subject=Patient/ISiKPatientExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
@@ -82,7 +82,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     Beispiele
 
-    ```GET [base]/Slot?recipient=Practitioner/ISiKPractitionerExample```
+    ```GET [base]/Communication?recipient=Practitioner/ISiKPractitionerExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
@@ -90,7 +90,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     Beispiele
 
-    ```GET [base]/Slot?sender=Practitioner/ISiKPractitionerExample```
+    ```GET [base]/Communication?sender=Practitioner/ISiKPractitionerExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
