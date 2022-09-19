@@ -76,7 +76,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?subject=Patient/ISiKPatientExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
 1. Der Suchparameter "recipient" MUSS unterstützt werden:
 
@@ -84,7 +84,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?recipient=Practitioner/ISiKPractitionerExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
 
 1. Der Suchparameter "sender" MUSS unterstützt werden:
 
@@ -92,7 +92,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?sender=Practitioner/ISiKPractitionerExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference)
 
 
 ---
