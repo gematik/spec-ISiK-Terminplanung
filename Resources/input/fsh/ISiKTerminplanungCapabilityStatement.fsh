@@ -2,7 +2,7 @@ Instance: ISiKCapabilityStatementTerminplanungServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server"
-* version = "2.0.0"
+* version = "2.0.1"
 * name = "ISiKCapabilityStatementTerminplanungServer"
 * title = "ISiK CapabilityStatement Terminplanung Server"
 * status = #active
