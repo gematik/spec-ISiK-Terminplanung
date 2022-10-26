@@ -20,4 +20,4 @@ RuleSet: Meta-CapabilityStatement
 * publisher = "gematik GmbH"
 * date = "2022-10-31"
 * implementationGuide = "https://gematik.de/fhir/isik/v2/Terminplanung/ImplementationGuide|2.0.1"
-* url = "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/vitalparameter-server"
+* url = "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server"
