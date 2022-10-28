@@ -2,13 +2,16 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementTerminplanungServer",
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server",
-  "version": "2.0.0",
-  "name": "ISiKCapabilityStatementTerminplanungServer",
-  "title": "ISiK CapabilityStatement Terminplanung Server",
   "status": "active",
   "experimental": false,
-  "date": "2022-03-27",
+  "version": "2.0.1",
   "publisher": "gematik GmbH",
+  "date": "2022-10-31",
+  "implementationGuide": [
+    "https://gematik.de/fhir/isik/v2/Terminplanung/ImplementationGuide|2.0.1"
+  ],
+  "name": "ISiKCapabilityStatementTerminplanungServer",
+  "title": "ISiK CapabilityStatement Terminplanung Server",
   "contact": [
     {
       "telecom": [

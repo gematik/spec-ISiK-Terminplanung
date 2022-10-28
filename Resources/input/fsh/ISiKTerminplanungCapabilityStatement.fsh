@@ -1,14 +1,9 @@
 Instance: ISiKCapabilityStatementTerminplanungServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server"
-* version = "2.0.0"
+* insert Meta-CapabilityStatement
 * name = "ISiKCapabilityStatementTerminplanungServer"
 * title = "ISiK CapabilityStatement Terminplanung Server"
-* status = #active
-* experimental = false
-* date = "2022-03-27"
-* publisher = "gematik GmbH"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes System unterstützen muss um das Bestätigungsverfahren des Moduls 'Terminplanung' zu bestehen."
