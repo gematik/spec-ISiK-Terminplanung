@@ -4,7 +4,7 @@ Id: ISiKTerminblock
 * insert Meta
 * obeys ISiK-slot-1
 * schedule 1..1 MS
-* schedule only Reference(ISiKKalender)
+* schedule only Reference(Schedule)
 * status 1..1 MS
 * start 1..1 MS
 * end 1..1 MS
