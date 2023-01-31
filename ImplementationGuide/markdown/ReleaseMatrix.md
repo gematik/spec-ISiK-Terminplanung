@@ -5,6 +5,7 @@ Folgende Tabelle zeigt Abhängigkeiten zwischen den verschiedenen Modulen von IS
 | [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)    |     2.0.4        |    30.01.2023        |  30.06.2025 |       -    |     |
 | [ISiK - Basis (Stufe 1)](https://simplifier.net/isik-basis-1)    |       1.0.8      |     30.01.2023              |   30.06.2024 |   -     |        |
 |[ISiK - Dokumentenaustausch (Release Candidate für Stufe 3)](https://simplifier.net/spec-isik-dokumentenaustausch)    |     3.0.0-rc2       |      31.1.2023      |   noch nicht festgelegt |      -    |  [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)   |
+|[ISiK - Dokumentenaustausch (Stufe 2)](https://gematik.github.io/spec-ISiK-Dokumentenaustausch/IG/2.0.1/ImplementationGuide-markdown-Einfuehrung.html)    |     2.0.1       |      31.10.2022      |         1.2.2023   | 1.2.2023   |
 | [ISiK - Medikation (Stufe 2)](https://simplifier.net/spec-isik-medikation)    | 2.0.2 |          31.1.2023        |  30.06.2025 |     -    |    [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)   |
 [ISiK - Sicherheit (Stufe 2)](https://simplifier.net/spec-isik-sicherheit)    |     2.0.0       |     30.06.2022       |    30.06.2025 |     -    |    |
 | [ISiK - Terminplanung (Stufe 2)](https://simplifier.net/spec-isik-terminplanung)    |     2.0.2        |    31.1.2023        |  30.06.2025 |       -    |  [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)    |
