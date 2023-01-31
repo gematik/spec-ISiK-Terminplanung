@@ -19,9 +19,11 @@ Hersteller bestätigungsrelevanter Systeme sollen durch diesen IG in die Lage ve
 
 Weitere Informationen siehe [§373 SGB V](https://www.gesetze-im-internet.de/sgb_5/__373.html).
 
+Hinweis: Sowohl für die Implementierung der ISiK-Spezifikation als auch für den Betrieb eines Produktes, das die ISiK-Spezifikation implementiert, ist eine SNOMED-CT-Lizenz notwendig. Diese kann beim [National Release Center für SNOMED CT in Deutschland](https://www.bfarm.de/DE/Kodiersysteme/Terminologien/SNOMED-CT/_node.html) beantragt werden.
+
 **Kontakt**
 
-[isik@gematik.de](isik@gematik.de)
+[ISiK@gematik.de](mailto:ISiK@gematik.de)
 
 **Herausgeber**
 
