@@ -19,7 +19,7 @@
         <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="static/project/ImplementationGuide/style/style.css?v=1d8ead61f82df00" />
+        <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1d9359397f4aa80" />
 
     </head>
 
@@ -61,6 +61,11 @@
                         <li>
                             <a href="ImplementationGuide-markdown-ReleaseNotes.html">
                                 Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseMatrix.html">
+                                Release Matrix
                             </a>
                         </li>
                         <li>
@@ -227,42 +232,17 @@
 
             <div id="preview-content">
 
-                <h1 id="release-notes">Release Notes</h1>
-<p>Im Rahmen der ISiK-Veröffentlichungen wird das <a href="https://semver.org/lang/de/">Semantic Versioning</a> verwendet.</p>
-<p>Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.</p>
-<hr />
-<p>Version: 2.0.1</p>
-<p>Datum: 31.10.2022</p>
-<ul>
-<li>Update Basismodul Dependency -&gt; 2.0.2</li>
-</ul>
-<hr />
-<p>Version: 2.0.0</p>
-<p>Datum: 30.06.2022</p>
-<ul>
-<li>Initialer Release</li>
-</ul>
-<hr />
-<p>Version: 2.0.0 (Ballotierung)</p>
-<p>Datum: 22.01.2022</p>
-<ul>
-<li>Aufnahme des Profils für das Körpergewicht</li>
-<li>Aufnahme des Profils für die Körpergrösse</li>
-<li>Aufnahme des Profils für die Körpertemperatur</li>
-<li>Aufnahme des Profils für den Kopfumfang</li>
-<li>Aufnahme des Profils für die Atemfrequenz</li>
-<li>Aufnahme des Profils für den Blutdruck</li>
-<li>Aufnahme des Profils für die Herzfrequenz</li>
-<li>Aufnahme des Profils für die Sauerstoffsättigung</li>
-<li>Aufnahme des Profils für das EKG</li>
-<li>Aufnahme des Profils für den Glasgow Coma Score</li>
-<li>Aufnahme der Suchparameter in das CapabilityStatement</li>
-<li>Anpassung der Cannonical URLs auf v2</li>
-<li>Festlegung der bestätigungsrelevanten Systeme</li>
-<li>Festlegung der zu unterstützenden Interaktionen</li>
-<li>Verweis auf einen externen ImplementationGuide zur Profilierung von Signaldaten</li>
-<li>Anmerkungen zu den Must-Support-Feldern</li>
-</ul>
+                <h1 id="kompatibilitat">Kompatibilität</h1>
+<h2 id="kompatibilitat-zu-anderen-nationalen-fhir-basierten-spezifikationen">Kompatibilität zu anderen nationalen FHIR-basierten Spezifikationen</h2>
+<p>Die Vitalparameter-Profile wurden gemeinsam mit <a href="https://hl7.de/">HL7 Deutschland e.V.</a>,
+der <a href="https://www.medizininformatik-initiative.de/de/start">Medizininformatik-Initative</a> und
+der <a href="https://kbv.de/html/">KBV</a> erstellt
+und sind von den <a href="https://simplifier.net/Basisprofil-DE-R4/%7Eresources?category=Profile&amp;corebasetype=Observation&amp;fhirVersion=R4&amp;sortBy=RankScore_desc">Deutschen Basisprofilen für Vitalparameter</a> abgeleitet.</p>
+<h2 id="kompatibilitat-zu-ihe-profilen">Kompatibilität zu IHE-Profilen</h2>
+<p>Die Interaktionen auf den Observation-Ressourcen, die in diesem Modul festgelegt werden, entsprechen jenen der &quot;Simple Observation Option&quot; im IHE-Profil
+<a href="https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_Suppl_QEDm.pdf">QEDm (Query for Existing Data for mobile)</a>.</p>
+<h2 id="kompatibilitat-zu-den-internationalen-vitalparameter-profilen">Kompatibilität zu den internationalen Vitalparameter Profilen</h2>
+<p>Das ISiK Vitalparameter Modul orientiert sich durch die deutschen Basisprofile transitiv an den <a href="https://www.hl7.org/fhir/observation-vitalsigns.html">internationalen VitalSign Profilen</a>. Die Profile in diesem Modul enthalten jedoch technische Korrekturen (verbessertes Slicing und korrigierte FHIRPath-Expressions) sowie Einschränkungen auf die in Deutschland üblicherweise verwendeten Maßeinheiten. Weitere Details zur Kompatibilität zu den internationalen VitalSign Profilen finden sich im <a href="https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Observation-VitalParameter.html">ImplementationGuide der deutschen Basisprofile</a>.</p>
 
 
 

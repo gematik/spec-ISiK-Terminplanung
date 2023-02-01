@@ -19,7 +19,7 @@
         <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="static/project/ImplementationGuide/style/style.css?v=1d8ead61f82df00" />
+        <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1d9359397f4aa80" />
 
     </head>
 
@@ -61,6 +61,11 @@
                         <li>
                             <a href="ImplementationGuide-markdown-ReleaseNotes.html">
                                 Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseMatrix.html">
+                                Release Matrix
                             </a>
                         </li>
                         <li>
@@ -227,42 +232,27 @@
 
             <div id="preview-content">
 
-                <h1 id="release-notes">Release Notes</h1>
-<p>Im Rahmen der ISiK-Veröffentlichungen wird das <a href="https://semver.org/lang/de/">Semantic Versioning</a> verwendet.</p>
-<p>Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.</p>
-<hr />
-<p>Version: 2.0.1</p>
-<p>Datum: 31.10.2022</p>
-<ul>
-<li>Update Basismodul Dependency -&gt; 2.0.2</li>
-</ul>
-<hr />
-<p>Version: 2.0.0</p>
-<p>Datum: 30.06.2022</p>
-<ul>
-<li>Initialer Release</li>
-</ul>
-<hr />
-<p>Version: 2.0.0 (Ballotierung)</p>
-<p>Datum: 22.01.2022</p>
-<ul>
-<li>Aufnahme des Profils für das Körpergewicht</li>
-<li>Aufnahme des Profils für die Körpergrösse</li>
-<li>Aufnahme des Profils für die Körpertemperatur</li>
-<li>Aufnahme des Profils für den Kopfumfang</li>
-<li>Aufnahme des Profils für die Atemfrequenz</li>
-<li>Aufnahme des Profils für den Blutdruck</li>
-<li>Aufnahme des Profils für die Herzfrequenz</li>
-<li>Aufnahme des Profils für die Sauerstoffsättigung</li>
-<li>Aufnahme des Profils für das EKG</li>
-<li>Aufnahme des Profils für den Glasgow Coma Score</li>
-<li>Aufnahme der Suchparameter in das CapabilityStatement</li>
-<li>Anpassung der Cannonical URLs auf v2</li>
-<li>Festlegung der bestätigungsrelevanten Systeme</li>
-<li>Festlegung der zu unterstützenden Interaktionen</li>
-<li>Verweis auf einen externen ImplementationGuide zur Profilierung von Signaldaten</li>
-<li>Anmerkungen zu den Must-Support-Feldern</li>
-</ul>
+                <h1 id="anmerkungen-zu-den-must-support-feldern">Anmerkungen zu den Must-Support-Feldern</h1>
+<h3 id="observation.status"><code>Observation.status</code></h3>
+<p><strong>Bedeutung:</strong> Der Status MUSS insbesondere zur Differenzierung von abgeschlossenen, vorläufigen oder korrigierten Beobachtungen angegeben werden.
+Es ist möglich, dass einzelne Systeme nur Werte vom Status <code>final</code> bereitstellen. Empfangende Systeme müssen jedoch in der Lage sein, sämtliche Status-Codes zu interpretieren.</p>
+<p><strong>Hinweis:</strong> Siehe Beschreibung in der <a href="http://hl7.org/fhir/observation-definitions.html#Observation.status">FHIR Kernspezifikation</a>.</p>
+<h3 id="observation.category"><code>Observation.category</code></h3>
+<p><strong>Bedeutung:</strong> Die Observation-Ressource kann für eine Vielzahl verschiedener Messungen und Beobachtungen eingesetzt werden (Vitalparameter, Laborwerte, Risiko-Scores etc).
+Vitalwerte werden stets mit der Kategorie <code>vital-signs</code> klassifiziert.</p>
+<h3 id="observation.code"><code>Observation.code</code></h3>
+<p><strong>Bedeutung:</strong> Der Code gibt an, um welchen konkreten Vitalparameter es sich in einer Observation-Instanz handelt. Für jedes Vitalparameter-Profil ist ein entsprechender LOINC-Code festgelegt.</p>
+<h3 id="observation.subject"><code>Observation.subject</code></h3>
+<p><strong>Bedeutung:</strong> Stellt den Bezug zum Patienten her.</p>
+<h3 id="observation.encounter"><code>Observation.encounter</code></h3>
+<p><strong>Bedeutung:</strong> Stellt den Bezug zum Einrichtungs-Kontakt/Aufenthalt des Patienten her.</p>
+<h3 id="observation.effective"><code>Observation.effective</code></h3>
+<p><strong>Bedeutung:</strong> Gibt den Zeitpunkt der Erhebung des Vitalparameters an.</p>
+<h3 id="observation.value"><code>Observation.value</code></h3>
+<p><strong>Bedeutung:</strong> Gibt den gemessenen Wert und dessen Maßeinheit an, es sei denn es handelt sich um einen Vitalparameter mit mehreren Komponenten (siehe <code>Observation.component</code>).</p>
+<h3 id="observation.component"><code>Observation.component</code></h3>
+<p><strong>Bedeutung:</strong> Bei Vitalparametern, die aus mehreren Einzelnen Messpunkten bestehen (Blutdruck, EKG, GCS) werden die gemessenen Einzelwerte
+jeweils mit einem separaten LOINC-Code in <code>Observation.component.code</code> versehen  und der entsprechende Messwert in <code>Observation.component.value</code> erfasst.</p>
 
 
 

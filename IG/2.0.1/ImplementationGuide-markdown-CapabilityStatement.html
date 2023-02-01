@@ -227,42 +227,20 @@
 
             <div id="preview-content">
 
-                <h1 id="release-notes">Release Notes</h1>
-<p>Im Rahmen der ISiK-Veröffentlichungen wird das <a href="https://semver.org/lang/de/">Semantic Versioning</a> verwendet.</p>
-<p>Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.</p>
-<hr />
-<p>Version: 2.0.1</p>
-<p>Datum: 31.10.2022</p>
-<ul>
-<li>Update Basismodul Dependency -&gt; 2.0.2</li>
-</ul>
-<hr />
-<p>Version: 2.0.0</p>
-<p>Datum: 30.06.2022</p>
-<ul>
-<li>Initialer Release</li>
-</ul>
-<hr />
-<p>Version: 2.0.0 (Ballotierung)</p>
-<p>Datum: 22.01.2022</p>
-<ul>
-<li>Aufnahme des Profils für das Körpergewicht</li>
-<li>Aufnahme des Profils für die Körpergrösse</li>
-<li>Aufnahme des Profils für die Körpertemperatur</li>
-<li>Aufnahme des Profils für den Kopfumfang</li>
-<li>Aufnahme des Profils für die Atemfrequenz</li>
-<li>Aufnahme des Profils für den Blutdruck</li>
-<li>Aufnahme des Profils für die Herzfrequenz</li>
-<li>Aufnahme des Profils für die Sauerstoffsättigung</li>
-<li>Aufnahme des Profils für das EKG</li>
-<li>Aufnahme des Profils für den Glasgow Coma Score</li>
-<li>Aufnahme der Suchparameter in das CapabilityStatement</li>
-<li>Anpassung der Cannonical URLs auf v2</li>
-<li>Festlegung der bestätigungsrelevanten Systeme</li>
-<li>Festlegung der zu unterstützenden Interaktionen</li>
-<li>Verweis auf einen externen ImplementationGuide zur Profilierung von Signaldaten</li>
-<li>Anmerkungen zu den Must-Support-Feldern</li>
-</ul>
+                <h1 id="konformitatserklarung-capabilitystatement">Konformitätserklärung <a href="http://hl7.org/fhir/capabilitystatement.html">(CapabilityStatement)</a></h1>
+<p>Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine <a href="http://hl7.org/fhir/capabilitystatement.html">CapabilityStatement</a>-Ressource bereitstellen.</p>
+<p>Hierzu MUSS die <a href="http://hl7.org/fhir/http.html#capabilities">capabilities-Interaktion gemäß FHIR-Spezifikation</a> unterstützt werden.
+Der MODE-Parameter kann ignoriert werden.</p>
+<p>Das CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (<code>kind</code> = &quot;requirements&quot;). Zur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, wird die <a href="http://hl7.org/fhir/extension-capabilitystatement-expectation.html">CapabilityStatement-Expectation-Extension</a> mit den möglichen Werten &quot;SHALL&quot; (=MUSS) und &quot;MAY&quot; (=KANN) verwendet.</p>
+<p>Eine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom <code>kind</code>= &quot;instance&quot; liefern und im Element <code>software</code> den Namen und die Versionsnummer angeben.</p>
+<p>Das CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die im folgenden CapabilityStatement mit &quot;SHALL&quot; gekennzeichnet sind. Das CapabilityStatement KANN darüber hinaus die mit &quot;MAY&quot; gekennzeichneten Funktionalitäten sowie weitere Funktionalitäten auflisten, sofern diese in der Instanz implementiert wurden.</p>
+<p>Die Verwendung der <a href="http://hl7.org/fhir/extension-capabilitystatement-expectation.html">CapabilityStatement-Expectation</a>-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.</p>
+<h2 id="capabilitystatement-requirement-isik-vitalparameter">CapabilityStatement (Requirement) ISiK-Vitalparameter</h2>
+<p>Die Bereitstellung des CapabilityStatments für das Modul &quot;Vitalparameter&quot; erfolgt zusammen mit der Festlegung der bestätigungsrelevanten Systeme in Stufe 2.</p>
+<p>Für Systeme, die das Modul &quot;Vitalparameter&quot; implementieren, ist außerdem die Erfüllung der Mindestanforderungen des <a href="https://simplifier.net/guide/ImplementierungsleitfadenISiK-Basismodul/Einfuehrung">Moduls &quot;Basis&quot;</a> erfoderlich:</p>
+<p>Canonical: <a href="https://gematik.de/fhir/isik/v2/VitalwerteUndKoerpermasse/CapabilityStatement/core-server">https://gematik.de/fhir/isik/v2/VitalwerteUndKoerpermasse/CapabilityStatement/core-server</a></p>
+<p><a href="https://simplifier.net/isik-modulvitalparameter/isik-capabilitystatement-vitalparameter-server">Link Simplifier Profil Übersicht</a></p>
+<p><div xmlns="http://www.w3.org/1999/xhtml"><p><h3>REST Capabilities</h3></p><table class="regular"><tr><td>Mode</td><td>Server</td></tr></table><p><h4>Resource Interactions</h4></p><p><table class="small"><tr><th><b>Resource Type</b></th><th><b>Supported Profiles</b></th><th><b>Read</b></th><th><b>SearchType</b></th></tr><tr><td>Observation</td><td><ul /><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKAtemfrequenz.json" title="Observation">ISiKAtemfrequenz</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKBlutdruck.json" title="Observation">ISiKBlutdruck</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKHerzfrequenz.json" title="Observation">ISiKHerzfrequenz</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKKoerpergewicht.json" title="Observation">ISiKKoerpergewicht</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKKoerpergroesse.json" title="Observation">ISiKKoerpergroesse</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKKoerpertemperatur.json" title="Observation">ISiKKoerpertemperatur</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKKopfumfang.json" title="Observation">ISiKKopfumfang</a><li /><a href="artifacts/Resources/fsh-generated/resources/StructureDefinition-ISiKSauerstoffsaettigung.json" title="Observation">ISiKSauerstoffsaettigung</a></td><td>SHALL</td><td>SHALL</td></tr></table></p><p><h4>Search Parameters per resource type</h4></p><p><b>Observation</b></p><table class="small"><tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Level</b></th></tr><tr><td>_id</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>category</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>status</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>date</td><td><a href="http://hl7.org/fhir/r4/search.html#date" target="_blank">date</a></td><td>SHALL</td></tr><tr><td>code</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>patient</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>subject</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>encounter</td><td><a href="http://hl7.org/fhir/r4/search.html#reference" target="_blank">reference</a></td><td>SHALL</td></tr><tr><td>combo-code</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr><tr><td>combo-code-value-quantity</td><td><a href="http://hl7.org/fhir/r4/search.html#composite" target="_blank">composite</a></td><td>SHALL</td></tr><tr><td>component-code</td><td><a href="http://hl7.org/fhir/r4/search.html#token" target="_blank">token</a></td><td>SHALL</td></tr></table></div></p>
 
 
 

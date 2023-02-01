@@ -1,0 +1,5 @@
+{
+  "resourceType": "Device",
+  "id": "ExampleDevice",
+  "status": "active"
+}

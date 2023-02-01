@@ -1,0 +1,151 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKBlutdruck",
+  "url": "https://gematik.de/fhir/isik/v2/VitalwerteUndKoerpermasse/StructureDefinition/ISiKBlutdruck",
+  "version": "2.0.1",
+  "name": "ISiKBlutdruck",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-10-31",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:vs-cat",
+        "path": "Observation.category",
+        "sliceName": "vs-cat",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP",
+        "path": "Observation.component",
+        "sliceName": "SystolicBP",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.code.coding",
+        "path": "Observation.component.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]",
+        "path": "Observation.component.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP",
+        "path": "Observation.component",
+        "sliceName": "DiastolicBP",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.code.coding",
+        "path": "Observation.component.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.value[x]",
+        "path": "Observation.component.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "mustSupport": true
+      }
+    ]
+  }
+}
