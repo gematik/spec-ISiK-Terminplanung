@@ -6,15 +6,14 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Offene Punkte und bekannte Probleme siehe [GitHub Issues](https://github.com/gematik/ISiK-Dokumentenaustausch/issues?q=is%3Aissue+is%3Aopen+label%3A%22offene+Punkte+Ballot%22)
 
+
 ----
 Version: 2.0.2
 
 Datum: 31.01.2023
 
-- ISiKTerminblock
-  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind. 
 - Update Basismodul Dependency -> 2.0.4
-- weitere Änderungen an IG (informativ)
+- weitere Änderungen am Implementierungsleitfaden (informativ)
 
 ----
 Version: 2.0.1
@@ -33,7 +32,20 @@ Datum: 30.06.2022
 ----
 Version: 2.0.0 (Ballotierung)
 
-Datum: 31.03.2022
- - Initiale Ballotierungsversion für ISiK Stufe 2
-
-----
+Datum: 22.01.2022
+ - Aufnahme des Profils für das Körpergewicht
+ - Aufnahme des Profils für die Körpergrösse
+ - Aufnahme des Profils für die Körpertemperatur
+ - Aufnahme des Profils für den Kopfumfang
+ - Aufnahme des Profils für die Atemfrequenz
+ - Aufnahme des Profils für den Blutdruck
+ - Aufnahme des Profils für die Herzfrequenz
+ - Aufnahme des Profils für die Sauerstoffsättigung
+ - Aufnahme des Profils für das EKG
+ - Aufnahme des Profils für den Glasgow Coma Score
+ - Aufnahme der Suchparameter in das CapabilityStatement
+ - Anpassung der Cannonical URLs auf v2
+ - Festlegung der bestätigungsrelevanten Systeme
+ - Festlegung der zu unterstützenden Interaktionen
+ - Verweis auf einen externen ImplementationGuide zur Profilierung von Signaldaten
+ - Anmerkungen zu den Must-Support-Feldern
