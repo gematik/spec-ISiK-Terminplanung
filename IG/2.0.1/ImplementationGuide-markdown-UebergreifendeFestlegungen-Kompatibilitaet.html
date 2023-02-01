@@ -182,15 +182,24 @@
 
             <div id="preview-content">
 
-                <h1 id="datenobjekte">Datenobjekte</h1>
-<p>Folgende Datenobjekte und Interaktionen aus dem Modul <a href="https://simplifier.net/guide/isik-basismodul-stufe2/Einfuehrung">ISiK Basis Stufe 2</a> sind in diesem Modul bestätigungsrelevant:</p>
+                <h2 id="kompatibilitat-zu-anderen-nationalen-fhir-basierten-spezifikationen">Kompatibilität zu anderen nationalen FHIR-basierten Spezifikationen</h2>
+<p>Die vorliegende Spezifikation orientiert sich teilweise an bereits vorhandenen (internationalen) FHIR-Projekten zum Thema Terminvergabe. Hier sei vorallem das <a href="http://fhir.org/guides/argonaut/scheduling/">Argonaut Scheduling Project</a> hervorgehoben.</p>
+<h2 id="kompatibilitat-zum-kbv-eterminservice">Kompatibilität zum KBV eTerminService</h2>
+<p>Bei folgenden FHIR-Ressourcen existiert zum Zeitpunkt der Veröffentlichung eine inhatliche Überschneidung mit dem <a href="https://simplifier.net/eTerminservice-R4/%7Eintroduction">eTerminService der KBV</a>:</p>
 <ul>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Patient?version=current">Patient</a></li>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/I-markdown-Datenobjekte-Datenobjekte-PersonImGesundheitsberuf?version=current">Practitioner</a></li>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current">Binary</a></li>
+<li><p><a href="https://simplifier.net/eterminservice-r4/patientets">Patient</a> - Jede ISiK &quot;Patient&quot;-Instanz ist auch valide gegen das entsprechende KBV ETS Profil falls:</p>
+<ul>
+<li>Elemente, die auf eine Kardinalität von 0..0 beschränkt sind, entfernt werden</li>
 </ul>
-<p>Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:</p>
-<p><ul><li><a href="ImplementationGuide-markdown-Datenobjekte.html">Datenobjekte</a></li><ul><li><a href="ImplementationGuide-markdown-Datenobjekte-CapabilityStatement.html">CapabilityStatement</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-Operations.html">Operations</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKKalenderSchedule.html">ISiKKalender (Schedule)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminblockSlot.html">ISiKTerminblock (Slot)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminAppointment.html">ISiKTermin (Appointment)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKNachrichtCommunication.html">ISiKNachricht (Communication)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKMedizinischeBehandlungseinheitHealthcareService.html">ISiKMedizinischeBehandlungseinheit (HealthcareService)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKBinary.html">ISiKBinary (Binary)</a></li></ul></ul></p>
+</li>
+<li><p><a href="https://simplifier.net/eterminservice-r4/appointmentets-duplicate-2">Appointment</a> - Jede ISiK &quot;Appointment&quot;-Instanz ist auch valide gegen das entsprechende KBV ETS Profil falls:</p>
+<ul>
+<li>Elemente, die auf eine Kardinalität von 0..0 beschränkt sind, entfernt werden</li>
+<li>Eine PractitionerRole Referenz als Akteur angegeben wird</li>
+</ul>
+</li>
+</ul>
+<p>Aufgrund von fachlichen Unterschieden in den zu unterstützenden Arbeitsabläufen sind die OperationDefinitions für die Buchung eines Termins nicht vergleichbar.</p>
 
 
 

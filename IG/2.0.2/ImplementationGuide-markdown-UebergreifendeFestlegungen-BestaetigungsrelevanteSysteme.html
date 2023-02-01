@@ -19,7 +19,7 @@
         <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
         <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="static/project/ImplementationGuide/style/style.css?v=1d8ead3db8ed280" />
+        <link rel="stylesheet" href="static/project/ImplementationGuide/style/style.css?v=1d9358f4d713700" />
 
     </head>
 
@@ -61,6 +61,11 @@
                         <li>
                             <a href="ImplementationGuide-markdown-ReleaseNotes.html">
                                 Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseMatrix.html">
+                                Release Matrix
                             </a>
                         </li>
                         <li>
@@ -182,15 +187,56 @@
 
             <div id="preview-content">
 
-                <h1 id="datenobjekte">Datenobjekte</h1>
-<p>Folgende Datenobjekte und Interaktionen aus dem Modul <a href="https://simplifier.net/guide/isik-basismodul-stufe2/Einfuehrung">ISiK Basis Stufe 2</a> sind in diesem Modul bestätigungsrelevant:</p>
+                <h1 id="bestatigungsrelevante-systeme">Bestätigungsrelevante Systeme</h1>
+<p>Hier folgt die Festlegung der Deutschen Krankenhausgesellschaft e. V. wie <a href="https://www.dkgev.de/themen/digitalisierung-daten/elektronische-datenuebermittlung/datenuebermittlung-nach-373-sgb-v-informationssysteme-im-krankenhaus/">hier</a> aufgeführt</p>
+<h2 id="festlegung-der-deutschen-krankenhausgesellschaft-e.v.aus-dem-jahr-2022">Festlegung der Deutschen Krankenhausgesellschaft e. V. aus dem Jahr 2022</h2>
+<p>Die im Folgenden definierten Subsysteme müssen gemäß § 373 Abs. 2 SGB V nach
+zweijähriger Übergangsfrist im Krankenhaus um die Schnittstelle erweitert sein, die
+das ISIK-Modul bzw. die Datenobjekte der gematik jeweils beschreiben. Die Festlegung der Systeme zu den einzelnen ISiK-Modulen ist um Erläuterungen in eckigen
+Klammern ergänzt.</p>
+<p>ISiK-Basismodul (Stufe 1 und Stufe 2)</p>
 <ul>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Patient?version=current">Patient</a></li>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/I-markdown-Datenobjekte-Datenobjekte-PersonImGesundheitsberuf?version=current">Practitioner</a></li>
-<li><a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current">Binary</a></li>
+<li>Krankenhaus-Informationssystem (KIS)</li>
 </ul>
-<p>Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:</p>
-<p><ul><li><a href="ImplementationGuide-markdown-Datenobjekte.html">Datenobjekte</a></li><ul><li><a href="ImplementationGuide-markdown-Datenobjekte-CapabilityStatement.html">CapabilityStatement</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-Operations.html">Operations</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKKalenderSchedule.html">ISiKKalender (Schedule)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminblockSlot.html">ISiKTerminblock (Slot)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminAppointment.html">ISiKTermin (Appointment)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKNachrichtCommunication.html">ISiKNachricht (Communication)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKMedizinischeBehandlungseinheitHealthcareService.html">ISiKMedizinischeBehandlungseinheit (HealthcareService)</a></li><li><a href="ImplementationGuide-markdown-Datenobjekte-ISiKBinary.html">ISiKBinary (Binary)</a></li></ul></ul></p>
+<p>ISiK-Modul Vitalwerte und Körpermaße</p>
+<ul>
+<li>KIS mit Funktion elektronische Kurve bzw. entsprechendes KIS-Modul</li>
+<li>Patientendaten-Managementsystem (PDMS) [z.B. für Intensivbereiche]</li>
+<li>Elektronische Kurve [z.B. für die Verwendung auf Normal-Stationen]</li>
+</ul>
+<p>ISiK-Modul Dokumentenaustausch</p>
+<ul>
+<li>KIS</li>
+<li>Dokumentenmanagementsystem (DMS)</li>
+<li>Archivsystem</li>
+<li>Telekonsil-Modul gemäß § 31a BMV-Ä [Ziel ist die clientseitige Implementierung für die Suche nach Dokumenten anhand von Metadaten,
+Verarbeitung von Suchergebnissen und Dokumentenzugriff zur Verwendung in Telekonsilien], hierbei keine Umsetzung einer Funktion zum Abruf von Dokumenten aus dem Telekonsil-Modul</li>
+<li>KIM-Client-Anwendungssoftware [die Anwendungsintegration, nicht der
+KIM-Client, Implementierung für die Ablage von Dokumenten aus KIM-Nachrichten und den Versand von Dokumenten mit KIM-Nachrichten],
+hierbei keine Umsetzung einer Funktion zum Abruf von Dokumenten aus
+der KIM-Client-Anwendungssoftware</li>
+</ul>
+<p>ISiK-Modul Medication</p>
+<ul>
+<li>KIS</li>
+<li>PDMS [Anwendungsfallbeispiel: Medikationsdaten in das KIS übertragen bei Verlegung vom Intensivbereich auf Normal-Station]</li>
+<li>Software für digitales Medikationsmanagement [z.B. für die Umsetzung
+von KHZG Fördertatbestand 5]</li>
+<li>E-Therapieplan-System für Zytostatika-Behandlung mit Verarbeitung
+von Verordnungs- und Medikationsinformationen [teilweise Grundlage
+für onkologische Verordnungsdaten], gemäß diesen Festlegungen keine
+Umsetzung des ISIK-Datenobjekts MedikationsVerabreichung notwendig</li>
+<li>Herstellungssystem mit Verarbeitung von Verordnungs- und Medikationsinformationen [in KH-Apotheke, z.B. für Zytostatika], gemäß diesen
+Festlegungen keine Umsetzung des ISIK-Datenobjekts MedikationsVerabreichung notwendig</li>
+<li>E-Rezept-Modul für Herstellungen [eRezept an Fachdienst in TI übertragen]</li>
+<li>Taxierungssoftware [in KH-Apotheke]</li>
+</ul>
+<p>ISiK-Modul Terminplanung [z.B. für die Umsetzung von KHZG Fördertatbestand 2]</p>
+<ul>
+<li>KIS</li>
+<li>Patientenportal-Terminmodul</li>
+</ul>
+<p>Hinweise und Rückfragen zu den bestätigungsrelevante Systemen können an die <a href="https://www.dkgev.de/dkg/verband-auf-einen-blick/geschaeftsstelle/">DKG-Geschäftsstelle</a> gerichtet werden.</p>
 
 
 

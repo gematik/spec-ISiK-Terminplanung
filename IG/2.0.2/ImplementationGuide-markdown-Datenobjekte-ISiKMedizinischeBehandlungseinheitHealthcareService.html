@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Implementierungsleitfaden ISiK-Modul Terminplanung</title>
+
+        <link rel="icon" href="static/styles/common/favicon.ico" />
+
+        <script src="static/styles/common/jquery/jquery.min.js"></script>
+        <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="static/styles/common/main.min.css" />
+        <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" />
+
+        <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="static/project/ImplementationGuide/style/style.css?v=1d9358f4d713700" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header" role="banner" aria-label="Header">
+                        
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                Implementierungsleitfaden ISiK-Modul Terminplanung
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseMatrix.html">
+                                Release Matrix
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Kompatibilitaet.html">
+                                            Kompatibilit&#xE4;t
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Akteure.html">
+                                            Akteure
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Interaktionen.html">
+                                            Interaktionen
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Operations.html">
+                                            Operations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKKalenderSchedule.html">
+                                            ISiKKalender (Schedule)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminblockSlot.html">
+                                            ISiKTerminblock (Slot)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKTerminAppointment.html">
+                                            ISiKTermin (Appointment)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKNachrichtCommunication.html">
+                                            ISiKNachricht (Communication)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKMedizinischeBehandlungseinheitHealthcareService.html">
+                                            ISiKMedizinischeBehandlungseinheit (HealthcareService)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-ISiKBinary.html">
+                                            ISiKBinary (Binary)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container" role="main" aria-label="Main content">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <h2 id="isikmedizinischebehandlungseinheit-healthcareservice">ISiKMedizinischeBehandlungseinheit <a href="http://hl7.org/fhir/communication.html">(HealthcareService)</a></h2>
+<hr />
+<h3 id="motivation">Motivation</h3>
+<p>Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfügung stehenden Ressourcen (z.B. Räume / Geräte), zum Zweck der Ausübung einer Behandlungsleistung, verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden.</p>
+<hr />
+<h3 id="kompabilitat">Kompabilität</h3>
+<p>Siehe <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen-Kompatibilitaet.html" title='ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md'>Kompabilität</a>.</p>
+<hr />
+<h3 id="fhir-profil">FHIR-Profil</h3>
+<table class='table table-bordered scrollbar '><thead><tr><th>Name</th><th>Canonical</th></tr></thead><tbody><tr><td>ISiKMedizinischeBehandlungseinheit</td><td><a target='_blank' href='https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit&scope=spec-isik-terminplanung@current'>https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit</a></td></tr>
+</tbody></table>
+<p><div id="37b548794bd04b45baaa6875bd8e7bb0" data-level="1" class="stu3-treetable"><div class="treetable-wrapper hybrid"><div class="treetable-left-panel"><table class="treetable"><tr data-id="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="collapsed constraints"><td class="profile"><span class="baseIcon resource"></span><span class="constraints">HealthcareService</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td></td><td class="profile"><a title="HealthcareService
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-HealthcareService.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-healthcareservice.json" >HealthcareService</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService</pre></p></div><span><b>Short description </b></span><p><span>The details of a healthcare service available at a location</span></p><span><b>Definition </b></span><div class="markdown"><p>The details of a healthcare service available at a location.</p>
+</div><span><b>Data Type </b></span><p><a title="HealthcareService
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-HealthcareService.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-healthcareservice.json" >HealthcareService</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>dom-2:</b>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/><code>contained.contained.empty()</code></li><li class=""><b>dom-4:</b>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/><code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code></li><li class=""><b>dom-3:</b>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/><code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code></li><li class=""><b>dom-6:</b>A resource should have narrative for robust management<br/><code>text.`div`.exists()</code></li><li class=""><b>dom-5:</b>If a resource is contained in another resource, it SHALL NOT have a security label<br/><code>contained.meta.security.empty()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>Entity. Role, or Act</li><li class=""><b>rim:</b>act[classCode=ACT][moodCode=DEF]</li></ul></td></tr><tr id="HealthcareService.identifier" data-id="8da3ccc6-7555-44fc-936e-aa179bf9f563" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>identifier</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-identifier.json" >Identifier</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.identifier</pre></p></div><span><b>Short description </b></span><p><span>External identifiers for this item</span></p><span><b>Definition </b></span><div class="markdown"><p>External identifiers for this item.</p>
+</div><span><b>Data Type </b></span><p><a title="Identifier
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Identifier.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-identifier.json" >Identifier</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CX / EI (occasionally, more often EI maps to a resource id or a URL)</li><li class=""><b>rim:</b>II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</li><li class=""><b>servd:</b>Identifier</li><li class=""><b>w5:</b>FiveWs.identifier</li><li class=""><b>rim:</b>.id</li></ul></td></tr><tr id="HealthcareService.active" data-id="ab1d796f-9d0e-43c2-bab8-fb05673bc2b0" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="constraints"><td class="profile"><span class="baseIcon primitive"></span><span class="constraints">active</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span> <span title="This element is a modifying element">?!</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.active</pre></p></div><span><b>Short description </b></span><p><span>Whether this HealthcareService record is in active use</span></p><span><b>Definition </b></span><div class="markdown"><p>This flag is used to mark the record to not be used. This is not used when a center is closed for maintenance, or for holidays, the notAvailable period is to be used for this.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This element is labeled as a modifier because it may be used to mark that the resource was created in error.</p>
+</div><span><b>Data Type </b></span><p><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>w5:</b>FiveWs.status</li><li class=""><b>rim:</b>.statusCode</li></ul></td></tr><tr id="HealthcareService.providedBy" data-id="331c5f7d-3f86-4624-adf2-5f3dbb5e689b" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon reference"></span><span>providedBy</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-organization.json" >Organization</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.providedBy</pre></p></div><span><b>Short description </b></span><p><span>Organization that provides this service</span></p><span><b>Definition </b></span><div class="markdown"><p>The organization that provides this healthcare service.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>This property is recommended to be the same as the Location's managingOrganization, and if not provided should be interpreted as such. If the Location does not have a managing Organization, then this property should be populated.</p>
+</div><span><b>Data Type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Organization
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Organization.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-organization.json" >Organization</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>rim:</b>.scopingRole.Organization</li></ul></td></tr><tr id="HealthcareService.category" data-id="2ed2d28f-d6f4-4d80-a18f-b91157397c53" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>category</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.category</pre></p></div><span><b>Short description </b></span><p><span>Broad category of service being performed or delivered</span></p><span><b>Alternate names </b></span><p><span>service category</span></p><span><b>Definition </b></span><div class="markdown"><p>Identifies the broad category of service being performed or delivered.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Selecting a Service Category then determines the list of relevant service types that can be selected in the primary service type.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>A category of the service(s) that could be provided.</span></p><a title="ServiceCategory
+hl7.fhir.r4.core 4.0.1
+ValueSet-service-category.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-service-category.json" >ServiceCategory</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>w5:</b>FiveWs.class</li><li class=""><b>rim:</b>.code</li></ul></td></tr><tr id="HealthcareService.type" data-id="29ea8b9f-df1e-48d7-8b0e-92396b94a0c7" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="constraints"><td class="profile"><span class="baseIcon datatype"></span><span class="constraints">type</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.type</pre></p></div><span><b>Short description </b></span><p><span>Type of service that may be delivered or performed</span></p><span><b>Alternate names </b></span><p><span>service type</span></p><span><b>Definition </b></span><div class="markdown"><p>The specific type of service that may be delivered or performed.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>Additional details about where the content was created (e.g. clinical specialty).</span></p><a title="ServiceType
+hl7.fhir.r4.core 4.0.1
+ValueSet-service-type.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-service-type.json" >ServiceType</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code</li></ul></td></tr><tr id="HealthcareService.specialty" data-id="3bc37c75-dd25-459a-98f7-1d24d9e74101" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="collapsed sliced constraints"><td class="profile"><span class="baseIcon slice"></span><span class="constraints">specialty</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>HealthcareService.specialty</pre></p></div><span><b>Short description </b></span><p><span>Specialties handled by the HealthcareService</span></p><span><b>Definition </b></span><div class="markdown"><p>Collection of specialties handled by the service site. This is more of a medical term.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span class="constraints"><b>Sliced: </b></span><p><span class="constraints">Unordered, Open, by $this(Pattern)</span></p><span><b>Binding </b></span><p><p><span>A specialty that a healthcare service may provide.</span></p><a title="PracticeSettingCodeValueSet
+hl7.fhir.r4.core 4.0.1
+ValueSet-c80-practice-codes.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-c80-practice-codes.json" >PracticeSettingCodeValueSet</a><span> (</span><a title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." href="http://hl7.org/fhir/r4/terminologies.html#preferred" >preferred</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code</li></ul></td></tr><tr id="HealthcareService.specialty:Fachrichtung" data-id="403cbcf1-c727-48ff-8f28-b089d5b658f8" data-parentId="3bc37c75-dd25-459a-98f7-1d24d9e74101" class="constraints"><td class="profile"><span class="baseIcon individualSlice"></span><span class="constraints">Fachrichtung</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a><span class="binding-label constraints">Binding</span></td><td class="details hidden"><span class="pin-control"></span><span><b>Element Id</b></span><div><p><pre>HealthcareService.specialty:Fachrichtung</pre></p></div><span><b>Short description </b></span><p><span>Specialties handled by the HealthcareService</span></p><span><b>Definition </b></span><div class="markdown"><p>Collection of specialties handled by the service site. This is more of a medical term.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span class="constraints"><b>Binding </b></span><p><p><span class="constraints">A specialty that a healthcare service may provide.</span></p><a title="IHEXDSauthorSpeciality
+de.basisprofil.r4 1.4.0
+ValueSet-1.2.276.0.76.11.31--20180713132208.json" href="/packages/de.basisprofil.r4/1.4.0/files/package/valueset-1.2.276.0.76.11.31--20180713132208.json"  class="constraints">IHEXDSauthorSpeciality</a><span class="constraints"> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required"  class="constraints">required</a><span class="constraints">)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code</li></ul></td></tr><tr id="HealthcareService.location" data-id="6f0f0d81-b62c-4186-b66b-22a95473fc99" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon reference"></span><span>location</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Location
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Location.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-location.json" >Location</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.location</pre></p></div><span><b>Short description </b></span><p><span>Location(s) where service may be provided</span></p><span><b>Definition </b></span><div class="markdown"><p>The location(s) where this healthcare service may be provided.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data Type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Location
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Location.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-location.json" >Location</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>w5:</b>FiveWs.where[x]</li><li class=""><b>rim:</b>.location.role[classCode=SDLOC]</li></ul></td></tr><tr id="HealthcareService.name" data-id="893c9a59-bd18-4529-9638-ba5e572db2e5" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="constraints"><td class="profile"><span class="baseIcon primitive"></span><span class="constraints">name</span></td><td class="profile"><span class="mustsupport constraints" title="This element is an element that must be supported">S</span> <span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span class="constraints">1</span><span class="constraints">..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.name</pre></p></div><span><b>Short description </b></span><p><span>Description of service as presented to a consumer while searching</span></p><span><b>Definition </b></span><div class="markdown"><p>Further description of the service as it would be presented to a consumer while searching.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.name</li></ul></td></tr><tr id="HealthcareService.comment" data-id="b5f95bfc-9e97-41d7-aa7d-5df14a4a5c4d" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon primitive"></span><span>comment</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.comment</pre></p></div><span><b>Short description </b></span><p><span>Additional description and/or any specific issues not covered elsewhere</span></p><span><b>Definition </b></span><div class="markdown"><p>Any additional description of the service and/or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Would expect that a user would not see this information on a search results, and it would only be available when viewing the complete details of the service.</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.location.role[classCode=SDLOC].desc</li></ul></td></tr><tr id="HealthcareService.extraDetails" data-id="8411f01d-0b56-488b-90da-ad504a317fcb" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon primitive"></span><span>extraDetails</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="markdown
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-markdown.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-markdown.json" >markdown</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.extraDetails</pre></p></div><span><b>Short description </b></span><p><span>Extra details about the service that can&#39;t be placed in the other fields</span></p><span><b>Definition </b></span><div class="markdown"><p>Extra details about the service that can't be placed in the other fields.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/</p>
+</div><span><b>Data Type </b></span><p><a title="markdown
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-markdown.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-markdown.json" >markdown</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].text</li></ul></td></tr><tr id="HealthcareService.photo" data-id="222bceca-a81f-4c19-8150-92aea14310ee" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>photo</span></td><td class="profile"><span title="This element is an element that is part of the summary">Σ</span> <span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Attachment
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Attachment.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-attachment.json" >Attachment</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.photo</pre></p></div><span><b>Short description </b></span><p><span>Facilitates quick identification of the service</span></p><span><b>Definition </b></span><div class="markdown"><p>If there is a photo/symbol associated with this HealthcareService, it may be included here to facilitate quick identification of the service in a list.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as &quot;Signed Procedure Consent&quot;.</p>
+</div><span><b>Data Type </b></span><p><a title="Attachment
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Attachment.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-attachment.json" >Attachment</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>att-1:</b>If the Attachment has data, it SHALL have a contentType<br/><code>data.empty() or contentType.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>ED/RP</li><li class=""><b>rim:</b>ED</li><li class=""><b>rim:</b>.actrelationship[typeCode=SBJ].observation.value</li></ul></td></tr><tr id="HealthcareService.telecom" data-id="be48f384-b835-467a-a117-dd3a9fb0470c" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>telecom</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="ContactPoint
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-ContactPoint.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-contactpoint.json" >ContactPoint</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.telecom</pre></p></div><span><b>Short description </b></span><p><span>Contacts related to the healthcare service</span></p><span><b>Definition </b></span><div class="markdown"><p>List of contacts related to this specific healthcare service.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>If this is empty, then refer to the location's contacts.</p>
+</div><span><b>Data Type </b></span><p><a title="ContactPoint
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-ContactPoint.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-contactpoint.json" >ContactPoint</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>cpt-2:</b>A system is required if a value is provided.<br/><code>value.empty() or system.exists()</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>XTN</li><li class=""><b>rim:</b>TEL</li><li class=""><b>servd:</b>ContactPoint</li><li class=""><b>rim:</b>.telecom</li></ul></td></tr><tr id="HealthcareService.coverageArea" data-id="b1feea9c-b695-4682-b237-72c82d0d2e00" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon reference"></span><span>coverageArea</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Location
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Location.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-location.json" >Location</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.coverageArea</pre></p></div><span><b>Short description </b></span><p><span>Location(s) service is intended for/available to</span></p><span><b>Definition </b></span><div class="markdown"><p>The location(s) that this service is available to (not where the service is provided).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The locations referenced by the coverage area can include both specific locations, including areas, and also conceptual domains too (mode = kind), such as a physical area (tri-state area) and some other attribute (covered by Example Care Organization). These types of Locations are often not managed by any specific organization. This could also include generic locations such as &quot;in-home&quot;.</p>
+</div><span><b>Data Type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Location
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Location.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-location.json" >Location</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li><li class=""><b>rim:</b>.location.role[classCode=SDLOC].subjectOf.A_SpatialCoordinate</li></ul></td></tr><tr id="HealthcareService.serviceProvisionCode" data-id="fcfff5d9-31f3-4a9f-972b-f8f2f4f6ad7c" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>serviceProvisionCode</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.serviceProvisionCode</pre></p></div><span><b>Short description </b></span><p><span>Conditions under which service is available/offered</span></p><span><b>Definition </b></span><div class="markdown"><p>The code(s) that detail the conditions under which the healthcare service is available/offered.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The provision means being commissioned by, contractually obliged or financially sourced. Types of costings that may apply to this healthcare service, such if the service may be available for free, some discounts available, or fees apply.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>The code(s) that detail the conditions under which the healthcare service is available/offered.</span></p><a title="ServiceProvisionConditions
+hl7.fhir.r4.core 4.0.1
+ValueSet-service-provision-conditions.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-service-provision-conditions.json" >ServiceProvisionConditions</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]</li></ul></td></tr><tr id="HealthcareService.eligibility" data-id="99c63cf7-56d8-497b-a320-aaab233ba40d" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>eligibility</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.eligibility</pre></p></div><span><b>Short description </b></span><p><span>Specific eligibility requirements required to use the service</span></p><span><b>Definition </b></span><div class="markdown"><p>Does this service have specific eligibility requirements that need to be met in order to use the service?</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="HealthcareService.eligibility.code" data-id="bbddb72e-4b37-47d7-9f73-254b4b2df8c3" data-parentId="99c63cf7-56d8-497b-a320-aaab233ba40d" class=""><td class="profile"><span class="baseIcon datatype"></span><span>code</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.eligibility.code</pre></p></div><span><b>Short description </b></span><p><span>Coded value for the eligibility</span></p><span><b>Definition </b></span><div class="markdown"><p>Coded value for the eligibility.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>Coded values underwhich a specific service is made available.</span></p><a  href="http://hl7.org/fhir/r4/terminologies.html#unbound" >(unbound)</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT]</li></ul></td></tr><tr id="HealthcareService.eligibility.comment" data-id="f1c9908c-bf43-4632-a3d9-69d03217776e" data-parentId="99c63cf7-56d8-497b-a320-aaab233ba40d" class=""><td class="profile"><span class="baseIcon primitive"></span><span>comment</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="markdown
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-markdown.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-markdown.json" >markdown</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.eligibility.comment</pre></p></div><span><b>Short description </b></span><p><span>Describes the eligibility conditions for the service</span></p><span><b>Definition </b></span><div class="markdown"><p>Describes the eligibility conditions for the service.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The description of service eligibility should, in general, not exceed one or two paragraphs. It should be sufficient for a prospective consumer to determine if they are likely to be eligible or not. Where eligibility requirements and conditions are complex, it may simply be noted that an eligibility assessment is required. Where eligibility is determined by an outside source, such as an Act of Parliament, this should be noted, preferably with a reference to a commonly available copy of the source document such as a web page.</p>
+</div><span><b>Data Type </b></span><p><a title="markdown
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-markdown.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-markdown.json" >markdown</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.actrelationship[typeCode=PRCN].observation[moodCode=EVN.CRT].text</li></ul></td></tr><tr id="HealthcareService.program" data-id="fb341afc-8b41-4cc3-a261-f9994afd07d3" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>program</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.program</pre></p></div><span><b>Short description </b></span><p><span>Programs that this service is applicable to</span></p><span><b>Definition </b></span><div class="markdown"><p>Programs that this service is applicable to.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Programs are often defined externally to an Organization, commonly by governments; e.g. Home and Community Care Programs, Homeless Program, ….</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>Government or local programs that this service applies to.</span></p><a title="Program
+hl7.fhir.r4.core 4.0.1
+ValueSet-program.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-program.json" >Program</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=PERT].observation</li></ul></td></tr><tr id="HealthcareService.characteristic" data-id="0fd739e3-b44c-4c48-973e-e064ffa501fe" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>characteristic</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.characteristic</pre></p></div><span><b>Short description </b></span><p><span>Collection of characteristics (attributes)</span></p><span><b>Definition </b></span><div class="markdown"><p>Collection of characteristics (attributes).</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>These could be such things as is wheelchair accessible.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>A custom attribute that could be provided at a service (e.g. Wheelchair accessibiliy).</span></p><a  href="http://hl7.org/fhir/r4/terminologies.html#unbound" >(unbound)</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=PERT].observation</li></ul></td></tr><tr id="HealthcareService.communication" data-id="03b502be-47d1-4286-b92e-520a3b8b59ec" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>communication</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.communication</pre></p></div><span><b>Short description </b></span><p><span>The language that this service is offered in</span></p><span><b>Definition </b></span><div class="markdown"><p>Some services are specifically made available in multiple languages, this property permits a directory to declare the languages this is offered in. Typically this is only provided where a service operates in communities with mixed languages used.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>When using this property it indicates that the service is available with this language, it is not derived from the practitioners, and not all are required to use this language, just that this language is available while scheduling.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>A human language.</span></p><a title="CommonLanguages
+hl7.fhir.r4.core 4.0.1
+ValueSet-languages.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-languages.json" >CommonLanguages</a><span> (</span><a title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." href="http://hl7.org/fhir/r4/terminologies.html#preferred" >preferred</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li></ul></td></tr><tr id="HealthcareService.referralMethod" data-id="d6036240-bf0f-472b-9e27-8ae9aef8b138" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon datatype"></span><span>referralMethod</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.referralMethod</pre></p></div><span><b>Short description </b></span><p><span>Ways that the service accepts referrals</span></p><span><b>Definition </b></span><div class="markdown"><p>Ways that the service accepts referrals, if this is not provided then it is implied that no referral is required.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</div><span><b>Data Type </b></span><p><a title="CodeableConcept
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-CodeableConcept.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-codeableconcept.json" >CodeableConcept</a></p><span><b>Binding </b></span><p><p><span>The methods of referral can be used when referring to a specific HealthCareService resource.</span></p><a title="ReferralMethod
+hl7.fhir.r4.core 4.0.1
+ValueSet-service-referral-method.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-service-referral-method.json" >ReferralMethod</a><span> (</span><a title="Instances are not expected or even encouraged to draw from the specified valueset. The value set merely provides examples of the types of concepts intended to be included." href="http://hl7.org/fhir/r4/terminologies.html#example" >example</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>CE/CNE/CWE</li><li class=""><b>rim:</b>CD</li><li class=""><b>orim:</b>fhir:CodeableConcept rdfs:subClassOf dt:CD</li><li class=""><b>rim:</b>.actrelationship[typeCode=PERT].observation</li></ul></td></tr><tr id="HealthcareService.appointmentRequired" data-id="207edcb7-16c7-4e31-b3ab-a2410a8f2ca6" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon primitive"></span><span>appointmentRequired</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.appointmentRequired</pre></p></div><span><b>Short description </b></span><p><span>If an appointment is required for access to this service</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates whether or not a prospective consumer will require an appointment for a particular service at a site to be provided by the Organization. Indicates if an appointment is required for access to this service.</p>
+</div><span><b>Data Type </b></span><p><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.actrelationship[typeCode=PERT].observation</li></ul></td></tr><tr id="HealthcareService.availableTime" data-id="58146ef7-9f1f-42d2-8eaf-64ce56b7b98a" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>availableTime</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availableTime</pre></p></div><span><b>Short description </b></span><p><span>Times the Service Site is available</span></p><span><b>Definition </b></span><div class="markdown"><p>A collection of times that the Service Site is available.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>More detailed availability information may be provided in associated Schedule/Slot resources.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.availableTime.daysOfWeek" data-id="e4a11186-725b-4deb-b46c-c23c78b37ecb" data-parentId="58146ef7-9f1f-42d2-8eaf-64ce56b7b98a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>daysOfWeek</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-code.json" >code</a><span class="binding-label">Binding</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availableTime.daysOfWeek</pre></p></div><span><b>Short description </b></span><p><span>mon | tue | wed | thu | fri | sat | sun</span></p><span><b>Definition </b></span><div class="markdown"><p>Indicates which days of the week are available between the start and end Times.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="code
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-code.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-code.json" >code</a></p><span><b>Binding </b></span><p><p><span>The days of the week.</span></p><a title="DaysOfWeek
+hl7.fhir.r4.core 4.0.1
+ValueSet-days-of-week.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/valueset-days-of-week.json" >DaysOfWeek</a><span> (</span><a title="To be conformant, instances of this element SHALL include a code from the specified valueset" href="http://hl7.org/fhir/r4/terminologies.html#required" >required</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.availableTime.allDay" data-id="b825e9fb-f192-440b-87d7-978bd0644691" data-parentId="58146ef7-9f1f-42d2-8eaf-64ce56b7b98a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>allDay</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availableTime.allDay</pre></p></div><span><b>Short description </b></span><p><span>Always available? e.g. 24 hour service</span></p><span><b>Definition </b></span><div class="markdown"><p>Is this always available? (hence times are irrelevant) e.g. 24 hour service.</p>
+</div><span><b>Data Type </b></span><p><a title="boolean
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-boolean.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-boolean.json" >boolean</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.availableTime.availableStartTime" data-id="f95fe549-2214-4ee7-87f7-9f824494432a" data-parentId="58146ef7-9f1f-42d2-8eaf-64ce56b7b98a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>availableStartTime</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="time
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-time.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-time.json" >time</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availableTime.availableStartTime</pre></p></div><span><b>Short description </b></span><p><span>Opening time of day (ignored if allDay = true)</span></p><span><b>Definition </b></span><div class="markdown"><p>The opening time of day. Note: If the AllDay flag is set, then this time is ignored.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The time zone is expected to be for where this HealthcareService is provided at.</p>
+</div><span><b>Data Type </b></span><p><a title="time
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-time.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-time.json" >time</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.availableTime.availableEndTime" data-id="b193fb9c-7ea8-4818-95b6-39df4d6d6184" data-parentId="58146ef7-9f1f-42d2-8eaf-64ce56b7b98a" class=""><td class="profile"><span class="baseIcon primitive"></span><span>availableEndTime</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="time
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-time.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-time.json" >time</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availableTime.availableEndTime</pre></p></div><span><b>Short description </b></span><p><span>Closing time of day (ignored if allDay = true)</span></p><span><b>Definition </b></span><div class="markdown"><p>The closing time of day. Note: If the AllDay flag is set, then this time is ignored.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>The time zone is expected to be for where this HealthcareService is provided at.</p>
+</div><span><b>Data Type </b></span><p><a title="time
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-time.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-time.json" >time</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.notAvailable" data-id="afddd83e-40b1-4d00-8c0c-b4f751a9ddce" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class="collapsed"><td class="profile"><span class="baseIcon backboneElement"></span><span>notAvailable</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.notAvailable</pre></p></div><span><b>Short description </b></span><p><span>Not available during this time due to provided reason</span></p><span><b>Definition </b></span><div class="markdown"><p>The HealthcareService is not available during this period of time due to the provided reason.</p>
+</div><span><b>Data Type </b></span><p><a title="BackboneElement
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-BackboneElement.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-backboneelement.json" >BackboneElement</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.notAvailable.description" data-id="fd99cc50-d733-4bbb-9a2e-995b1267a398" data-parentId="afddd83e-40b1-4d00-8c0c-b4f751a9ddce" class=""><td class="profile"><span class="baseIcon primitive"></span><span>description</span></td><td class="profile"></td><td class="profile"><span>1</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.notAvailable.description</pre></p></div><span><b>Short description </b></span><p><span>Reason presented to the user explaining why time not available</span></p><span><b>Definition </b></span><div class="markdown"><p>The reason that can be presented to the user as to why this time is not available.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li></ul></td></tr><tr id="HealthcareService.notAvailable.during" data-id="2fa87daf-e893-4e2e-9d81-98c185bd2a30" data-parentId="afddd83e-40b1-4d00-8c0c-b4f751a9ddce" class=""><td class="profile"><span class="baseIcon datatype"></span><span>during</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-period.json" >Period</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.notAvailable.during</pre></p></div><span><b>Short description </b></span><p><span>Service not available from this date</span></p><span><b>Definition </b></span><div class="markdown"><p>Service is not available (seasonally or for a public holiday) from this date.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).</p>
+<p>Period is not used for a duration (a measure of elapsed time). See <a href="datatypes.html#Duration">Duration</a>.</p>
+</div><span><b>Data Type </b></span><p><a title="Period
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Period.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-period.json" >Period</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>per-1:</b>If present, start SHALL have a lower value than end<br/><code>start.hasValue().not() or end.hasValue().not() or (start <= end)</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>v2:</b>DR</li><li class=""><b>rim:</b>IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.availabilityExceptions" data-id="03507bbb-9473-4151-890a-7a241f067ffd" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon primitive"></span><span>availabilityExceptions</span></td><td class="profile"></td><td class="profile"><span>0</span><span>..</span><span>1</span></td><td class="profile"><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.availabilityExceptions</pre></p></div><span><b>Short description </b></span><p><span>Description of availability exceptions</span></p><span><b>Definition </b></span><div class="markdown"><p>A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>Note that FHIR strings SHALL NOT exceed 1MB in size</p>
+</div><span><b>Data Type </b></span><p><a title="string
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-string.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-string.json" >string</a></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>.effectiveTime</li></ul></td></tr><tr id="HealthcareService.endpoint" data-id="a3f2f24a-5a69-4894-9667-bbe2c152f77b" data-parentId="1b090d0b-e3af-44e0-b72a-1e690cfe7dd6" class=""><td class="profile"><span class="baseIcon reference"></span><span>endpoint</span></td><td class="profile"><span title="This element has or is affected by some invariants">I</span></td><td class="profile"><span>0</span><span>..</span><span>*</span></td><td class="profile"><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Endpoint
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Endpoint.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-endpoint.json" >Endpoint</a><span>)</span></td><td class="details hidden"><span class="pin-control"></span><div class="noconstraints"><span class="constraints">There are no (further) constraints on this element</span></div><span><b>Element Id</b></span><div><p><pre>HealthcareService.endpoint</pre></p></div><span><b>Short description </b></span><p><span>Technical endpoints providing access to electronic services operated for the healthcare service</span></p><span><b>Definition </b></span><div class="markdown"><p>Technical endpoints providing access to services operated for the specific healthcare services defined at this resource.</p>
+</div><span><b>Comments </b></span><div class="markdown"><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
+</div><span><b>Data Type </b></span><p><a title="Reference
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Reference.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-reference.json" >Reference</a><span>(</span><a title="Endpoint
+hl7.fhir.r4.core 4.0.1
+StructureDefinition-Endpoint.json" href="/packages/hl7.fhir.r4.core/4.0.1/files/package/structuredefinition-endpoint.json" >Endpoint</a><span>)</span></p><span><b>Constraints</b></span><div><ul><li class=""><b>ele-1:</b>All FHIR elements must have a @value or children<br/><code>hasValue() or (children().count() > id.count())</code></li><li class=""><b>ref-1:</b>SHALL have a contained resource if a local reference is provided<br/><code>reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))</code></li></ul></div><span><b>Mappings</b></span><ul><li class=""><b>rim:</b>n/a</li><li class=""><b>rim:</b>The target of a resource reference is a RIM entry point (Act, Role, or Entity)</li></ul></td></tr></table></div><div class="treetable-right-panel"></div></div></div><script type="text/javascript">
+(function() {
+var isTreetableVisible = document.querySelector(".treetable") != null;
+if (isTreetableVisible) {
+var resourceTreeTable37b548794bd04b45baaa6875bd8e7bb0 = new Stu3TreeTable(false);
+resourceTreeTable37b548794bd04b45baaa6875bd8e7bb0.init("37b548794bd04b45baaa6875bd8e7bb0");
+}
+})();
+</script></p>
+<p>Folgende FHIRPath-Constraints sind im Profil zu beachten:</p>
+<hr />
+<p><strong>Terminology Bindings</strong></p>
+<table class='table table-bordered scrollbar '><thead><tr><th>Path</th><th>Name</th><th>Strength</th><th>URL</th></tr></thead><tbody><tr><td>HealthcareService.specialty</td><td>he-d.de/ValueSets/IHEXDSauthorSpeciality</td><td>required</td><td><a target='_blank' href='https://simplifier.net/resolve?canonical=http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality&scope=spec-isik-terminplanung@current'>http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality</a></td></tr>
+</tbody></table>
+<hr />
+<h3 id="anmerkungen-zu-must-support-feldern">Anmerkungen zu Must-Support-Feldern</h3>
+<h3 id="healthcareservice.active"><code>HealthcareService.active</code></h3>
+<p><strong>Bedeutung:</strong> Ist der HealthcareService in aktiver Verwendung.</p>
+<p><strong>Hinweis:</strong> Historische HealthcareServices können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese dürfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.</p>
+<h3 id="healthcareservice.type"><code>HealthcareService.type</code></h3>
+<p><strong>Bedeutung:</strong> Klassifikation der Behandlungsleistung welche durch den HealthcareService erbracht wird</p>
+<p><strong>Hinweis:</strong> Diese Klassifikation sollte stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe <a href="https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current">Suchparameter &quot;content-mode&quot; in ISiK Basis - Datenobjekt ValueSet</a>.</p>
+<h3 id="healthcareservice.specialty"><code>HealthcareService.specialty</code></h3>
+<p><strong>Bedeutung:</strong> Fachrichtung der Behandlungsleistung welche durch den HealthcareService erbracht wird</p>
+<p><strong>Hinweis:</strong> Diese Fachrichtung sollte stets auch in Appointment.specialty und Schedule.specialty angegeben werden.</p>
+<h3 id="healthcareservice.name"><code>HealthcareService.name</code></h3>
+<p><strong>Bedeutung:</strong> Informeller Name der Behandlungseinheit</p>
+<p><strong>Hinweis:</strong> Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller, jedoch identifizierender Bezeichner vergeben werden.</p>
+<hr />
+<h3 id="interaktionen">Interaktionen</h3>
+<p>Für die Ressource HealthcareService MUSS die REST-Interaktion &quot;READ&quot; implementiert werden.</p>
+<ol>
+<li><p>Der Suchparameter &quot;_id&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/HealthcareService?_id=103270</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;_id&quot; finden sich in der <a href="http://hl7.org/fhir/R4/search.html#all">FHIR-Basisspezifikation - Abschnitt &quot;Parameters for all resources&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;active&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/HealthcareService?active=true</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;HealthcareService.active&quot; finden sich in der <a href="http://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;service-type&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/HealthcareService?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;HealthcareService.type&quot; finden sich in der <a href="http://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;specialty&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/HealthcareService?specialty=urn:oid:1.2.276.0.76.5.114|535</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;HealthcareService.specialty&quot; finden sich in der <a href="http://hl7.org/fhir/R4/search.html#token">FHIR-Basisspezifikation - Abschnitt &quot;Token Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;name&quot; MUSS unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/HealthcareService?name=Medizinische Behandlungseinheit Des Fachbereichs 0100</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;HealthcareService.name&quot; finden sich in der <a href="https://www.hl7.org/fhir/search.html#string">FHIR-Basisspezifikation - Abschnitt &quot;string&quot;</a>.</p>
+</li>
+</ol>
+<hr />
+<h3 id="beispiele">Beispiele</h3>
+<p><pre class="resource-validation-xml"><pre><span class="brace">{</span>
+    <span class="element">&quot;</span><span class="element">resourceType</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">HealthcareService</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">id</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">ISiKMedizinischeBehandlungseinheitExample</span><span class="string">&quot;</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">meta</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace">{</span>
+        <span class="element">&quot;</span><span class="element">profile</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+            <span class="string">&quot;</span><span class="string">https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit</span><span class="string">&quot;</span>
+        <span class="brace">]</span>
+    <span class="brace">}</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">active</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">true</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">type</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">124</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">http://terminology.hl7.org/CodeSystem/service-type</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">specialty</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+        <span class="brace">{</span>
+            <span class="element">&quot;</span><span class="element">coding</span><span class="element">&quot;</span><span class="symbol">: </span><span class="brace"> [</span>
+                <span class="brace">{</span>
+                    <span class="element">&quot;</span><span class="element">code</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">010</span><span class="string">&quot;</span><span class="symbol">,</span>
+                    <span class="element">&quot;</span><span class="element">system</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">urn:oid:1.2.276.0.76.5.114</span><span class="string">&quot;</span>
+                <span class="brace">}</span>
+            <span class="brace">]</span>
+        <span class="brace">}</span>
+    <span class="brace">]</span><span class="symbol">,</span>
+    <span class="element">&quot;</span><span class="element">name</span><span class="element">&quot;</span><span class="symbol">: </span><span class="string">&quot;</span><span class="string">Allgemeine Beratungsstelle der Fachabteilung 0100</span><span class="string">&quot;</span>
+<span class="brace">}</span></pre></pre></p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
