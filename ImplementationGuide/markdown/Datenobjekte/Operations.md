@@ -18,11 +18,11 @@ Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benu
 
 Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung eines HealthcareService relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können abgefragt werden. Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
 
-2. Abfrage aller verfügbaren Kalender: `GET https://example.org/fhir/Scheudle`
+2. Abfrage aller verfügbaren Kalender: `GET https://example.org/fhir/Schedule`
 
 Der Termin-Requestor KANN durch die Abfrage aller verfügbaren Kalender alle Ressourcen abfragen, für die eine Termin-Buchung zur Verfügung steht.
 
-3. Abfrage aller verfügbaren Slots für einen Kalender: `GET https://example.org/fhir/Slot?schedule=<Scheudule/ISiKKalenderExampple>`
+3. Abfrage aller verfügbaren Slots für einen Kalender: `GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExampple>`
 
 In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 
