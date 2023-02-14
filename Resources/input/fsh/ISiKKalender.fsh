@@ -29,7 +29,7 @@ Extension: ScheduleName
 Id: ScheduleName
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name"
 * value[x] only string
-* valueString 0..1 MS
+* valueString 0..1
 
 Instance: ISiKKalenderExample
 InstanceOf: ISiKKalender
