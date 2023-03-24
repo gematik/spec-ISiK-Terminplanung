@@ -20,12 +20,16 @@ Id: ISiKKalender
 * actor[Akteur] only Reference(Practitioner or HealthcareService)
 * actor[Akteur].reference 1..1 MS
 * extension MS
-* extension contains ISiKKalenderNameExtension named Name 0..1 MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name named KalenderName 0..1 MS
+  * valueString 1..1
 
-Extension: ISiKKalenderNameExtension
-Id: ISiKKalenderNameExtension
+// This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
+//WIP
+Extension: ScheduleName
+Id: ScheduleName
+* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name"
 * value[x] only string
-* valueString 1..1 MS
+* valueString 0..1
 
 Instance: ISiKKalenderExample
 InstanceOf: ISiKKalender
