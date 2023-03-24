@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/master-isik-stufe-2/Material/Gematik_Logo_Flag.png" alt="gematik logo" width="400"/>
 
 ----
-Version: 2.0.1
+Version: 2.0.3
 
-Datum: 31.10.2022
+Datum: 24.03.2023
 
 Status: Aktiv
 
@@ -23,7 +23,9 @@ Hinweis: Sowohl für die Implementierung der ISiK-Spezifikation als auch für de
 
 **Kontakt**
 
-[ISiK@gematik.de](mailto:ISiK@gematik.de)
+Bringen Sie allgemeine Fragen und Anmerkungen gerne über unser Anfrageportal ein: [Anfragen ISiK + ISiP](https://service.gematik.de/servicedesk/customer/portal/16)
+
+Falls Sie keinen Zugang zum Anfrageportal haben und dieses nutzen wollen, senden Sie uns bitte eine Nachricht an die Adresse isik [ at ] gematik.de mit dem Betreff "Portalzugang".
 
 **Herausgeber**
 

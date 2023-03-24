@@ -12,11 +12,11 @@
     }
   ],
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "name": "ISiKTerminblock",
   "status": "active",
   "experimental": false,
-  "date": "2022-10-31",
+  "date": "2023-03-24",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -59,14 +59,6 @@
       {
         "id": "Slot.schedule",
         "path": "Slot.schedule",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
