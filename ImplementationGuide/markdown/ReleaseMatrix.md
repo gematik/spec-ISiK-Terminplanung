@@ -9,7 +9,7 @@ Folgende Tabelle zeigt Abhängigkeiten zwischen den verschiedenen Modulen von IS
 | [ISiK - Medikation (Stufe 2)](https://simplifier.net/spec-isik-medikation)  | 1.7.2022   | 2.0.2 |          31.1.2023        |  30.06.2025 |  01.07.2024  |   -    |    [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)   |
 [ISiK - Sicherheit ](https://simplifier.net/spec-isik-sicherheit) (Release Candidate für Stufe 3)   | 1.7.2023 (noch nicht festgelegt)  |    3.0.0-rc1       |     30.06.2022       |    noch nicht festgelegt |    noch nicht festgelegt |  -    |    |
 | [ISiK - Terminplanung (Stufe 2)](https://simplifier.net/spec-isik-terminplanung) | 1.7.2022    |     2.0.2        |    31.1.2023        |  30.06.2025 |    01.07.2024  |   -    |  [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)    |
-| [ISiK - Vitalparameter und Körpermaße (Stufe 2)](https://simplifier.net/spec-isik-vitalparameter-und-koerpermasse) | 1.7.2022   |        2.0.2     |    31.1.2023    |   30.06.2025 | 01.07.2024  | -      | [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)  |
+| [ISiK - Vitalparameter und Körpermaße (Stufe 2)](https://simplifier.net/spec-isik-vitalparameter-und-koerpermasse) | 1.7.2022   |        2.0.3     |    24.03.2023    |   30.06.2025 | 01.07.2024  | -      | [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)  |
 | [ISiP](https://simplifier.net/isip)   | 1.7.2022   |       1.0.2      |       31.1.2023           | 30.06.2025 |   01.07.2024  |  -   |   [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)     |
 
 
