@@ -36,6 +36,6 @@ InstanceOf: ISiKKalender
 Usage: #example
 * active = true
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty = $authorSpecialtyVS#071001 "FA Chirurgie"
+* specialty[Fachrichtung] = $authorSpecialtyVS#071001 "FA Chirurgie"
 * actor.reference = "Practitioner/example"
 * actor.display = "Dr. Fleming"

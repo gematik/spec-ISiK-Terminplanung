@@ -17,5 +17,5 @@ InstanceOf: ISiKMedizinischeBehandlungseinheit
 Usage: #example
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty = $authorSpecialtyVS#071001 "FA Chirurgie"
+* specialty[Fachrichtung] = $authorSpecialtyVS#071001 "FA Chirurgie"
 * name = "Allgemeine Beratungsstelle der Fachabteilung 0100"
