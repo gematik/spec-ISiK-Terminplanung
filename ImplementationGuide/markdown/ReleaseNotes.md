@@ -4,6 +4,28 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
+
+Version: 2.0.3
+
+Datum: 24.03.2023
+
+* enhancement: backport extension r5 by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/61
+  * ISiKKalender - Harmonisierung mit den Empfehlungen der Basisprofile DE
+* quickfix: typo IG by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/63
+
+
+**Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v2.0.2...v.2.0.3
+
+----
+Version: 2.0.2
+
+Datum: 31.01.2023
+
+- ISiKTerminblock
+  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind. 
+- Update Basismodul Dependency -> 2.0.4
+- weitere Änderungen an IG (informativ)
+
 ----
 Version: 2.0.2
 
