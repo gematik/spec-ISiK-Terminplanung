@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ScheduleName",
-  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name",
-  "version": "2.0.2",
-  "name": "ScheduleName",
+  "id": "ISiKKalenderNameExtension",
+  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalenderNameExtension",
+  "version": "2.0.3",
+  "name": "ISiKKalenderNameExtension",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
