@@ -12,11 +12,11 @@
     }
   ],
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "name": "ISiKKalender",
   "status": "active",
   "experimental": false,
-  "date": "2023-01-31",
+  "date": "2023-03-24",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -49,16 +49,47 @@
         "mustSupport": true
       },
       {
-        "id": "Schedule.extension:Name",
+        "id": "Schedule.extension.extension",
+        "path": "Schedule.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Schedule.extension.value[x]",
+        "path": "Schedule.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Schedule.extension.valueString",
+        "path": "Schedule.extension.valueString",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Schedule.extension:KalenderName",
         "path": "Schedule.extension",
-        "sliceName": "Name",
+        "sliceName": "KalenderName",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalenderNameExtension"
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name"
             ]
           }
         ],
