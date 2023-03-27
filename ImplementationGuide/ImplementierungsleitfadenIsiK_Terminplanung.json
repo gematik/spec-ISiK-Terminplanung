@@ -3,7 +3,7 @@
   "url": "https://gematik.de/fhir/ISiK/v2/Terminplanung/ImplementationGuide/ISiK-terminplanung",
   "name": "Implementierungsleitfaden ISiK-Modul Terminplanung",
   "version": "3.0.0-rc1",
-  "status": "active",
+  "status": "draft",
   "fhirVersion": [
     "4.0.1"
   ],
