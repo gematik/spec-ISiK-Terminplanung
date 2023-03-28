@@ -194,4 +194,4 @@ Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werde
 - Ein HTTP-Header mit dem Namen "Prefer" und dem Inhalt "respond-async" MUSS im Aufruf der Operation enthalten sein
 - Als HTTP-Status-Code MUSS das Terminrepository 202 - Accepted zurückgeben
 - Im Fehlerfall MUSS ein 4XX- oder 5XX-HTTP-Status-Code zurückgeben werden
-- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufe werden kann
+- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufen werden kann
