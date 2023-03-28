@@ -5,9 +5,9 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
 
-Version: 2.1.0
+Version: 3.0.0-rc
 
-Datum: 24.03.2023
+Datum: 28.03.2023
 
 * ISiKTermin: 
   * Kardinalität der Elemente Appointment.speciality und Appointment.serviceType von 1..* auf 0..* geändert. MustSupport dieser Elemente von "true" auf "false" geändert.
