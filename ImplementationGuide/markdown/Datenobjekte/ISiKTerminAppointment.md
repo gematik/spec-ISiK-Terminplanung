@@ -80,18 +80,6 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
 
-### `Appointment.serviceType`
-
-**Bedeutung:** Kodierung der Behandlungsleistung des Termins
-
-**Hinweis:** Dies SOLLTE der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
-
-### `Appointment.specialty`
-
-**Bedeutung:** Kodierung der Fachrichtung des Termins
-
-**Hinweis:** Dies SOLLTE der Kodierung des specialty des Schedules entsprechend, der innerhalb des Termins gebucht wird.
-
 ### `Appointment.priority.extension:Priority`
 
 **Bedeutung:** Kodierte Angabe der Priorität des Termins
@@ -102,13 +90,14 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** Startzeitpunkt des Termins
 
-**Hinweis:** Dies MUSS dem Startzeitpunkt des ersten Slots eines Termins entsprechen
+**Hinweis:** Sofern der Termin an einen Slot gebunden ist, SOLL der Startzeitpunkt des Termins dem Startzeitpunkt des ersten Slots des Termins entsprechen.
 
 ### `Appointment.end`
 
 **Bedeutung:** Endzeitpunkt des Termins
 
-**Hinweis:** Dies MUSS dem Endzeitpunkt des letzten Slots eines Termins entsprechen
+**Hinweis:** Sofern der Termin an einen Slot gebunden ist, SOLL der Endzeitpunkt des Termins dem Endzeitpunkt des letzten Slots des Termins entsprechen.
+
 
 ### `Appointment.slot`
 
