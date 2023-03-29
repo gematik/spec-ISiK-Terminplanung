@@ -7,6 +7,10 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 3.0.0-rc
 
+Datum: 29.03.2023
+
+* ISiKNachricht: Hinweis zum Thema Sicherheit eingefügt. Ohne weiter Maßnahmen können über ISiKNachricht keine medizinischen Daten ausgetauscht werden. Hierfür sollte daher bevorzugt die ePA verwendet werden.
+
 Datum: 28.03.2023
 
 * ISiKTermin: 
