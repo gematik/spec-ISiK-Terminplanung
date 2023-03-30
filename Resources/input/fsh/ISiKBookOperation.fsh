@@ -41,5 +41,5 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Als Return-Parameter wird ein Bundle vom Typ 'searchset' zurückgegeben, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Im Falle das die Terminbuchung akzeptiert wird MUSS das Appointment persistiert werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben."
+  * documentation	= "Als Return-Parameter wird ein Bundle vom Typ 'searchset' zurückgegeben, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle das die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
   * type = #Bundle
