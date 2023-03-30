@@ -133,7 +133,7 @@ Antwort:
 }
 ```
 
-Für den Fall, dass ein Terminrepository zum aktuellen Zeitpunkt keine Terminbestätigung geben kann, wird in der in der Antwortnachricht zurückgegebenen Appointment-Ressource der Wert von "Appointment.status" auf "pending" gesetzt. Als HTTP-Status-Code MUSS das Terminrepository "202 - Accepted" zurückgeben.
+Für den Fall, dass ein Terminrepository zum aktuellen Zeitpunkt keine Terminbestätigung geben kann, wird in der Antwortnachricht zurückgegebenen Appointment-Ressource der Wert von "Appointment.status" auf "pending" gesetzt. Als HTTP-Status-Code MUSS das Terminrepository "202 - Accepted" zurückgeben.
 Beispielsweise kann dies der Fall sein, falls ein Termin zunächst manuell im Terminrepository bestätigt werden muss. Sobald ein Termin im Status "pending" seitens des Terminrepository bestätigt oder abgesagt wurde, MUSS das Terminrepository den Status des Termins auf "booked" bzw. "canceled" stellen. Sofern dieses unterstützt wird, SOLL eine Benachrichtigung des Termin-Consumers per Push-Mechanismus erfolgen (siehe auch nächster Abschnitt). In jedem Fall MUSS der Termin-Consumer über eine Lese- oder Such-Anfrage jederzeit den aktuellen Status der Terminbuchung ermitteln können.
 
 ---
@@ -197,4 +197,4 @@ Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werde
 - Ein HTTP-Header mit dem Namen "Prefer" und dem Inhalt "respond-async" MUSS im Aufruf der Operation enthalten sein
 - Als HTTP-Status-Code MUSS das Terminrepository 202 - Accepted zurückgeben
 - Im Fehlerfall MUSS ein 4XX- oder 5XX-HTTP-Status-Code zurückgeben werden
-- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufe werden kann
+- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufen werden kann
