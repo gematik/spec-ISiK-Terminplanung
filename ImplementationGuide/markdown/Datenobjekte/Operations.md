@@ -12,7 +12,7 @@ Es gelten die allgemeinen Vorgaben der FHIR-Kernspezifikation für die Ausführu
 
 Folgende Schritte KÖNNEN notwendig sein, sodass ein Termin durch einen Termin Requestor innerhalb eines Termin Repository eingestellt wird. Es ist zu beachten, dass für spezielle Implementierungen nicht alle Schritte hiervon relevant sind und übersprungen werden können.
 
-Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung zu implementieren ist. Es wird als Best-Practice auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/implementierungsleitfadenisik-sicherheit) verwiesen.
+Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung und Autorisierung zu implementieren ist. Es wird hierzu auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/implementierungsleitfadenisik-sicherheit) verwiesen.
 
 1. Abfrage aller Kodierungen der Behandlungsleistungen: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v2/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/definition-resource-types|HealthcareService`
 
@@ -133,6 +133,9 @@ Antwort:
 }
 ```
 
+Für den Fall, dass ein Terminrepository zum aktuellen Zeitpunkt keine Terminbestätigung geben kann, wird in der Antwortnachricht zurückgegebenen Appointment-Ressource der Wert von "Appointment.status" auf "pending" gesetzt. Als HTTP-Status-Code MUSS das Terminrepository "202 - Accepted" zurückgeben.
+Beispielsweise kann dies der Fall sein, falls ein Termin zunächst manuell im Terminrepository bestätigt werden muss. Sobald ein Termin im Status "pending" seitens des Terminrepository bestätigt oder abgesagt wurde, MUSS das Terminrepository den Status des Termins auf "booked" bzw. "canceled" stellen. Sofern dieses unterstützt wird, SOLL eine Benachrichtigung des Termin-Consumers per Push-Mechanismus erfolgen (siehe auch nächster Abschnitt). In jedem Fall MUSS der Termin-Consumer über eine Lese- oder Such-Anfrage jederzeit den aktuellen Status der Terminbuchung ermitteln können.
+
 ---
 
 ### Aktualisierung / Absage eines Termins
@@ -188,10 +191,11 @@ Ein Termin Repository MUSS die Anlage (Create-Interaktion) einer Patient-Ressour
 
 ### Asynchrone Ausführung $book
 
-Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werden können, für den Fall, dass ein Terminrepository keine Terminbestätigung als direkte Antwort versenden kann. Beispielsweise kann dies der Fall sein, falls ein Termin zunächst manuell im Terminrepository bestätigt werden muss. Es gelten die Regeln der [FHIR Kernspezifikation - Abschnitt 3.2.0.7 Executing an Operation Asynchronously](https://www.hl7.org/fhir/r4/operations.html):
+Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werden können, für den Fall, dass ein Terminrepository keine Zusagen zu Antwortzeiten machen kann und so dass Problem besteht, dass der Client in einen Timeout läuft. Beispielsweise kann dies der Fall sein, wenn die Buchungsanfrage im Terminrepository asynchrone Anfragen an andere Systeme auslöst und der Termin erst bestätigt werden kann, wenn diese durchgelaufen sind. Es gelten die Regeln der [FHIR Kernspezifikation - Abschnitt 3.2.0.7 Executing an Operation Asynchronously](https://www.hl7.org/fhir/r4/operations.html):
 
 - Der Aufruf der $book-Operation erfolgte auch im asynchronen Fall durch einen POST-Request
 - Ein HTTP-Header mit dem Namen "Prefer" und dem Inhalt "respond-async" MUSS im Aufruf der Operation enthalten sein
 - Als HTTP-Status-Code MUSS das Terminrepository 202 - Accepted zurückgeben
 - Im Fehlerfall MUSS ein 4XX- oder 5XX-HTTP-Status-Code zurückgeben werden
-- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufe werden kann
+- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufen werden kann
+

@@ -39,13 +39,13 @@ Id: ISiKTermin
 * participant[AkteurMedizinischeBehandlungseinheit].actor only Reference(HealthcareService)
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
-* specialty 1..* MS
+* specialty 0..* 
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* specialty contains Fachrichtung 1..1 MS
+* specialty contains Fachrichtung 0..1 
 * specialty[Fachrichtung] from $authorSpecialtyVS (required)
-* serviceType 1..* MS
+* serviceType 0..* 
 * priority MS
 * priority.extension MS
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
