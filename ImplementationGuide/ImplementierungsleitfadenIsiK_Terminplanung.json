@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "url": "https://gematik.de/fhir/ISiK/v2/Terminplanung/ImplementationGuide/ISiK-terminplanung",
+  "url": "https://gematik.de/fhir/ISiK/v3/Terminplanung/ImplementationGuide/ISiK-terminplanung",
   "name": "Implementierungsleitfaden ISiK-Modul Terminplanung",
   "version": "3.0.0-rc1",
   "status": "draft",

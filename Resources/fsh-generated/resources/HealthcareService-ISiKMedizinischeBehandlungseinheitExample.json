@@ -3,7 +3,7 @@
   "id": "ISiKMedizinischeBehandlungseinheitExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
+      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
     ]
   },
   "active": true,

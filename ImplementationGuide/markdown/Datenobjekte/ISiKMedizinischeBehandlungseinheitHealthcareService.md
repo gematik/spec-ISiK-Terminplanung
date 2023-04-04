@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' )
+where url in ('https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' )
 for differential.element
 select
 Path: path,
@@ -70,7 +70,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Informeller Name der Behandlungseinheit
 
-**Hinweis:** Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller, jedoch identifizierender Bezeichner vergeben werden. 
+**Hinweis:** Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller, jedoch identifizierender Bezeichner vergeben werden.
 
 ---
 
