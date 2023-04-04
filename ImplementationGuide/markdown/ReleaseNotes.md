@@ -4,6 +4,12 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
+Version: 2.0.3
+
+Datum: 04.04.2023
+
+* ISiKTerminKontaktMitGesundheitseinrichtung: Entfernen des Profils da kein integraler Use Case für Terminvereinbarung und Inkompatiblität zum ISiK Basisprofil
+---
 
 Version: 2.0.3
 
@@ -22,7 +28,7 @@ Version: 2.0.2
 Datum: 31.01.2023
 
 - ISiKTerminblock
-  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind. 
+  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind.
 - Update Basismodul Dependency -> 2.0.4
 - weitere Änderungen an IG (informativ)
 
@@ -32,7 +38,7 @@ Version: 2.0.2
 Datum: 31.01.2023
 
 - ISiKTerminblock
-  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind. 
+  - Reference(Schedule) statt Reference(ISiKKalender). Reference-Element erweitert auf die Kernspezifikation (entspricht allgemeinem Design-Prinzip), damit die Profile auch außerhalb des ISiK-Kontextes nutzbar sind.
 - Update Basismodul Dependency -> 2.0.4
 - weitere Änderungen an IG (informativ)
 
