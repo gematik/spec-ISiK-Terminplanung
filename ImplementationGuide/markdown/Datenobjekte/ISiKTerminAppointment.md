@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin' )
+where url in ('https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' )
 for differential.element
 select
 Path: path,
@@ -72,7 +72,7 @@ join binding.where(valueSet.exists())
 
 **Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
 
-Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, insbesondere der Status "proposed" und "booked". 
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, insbesondere der Status "proposed" und "booked".
 
 ### `Appointment.cancelationReason`
 

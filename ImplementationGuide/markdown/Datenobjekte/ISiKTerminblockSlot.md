@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Die Slot-Ressource repräsentiert die Verbindung eines Termins (Appointment) und den dazugehörigen Ressourcen (z.B. HealthcareService, Device, Practitioner). Für diese Ressourcen können separate Kalender (Schedules) verwaltet werden. Der Slot agiert als Verbindungsstück zwischen diesen Ressourcen. 
+Die Slot-Ressource repräsentiert die Verbindung eines Termins (Appointment) und den dazugehörigen Ressourcen (z.B. HealthcareService, Device, Practitioner). Für diese Ressourcen können separate Kalender (Schedules) verwaltet werden. Der Slot agiert als Verbindungsstück zwischen diesen Ressourcen.
 
 ---
 
@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -92,7 +92,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
 
-5. Abfrage aller verfügbaren Slots für einen Kalender: 
+5. Abfrage aller verfügbaren Slots für einen Kalender:
 
     ```GET https://example.org/fhir/Slot?schedule=<Scheudule/ISiKKalenderExampple>```
 
