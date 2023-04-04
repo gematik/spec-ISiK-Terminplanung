@@ -1,5 +1,5 @@
 RuleSet: Meta
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^publisher = "gematik GmbH"
 * ^version = "3.0.0-rc1"
@@ -7,14 +7,14 @@ RuleSet: Meta
 
 
 RuleSet: Meta-Inst
-* status = #active
+* status = #draft
 * experimental = false
 * version = "3.0.0-rc1"
 * publisher = "gematik GmbH"
 * date = "2023-03-27"
 
 RuleSet: Meta-CapabilityStatement
-* status = #active
+* status = #draft
 * experimental = false
 * version = "3.0.0-rc1"
 * publisher = "gematik GmbH"
