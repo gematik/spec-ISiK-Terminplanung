@@ -19,4 +19,7 @@ Folgende Tabelle zeigt Abhängigkeiten zwischen den verschiedenen Modulen von IS
 
 \* Die Gültigkeit ist eine ungefähre, prognostische Angabe, die mit dem jetzigen Stand der Projektierung zusammenhängt. Die ISiK-Module werden bis zur formalen Abkündigung Gültigkeit besitzen.
 
+Folgendes Schema für das ISiK Release-Management dient dem Verständnis der Fristen - entscheiden für die (prognostizierte) Abkündigung ("Gültig bis") ist nicht der Release-Zeitpunkt, sondern das rechtlich bindende Umsetzungsdatum ("Verpflichtend ab" / "Verpflichtender Einsatz"):
+![Schema für das ISiK Releasemanagement](ISiK_Releasemanagement.png)
+
 Weitere Abhängigkeiten zu externen Packages sind unter den jeweiligen Simplifier-Projekten in der View "Dependencies" zu finden.
