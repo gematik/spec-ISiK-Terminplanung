@@ -19,14 +19,14 @@ Usage: #example
   * use = #in
   * min = 1
   * max = "1"
-  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil. Das Appointment MUSS den Status 'proposed' enthalten. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome und dem Status Code HTTP 400 - Bad Request abgewiesen werden. Falls der Parameter als einzige Parameter verwendet wird KANN die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen. Invalide Ressource MÜSSEN abgelehnt werden durch das Termin Repository."
+  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil. Das Appointment MUSS den Status 'proposed' enthalten. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome und dem Status Code HTTP 400 - Bad Request abgewiesen werden. Falls der Parameter als einzige Parameter verwendet wird, KANN die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen. Invalide Ressource MÜSSEN abgelehnt werden durch das Termin Repository."
   * type = #Appointment
 * parameter[+]
   * name = #cancelled-appt-id
   * use = #in
   * min = 0
   * max = "1"
-  * documentation	= "Für die vorliegende Spezifikation ist die Verschiebung eines Termin eins zwei-stufiger Prozess, bei dem ein Termin storniert und ein neuer Termin neu gebucht wird. Dieser Parameter repräsentiert die Ressourcen-Id des stornierten Appointments. Der uri-Parameter kann eine absoulte URL enthalten, Server SOLLTEN jedoch nur Termine für ihre eigene Domäne verwalten. Im neu-angelegten Appointment MUSS eine Reference auf den abgesagten Termin hinterlegt werden (vgl. Appointment.extension:replaces). Der Status der abgesagten Ressource MUSS durch den Server angepasst werden."
+  * documentation	= "Für die vorliegende Spezifikation ist die Verschiebung eines Termins ein zweistufiger Prozess, bei dem ein Termin storniert und ein neuer Termin neu gebucht wird. Dieser Parameter repräsentiert die Ressourcen-Id des stornierten Appointments. Der uri-Parameter kann eine absolute URL enthalten, Server SOLLTEN jedoch nur Termine für ihre eigene Domäne verwalten. Im neu-angelegten Appointment MUSS eine Reference auf den abgesagten Termin hinterlegt werden (vgl. Appointment.extension:replaces). Der Status der abgesagten Ressource MUSS durch den Server angepasst werden."
   * type = #uri
 * parameter[+]
   * name = #schedule
@@ -34,12 +34,12 @@ Usage: #example
   * min = 0
   * max = "1"
   * type = #Reference
-  * documentation	= "Im Falle das ein Appointment keine Referenz auf ein oder mehrere Slots enthält MUSS der Server die benötigten Slots auf Basis der Referenz auf Schedule, sowie dem Start- und Endzeitpunkt im Appointment ermitteln."
+  * documentation	= "Im Falle dass ein Appointment keine Referenz auf ein oder mehrere Slots enthält, MUSS der Server die benötigten Slots auf Basis der Referenz auf Schedule, sowie dem Start- und Endzeitpunkt im Appointment ermitteln."
   * targetProfile = Canonical(ISiKKalender)
 * parameter[+]
   * name = #return
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Als Return-Parameter wird ein Bundle vom Typ 'searchset' zurückgegeben, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle das die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
+  * documentation	= "Als Return-Parameter wird ein Bundle vom Typ 'searchset' zurückgegeben, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle dass die Terminbuchung grundsätzlich akzeptiert wird, d.h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
   * type = #Bundle
