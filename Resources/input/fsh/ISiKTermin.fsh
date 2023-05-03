@@ -29,15 +29,12 @@ Id: ISiKTermin
   * ^slicing.rules = #open
 * participant contains AkteurPatient 1.. MS
 * participant[AkteurPatient].actor only Reference(Patient)
-* participant[AkteurPatient].actor MS
 * participant[AkteurPatient].actor.reference 1..1 MS
 * participant contains AkteurPersonImGesundheitsberuf 0.. MS
 * participant[AkteurPersonImGesundheitsberuf].actor only Reference(Practitioner)
-* participant[AkteurPersonImGesundheitsberuf].actor MS
 * participant[AkteurPersonImGesundheitsberuf].actor.reference 1..1 MS
 * participant contains AkteurMedizinischeBehandlungseinheit 0.. MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor only Reference(HealthcareService)
-* participant[AkteurMedizinischeBehandlungseinheit].actor MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
 * specialty 0..* 
   * ^slicing.discriminator.type = #pattern
