@@ -100,6 +100,16 @@
       {
         "id": "Appointment.extension",
         "path": "Appointment.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -180,6 +190,16 @@
       {
         "id": "Appointment.priority.extension",
         "path": "Appointment.priority.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -288,6 +308,8 @@
       {
         "id": "Appointment.participant:AkteurPersonImGesundheitsberuf.actor",
         "path": "Appointment.participant.actor",
+        "min": 1,
+        "mustSupport": true,
         "type": [
           {
             "code": "Reference",
@@ -296,6 +318,12 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Appointment.participant:AkteurPersonImGesundheitsberuf.actor.display",
+        "path": "Appointment.participant.actor.display",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Appointment.participant:AkteurPersonImGesundheitsberuf.actor.reference",
