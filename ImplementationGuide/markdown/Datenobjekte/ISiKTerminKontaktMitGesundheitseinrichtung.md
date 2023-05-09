@@ -32,5 +32,10 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplan
 
 **Hinweise:** Die Referenz auf Appointment bietet ermöglicht Portalen den Fallbezug aus dem Termin zu ermitteln und Dokumente an ein KIS zu senden.
 
+### Weitere
+
+Siehe für weitere Anmerkungen und Vorgaben den [ISiK-Basis-Encounters (ISiKKontaktGesundheitseinrichtung)](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Kontakt?version=current)
+
 ---
 
+### Interaktionen
