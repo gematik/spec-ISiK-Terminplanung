@@ -80,6 +80,12 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
 
+### `Appointment.serviceType`
+
+**Bedeutung:** Kodierung der Behandlungsleistung des Termins
+
+**Hinweis:** Dies SOLLTE der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
+
 ### `Appointment.priority.extension:Priority`
 
 **Bedeutung:** Kodierte Angabe der Priorität des Termins

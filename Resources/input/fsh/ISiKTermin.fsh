@@ -45,7 +45,7 @@ Id: ISiKTermin
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 0..1 
 * specialty[Fachrichtung] from $authorSpecialtyVS (required)
-* serviceType 0..* 
+* serviceType 1..* MS 
 * priority MS
 * priority.extension MS
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
