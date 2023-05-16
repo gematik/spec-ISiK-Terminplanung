@@ -34,7 +34,19 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplan
 
 Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der entsprechende [Implementation Guide zum Modul Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden%20ISiK-Modul%20Dokumentenaustausch/ImplementationGuide-markdown-Einfuehrung?version=current) zu beachten.
 
+---
 
+### Interaktionen
+
+Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert werden:
+
+Der Suchparameter "encounter" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Appointment?encounter=Encounter/123```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "encounter" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/search.html#reference).
 
 ### Weitere
 
