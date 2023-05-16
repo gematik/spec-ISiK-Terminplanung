@@ -84,7 +84,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** Kodierung der Behandlungsleistung des Termins
 
-**Hinweis:** Dies SOLLTE der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
+**Hinweis:** Dies SOLL der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
 
 ### `Appointment.priority.extension:Priority`
 
