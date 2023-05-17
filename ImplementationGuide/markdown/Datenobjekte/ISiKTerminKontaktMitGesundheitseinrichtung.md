@@ -38,15 +38,15 @@ Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der e
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" implementiert werden:
+Für die Ressource Encounter MUSS die REST-Interaktion "READ" implementiert werden:
 
-Der Suchparameter "encounter" MUSS unterstützt werden:
+Der Suchparameter "appointment" MUSS unterstützt werden:
 
     Beispiele:
 
-    ```GET [base]/Appointment?encounter=Encounter/123```
+    ```GET [base]/Encounter?appointment=Appointment/123```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "encounter" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "appointment" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/search.html#reference).
 
 ### Weitere
 
