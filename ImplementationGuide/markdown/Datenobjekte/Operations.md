@@ -90,44 +90,33 @@ Antwort:
 
 ```json
 {
-    "resourceType": "Bundle",
-    "type": "searchset",
-    "entry": [
+    
+    "resourceType": "Appointment",
+    "status": "booked",
+    "start": "2022-12-10T09:00:00Z",
+    "end": "2022-12-10T11:00:00Z",
+    "slot":  [
         {
-            "fullUrl": "https://example.org/fhir/Appointment/ISiKAppointmentTest",
-            "resource":         {
-            "name": "appt-resource",
-            "resource": {
-                "resourceType": "Appointment",
-                "status": "booked",
-                "start": "2022-12-10T09:00:00Z",
-                "end": "2022-12-10T11:00:00Z",
-                "slot":  [
-                    {
-                        "reference": "ISiKSlotExample"
-                    }
-                ],
-                "specialty":  [
-                    {
-                        "coding":  [
-                            {
-                                "code": "010",
-                                "system": "urn:oid:1.2.276.0.76.5.114"
-                            }
-                        ]
-                    }
-                ],
-                "participant":  [
-                    {
-                        "actor": {
-                            "display": "Test Patient",
-                            "reference": "Patient/example"
-                        },
-                        "status": "accepted"
-                    }
-                ]
-            }
+            "reference": "ISiKSlotExample"
         }
+    ],
+    "specialty":  [
+        {
+            "coding":  [
+                {
+                    "code": "010",
+                    "system": "urn:oid:1.2.276.0.76.5.114"
+                }
+            ]
+        }
+    ],
+    "participant":  [
+        {
+            "actor": {
+                "display": "Test Patient",
+                "reference": "Patient/example"
+            },
+            "status": "accepted"
         }
     ]
 }
@@ -197,5 +186,5 @@ Die Operation zur Buchung eines Termin MUSS ebenfalls asychron ausgeführt werde
 - Ein HTTP-Header mit dem Namen "Prefer" und dem Inhalt "respond-async" MUSS im Aufruf der Operation enthalten sein
 - Als HTTP-Status-Code MUSS das Terminrepository 202 - Accepted zurückgeben
 - Im Fehlerfall MUSS ein 4XX- oder 5XX-HTTP-Status-Code zurückgeben werden
-- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher das oben beschriebene Suchbundle inkl. Appointment-Ressource als Antwort auf die Buchung des Termins abgerufen werden kann
+- Zudem MUSS das Terminrepository einen "Content-Location"-Header zurückliefern indem eine valide absolute URL enthalten ist unter welcher die oben beschriebene Appointment- bzw OperationOutcome-Ressource als Antwort auf die Buchung des Termins abgerufen werden kann
 
