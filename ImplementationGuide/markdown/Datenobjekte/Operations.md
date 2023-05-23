@@ -12,7 +12,7 @@ Es gelten die allgemeinen Vorgaben der FHIR-Kernspezifikation für die Ausführu
 
 Folgende Schritte KÖNNEN notwendig sein, sodass ein Termin durch einen Termin Requestor innerhalb eines Termin Repository eingestellt wird. Es ist zu beachten, dass für spezielle Implementierungen nicht alle Schritte hiervon relevant sind und übersprungen werden können.
 
-Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung und Autorisierung zu implementieren ist. Es wird hierzu auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/implementierungsleitfadenisik-sicherheit) verwiesen.
+Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung und Autorisierung zu implementieren ist. Es wird hierzu auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/isik-sicherheit?version=current) verwiesen.
 
 1. Abfrage aller Kodierungen der Behandlungsleistungen: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/definition-resource-types|HealthcareService`
 
