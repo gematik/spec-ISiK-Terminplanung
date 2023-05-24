@@ -109,7 +109,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
 
-**Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehrere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
+**Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
 
 **Hinweis:** In der Vergangenheit liegende Slots, welche nicht verknüpft wurden, dürfen nicht mehr abrufbar sein. Jegliche andere Slots müssen auch per id, herausgegeben werden. Sobald die id einmalig per Search herausgeben wurde, müssen diese gleichbleibend abrufbar sein.
 
