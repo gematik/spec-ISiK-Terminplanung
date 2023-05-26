@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKMedizinischeBehandlungseinheit",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Entities"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit",
   "version": "3.0.0-rc1",
   "name": "ISiKMedizinischeBehandlungseinheit",

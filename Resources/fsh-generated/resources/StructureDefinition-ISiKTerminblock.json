@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminblock",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Workflow"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock",
   "version": "3.0.0-rc1",
   "name": "ISiKTerminblock",

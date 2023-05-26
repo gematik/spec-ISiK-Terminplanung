@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminKontaktMitGesundheitseinrichtung",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Management"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
   "version": "3.0.0-rc1",
   "name": "ISiKTerminKontaktMitGesundheitseinrichtung",
