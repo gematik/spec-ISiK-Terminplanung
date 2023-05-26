@@ -86,6 +86,14 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Hinweis:** Dies SOLL der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
 
+### `Appointment.specialty`
+
+**Bedeutung:** Kodierung der Fachrichtung des Termins
+
+**Hinweis:** Sofern aus den auf der Appointment-Ressource aufsetzenden Anwendungsfällen eine weitere Verarbeitung der Ressource durch einen menschlichen Nutzer nicht ausgeschlossen werden kann, MUSS das bestätigungsrelevante System mit dem Termin verbundenen Ressourcen (insb. `Appointment.slot`, `Appointment.slot.schedule`, `Appointment.participant:AkteurMedizinischeBehandlungseinheit.actor`) oder aus dem spezifischen Kontext verfügbare Informationen auswerten und das Element `Appointment.specialty` mit einem sinnvollen Wert kodieren (eine Ausnahme bildet hier zum Beispiel die fachrichtungs-unabhängige Terminplanung durch krankenhausinterne, zentrale Organisationseinheiten).
+Insbesondere ist die Kodierung der Fachrichtung des Termins notwendig im Kontext der Bereitstellung einer graphischen Oberfläche, wie sie Endnutzenden in einem Zuweiserportal/Patientenportal zur Ansicht gebracht wird.
+ 
+
 ### `Appointment.priority.extension:Priority`
 
 **Bedeutung:** Kodierte Angabe der Priorität des Termins
