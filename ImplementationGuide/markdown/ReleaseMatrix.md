@@ -2,7 +2,7 @@ Folgende Tabelle zeigt Abhängigkeiten zwischen den verschiedenen Modulen von IS
 
 | **Modul**                  | **Releasedatum des Moduls**   | **Version** | **Releasedatum Version** |**Gültig bis\*** | **Verpflichtend ab** | **Abkündigungsdatum** | **Abhängigkeiten** |
 |---------------------------|-----------------|-------------|------------------|-----------------------|---------|-------|--------------------|
-| [ISiK - Basis (Release Candidate für Stufe 3)](https://simplifier.net/isik-v3)    | 1.7.2023 (noch nicht festgelegt)|     3.0.0-rc2      |    03.04.2023        |  30.06.2026 | 01.07.2025 |      -    |     |
+| [ISiK - Basis (Release Candidate für Stufe 3)](https://simplifier.net/isik-v3)    | 1.7.2023 (noch nicht festgelegt)|     3.0.0-rc3      |    30.05.2023        |  30.06.2026 | 01.07.2025 |      -    |     |
 | [ISiK - Basis (Stufe 2)](https://simplifier.net/isik)    | 1.7.2022|     2.0.5        |    24.03.2023        |  30.06.2025 | 01.07.2024 |      -    |     |
 | [ISiK - Basis (Stufe 1)](https://simplifier.net/isik-basis-1) |  1.7.2021  |       1.0.9      |     22.03.2023              |   30.06.2024 |  30.08.2023 | -     |        |
 |[ISiK - Dokumentenaustausch (Release Candidate für Stufe 3)](https://simplifier.net/spec-isik-dokumentenaustausch)  | 1.7.2023 (noch nicht festgelegt)  |     3.0.0-rc3       |      4.4.2023      |   noch nicht festgelegt |    noch nicht festgelegt|    -    |   [ISiK - Basis (Release Candidate für Stufe 3)](https://simplifier.net/isik-v3)  |
