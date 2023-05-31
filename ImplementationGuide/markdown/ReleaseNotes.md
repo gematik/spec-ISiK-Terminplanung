@@ -4,7 +4,23 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
+Version: 3.0.0-rc2
 
+Datum: 31.05.2023
+
+* ISiKTerminAppointment
+  * Änderung zu Appointment.serviceType aus 3.0.0-rc1 (Kommentierung) wurde zurückgezogen
+    * wurde  revert Changes for Appointment.serviceType #88 by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/89
+  * Eine IG Seite zur Encounter Beschreibung für Terminplanung wurde hinzugefügt
+    * Encounter Beschreibung für Terminplanung by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
+  * Mehrere Slots müssen nicht mehr  ein und denselben Schedule referenzieren
+    * rm cosntraint: allow different Schedules #82 by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/92
+  * Die Änderung zu Appointment.specialty wurde um eine textuelle Vorgabe zum MS ergänzt
+    * add MS + textual constraint #72 by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/91
+* Operations: statt eines Bundle reicht als Return-Wert ein Appointment
+  * update return Ressources #85 by @f-peverali in https://github.com/gematik/spec-ISiK-Terminplanung/pull/93
+
+----
 Version: 3.0.0-rc1
 
 Datum: 04.04.2023

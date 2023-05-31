@@ -94,7 +94,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
 5. Abfrage aller verfügbaren Slots für einen Kalender:
 
-    ```GET https://example.org/fhir/Slot?schedule=<Scheudule/ISiKKalenderExampple>```
+    ```GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExample>```
 
     Anwendungshinweise: In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 ---
