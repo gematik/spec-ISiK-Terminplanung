@@ -1,22 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Workflow"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin",
-  "version": "2.0.3",
+  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin",
+  "version": "3.0.0-rc1",
   "name": "ISiKTermin",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
-  "date": "2023-03-24",
+  "date": "2023-04-04",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -62,7 +52,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTermin"
+            "source": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
           }
         ]
       },
@@ -112,7 +102,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
+              "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
             ]
           }
         ],
@@ -145,7 +135,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/v2/Terminplanung/ValueSet/ISiKTerminCancelationReason"
+          "valueSet": "https://gematik.de/fhir/isik/v3/Terminplanung/ValueSet/ISiKTerminCancelationReason"
         }
       },
       {
@@ -166,14 +156,13 @@
           ],
           "rules": "open"
         },
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Appointment.specialty:Fachrichtung",
         "path": "Appointment.specialty",
         "sliceName": "Fachrichtung",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "mustSupport": true,
         "binding": {
@@ -201,7 +190,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
+              "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
             ]
           }
         ],

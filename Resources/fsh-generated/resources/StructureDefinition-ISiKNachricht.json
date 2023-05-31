@@ -1,22 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKNachricht",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Request &amp; Response"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
-  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht",
-  "version": "2.0.3",
+  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht",
+  "version": "3.0.0-rc1",
   "name": "ISiKNachricht",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
-  "date": "2023-03-24",
+  "date": "2023-04-04",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [

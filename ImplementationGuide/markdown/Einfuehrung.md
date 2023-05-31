@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/master-isik-stufe-2/Material/Gematik_Logo_Flag.png" alt="gematik logo" width="400"/>
 
 ----
-Version: 2.0.3
+Version: 3.0.0-rc2
 
-Datum: 24.03.2023
+Datum: 31.05.2023
 
-Status: Aktiv
+Status: Benehmensherstellung
 
 Realm: Deutschland
 

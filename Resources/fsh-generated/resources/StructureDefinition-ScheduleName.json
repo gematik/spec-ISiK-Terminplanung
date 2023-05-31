@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ScheduleName",
   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name",
-  "version": "2.0.3",
+  "version": "3.0.0-rc1",
   "name": "ScheduleName",
   "status": "active",
   "fhirVersion": "4.0.1",

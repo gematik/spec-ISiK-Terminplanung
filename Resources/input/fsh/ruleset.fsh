@@ -1,23 +1,23 @@
 RuleSet: Meta
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^publisher = "gematik GmbH"
-* ^version = "2.0.3"
-* ^date = "2023-03-24"
+* ^version = "3.0.0-rc2"
+* ^date = "2023-05-31"
 
 
 RuleSet: Meta-Inst
-* status = #active
+* status = #draft
 * experimental = false
-* version = "2.0.3"
+* version = "3.0.0-rc2"
 * publisher = "gematik GmbH"
-* date = "2023-03-24"
+* date = "2023-05-31"
 
 RuleSet: Meta-CapabilityStatement
-* status = #active
+* status = #draft
 * experimental = false
-* version = "2.0.3"
+* version = "3.0.0-rc2"
 * publisher = "gematik GmbH"
-* date = "2023-03-24"
-* implementationGuide = "https://gematik.de/fhir/isik/v2/Terminplanung/ImplementationGuide|2.0.3"
-* url = "https://gematik.de/fhir/isik/v2/Terminplanung/CapabilityStatement/terminplanung-server"
+* date = "2023-05-31"
+* implementationGuide = "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|3.0.0-rc2"
+* url = "https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server"

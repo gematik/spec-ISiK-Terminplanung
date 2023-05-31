@@ -6,6 +6,10 @@
 
 Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
 
+Es liegt in der Verantwortung des bestätigungsrelevanten Systems, eine dem Schutzbedarf der ausgetauschten Nachrichten angemessene Sicherheit in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit herzustellen. Die Vorgaben des BSI, z. B. aus der TR-03161, sind zu beachten. Grundsätzlich liegen der vorliegenden Definition von ISiKNachricht die folgenden Annahmen zugrunde, die auch eine Nutzung einfach umsetzbarer Sicherheitsmaßnahmen ermöglichen:
+* ISiKNachricht SOLL ausschließlich für den Austausch administrativer, nicht personenbezogener Informationen im Kontext der Terminbuchung verwendet werden, z. B. zur Übermittlung von Coronahinweisen oder Lageplänen.
+* Der Austausch personenbezogener medizinischer Daten SOLL ausschließlich über die dafür vorgesehenen sicheren Dienste der Telematikinfrastruktur, wie z. B. ePA und zukünftig auch den TI-Messenger, erfolgen.
+
 ---
 
 ### Kompabilität
@@ -17,14 +21,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht, hybrid}}
+{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
 
 ---
 

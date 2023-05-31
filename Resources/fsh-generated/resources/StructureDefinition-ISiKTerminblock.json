@@ -1,22 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminblock",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Workflow"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
-  "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock",
-  "version": "2.0.3",
+  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock",
+  "version": "3.0.0-rc1",
   "name": "ISiKTerminblock",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
-  "date": "2023-03-24",
+  "date": "2023-04-04",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -52,7 +42,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock"
+            "source": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock"
           }
         ]
       },
