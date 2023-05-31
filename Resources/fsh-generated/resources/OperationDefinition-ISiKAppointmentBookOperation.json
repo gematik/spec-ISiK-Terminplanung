@@ -41,7 +41,7 @@
       "min": 0,
       "max": "1",
       "type": "Reference",
-      "documentation": "Im Falle das ein Appointment keine Referenz auf ein oder mehrere Slots enthält MUSS der Server die benötigten Slots auf Basis der Referenz auf Schedule, sowie dem Start- und Endzeitpunkt im Appointment ermitteln.",
+      "documentation": "Im Falle dass ein Appointment keine Referenz auf ein oder mehrere Slots enthält, MUSS der Server die benötigten Slots auf Basis der Referenz auf Schedule, sowie dem Start- und Endzeitpunkt im Appointment ermitteln.",
       "targetProfile": [
         "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender"
       ]
@@ -51,8 +51,16 @@
       "use": "out",
       "min": 0,
       "max": "1",
-      "documentation": "Als Return-Parameter wird ein Bundle vom Typ 'searchset' zurückgegeben, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle das die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden.",
-      "type": "Bundle"
+      "documentation": "Als Return-Parameter MUSS ein Appointment oder ein OperationOutcome zurückgegeben werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle dass die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden.",
+      "type": "Appointment"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Als Return-Parameter MUSS ein OperationOutcome zurückgegeben werden, falls die Interaktion fehlschlägt. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden.",
+      "type": "OperationOutcome"
     }
   ]
 }

@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Workflow"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin",
   "version": "3.0.0-rc1",
   "name": "ISiKTermin",
@@ -149,6 +139,12 @@
         }
       },
       {
+        "id": "Appointment.serviceType",
+        "path": "Appointment.serviceType",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.specialty",
         "path": "Appointment.specialty",
         "slicing": {
@@ -159,7 +155,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Appointment.specialty:Fachrichtung",
@@ -167,6 +164,7 @@
         "sliceName": "Fachrichtung",
         "min": 0,
         "max": "1",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality"
