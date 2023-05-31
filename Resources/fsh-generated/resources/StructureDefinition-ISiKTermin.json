@@ -155,7 +155,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Appointment.specialty:Fachrichtung",
@@ -163,6 +164,7 @@
         "sliceName": "Fachrichtung",
         "min": 0,
         "max": "1",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality"
