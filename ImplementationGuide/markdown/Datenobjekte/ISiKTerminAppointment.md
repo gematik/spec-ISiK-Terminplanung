@@ -80,6 +80,20 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
 
+### `Appointment.serviceType`
+
+**Bedeutung:** Kodierung der Behandlungsleistung des Termins
+
+**Hinweis:** Dies SOLL der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
+
+### `Appointment.specialty`
+
+**Bedeutung:** Kodierung der Fachrichtung des Termins
+
+**Hinweis:** Sofern aus den auf der Appointment-Ressource aufsetzenden Anwendungsfällen eine weitere Verarbeitung der Ressource durch einen menschlichen Nutzer nicht ausgeschlossen werden kann, MUSS das bestätigungsrelevante System mit dem Termin verbundenen Ressourcen (insb. `Appointment.slot`, `Appointment.slot.schedule`, `Appointment.participant:AkteurMedizinischeBehandlungseinheit.actor`) oder aus dem spezifischen Kontext verfügbare Informationen auswerten und das Element `Appointment.specialty` mit einem sinnvollen Wert kodieren (eine Ausnahme bildet hier zum Beispiel die fachrichtungs-unabhängige Terminplanung durch krankenhausinterne, zentrale Organisationseinheiten).
+Insbesondere ist die Kodierung der Fachrichtung des Termins notwendig im Kontext der Bereitstellung einer graphischen Oberfläche, wie sie Endnutzenden in einem Zuweiserportal/Patientenportal zur Ansicht gebracht wird.
+ 
+
 ### `Appointment.priority.extension:Priority`
 
 **Bedeutung:** Kodierte Angabe der Priorität des Termins
@@ -103,7 +117,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt we
 
 **Bedeutung:** Referenzierung der Slots für die Verknüpfung des Termins mit einem Schedule
 
-**Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Falls mehrere Slots referenziert werden, MÜSSEN diese den gleichen Schedule referenzieren. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
+**Hinweis:** Die Referenzierung des Schedules kann durch einen oder mehrere Slots erfolgen. Es kann keine Reihenfolge durch die Angabe der Slots abgeleitet werden.
 
 **Hinweis:** In der Vergangenheit liegende Slots, welche nicht verknüpft wurden, dürfen nicht mehr abrufbar sein. Jegliche andere Slots müssen auch per id, herausgegeben werden. Sobald die id einmalig per Search herausgeben wurde, müssen diese gleichbleibend abrufbar sein.
 
