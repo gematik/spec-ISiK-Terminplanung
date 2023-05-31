@@ -2,12 +2,12 @@
   "resourceType": "ImplementationGuide",
   "url": "https://gematik.de/fhir/ISiK/v3/Terminplanung/ImplementationGuide/ISiK-terminplanung",
   "name": "Implementierungsleitfaden ISiK-Modul Terminplanung",
-  "version": "3.0.0-rc1",
+  "version": "3.0.0-rc2",
   "status": "draft",
   "fhirVersion": [
     "4.0.1"
   ],
-  "packageId": "0.0.1",
+  "packageId": "de.gematik.isik-terminplanung-stufe-3",
   "definition": {
     "page": {
       "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
@@ -79,6 +79,11 @@
             {
               "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKTerminblockSlot.md",
               "title": "ISiKTerminblock (Slot)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKTerminKontaktMitGesundheitseinrichtung.md",
+              "title": "ISiKTerminKontaktMitGesundheitseinrichtung (Encounter)",
               "generation": "markdown"
             },
             {
