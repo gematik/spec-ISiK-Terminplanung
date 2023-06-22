@@ -20,11 +20,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/ReleaseMatrix.md",
-          "title": "Release Matrix",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "ImplementationGuide/markdown/Motivation.md",
           "title": "Motivation",
           "generation": "markdown"
