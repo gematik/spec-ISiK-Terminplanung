@@ -7,7 +7,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 ----
 Version: 3.0.0
 
-Datum: 1.7.2023
+Datum: 01.07.2023
 
 * Mit dem Release der Stufe 3.0.0 werden die unten gelisteten Änderungen normativ festgesetzt.
 
