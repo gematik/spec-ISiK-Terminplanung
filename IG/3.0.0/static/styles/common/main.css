@@ -1,0 +1,11 @@
+html, body {
+  height: 100%; }
+  html #preview-content pre, body #preview-content pre {
+    font-family: Consolas, Menlo, Monaco, "Courier New", monospace !important; }
+    html #preview-content {
+        padding-top: 30px;
+        padding-bottom: 30px; }
+
+@media screen and (max-width: 1300px) {
+  #ig-view-treetable {
+    width: 90% !important; } }
