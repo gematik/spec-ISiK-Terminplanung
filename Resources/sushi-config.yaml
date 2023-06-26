@@ -4,12 +4,12 @@ FSHOnly: true
 applyExtensionMetadataToRoot: false
 id: Implementierungsleitfaden ISiK-Modul Terminplanung
 name: Implementierungsleitfaden ISiK-Modul Terminplanung
-status: draft
-version: "3.0.0-rc2"
+status: active
+version: 3.0.0
 publisher:
-  name: Gematik GmbH
+  name: gematik GmbH
   url: https://www.gematik.de/
   email: ISiK@gematik.de
 dependencies:
-  de.gematik.isik-basismodul: 3.0.0-rc3
+  de.gematik.isik-basismodul: 3.0.0
   hl7.fhir.extensions.r5: 4.0.1
