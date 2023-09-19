@@ -48,7 +48,7 @@ join binding.where(valueSet.exists())
 
 ### Anmerkungen zu Must-Support-Feldern
 
-### `Schedule.extension:name`
+### `Schedule.extension:KalenderName`
 
 **Bedeutung:** Gebräuchlicher Name des Kalenders
 
