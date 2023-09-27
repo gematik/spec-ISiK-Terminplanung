@@ -1,4 +1,4 @@
-## ISiKTermin [(Appointment)](http://hl7.org/fhir/appointment.html)
+## ISiKTermin [(Appointment)](http://hl7.org/fhir/R4/appointment.html)
 
 ---
 
@@ -52,7 +52,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Herkunft der Termnins
 
-**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
+**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/I-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
 
 ### `Appointment.extension:Nachricht`
 
@@ -70,15 +70,15 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Differenzierung zwischen Terminwunsch und gebuchten Termin
 
-**Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
+**Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Termin-Repository anzupassen.
 
-Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, insbesondere der Status "proposed" und "booked". 
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstützt werden, insbesondere der Status "proposed" und "booked". 
 
 ### `Appointment.cancelationReason`
 
 **Bedeutung:** Grund für die Absage eines Termins
 
-**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
+**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Feiner granulare Differenzierungen können durch weitere Codings erfolgen.
 
 ### `Appointment.serviceType`
 
