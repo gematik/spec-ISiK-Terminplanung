@@ -78,7 +78,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstützt w
 
 **Bedeutung:** Grund für die Absage eines Termins
 
-**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Feiner granulare Differenzierungen können durch weitere Codings erfolgen.
+**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Differenzierungen mit feinerer Granularität können durch weitere Codings erfolgen.
 
 ### `Appointment.serviceType`
 
