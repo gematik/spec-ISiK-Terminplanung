@@ -1,4 +1,4 @@
-## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](http://hl7.org/fhir/communication.html)
+## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](https://hl7.org/fhir/R4/healthcareservice.html)
 
 ---
 
@@ -116,7 +116,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?name=Medizinische Behandlungseinheit Des Fachbereichs 0100```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "string"](https://www.hl7.org/fhir/search.html#string).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "string"](https://www.hl7.org/fhir/R4/search.html#string).
 
 ---
 

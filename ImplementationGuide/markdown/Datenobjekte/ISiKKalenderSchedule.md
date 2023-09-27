@@ -1,4 +1,4 @@
-## ISiKKalender [(Schedule)](http://hl7.org/fhir/schedule.html)
+## ISiKKalender [(Schedule)](http://hl7.org/fhir/R4/schedule.html)
 
 ---
 
