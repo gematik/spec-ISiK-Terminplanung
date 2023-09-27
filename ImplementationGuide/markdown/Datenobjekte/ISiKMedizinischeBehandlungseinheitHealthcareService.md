@@ -1,4 +1,4 @@
-## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](http://hl7.org/fhir/communication.html)
+## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](https://hl7.org/fhir/R4/healthcareservice.html)
 
 ---
 
