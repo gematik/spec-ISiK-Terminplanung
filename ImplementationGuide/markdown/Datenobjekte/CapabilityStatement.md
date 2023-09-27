@@ -17,7 +17,7 @@ Die Verwendung der [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/ext
 
 Die Bereitstellung des CapabilityStatements für das Modul "Terminplanung" erfolgt zusammen mit der Festlegung der bestätigungsrelevanten Systeme in Stufe 2
 
-Für Systeme, die das Modul "Terminplanung" implementieren, ist außerdem die Erfüllung der Mindestanforderungen des [Moduls "Basis"](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Einfuehrung?version=current) erfoderlich:
+Für Systeme, die das Modul "Terminplanung" implementieren, ist außerdem die Erfüllung der Mindestanforderungen des [Moduls "Basis"](https://simplifier.net/guide/implementierungsleitfaden-isik-basismodul-stufe-3?version=current) erfoderlich:
 
 Canonical: https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/core-server
 
