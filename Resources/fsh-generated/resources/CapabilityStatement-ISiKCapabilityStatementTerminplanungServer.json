@@ -314,6 +314,15 @@
                   "valueCode": "SHALL"
                 }
               ],
+              "code": "search-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
               "code": "patch"
             }
           ],
