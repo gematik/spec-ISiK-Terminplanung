@@ -314,6 +314,15 @@
                   "valueCode": "SHALL"
                 }
               ],
+              "code": "search-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
               "code": "patch"
             }
           ],
@@ -443,6 +452,24 @@
             "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht"
           ],
           "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "create"
+            },
             {
               "extension": [
                 {
