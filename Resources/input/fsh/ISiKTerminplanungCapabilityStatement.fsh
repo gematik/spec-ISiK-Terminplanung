@@ -179,8 +179,8 @@ Usage: #definition
 * rest.resource[=].interaction[+].extension.url = $capabilitystatement-expectation
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #search-type
-* rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[+].extension.url = $capabilitystatement-expectation
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #patch
 * rest.resource[=].searchParam[0].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
