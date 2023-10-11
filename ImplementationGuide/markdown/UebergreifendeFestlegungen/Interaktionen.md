@@ -63,7 +63,7 @@ Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:A
 
 {{render:ImplementationGuide/images/Interaktionen/7.2 Termin verschieben (ausgehend vom Termin Repository).png}}
 
-Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System verschoben werden.
+Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System verschoben werden. Im Falle, dass das Termin-Repository den Termin verschiebt ist der Termin-Consumer darüber zu benachrichtigen.
 
 Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Buchung eines Termins}} für die technische Umsetzung.
 
