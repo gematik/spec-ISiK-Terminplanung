@@ -41,12 +41,12 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Als Return-Parameter MUSS ein Appointment oder ein OperationOutcome zurückgegeben werden, sowie der Status Code HTTP 201 - Created. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle dass die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
+  * documentation	= "Falls die Interaktion erfolgreich ist, ist der Status Code HTTP 201 - Created zurückzugeben. Zudem MUSS Als Return-Parameter entweder eine Appointment-Ressource (entsprechend dem dazugehörigen ISiK-Profil) oder eine Parameters-Ressource mit mindestens einem .parameter-Element Appointment (entsprechend dem ISiK-Profil) und einem .parameter-Element OperationOutcome zurückgegeben werden und die Appointment-Ressource MUSS verarbeitet werden (eine Parameters-Ressource mit einem einzigen .parameter-Element 'Appointment' sollte nicht zurückgegeben werden). Das id-Element der Ressource Appointment MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource MUSS auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben."
   * type = #Appointment
 * parameter[+]
   * name = #return
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Als Return-Parameter MUSS ein OperationOutcome zurückgegeben werden, falls die Interaktion fehlschlägt. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden."
+  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter ein OperationOutcome zurückgegeben werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
   * type = #OperationOutcome
