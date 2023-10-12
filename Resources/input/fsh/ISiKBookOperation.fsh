@@ -41,7 +41,7 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Als Return-Parameter MUSS ein Appointment oder ein OperationOutcome zurückgegeben werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle dass die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
+  * documentation	= "Als Return-Parameter MUSS ein Appointment oder ein OperationOutcome zurückgegeben werden, sowie der Status Code HTTP 201 - Created. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource muss auf 'booked' oder 'pending' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Im Falle dass die Terminbuchung grundsätzlich akzeptiert wird, d. h. der neue Status 'booked' oder 'pending' ist, MUSS das Appointment persistiert werden."
   * type = #Appointment
 * parameter[+]
   * name = #return
