@@ -19,6 +19,8 @@ Id: ISiKTermin
 * start 1..1 MS
 * end 1..1 MS
 * slot 0..* MS
+  * reference 1.. MS
+* slot ^comment = "Als Reference auf eine Slot-Ressource MUSS eine Reference.reference mit einer relativen URL verwendet werden." //Zur Begründung: verschiedene Reference-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
