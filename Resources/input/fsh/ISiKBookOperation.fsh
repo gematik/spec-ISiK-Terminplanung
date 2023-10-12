@@ -19,7 +19,7 @@ Usage: #example
   * use = #in
   * min = 1
   * max = "1"
-  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil. Das Appointment MUSS den Status 'proposed' enthalten. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome und dem Status Code HTTP 400 - Bad Request abgewiesen werden. Falls der Parameter als einzige Parameter verwendet wird KANN die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen. Invalide Ressource MÜSSEN abgelehnt werden durch das Termin Repository."
+  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil. Das Appointment MUSS den Status 'proposed' enthalten. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome und dem Status Code HTTP 422 - Unprocessable Entity abgewiesen werden. Falls der Parameter als einzige Parameter verwendet wird KANN die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen. Invalide Ressource MÜSSEN abgelehnt werden durch das Termin Repository."
   * type = #Appointment
 * parameter[+]
   * name = #cancelled-appt-id
