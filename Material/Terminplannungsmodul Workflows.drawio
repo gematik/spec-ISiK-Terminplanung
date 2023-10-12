@@ -1,1 +1,439 @@
-<mxfile host="app.diagrams.net" modified="2022-03-22T11:46:11.035Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15" etag="xE3ebKyHWsv_ftCYdvu4" version="17.1.3" type="device"><diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">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</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-10-11T12:50:07.345Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="H5yyM7cWAn_hJPCPyT7E" version="22.0.4" type="device">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="954" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-18" value="Terminrepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="400" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-19" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="wLxULnZX6Zh7Ex37R7WK-18" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-20" value="Übermittlung verfügbarer Behandlungsleistungen" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="wLxULnZX6Zh7Ex37R7WK-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="38.5" y="70" width="100" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-1" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-3" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-1" target="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="Terminrepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="70" width="140" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
+          <mxGeometry x="70" y="80" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
+          <mxGeometry x="60" y="140" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="Übermittlung vorläufiger Informationen" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193.5" y="150" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-1" value="1. Übermittlung Patienteninformationen / zum Termin zugehörige Vorabinformationen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="28.5" y="20" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-7" value="2. Verfügbare Behandlungsleistungen abrufen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="360" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-15" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="400" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-16" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="wLxULnZX6Zh7Ex37R7WK-15" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-17" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="wLxULnZX6Zh7Ex37R7WK-15" target="wLxULnZX6Zh7Ex37R7WK-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-23" value="Anfrage nach verfügbarer Behandlungsleistung (optional gefiltert)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="wLxULnZX6Zh7Ex37R7WK-16" target="wLxULnZX6Zh7Ex37R7WK-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-1" value="3. Verfügbare Terminlisten abrufen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="590" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-2" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="630" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-3" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-2" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-4" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-2" target="1Q3aQoQ077KybnQAMOsV-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-5" value="Terminrepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="630" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-5" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-7" value="Übermittlung existierender Terminlisten" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-8" value="Anfrage nach existierenden Terminlisten (Schedule) (optional gefiltert)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-3" target="1Q3aQoQ077KybnQAMOsV-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="710" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-9" value="4. Abfragen von (verfügbaren) Terminenblöcken (durch Patient/Überweiser/externes System)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="820" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-10" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="860" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-11" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-10" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-12" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-10" target="1Q3aQoQ077KybnQAMOsV-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-13" value="Terminrepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="860" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-14" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-13" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-15" value="Übermittlung von Terminblöcken" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-16" value="Anfrage nach von Terminblöcken (Slot) (optional gefiltert)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-11" target="1Q3aQoQ077KybnQAMOsV-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="940" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-18" value="5. Termin neu buchen Buchungsmanagement von verfügbaren Terminen (Zusage, Absage, Temporäre Buchung, Wiederholende Termine)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="37" y="1120" width="740" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-19" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="38" y="1160" width="100" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-20" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-19" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-21" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-19" target="1Q3aQoQ077KybnQAMOsV-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-22" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="358" y="1160" width="140" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-23" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-22" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-24" value="Bestätigung des Empfangs der Terminoption" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-32" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-22" vertex="1">
+          <mxGeometry x="55" y="180" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-25" value="Übermittelung einer Auswahl einer Terminoption" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-20" target="1Q3aQoQ077KybnQAMOsV-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="193" y="1240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-26" value="BenutzerIn Bestätigungsrelevantes &#xa;System" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="608" y="1160" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-27" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-26" vertex="1">
+          <mxGeometry x="105" y="80" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-28" value="Bestätigung/Ablehnung der angefragten Terminoption" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="170" as="targetPoint" />
+            <mxPoint x="105" y="169.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-30" value="Benachrichtigung der BenutzerIn Anfrage Terminoption" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="137.00000000000023" as="sourcePoint" />
+            <mxPoint x="100" y="137" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-31" value="Bestätigung/Ablehnung der angefragten Terminoption" style="verticalAlign=bottom;endArrow=none;entryX=0;entryY=0;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="93" y="1364.6600000000003" as="sourcePoint" />
+            <mxPoint x="423" y="1364.6600000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-33" value="Benutzer:in des &#xa;Terminmanagementsystems " style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="70" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-34" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-33" vertex="1">
+          <mxGeometry x="105" y="80" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-35" value="Bestätigung Empfang der vorläufiger Informationen" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-210" y="170" as="targetPoint" />
+            <mxPoint x="105" y="169.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-36" value="Benachrichtigung der BenutzerIn &#xa;Übermittelung vorläufiger Informationen " style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;exitX=1.1;exitY=0.433;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1Q3aQoQ077KybnQAMOsV-33" source="3nuBFxr9cyL0pnOWT2aG-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-200" y="140" as="sourcePoint" />
+            <mxPoint x="100" y="132" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-37" value="7.1 Termin verschieben (ausgehend vom Client)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1920" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-38" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1960" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-39" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-38" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-40" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-38" target="1Q3aQoQ077KybnQAMOsV-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-41" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="441" y="1960" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-42" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-41" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-44" value="Interaktion 6.1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-39" target="1Q3aQoQ077KybnQAMOsV-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="2040" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-53" value="Interaktion 4, 5" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="179" y="2070" as="sourcePoint" />
+            <mxPoint x="509" y="2070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-60" value="6.1 Termin absagen (ausgehend vom Client)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1450" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-61" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1490" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-62" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-61" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-63" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-61" target="1Q3aQoQ077KybnQAMOsV-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-64" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="441" y="1490" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-65" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-64" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-66" value="Bestätigung der Terminabsage" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-67" value="Termin absagen" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-62" target="1Q3aQoQ077KybnQAMOsV-65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="1570" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-68" value="6.2 Termin absagen (ausgehend vom terminführenden System)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="1680" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-69" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1720" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-70" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-69" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-72" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="421" y="1720" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-73" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-72" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O9fY5AmduQZpGWWO2_DW-1" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1Q3aQoQ077KybnQAMOsV-72">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="80" as="sourcePoint" />
+            <mxPoint x="75" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-75" value="Termin absagen" style="verticalAlign=bottom;endArrow=none;entryX=0;entryY=0;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" source="1Q3aQoQ077KybnQAMOsV-70" target="1Q3aQoQ077KybnQAMOsV-73" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="256" y="1800" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-83" value="7.2 Termin verschieben (ausgehend vom Termin Repository)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="121" y="2240" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-84" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="121" y="2270" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-85" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-84" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-87" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="450" y="2280" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-88" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-87" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O9fY5AmduQZpGWWO2_DW-3" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="1Q3aQoQ077KybnQAMOsV-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="80" as="sourcePoint" />
+            <mxPoint x="75" y="80" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-89" value="Interaktion 6.2" style="verticalAlign=bottom;endArrow=none;entryX=0;entryY=0;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" source="1Q3aQoQ077KybnQAMOsV-85" target="1Q3aQoQ077KybnQAMOsV-88" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="2360" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-90" value="Interaktion 4, 5" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry x="-0.0182" y="10" relative="1" as="geometry">
+            <mxPoint x="180" y="2396" as="sourcePoint" />
+            <mxPoint x="518" y="2396" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-98" value="9. Abfragen von (vereinbarten) Terminen (durch Patient/Überweiser/externes System)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="2960" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-99" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="3000" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-100" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-99" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-101" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-99" target="1Q3aQoQ077KybnQAMOsV-100" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-102" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="3000" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-103" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-102" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-104" value="Übermittlung von angefragten Terminen" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;shadow=0;strokeWidth=1;" parent="1Q3aQoQ077KybnQAMOsV-102" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-265" y="109.99999999999989" as="targetPoint" />
+            <mxPoint x="65" y="109.99999999999989" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Q3aQoQ077KybnQAMOsV-105" value="Anfrage nach Terminen (optional gefiltert)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="1Q3aQoQ077KybnQAMOsV-100" target="1Q3aQoQ077KybnQAMOsV-103" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="3080" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-1" value="8.1 Terminzusatzinformationen aktualisieren (ausgehend vom Client)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="2470" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-2" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="2510" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-3" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="ubozRvYDUmoPy83B7Nog-2" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-4" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" parent="ubozRvYDUmoPy83B7Nog-2" target="ubozRvYDUmoPy83B7Nog-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-5" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="2510" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="ubozRvYDUmoPy83B7Nog-5" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-7" value="Übermittelung der Terminoption inkl. Zusatzinformationen" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;shadow=0;strokeWidth=1;" parent="1" source="ubozRvYDUmoPy83B7Nog-3" target="ubozRvYDUmoPy83B7Nog-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="2590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-8" value="Bestätigung der Aktualisierung" style="verticalAlign=bottom;endArrow=none;entryX=0;entryY=0;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="178" y="2620" as="sourcePoint" />
+            <mxPoint x="508" y="2620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-17" value="8.2 Terminzusatzinformationen aktualisieren (ausgehend&amp;nbsp;vom Termin Repository)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="2710" width="530" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-18" value="Termin Requestor" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="121" y="2750" width="100" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-19" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="ubozRvYDUmoPy83B7Nog-18" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-21" value="Termin Repository" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="441" y="2750" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-22" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="ubozRvYDUmoPy83B7Nog-21" vertex="1">
+          <mxGeometry x="65" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O9fY5AmduQZpGWWO2_DW-4" value="Trigger" style="verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;shadow=0;strokeWidth=1;" edge="1" parent="ubozRvYDUmoPy83B7Nog-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="79" as="sourcePoint" />
+            <mxPoint x="75" y="79" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubozRvYDUmoPy83B7Nog-23" value="Übermittelung der Terminoption inkl. Zusatzinformationen" style="verticalAlign=bottom;endArrow=none;entryX=0;entryY=0;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" source="ubozRvYDUmoPy83B7Nog-19" target="ubozRvYDUmoPy83B7Nog-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="2830" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="URDjNdw8PeC2WABUD8yq-1" value="Optional" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="120" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="URDjNdw8PeC2WABUD8yq-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="URDjNdw8PeC2WABUD8yq-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="290" as="sourcePoint" />
+            <mxPoint x="610" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-7" value="Bestätigung des Empfangs der vorläufigen Informationen" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="93" y="189.4999999999999" as="targetPoint" />
+            <mxPoint x="400" y="189.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wLxULnZX6Zh7Ex37R7WK-5" value="Bestätigung der Finalisierung" style="verticalAlign=bottom;endArrow=none;shadow=0;strokeWidth=1;startArrow=classic;startFill=1;endFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="93" y="234.5" as="sourcePoint" />
+            <mxPoint x="390" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
