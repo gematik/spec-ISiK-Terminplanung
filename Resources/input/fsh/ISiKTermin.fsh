@@ -20,7 +20,7 @@ Id: ISiKTermin
 * end 1..1 MS
 * slot 0..* MS
   * reference 1.. MS
-* slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Bei verteilten Systemen sollten absolute URLs benutzt werden. Auf dem gleichen Host sind auch kürze, relative URLs zulässig." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
+* slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Bei verteilten Systemen sollten absolute URLs benutzt werden. Auf dem gleichen Host sind auch kürzere, relative URLs zulässig." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
