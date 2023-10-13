@@ -24,7 +24,7 @@ Der Termin-Requestor KANN durch die Abfrage aller verfügbaren Kalender alle Res
 
 3. Abfrage aller verfügbaren Slots für einen Kalender: `GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExampple>`
 
-In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
+In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=http://dicom.nema.org/resources/ontology/DCM|CT`
 
 4. Anlage einer Patient-Ressource: `POST https://example.org/fhir/Patient`
 
