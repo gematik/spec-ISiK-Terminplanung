@@ -19,7 +19,7 @@ Usage: #example
   * use = #in
   * min = 1
   * max = "1"
-  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil. Das Appointment MUSS den Status 'proposed' enthalten. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome und dem Status Code HTTP 422 - Unprocessable Entity abgewiesen werden. Falls der Parameter als einzige Parameter verwendet wird KANN die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen. Invalide Ressource MÜSSEN abgelehnt werden durch das Termin Repository."
+  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil MUSS übergeben werden. Invalide Ressourcen MÜSSEN abgelehnt werden durch das Termin Repository (zur Form der Ablehnung s.u.). Das Appointment MUSS den Status 'proposed' enthalten. Falls ein Parameter-Element Appointment als einziges Parameter-Element verwendet würde, KANN stattdessen die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen."
   * type = #Appointment
 * parameter[+]
   * name = #cancelled-appt-id
@@ -48,5 +48,5 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter ein OperationOutcome zurückgegeben werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
+  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter ein OperationOutcome zurückgegeben werden. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome abgewiesen werden und die Antwort SOLLTE mit folgendem Status Code erfolgen: HTTP 422 - Unprocessable Entity. Die Antwort auf eine falsche Anfrage SOLLTE mit folgendem Status Code erfolgen: HTTP 400 - Bad Request. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
   * type = #OperationOutcome
