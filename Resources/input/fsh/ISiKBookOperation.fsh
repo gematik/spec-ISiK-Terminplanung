@@ -48,5 +48,5 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter ein OperationOutcome zurückgegeben werden. Invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome abgewiesen werden und die Antwort SOLLTE mit folgendem Status Code erfolgen: HTTP 422 - Unprocessable Entity. Die Antwort auf eine falsche Anfrage SOLLTE mit folgendem Status Code erfolgen: HTTP 400 - Bad Request. Das id-Element der Ressource MUSS korrekt gefüllt werden. Ein OperationOutcome KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
+  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter eine OperationOutcome-Ressource zurückgegeben werden. Syntaktische Fehler in der Appointment-Ressource MUSS mit einem HTTP Status-Code 400 - Bad Request zurückgewiesen werden. Anderweitig invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome-Ressource abgewiesen werden. In diesem Fall SOLLTE der HTTP Status-Code HTTP 422 - Unprocessable Entity verwendet werden. Eine OperationOutcome-Ressource KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
   * type = #OperationOutcome
