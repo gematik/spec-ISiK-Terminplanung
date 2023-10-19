@@ -19,7 +19,7 @@ Usage: #example
   * use = #in
   * min = 1
   * max = "1"
-  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil MUSS (als Parameter-Element) übergeben werden. Invalide Ressourcen MÜSSEN abgelehnt werden durch das Termin Repository (zur Form der Ablehnung s.u.). Das Appointment MUSS den Status 'proposed' enthalten. Falls ein Parameter-Element Appointment als einziges Parameter-Element verwendet würde, KANN stattdessen die Appointment-Ressource direkt im HTTP Body anstelle einer Parameter-Ressource übergeben werden. Die referenzierte Ressource MUSS dem ISiKTermin-Profil entsprechen."
+  * documentation	= "Eine Appointment-Ressource entsprechend dem dazugehörigen ISiK-Profil MUSS übergeben werden. Falls das Parameter-Element 'Appointment' als einziges Parameter-Element verwendet wird, KANN die Appointment-Ressource direkt im HTTP Body übergeben werden, alternativ zu einer Parameter-Ressource inklusive dem eingebetteten Appointment-Element. Invalide Ressourcen MÜSSEN abgelehnt werden durch das Termin Repository (zur Form der Ablehnung s.u.). Das Appointment MUSS den Status 'proposed' enthalten."
   * type = #Appointment
 * parameter[+]
   * name = #cancelled-appt-id
