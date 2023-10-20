@@ -135,7 +135,7 @@ Insbesondere ist die Kodierung der Fachrichtung des Termins notwendig im Kontext
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" implementiert werden.
+Für die Ressource Appointment MUSS die REST-Interaktionen "READ" und "PATCH" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 
