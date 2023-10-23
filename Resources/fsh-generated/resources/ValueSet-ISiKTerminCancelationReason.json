@@ -4,7 +4,7 @@
   "name": "ISiKTerminCancelationReason",
   "id": "ISiKTerminCancelationReason",
   "description": "Enthaelt alle erlaubten Gruende fuer eine Stornierung eines ISiKTermins",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/ValueSet/ISiKTerminCancelationReason",
   "experimental": false,
   "publisher": "gematik GmbH",
