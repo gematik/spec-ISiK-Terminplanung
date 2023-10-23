@@ -44,6 +44,8 @@ Für einen durch die BenutzerIn ausgewählten Terminblock bzw. mehreren aufeinan
 
 Es ist zu beachten, dass innerhalb dieser Aktion ein terminführendes Termin Repository die Rolle des Termin Requestors übernehmen kann und den neu-angelegten Termin in ein weiteres Terminrepository spiegelt.
 
+In diesem Kontext kann das Termin-Repsoitory zudem Zusatzinformationen (z.B. Lagepläne) an den Termin-Requestor übermitteln.
+
 Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Buchung eines Termins}} für die technische Umsetzung.
 
 ---
@@ -74,6 +76,8 @@ Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:B
 {{render:ImplementationGuide/images/Interaktionen/8.2 Terminzusatzinformationen aktualisieren (ausgehend vom Termin Repository).png}}
 
 Termine können sowohl durch den Termin Requestor als Client oder durch das Termin Repository als terminführendes System durch Zusatzinformationen (z.B. welche Teilnehmer oder Ressourcen sind Teil des Termins) erweitert werden.
+
+In diesem Kontext kann der Termin-Requestor zudem Zusatzinformationen (z.B. Einwilligungen) an das Termin-Repository übermitteln.
 
 Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Operations.md, text:Aktualisierung / Absage eines Termins}} für die technische Umsetzung.
 
