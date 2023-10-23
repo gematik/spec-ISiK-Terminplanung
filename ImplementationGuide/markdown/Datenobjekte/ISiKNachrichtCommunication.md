@@ -58,7 +58,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Inhalt der Communication
 
-**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
+**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-3/ImplementationGuide-markdown-Einfuehrung?version=current) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
 
 ---
 
