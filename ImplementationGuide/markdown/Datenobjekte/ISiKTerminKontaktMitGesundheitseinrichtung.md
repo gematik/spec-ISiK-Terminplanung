@@ -32,7 +32,7 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplan
 
 **Hinweise:** Die Referenz auf Appointment ermöglicht Portalen den Fallbezug aus dem Termin zu ermitteln und Dokumente an ein KIS zu senden. 
 
-Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der entsprechende [Implementation Guide zum Modul Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden%20ISiK-Modul%20Dokumentenaustausch/ImplementationGuide-markdown-Einfuehrung?version=current) zu beachten.
+Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der entsprechende [Implementation Guide zum Modul Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-3/ImplementationGuide-markdown-Einfuehrung?version=current) zu beachten.
 
 ---
 
