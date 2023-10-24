@@ -16,15 +16,15 @@ Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benu
 
 User Story für die folgenden Beispiele: Ein Patient bucht über ein externes Patientenportal einen Termin in der allgemeinmedizinischen Ambulanz eines Krankenhauses. Da der Patient seit Tagen Bauchschmerzen hat, die in den letzten Stunden stärker werden, wählt er die Priorität "Notfall".
 
-1. Abfrage aller Kodierungen der Behandlungsleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService`
+1. Abfrage aller Kodierungen der Behandlungsleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService` bzw. `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|Schedule`
 
-Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung eines HealthcareService relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können abgefragt werden. Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
+Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung einer verfügbaren Behandlungsleistung relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können hierfür relevant sein. Beispielsweise erfolgt die Kodierung der Behandlungsleistung für einen Behandler im Kontext eines Schedules (vgl. {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKKalenderSchedule.md, text:Schedule.serviceType}}). Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
 
 Hinweis: Diese Abfrage ist für eine Initialisierung des Termin-Requestors gedacht. Es ist davon auszugehen, dass diese Auswahlliste nicht dynamisch angepasst wird durch das Termin-Repository und nicht bei jeder Terminbuchung erneut abgefragt werden muss.
 
-2. Abfrage aller verfügbaren Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Schedule`
+2. Abfrage aller verfügbaren Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Schedule` bzw. `GET https://example.org/fhir/Schedule?actor=Practitioner/ISiKPractitionerExample`
 
-Der Termin-Requestor KANN durch die Abfrage aller verfügbaren Kalender alle Ressourcen abfragen, für die eine Termin-Buchung zur Verfügung steht.
+Der Termin-Requestor KANN durch die Abfrage aller verfügbaren Kalender aller Ressourcen abfragen, für die eine Terminbuchung zur Verfügung stehen. Diese Abfrage kann auf ein oder mehrere Akteure eingeschränkt werden.
 
 3. Abfrage aller verfügbaren Slots für einen Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExample>&status=free`
 
