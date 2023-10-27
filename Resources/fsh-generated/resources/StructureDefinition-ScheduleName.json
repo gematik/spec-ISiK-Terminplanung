@@ -2,8 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "ScheduleName",
   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name",
+  "version": "3.0.1",
   "name": "ScheduleName",
   "status": "active",
+  "experimental": false,
+  "date": "2023-07-01",
+  "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
