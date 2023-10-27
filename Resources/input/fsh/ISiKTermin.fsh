@@ -52,10 +52,12 @@ Id: ISiKTermin
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension
+* insert Meta
 * value[x] only Reference(ISiKNachricht)
 
 Extension: ISiKTerminPriorityExtension
 Id: ISiKTerminPriorityExtension
+* insert Meta
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from ISiKTerminPriority (required)
@@ -88,5 +90,6 @@ Usage: #example
 // This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
 Extension: AppointmentReplaces
 Id: AppointmentReplaces
+* insert Meta
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces"
 * value[x] only Reference(Appointment)
