@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKNachricht",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "name": "ISiKNachricht",
   "status": "active",
   "experimental": false,
@@ -145,8 +145,9 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentString",
-        "path": "Communication.payload.contentString",
+        "id": "Communication.payload.content[x]:contentString",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentString",
         "min": 0,
         "max": "1",
         "type": [
@@ -157,8 +158,9 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment",
-        "path": "Communication.payload.contentAttachment",
+        "id": "Communication.payload.content[x]:contentAttachment",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentAttachment",
         "min": 0,
         "max": "1",
         "type": [
@@ -169,25 +171,25 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.contentType",
-        "path": "Communication.payload.contentAttachment.contentType",
+        "id": "Communication.payload.content[x]:contentAttachment.contentType",
+        "path": "Communication.payload.content[x].contentType",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.data",
-        "path": "Communication.payload.contentAttachment.data",
+        "id": "Communication.payload.content[x]:contentAttachment.data",
+        "path": "Communication.payload.content[x].data",
         "max": "0"
       },
       {
-        "id": "Communication.payload.contentAttachment.url",
-        "path": "Communication.payload.contentAttachment.url",
+        "id": "Communication.payload.content[x]:contentAttachment.url",
+        "path": "Communication.payload.content[x].url",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.creation",
-        "path": "Communication.payload.contentAttachment.creation",
+        "id": "Communication.payload.content[x]:contentAttachment.creation",
+        "path": "Communication.payload.content[x].creation",
         "min": 1,
         "mustSupport": true
       }
