@@ -3,7 +3,7 @@
   "id": "ISiKTerminPriorityExtension",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
   "name": "ISiKTerminPriorityExtension",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -3,7 +3,7 @@
   "id": "ISiKNachrichtExtension",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
   "name": "ISiKNachrichtExtension",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

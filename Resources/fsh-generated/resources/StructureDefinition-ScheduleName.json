@@ -3,7 +3,7 @@
   "id": "ScheduleName",
   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name",
   "name": "ScheduleName",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
