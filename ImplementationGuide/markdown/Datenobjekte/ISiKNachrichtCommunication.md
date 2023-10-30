@@ -1,4 +1,4 @@
-## ISiKNachricht [(Communication)](http://hl7.org/fhir/communication.html)
+## ISiKNachricht [(Communication)](http://hl7.org/fhir/R4/communication.html)
 
 ---
 
@@ -36,7 +36,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### `Communication.inResponseTo`
 
-**Bedeutung:** Falls die Communication-Ressource in einen zeitlichen Zusammenhang mit weiteren Nachrichten gebracht werden muss, KÖNNEN die Nachrichten miteinander verknüpft werden. Neue Nachrichten MÜSSEN auf die bereits zurvor existierenden Nachrichten zeigen.
+**Bedeutung:** Falls die Communication-Ressource in einen zeitlichen Zusammenhang mit weiteren Nachrichten gebracht werden muss, KÖNNEN die Nachrichten miteinander verknüpft werden. Neue Nachrichten MÜSSEN auf die bereits zuvor existierenden Nachrichten zeigen.
 
 ### `Communication.subject`
 
@@ -48,17 +48,17 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Empfänger der Communication
 
-**Hinweis:** Für Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
+**Hinweis:** Für Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Reference.display angegeben werden.
 
 ### `Communication.sender`
 
-**Hinweis:** Für Patient, Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
+**Hinweis:** Für Patient, Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Reference.display angegeben werden.
 
 ### `Communication.payload`
 
 **Bedeutung:** Inhalt der Communication
 
-**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
+**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-3/ImplementationGuide-markdown-Einfuehrung?version=current) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine Binary Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
 
 ---
 

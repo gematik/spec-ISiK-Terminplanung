@@ -1,0 +1,72 @@
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+title: "💡 [REQUEST] - <title>"
+labels: [
+  "question",
+  "enhancement"
+]
+body:
+  - type: input
+    id: target_date
+    attributes:
+      label: "Target Date"
+      description: When would you need this feature to be available?
+      placeholder: "MM YYYY"
+    validations:
+      required: false
+  - type: input
+    id: implementation_pr
+    attributes:
+      label: "Implementation PR"
+      description: In case you already developed the feature yourself, please tell us the corresponding PR. Also, maybe you have seen this feature somewhere else?
+      placeholder: "Your Pull Request ID or link to a similar PR."
+    validations:
+      required: false
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues"
+      description: Some common issues this feature would address.
+      placeholder: "Issues IDs and references"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Please provide a brief explanation of the feature.
+      placeholder: |
+                  Describe in a few lines your feature request ...
+                  If you are able to specify, please also select the appropriate label:
+                  - Question, if you would also be fine with more information, on how to address your request, e.g. with a workaround.
+                  - Enhancement, if you are kinda sure your Request is an independent new addition, that could not be achieved otherwise.
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Common Examples"
+      description: Indicate some basic examples of your feature or a common flow in which it would be used.
+      placeholder: |
+        In the use case of '...'
+        The necessary data will flow like '....'
+        Feature will be used '....'
+        With the result of '....'
+    validations:
+      required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks"
+      description: What are the drawbacks or mutual impacts of your feature request?
+      placeholder: Identify the drawbacks and mutual impacts with respect to other features.
+    validations:
+      required: true
+  - type: textarea
+    id: unadress_question
+    attributes:
+      label: "Unadressed questions"
+      description: What issues or questions still remain unadressed?
+      placeholder: Identify any unresolved issues or questions.
+    validations:
+      required: false

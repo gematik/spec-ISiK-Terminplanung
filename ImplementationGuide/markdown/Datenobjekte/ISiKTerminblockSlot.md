@@ -1,4 +1,4 @@
-## ISiKTerminblock [(Slot)](http://hl7.org/fhir/slot.html)
+## ISiKTerminblock [(Slot)](http://hl7.org/fhir/R4/slot.html)
 
 ---
 
