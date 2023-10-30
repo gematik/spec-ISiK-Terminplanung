@@ -19,6 +19,8 @@ Id: ISiKTermin
 * start 1..1 MS
 * end 1..1 MS
 * slot 0..* MS
+  * reference 1.. MS
+* slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Das Termin-Repository muss so gestaltet sein, dass es aus Perspektive des Clients nur eine Service-BaseUrl gibt." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
