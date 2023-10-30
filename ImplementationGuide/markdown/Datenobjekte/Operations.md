@@ -16,17 +16,19 @@ Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benu
 
 User Story für die folgenden Beispiele: Ein Patient bucht über ein externes Patientenportal einen Termin in der allgemeinmedizinischen Ambulanz eines Krankenhauses. Da der Patient seit Tagen Bauchschmerzen hat, die in den letzten Stunden stärker werden, wählt er die Priorität "Notfall".
 
-1. Abfrage aller Kodierungen der Behandlungsleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/definition-resource-types|HealthcareService`
+1. Abfrage aller Kodierungen der Behandlungsleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService`
 
 Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung eines HealthcareService relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können abgefragt werden. Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
+
+Hinweis: Diese Abfrage ist für eine Initialisierung des Termin-Requestors gedacht. Es ist davon auszugehen, dass diese Auswahlliste nicht dynamisch angepasst wird durch das Termin-Repository und nicht bei jeder Terminbuchung erneut abgefragt werden muss.
 
 2. Abfrage aller verfügbaren Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Schedule`
 
 Der Termin-Requestor KANN durch die Abfrage aller verfügbaren Kalender alle Ressourcen abfragen, für die eine Termin-Buchung zur Verfügung steht.
 
-3. Abfrage aller verfügbaren Slots für einen Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExample>`
+3. Abfrage aller verfügbaren Slots für einen Kalender durch den Termin-Requestor: `GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExample>&status=free`
 
-In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
+In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=http://dicom.nema.org/resources/ontology/DCM|CT`
 
 4. Anlage einer Patient-Ressource durch den Termin-Requestor: `POST https://example.org/fhir/Patient`
 
@@ -72,7 +74,7 @@ In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `
   ],
   "status": "proposed",
   "start": "2022-12-10T09:00:00Z",
-  "end": "2022-12-10T11:00:00Z",
+  "end": "2022-12-10T09:30:00Z",
   "slot": [
     {
       "reference": "ISiKSlotExample"
@@ -152,7 +154,7 @@ Antwort des Termin-Repository:
   ],
   "status": "booked",
   "start": "2022-12-10T09:00:00Z",
-  "end": "2022-12-10T11:00:00Z",
+  "end": "2022-12-10T09:30:00Z",
   "slot": [
     {
       "reference": "ISiKSlotExample"

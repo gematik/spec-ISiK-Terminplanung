@@ -52,7 +52,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Herkunft der Termnins
 
-**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
+**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
 
 ### `Appointment.extension:Nachricht`
 
@@ -135,7 +135,7 @@ Insbesondere ist die Kodierung der Fachrichtung des Termins notwendig im Kontext
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" implementiert werden.
+Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 

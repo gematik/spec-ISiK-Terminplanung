@@ -2,13 +2,20 @@
   "resourceType": "ImplementationGuide",
   "url": "https://gematik.de/fhir/ISiK/v3/Terminplanung/ImplementationGuide/ISiK-Terminplanung",
   "name": "Implementierungsleitfaden ISiK-Modul Terminplanung",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "status": "active",
   "fhirVersion": [
     "4.0.1"
   ],
   "packageId": "de.gematik.isik-terminplanung-stufe-3",
   "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Appointment/ISiKTerminExample"
+        }
+      }
+    ],
     "page": {
       "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
       "title": "Einführung",
