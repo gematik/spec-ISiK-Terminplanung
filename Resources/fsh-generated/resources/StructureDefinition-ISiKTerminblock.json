@@ -6,7 +6,7 @@
   "name": "ISiKTerminblock",
   "status": "active",
   "experimental": false,
-  "date": "2023-07-01",
+  "date": "2023-10-30",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -49,6 +49,13 @@
       {
         "id": "Slot.schedule",
         "path": "Slot.schedule",
+        "comment": "Zur Referenzierung auf eine Schedule-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Das Termin-Repository muss so gestaltet sein, dass es aus Perspektive des Clients nur eine Service-BaseUrl gibt.",
+        "mustSupport": true
+      },
+      {
+        "id": "Slot.schedule.reference",
+        "path": "Slot.schedule.reference",
+        "min": 1,
         "mustSupport": true
       },
       {
