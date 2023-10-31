@@ -8,9 +8,9 @@ Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -58,13 +58,13 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Klassifikation der Behandlungsleistung welche durch den HealthcareService erbracht wird
 
-**Hinweis:** Diese Klassifikation sollte stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "context-type-value" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current).
+**Hinweis:** Diese Klassifikation SOLL stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "context-type-value" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current).
 
 ### `HealthcareService.specialty`
 
 **Bedeutung:** Fachrichtung der Behandlungsleistung welche durch den HealthcareService erbracht wird
 
-**Hinweis:** Diese Fachrichtung sollte stets auch in Appointment.specialty und Schedule.specialty angegeben werden.
+**Hinweis:** Diese Fachrichtung SOLL stets auch in Appointment.specialty und Schedule.specialty angegeben werden.
 
 ### `HealthcareService.name`
 

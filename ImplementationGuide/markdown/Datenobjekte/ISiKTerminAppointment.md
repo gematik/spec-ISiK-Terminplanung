@@ -8,9 +8,9 @@ Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen T
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -50,7 +50,7 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.meta.tag`
 
-**Bedeutung:** Herkunft der Termnins
+**Bedeutung:** Herkunft der Termins
 
 **Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
 
@@ -58,7 +58,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patient:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -167,7 +167,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.speciality" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.speciality" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
 
 1. Der Suchparameter "date" MUSS unterstützt werden:
