@@ -50,7 +50,7 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.meta.tag`
 
-**Bedeutung:** Herkunft der Termnins
+**Bedeutung:** Herkunft der Termins
 
 **Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
 
@@ -58,7 +58,7 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patient:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 

@@ -65,7 +65,7 @@ Id: ISiKTerminPriorityExtension
 * valueCodeableConcept from ISiKTerminPriority (required)
 
 Invariant: ISiK-app-1
-Description: "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen"
+Description: "Der Endzeitpunkt eines Termins SOLL nach dem Startzeitpunkt liegen"
 Severity: #error
 Expression: "start <= end"
 
