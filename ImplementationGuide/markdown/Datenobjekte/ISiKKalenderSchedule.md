@@ -4,13 +4,13 @@
 
 ### Motivation
 
-Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitoner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
+Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitioner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 

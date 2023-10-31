@@ -8,9 +8,9 @@ Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
