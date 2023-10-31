@@ -12,7 +12,7 @@ Id: ISiKTerminblock
 * end 1..1 MS
 
 Invariant: ISiK-slot-1
-Description: "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen"
+Description: "Der Endzeitpunkt eines Terminsblocks MUSS nach dem Startzeitpunkt liegen"
 Severity: #error
 Expression: "start <= end"
 

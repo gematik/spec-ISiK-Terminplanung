@@ -4,13 +4,13 @@
 
 ### Motivation
 
-Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitoner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
+Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitioner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -64,19 +64,19 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Welche Besuchsgründe / Behandlungsleistungen werden durch diesen Kalender erfasst? 
 
-**Hinweis:** Die Besuchsgründe / Behandlungsleistungen sollten im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
+**Hinweis:** Die Besuchsgründe / Behandlungsleistungen SOLLEN im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
 
 ### `Schedule.specialty`
 
 **Bedeutung:** Welche Fachrichtung(en) führen die Behandlungsleistungen, die durch diesen Kalender erfasst werden, aus?
 
-**Hinweis:** Die Fachrichtung(en) sollte(n) im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
+**Hinweis:** Die Fachrichtung(en) SOLL(EN) im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
 
 ### `Schedule.actor`
 
 **Bedeutung:** Für welche Akteure wird der Kalender geführt?
 
-**Hinweis:** Nicht alle Target-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen sollte ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden. 
+**Hinweis:** Nicht alle Target-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden.
 
 ---
 
