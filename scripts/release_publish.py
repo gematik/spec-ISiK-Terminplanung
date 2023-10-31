@@ -7,7 +7,7 @@ from datetime import date
 import yaml
 
 
-class FileToUpdate:
+class FileTypeCombinationToUpdate:
     def __init__(self, filename, content_type, regex_list, format=None) -> None:
         self.filename = filename
         self.content_type = content_type
@@ -33,7 +33,7 @@ def create_files_to_update_list(config):
     for filename, replacements in config.items():
         for replacement in replacements:
             files_to_update.append(
-                FileToUpdate(
+                FileTypeCombinationToUpdate(
                     filename,
                     replacement["type"],
                     replacement["regex"] if isinstance(replacement["regex"], list) else [replacement["regex"]],
@@ -68,14 +68,14 @@ def replace_content_in_files(files: list, new_release_version: str, new_date: da
         print("Error: No files found!")
         return
 
-    for file in files:
-        if file.content_type == "version":
-            replace_version_in_file(file, new_release_version)
-        elif file.content_type == "date":
-            replace_date_in_file(file, new_date)
+    for FileTypeCombination in files:
+        if FileTypeCombination.content_type == "version":
+            replace_version_in_file(FileTypeCombination, new_release_version)
+        elif FileTypeCombination.content_type == "date":
+            replace_date_in_file(FileTypeCombination, new_date)
 
 
-def replace_version_in_file(file: FileToUpdate, new_release_version: str):
+def replace_version_in_file(file: FileTypeCombinationToUpdate, new_release_version: str):
     with open(file.location, 'r') as input_file:
         input_text = input_file.read()
 
@@ -88,7 +88,7 @@ def replace_version_in_file(file: FileToUpdate, new_release_version: str):
         output_file.write(input_text)
 
 
-def replace_date_in_file(file: FileToUpdate, new_date: datetime):
+def replace_date_in_file(file: FileTypeCombinationToUpdate, new_date: datetime):
     with open(file.location, 'r') as input_file:
         input_text = input_file.read()
 
