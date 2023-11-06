@@ -43,6 +43,7 @@ All jobs with an `x` in the boxes were performed to the best of knowledge.
 - [ ] Go to the corresponding SIMPLIFIER Project and _-> Packages -> Expand the Dropdown for Create -> Create new package_ for the project.
   - [ ] With the corresponding version number, and
   - [ ] The Release notes (from above) and a compare-link to the previous Release.
+  - [ ] Unlist the old package by _-> clicking on the old package_, _-> go to Admininstration_ and _-> click on Unlist_
 - [ ] Publish the previosuly drafteted Release, including version number, on GitHub.
 - [ ] Provide / Archive the IG in the corresponding _gh-pages_ branch of the GitHub project.
   - [ ] Checkout the Branch (no need to merge it later).
