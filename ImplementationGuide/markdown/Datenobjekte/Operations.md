@@ -14,9 +14,11 @@ Folgende Schritte KÖNNEN notwendig sein, sodass ein Termin durch einen Termin R
 
 Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung zu implementieren ist. Es wird als Best-Practice auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/implementierungsleitfadenisik-sicherheit) verwiesen.
 
-1. Abfrage aller Kodierungen der Behandlungsleistungen: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v2/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/definition-resource-types|HealthcareService`
+1. Abfrage aller Kodierungen der Behandlungsleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v2/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService`
 
 Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung eines HealthcareService relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können abgefragt werden. Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
+
+Hinweis: Diese Abfrage ist für eine Initialisierung des Termin-Requestors gedacht. Es ist davon auszugehen, dass diese Auswahlliste nicht dynamisch angepasst wird durch das Termin-Repository und nicht bei jeder Terminbuchung erneut abgefragt werden muss.
 
 2. Abfrage aller verfügbaren Kalender: `GET https://example.org/fhir/Schedule`
 
