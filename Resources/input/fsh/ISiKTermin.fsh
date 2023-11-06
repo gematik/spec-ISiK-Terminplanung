@@ -77,7 +77,7 @@ Usage: #example
 * extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
 * status = $appointmentStatus#proposed
 * start = "2022-12-10T09:00:00Z"
-* end = "2022-12-10T11:00:00Z"
+* end = "2022-12-10T09:30:00Z"
 * slot = Reference(ISiKSlotExample)
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
