@@ -1,0 +1,76 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [BUG] - <title>"
+labels: [
+  "bug",
+  "invalid"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of the issue.
+      placeholder: |
+                  Short and explicit description of the incident...
+                  If you are able to specify, please also select the appropriate label:
+                  - Bug, if something is technically not working, e.g. not compiling.
+                  - Invalid, if something is technically working but does not seem to yield to correct outcome, e.g. 1+1 is 3.
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "Reproduction URL"
+      description: Please enter the corresponding Simplifier URL (or other, e.g. GitHub) to provide a source for reproduction of the issue.
+      placeholder: ex. https://simplifier.net/REPO-NAME/RESOURCE-NAME
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Version or Branch"
+      description: If this bug occures only in a specific version or development branch, please tell us here.
+      placeholder: ex. Only occurs with ISiK 2.0.4.
+    validations:
+      required: false
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction Steps"
+      description: Please enter a step by step description of the issue.
+      value: |
+
+        1. At the interface '....'
+        2. With Data '....'
+        3. Execute Operation '....'
+        4. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Stack Trace and Logs"
+      description: Please copy and paste any relevant stack trace or log output. This will be automatically formatted into code.
+      render: bash
+    validations:
+      required: false      
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Software and Environment"
+      description: Please describe the used software and your environment further.
+      placeholder: ex. I Use dotnet sdk 4.x and Firely Terminal to manage fhir packages
+    validations:
+      required: false
