@@ -1,6 +1,7 @@
 Instance: ISiKCapabilityStatementTerminplanungServer
 InstanceOf: CapabilityStatement
 Usage: #definition
+* insert Meta-Inst
 * insert Meta-CapabilityStatement
 * name = "ISiKCapabilityStatementTerminplanungServer"
 * title = "ISiK CapabilityStatement Terminplanung Server"
