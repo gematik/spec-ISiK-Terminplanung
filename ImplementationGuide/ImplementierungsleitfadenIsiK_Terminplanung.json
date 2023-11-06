@@ -9,6 +9,13 @@
   ],
   "packageId": "0.0.1",
   "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Appointment/ISiKTerminExample"
+        }
+      }
+    ],
     "page": {
       "nameUrl": "ImplementationGuide/markdown/Einfuehrung.md",
       "title": "Einführung",
