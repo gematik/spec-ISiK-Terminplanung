@@ -41,12 +41,5 @@ Usage: #example
   * use = #out
   * min = 0
   * max = "1"
-  * documentation	= "Falls die Interaktion erfolgreich ist, ist der Status Code HTTP 201 - Created zurückzugeben. Im Erfolgsfall MUSS als Return-Parameter eine Appointment-Ressource (entsprechend dem dazugehörigen ISiK-Profil) zurückgegeben werden. Das id-Element der Appointment-Ressource MUSS korrekt gefüllt werden. Der Server MUSS den Status der Appointment-Ressource auf 'booked' oder 'pending' ändern. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben. Die Appointment-Ressource SOLL direkt im HTTP Body zurückgegeben werden, falls es sich um den einzigen Rückgabewert handelt. Alternativ kann die Appointment-Ressource innerhalb einer Parameter-Ressource zurückgegeben werden. Als Teil der Parameter-Ressource können zusätzlich Hinweise zum Termin als OperationOutcome zurückgegeben werden."
-  * type = #Appointment
-* parameter[+]
-  * name = #return
-  * use = #out
-  * min = 0
-  * max = "1"
-  * documentation	= "Falls die Interaktion fehlschlägt, MUSS als Return-Parameter eine OperationOutcome-Ressource zurückgegeben werden. Syntaktische Fehler in der Appointment-Ressource MUSS mit einem HTTP Status-Code 400 - Bad Request zurückgewiesen werden. Anderweitig invalide Appointment-Ressourcen MÜSSEN mit einer OperationOutcome-Ressource abgewiesen werden. In diesem Fall SOLL der HTTP Status-Code HTTP 422 - Unprocessable Entity verwendet werden. Eine OperationOutcome-Ressource KANN zu informativen Zwecken in jedem Fall zurückgegeben werden (s.o.)."
-  * type = #OperationOutcome
+  * documentation	= "Als Return-Parameter MUSS ein Bundle vom Typ 'searchset' zurückgegeben werden, welches eine aktualisierte Appointment- oder eine OperationOutcome-Ressource enthält. Falls die Terminbuchung akzeptiert wird, MUSS das Appointment persistiert werden. Das id-Element der Ressource MUSS korrekt gefüllt werden. Der Status der Appointment-Ressource MUSS auf 'booked' geändert werden. Der Server MUSS die verwendeten Slot-Ressourcen als Referenz im Appointment angeben."
+  * type = #Bundle
