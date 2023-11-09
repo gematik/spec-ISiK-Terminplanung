@@ -1,4 +1,4 @@
-## ISiKNachricht [(Communication)](http://hl7.org/fhir/communication.html)
+## ISiKNachricht [(Communication)](http://hl7.org/fhir/R4/communication.html)
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 ### `Communication.inResponseTo`
 
-**Bedeutung:** Falls die Communication-Ressource in einen zeitlichen Zusammenhang mit weiteren Nachrichten gebracht werden muss, KÖNNEN die Nachrichten miteinander verknüpft werden. Neue Nachrichten MÜSSEN auf die bereits zurvor existierenden Nachrichten zeigen.
+**Bedeutung:** Falls die Communication-Ressource in einen zeitlichen Zusammenhang mit weiteren Nachrichten gebracht werden muss, KÖNNEN die Nachrichten miteinander verknüpft werden. Neue Nachrichten MÜSSEN auf die bereits zuvor existierenden Nachrichten zeigen.
 
 ### `Communication.subject`
 
@@ -44,11 +44,11 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Empfänger der Communication
 
-**Hinweis:** Für Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
+**Hinweis:** Für Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Reference.display angegeben werden.
 
 ### `Communication.sender`
 
-**Hinweis:** Für Patient, Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Referenze.display angegeben werden.
+**Hinweis:** Für Patient, Practitioner und HealthcareService muss Reference.reference angegeben werden. Für weitere Ressourcen MUSS ein Reference.display angegeben werden.
 
 ### `Communication.payload`
 
