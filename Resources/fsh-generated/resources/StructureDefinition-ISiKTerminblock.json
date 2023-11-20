@@ -40,7 +40,7 @@
           {
             "key": "ISiK-slot-1",
             "severity": "error",
-            "human": "Der Endzeitpunkt eines Terminsblocks sollte nach dem Startzeitpunkt liegen",
+            "human": "Der Endzeitpunkt eines Terminsblocks MUSS nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
             "source": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock"
           }
