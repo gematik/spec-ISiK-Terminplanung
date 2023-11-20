@@ -1,4 +1,4 @@
-## ISiKBinary [(Binary)]https://hl7.org/fhir/R4binary.html)
+## ISiKBinary [(Binary)]https://hl7.org/fhir/R4/binary.html)
 
 ---
 
