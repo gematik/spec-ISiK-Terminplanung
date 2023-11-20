@@ -1,4 +1,4 @@
-## ISiKTerminKontaktMitGesundheitseinrichtung [(Encounter)](http://hl7.org/fhir/encounter.html)
+## ISiKTerminKontaktMitGesundheitseinrichtung [(Encounter)]https://hl7.org/fhir/R4/encounter.html)
 
 ---
 
@@ -46,7 +46,7 @@ Der Suchparameter "appointment" MUSS unterstützt werden:
 
     ```GET [base]/Encounter?appointment=Appointment/123```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "appointment" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "appointment" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
 
 ### Weitere
 
