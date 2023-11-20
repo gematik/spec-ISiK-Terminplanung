@@ -1,4 +1,4 @@
-## ISiKTermin [(Appointment)](http://hl7.org/fhir/R4/appointment.html)
+## ISiKTermin [(Appointment)]https://hl7.org/fhir/R4/appointment.html)
 
 ---
 
@@ -140,7 +140,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"]https://hl7.org/fhir/R4/search.html#all).
 
 1. Der Suchparameter "status" MUSS unterstützt werden:
 
@@ -148,7 +148,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?status=booked```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
@@ -156,7 +156,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
@@ -164,7 +164,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
 
 
 1. Der Suchparameter "date" MUSS unterstützt werden:
@@ -173,7 +173,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?date=2022-12-10T09:00:00Z```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"]https://hl7.org/fhir/R4/search.html#date).
 
 1. Der Suchparameter "slot" MUSS unterstützt werden:
 
@@ -181,7 +181,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?slot=Slot/ISiKSlotExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.slot" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.slot" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
 
@@ -189,7 +189,7 @@ Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" impl
 
     ```GET [base]/Appointment?actor=Patient/ISiKPatientExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.participant.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.participant.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
 
 ---
 

@@ -1,4 +1,4 @@
-## ISiKNachricht [(Communication)](http://hl7.org/fhir/R4/communication.html)
+## ISiKNachricht [(Communication)]https://hl7.org/fhir/R4/communication.html)
 
 ---
 
@@ -68,7 +68,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"]https://hl7.org/fhir/R4/search.html#all).
 
 1. Der Suchparameter "subject" MUSS unterstützt werden:
 
@@ -76,7 +76,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?subject=Patient/ISiKPatientExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference)
 
 1. Der Suchparameter "recipient" MUSS unterstützt werden:
 
@@ -84,7 +84,7 @@ Für die Ressource Communication MÜSSEN die REST-Interaktion "READ", "CREATE", 
 
     ```GET [base]/Communication?recipient=Practitioner/ISiKPractitionerExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference)
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference)
 
 1. Der Suchparameter "sender" MUSS unterstützt werden:
 
