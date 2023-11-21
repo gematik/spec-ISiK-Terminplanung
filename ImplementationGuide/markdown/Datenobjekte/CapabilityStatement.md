@@ -1,8 +1,8 @@
-# Konformitätserklärung [(CapabilityStatement)](http://hl7.org/fhir/capabilitystatement.html)
+# Konformitätserklärung [(CapabilityStatement)]https://hl7.org/fhir/R4/capabilitystatement.html)
 
-Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine [CapabilityStatement](http://hl7.org/fhir/capabilitystatement.html)-Ressource bereitstellen.
+Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine [CapabilityStatement]https://hl7.org/fhir/R4/capabilitystatement.html)-Ressource bereitstellen.
 
-Hierzu MUSS die [capabilities-Interaktion gemäß FHIR-Spezifikation](http://hl7.org/fhir/http.html#capabilities) unterstützt werden.
+Hierzu MUSS die [capabilities-Interaktion gemäß FHIR-Spezifikation]https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden.
 Der "MODE"-Parameter kann ignoriert werden.
 
 Das CapabilityStatement in dieser Spezifikation stellt die Anforderungen seitens der gematik dar (`kind` = "requirements"). Zur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN, gegenüber jenen, die erfüllt werden KÖNNEN, wird die [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)-Extension mit den möglichen Werten "SHALL" (=MUSS) und "MAY" (=KANN) verwendet.
