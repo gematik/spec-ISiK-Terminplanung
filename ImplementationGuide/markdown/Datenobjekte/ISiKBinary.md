@@ -1,4 +1,4 @@
-## ISiKBinary [(Binary)](http://hl7.org/fhir/binary.html)
+## ISiKBinary [(Binary)](https://hl7.org/fhir/R4/binary.html)
 
 ISiKBinary dient im Kontext der Terminplanung dazu Zusatzinformationen an das Termin-Repository bzw. den Termin-Requestor zu übermitteln (vgl. {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKNachrichtCommunication.md, text:'ISiKCommunication.payload.contentAttachment'}}).
 
