@@ -1,22 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKKalender",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Workflow"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKKalender",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "name": "ISiKKalender",
   "status": "active",
   "experimental": false,
-  "date": "2023-03-24",
+  "date": "2023-11-29",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -69,8 +59,9 @@
         "min": 1
       },
       {
-        "id": "Schedule.extension.valueString",
-        "path": "Schedule.extension.valueString",
+        "id": "Schedule.extension.value[x]:valueString",
+        "path": "Schedule.extension.value[x]",
+        "sliceName": "valueString",
         "min": 1,
         "max": "1",
         "type": [

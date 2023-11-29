@@ -1,22 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKNachricht",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Request &amp; Response"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKNachricht",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "name": "ISiKNachricht",
   "status": "active",
   "experimental": false,
-  "date": "2023-03-24",
+  "date": "2023-11-29",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -155,8 +145,9 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentString",
-        "path": "Communication.payload.contentString",
+        "id": "Communication.payload.content[x]:contentString",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentString",
         "min": 0,
         "max": "1",
         "type": [
@@ -167,8 +158,9 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment",
-        "path": "Communication.payload.contentAttachment",
+        "id": "Communication.payload.content[x]:contentAttachment",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentAttachment",
         "min": 0,
         "max": "1",
         "type": [
@@ -179,25 +171,25 @@
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.contentType",
-        "path": "Communication.payload.contentAttachment.contentType",
+        "id": "Communication.payload.content[x]:contentAttachment.contentType",
+        "path": "Communication.payload.content[x].contentType",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.data",
-        "path": "Communication.payload.contentAttachment.data",
+        "id": "Communication.payload.content[x]:contentAttachment.data",
+        "path": "Communication.payload.content[x].data",
         "max": "0"
       },
       {
-        "id": "Communication.payload.contentAttachment.url",
-        "path": "Communication.payload.contentAttachment.url",
+        "id": "Communication.payload.content[x]:contentAttachment.url",
+        "path": "Communication.payload.content[x].url",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Communication.payload.contentAttachment.creation",
-        "path": "Communication.payload.contentAttachment.creation",
+        "id": "Communication.payload.content[x]:contentAttachment.creation",
+        "path": "Communication.payload.content[x].creation",
         "min": 1,
         "mustSupport": true
       }
