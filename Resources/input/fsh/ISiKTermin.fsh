@@ -19,6 +19,8 @@ Id: ISiKTermin
 * start 1..1 MS
 * end 1..1 MS
 * slot 0..* MS
+  * reference 1.. MS
+* slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Das Termin-Repository muss so gestaltet sein, dass es aus Perspektive des Clients nur eine Service-BaseUrl gibt." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
@@ -52,16 +54,18 @@ Id: ISiKTermin
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension
+* insert Meta
 * value[x] only Reference(ISiKNachricht)
 
 Extension: ISiKTerminPriorityExtension
 Id: ISiKTerminPriorityExtension
+* insert Meta
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from ISiKTerminPriority (required)
 
 Invariant: ISiK-app-1
-Description: "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen"
+Description: "Der Endzeitpunkt eines Termins MUSS nach dem Startzeitpunkt liegen"
 Severity: #error
 Expression: "start <= end"
 
@@ -73,7 +77,7 @@ Usage: #example
 * extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
 * status = $appointmentStatus#proposed
 * start = "2022-12-10T09:00:00Z"
-* end = "2022-12-10T11:00:00Z"
+* end = "2022-12-10T09:30:00Z"
 * slot = Reference(ISiKSlotExample)
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
@@ -88,5 +92,6 @@ Usage: #example
 // This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
 Extension: AppointmentReplaces
 Id: AppointmentReplaces
+* insert Meta
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces"
 * value[x] only Reference(Appointment)

@@ -8,9 +8,9 @@ Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen T
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -50,15 +50,15 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.meta.tag`
 
-**Bedeutung:** Herkunft der Termnins
+**Bedeutung:** Herkunft der Termins
 
-**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, MUSS der Tag entfernt werden. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/I-markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
+**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
 
 ### `Appointment.extension:Nachricht`
 
 **Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patient:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -132,7 +132,7 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstützt w
 
 ### Interaktionen
 
-Für die Ressource Appointment MUSS die REST-Interaktion "READ" und "PATCH" implementiert werden.
+Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH" implementiert werden.
 
 1. Der Suchparameter "_id" MUSS unterstützt werden:
 

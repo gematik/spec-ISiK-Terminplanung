@@ -27,6 +27,7 @@ Id: ISiKKalender
 //WIP
 Extension: ScheduleName
 Id: ScheduleName
+* insert Meta
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name"
 * value[x] only string
 * valueString 0..1
