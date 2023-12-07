@@ -273,6 +273,21 @@ Usage: #definition
 * rest.resource[=].searchInclude[+] = "Communication:subject"
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
+
+* rest.resource[=].type = #Encounter
+* rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung"
+* rest.resource[=].interaction[0].extension.url = $capabilitystatement-expectation
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = $capabilitystatement-expectation
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #search-type
+* rest.resource[=].searchParam[0].extension.url = $capabilitystatement-expectation
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].name = "appointment"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Encounter-appointment"
+* rest.resource[=].searchParam[=].type = #reference
+
 * rest.resource[+].extension.url = $capabilitystatement-expectation
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #HealthcareService
