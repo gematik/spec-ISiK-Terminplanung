@@ -1,4 +1,4 @@
-## ISiKNachricht [(Communication)]https://hl7.org/fhir/R4/communication.html)
+## ISiKNachricht [(Communication)](https://hl7.org/fhir/R4/communication.html)
 
 ---
 
