@@ -1,4 +1,4 @@
-## ISiKTerminblock [(Slot)]https://hl7.org/fhir/R4/slot.html)
+## ISiKTerminblock [(Slot)](https://hl7.org/fhir/R4/slot.html)
 
 ---
 
@@ -66,7 +66,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"]https://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
 2. Der Suchparameter "schedule" MUSS unterstützt werden:
 
@@ -74,7 +74,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
 3. Der Suchparameter "status" MUSS unterstützt werden:
 
@@ -82,7 +82,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?status=busy```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 4. Der Suchparameter "start" MUSS unterstützt werden:
 
@@ -90,7 +90,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?start=2022-12-10T09:00:00Z```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"]https://hl7.org/fhir/R4/search.html#date).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](https://hl7.org/fhir/R4/search.html#date).
 
 5. Abfrage aller verfügbaren Slots für einen Kalender:
 

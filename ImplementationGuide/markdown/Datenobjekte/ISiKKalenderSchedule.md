@@ -106,7 +106,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
@@ -114,7 +114,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
@@ -123,7 +123,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?actor=Practitioner/ISiKPractitionerExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
 ---
 
