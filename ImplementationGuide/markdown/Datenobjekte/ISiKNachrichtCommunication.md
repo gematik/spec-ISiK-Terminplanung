@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Die Communication-Ressource dient als Datenobjekt für den Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
+Die Communication-Ressource dient als Datenobjekt für den bidirektionalen Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
 
 Es liegt in der Verantwortung des bestätigungsrelevanten Systems, eine dem Schutzbedarf der ausgetauschten Nachrichten angemessene Sicherheit in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit herzustellen. Die Vorgaben des BSI, z. B. aus der TR-03161, sind zu beachten. Grundsätzlich liegen der vorliegenden Definition von ISiKNachricht die folgenden Annahmen zugrunde, die auch eine Nutzung einfach umsetzbarer Sicherheitsmaßnahmen ermöglichen:
 * ISiKNachricht SOLL ausschließlich für den Austausch administrativer, nicht personenbezogener Informationen im Kontext der Terminbuchung verwendet werden, z. B. zur Übermittlung von Coronahinweisen oder Lageplänen.
