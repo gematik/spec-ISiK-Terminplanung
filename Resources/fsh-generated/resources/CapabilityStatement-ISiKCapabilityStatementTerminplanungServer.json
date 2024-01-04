@@ -76,15 +76,6 @@
                 }
               ],
               "code": "search-type"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "search-type"
             }
           ],
           "searchParam": [
@@ -142,17 +133,6 @@
               "name": "actor",
               "definition": "http://hl7.org/fhir/SearchParameter/Schedule-actor",
               "type": "reference"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "gender",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-gender",
-              "type": "token"
             }
           ],
           "searchRevInclude": [
