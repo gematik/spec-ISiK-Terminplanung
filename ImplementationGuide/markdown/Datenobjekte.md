@@ -7,7 +7,7 @@ Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 3](https://simplifier.net/
 
 Die Verwendung in diesem Modul bedeutet:
 Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein. 
-Die Referenzierung von im Basismodul spezifizierten Datenobjekten, bedeutet nicht, dass die Interaktionen für die entsprechenden Datenobjekte aus dem Basismodul auch im Modul Dokumentenaustausch bestätigungsrelevant sind.
+Die Referenzierung von im Basismodul spezifizierten Datenobjekten, bedeutet nicht, dass die Interaktionen für die entsprechenden Datenobjekte aus dem Basismodul auch im Modul Terminplanung bestätigungsrelevant sind.
 
 Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:
 
