@@ -29,6 +29,7 @@ Id: ISiKTermin
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "actor.resolve()"
   * ^slicing.rules = #open
+* participant ^comment = "Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren."
 * participant contains AkteurPatient 1.. MS
 * participant[AkteurPatient].actor only Reference(Patient)
 * participant[AkteurPatient].actor MS
