@@ -5,10 +5,10 @@
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "3.0.1",
-  "date": "2023-10-30",
+  "version": "3.0.2",
+  "date": "2024-01-03",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|3.0.1"
+    "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|3.0.2"
   ],
   "name": "ISiKCapabilityStatementTerminplanungServer",
   "title": "ISiK CapabilityStatement Terminplanung Server",
