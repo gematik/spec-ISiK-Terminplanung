@@ -5,6 +5,16 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
 ----
+Version: 4.0.0
+
+Datum: xx.xx.2024
+
+* Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
+  * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
+
+----
+
+----
 Version: 3.0.0
 
 Datum: 01.07.2023
