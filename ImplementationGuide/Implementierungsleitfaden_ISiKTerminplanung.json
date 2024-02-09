@@ -1,8 +1,8 @@
 {
   "resourceType": "ImplementationGuide",
-  "url": "https://gematik.de/fhir/ISiK/v3/Terminplanung/ImplementationGuide/ISiK-Terminplanung",
-  "name": "Implementierungsleitfaden ISiK-Modul Terminplanung",
-  "version": "3.0.2",
+  "url": "https://gematik.de/fhir/ISiK/v4/Terminplanung/ImplementationGuide/ISiK-Terminplanung",
+  "name": "Implementierungsleitfaden ISiK-Terminplanung",
+  "version": "4.0.0",
   "status": "active",
   "fhirVersion": [
     "4.0.1"
@@ -27,9 +27,31 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/Motivation.md",
-          "title": "Motivation",
-          "generation": "markdown"
+          "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
+          "title": "Zusammenfassung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
+              "title": "Motivation",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
+              "title": "Anwendungsfälle (Use Cases)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
+              "title": "Informationsmodell",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
+              "title": "Interaktionen Und SearchTypes",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/UebergreifendeFestlegungen.md",

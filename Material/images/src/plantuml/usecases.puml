@@ -1,0 +1,59 @@
+'@startuml usecases
+'usecase Medikation as "
+'    = Medikation
+'    
+'    ___
+'    Some text
+'    === Neu-Verordnung
+'    Other text
+'    === Anpassung
+'    Information
+'    === Abgabe
+'"
+'@enduml
+
+@startuml usecases
+left to right direction
+'skinparam packageStyle cloud
+'skinparam linetype ortho
+
+'actor :FHIR Repository: as DB << Application >>
+actor :Heilberufler:
+actor :Versicherter:
+storage adverseUC as "Adverse Use Case" {
+    storage (Verwechslung){
+        (Patient)
+        (Fall, Kontakt)
+        (Verordnung )
+        (Intensität, Dauer)
+    }
+    (Mehrfachverordnung)
+    (Informationslücke)
+    (Kontraindikation)
+    (Wechselwirkung)
+}
+
+storage gnrlUC as "Allgemein" {
+    (Information)
+    (Verordnung)
+    (Verabreichung)
+    (Abgabe)
+    (Einstellung)
+    (Rezeptierung)
+    storage (AMTS){
+        (Prüfung)
+        (Reconcillation)
+    }
+    storage (Medikations-Liste){
+        (Zusammenstellen)
+        (Aufteilen)
+        (Verändern)
+    }
+}
+
+Heilberufler --> gnrlUC
+Versicherter --> Information
+
+'fncts --> adverseUC : mitigates
+'fncts --> gnrlUC : enables
+@enduml
