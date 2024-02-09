@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKKalender",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "name": "ISiKKalender",
   "status": "active",
   "experimental": false,
-  "date": "2023-07-01",
+  "date": "2024-01-03",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -59,8 +59,9 @@
         "min": 1
       },
       {
-        "id": "Schedule.extension.valueString",
-        "path": "Schedule.extension.valueString",
+        "id": "Schedule.extension.value[x]:valueString",
+        "path": "Schedule.extension.value[x]",
+        "sliceName": "valueString",
         "min": 1,
         "max": "1",
         "type": [
@@ -153,6 +154,7 @@
         "id": "Schedule.actor:Akteur",
         "path": "Schedule.actor",
         "sliceName": "Akteur",
+        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.",
         "min": 0,
         "max": "1",
         "type": [

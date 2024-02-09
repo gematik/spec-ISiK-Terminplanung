@@ -1,4 +1,4 @@
-## ISiKTermin [(Appointment)](http://hl7.org/fhir/appointment.html)
+## ISiKTermin [(Appointment)](https://hl7.org/fhir/R4/appointment.html)
 
 ---
 
@@ -8,9 +8,9 @@ Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen T
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -21,6 +21,8 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplan
 ```
 
 {{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin, hybrid}}
+
+**Hinweis:** Die Kardinalität von participant.actor.display und das MS-Flag von participant.status wird an die Slices vererbt und diese sind entsprechend zu implementieren.
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
@@ -50,15 +52,15 @@ join binding.where(valueSet.exists())
 
 ### `Appointment.meta.tag`
 
-**Bedeutung:** Herkunft der Termnins
+**Bedeutung:** Herkunft der Termins
 
-**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/isik-basismodul-stufe2/UebergreifendeFestlegungenRest).
+**Hinweis:** Angabe, ob der Termin durch einen externen Termin Requestor eingestellt wurde. Falls das Datenobjekt dauerhaft in das Termin Repository gespeichert wird, KANN der Tag entfernt werden. Für die weitere Prozesssteuerung kann eine Unterscheidung, ob es sich um einen intern oder extern erstellten Termin handelt, notwendig sein, sodass aus Gründen der Nachvollziehbarkeit der Tag bestehen bleiben sollte. Des Weiteren gelten die Vorgaben des ISiK Basismoduls zur [CREATE-Interaktion](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current).
 
 ### `Appointment.extension:Nachricht`
 
 **Bedeutung:** Kommunikation mit dem Patienten
 
-**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patien:in gefiltert werden sollten.
+**Hinweis:** Für die Kommunikation mit dem Patienten sind Communication-Ressourcen zu verwenden. Für den Termin relevante Kommentare oder Anhänge MÜSSEN angegeben werden. Zudem kann die Communication-Ressource auch für die Kommunikation zwischen Leistungserbringer verwendet werden. Es ist zu beachten, dass in diesem Fall Kommentare vor der Herausgabe an die Patient:in gefiltert werden sollten.
 
 ### `Appointment.extension:replaces`
 
@@ -70,15 +72,15 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Differenzierung zwischen Terminwunsch und gebuchten Termin
 
-**Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Terminrepository anzupassen.
+**Hinweis:** Ein Termin Requestor kann im Status entsprechend wählen, sodass der Termin als Terminwunsch zu interpretieren ist. Nachdem der Termin bestätigt wurde, ist der Terminstatus durch das Termin-Repository anzupassen.
 
-Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstüzt werden, insbesondere der Status "proposed" und "booked".
+Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstützt werden, insbesondere der Status "proposed" und "booked". 
 
 ### `Appointment.cancelationReason`
 
 **Bedeutung:** Grund für die Absage eines Termins
 
-**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Granularere Differenzierungen können durch weitere Codings erfolgen.
+**Hinweis:** Eine minimale Kodierung MUSS mittels des vorgeschlagenen Bindings vorliegen. Differenzierungen mit feinerer Granularität können durch weitere Codings erfolgen.
 
 ### `Appointment.serviceType`
 
@@ -143,7 +145,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
 1. Der Suchparameter "status" MUSS unterstützt werden:
 
@@ -151,7 +153,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?status=booked```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
@@ -159,7 +161,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
-    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.serviceType" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.serviceType" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.serviceType" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.serviceType" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
@@ -167,7 +169,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.speciality" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.speciality" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 
 1. Der Suchparameter "date" MUSS unterstützt werden:
@@ -176,7 +178,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?date=2022-12-10T09:00:00Z```
 
-    Anwendungshinweise: Die Suche wird gegen das Element "Appointment.start" ausgewertet. Weitere Informationen zur Suche nach "Appointment.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+    Anwendungshinweise: Die Suche wird gegen das Element "Appointment.start" ausgewertet. Weitere Informationen zur Suche nach "Appointment.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](https://hl7.org/fhir/R4/search.html#date).
 
 1. Der Suchparameter "slot" MUSS unterstützt werden:
 
@@ -184,7 +186,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?slot=Slot/ISiKSlotExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.slot" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.slot" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
 
@@ -192,7 +194,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     ```GET [base]/Appointment?actor=Patient/ISiKPatientExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.participant.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Appointment.participant.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
 ---
 

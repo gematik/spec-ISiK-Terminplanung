@@ -1,16 +1,16 @@
-## ISiKKalender [(Schedule)](http://hl7.org/fhir/schedule.html)
+## ISiKKalender [(Schedule)](https://hl7.org/fhir/R4/schedule.html)
 
 ---
 
 ### Motivation
 
-Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitoner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
+Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitioner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können.
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -64,19 +64,19 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Welche Besuchsgründe / Behandlungsleistungen werden durch diesen Kalender erfasst?
 
-**Hinweis:** Die Besuchsgründe / Behandlungsleistungen sollten im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
+**Hinweis:** Die Besuchsgründe / Behandlungsleistungen SOLLEN im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLEN die gleichen Informationen wie in HealthcareService.type angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem-Ressource exponiert werden.
 
 ### `Schedule.specialty`
 
 **Bedeutung:** Welche Fachrichtung(en) führen die Behandlungsleistungen, die durch diesen Kalender erfasst werden, aus?
 
-**Hinweis:** Die Fachrichtung(en) sollte(n) im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLTEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
+**Hinweis:** Die Fachrichtung(en) SOLL(EN) im Schedule angegeben werden, falls unter Schedule.actor nur Referenzen mit Referenz.display angegeben werden oder direkt auf einen Practitioner referenziert wird. Im Falle, dass ein HealthcareService referenziert wird, SOLLEN die gleichen Informationen wie in HealthcareService.specialty angegeben werden.
 
 ### `Schedule.actor`
 
 **Bedeutung:** Für welche Akteure wird der Kalender geführt?
 
-**Hinweis:** Nicht alle Target-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen sollte ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden.
+**Hinweis:** Nicht alle Target-Ressourcen dieser Referenz existieren als Profil innerhalb des ISiK-Basismoduls oder ISiK-Terminplanung. Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden. Nur für HealthcareService und Practitioner MUSS Reference.reference angegeben werden.
 
 ---
 
@@ -90,7 +90,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
 1. Der Suchparameter "active" MUSS unterstützt werden:
 
@@ -98,7 +98,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?active=true```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.active" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.active" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
@@ -106,7 +106,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.serviceType" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
@@ -114,7 +114,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 
 1. Der Suchparameter "actor" MUSS unterstützt werden:
@@ -123,7 +123,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     ```GET [base]/Schedule?actor=Practitioner/ISiKPractitionerExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.actor" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
 ---
 

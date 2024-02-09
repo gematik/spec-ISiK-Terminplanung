@@ -1,4 +1,4 @@
-## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](http://hl7.org/fhir/communication.html)
+## ISiKMedizinischeBehandlungseinheit [(HealthcareService)](https://hl7.org/fhir/R4/healthcareservice.html)
 
 ---
 
@@ -8,9 +8,9 @@ Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation
 
 ---
 
-### Kompabilität
+### Kompatibilität
 
-Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompabilität}}.
+Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompatibilitaet.md, text:Kompatibilität}}.
 
 ---
 
@@ -58,13 +58,13 @@ join binding.where(valueSet.exists())
 
 **Bedeutung:** Klassifikation der Behandlungsleistung welche durch den HealthcareService erbracht wird
 
-**Hinweis:** Diese Klassifikation sollte stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "content-mode" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/implementierungsleitfadenisik-basismodul/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current).
+**Hinweis:** Diese Klassifikation SOLL stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "context-type-value" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-ValueSet?version=current).
 
 ### `HealthcareService.specialty`
 
 **Bedeutung:** Fachrichtung der Behandlungsleistung welche durch den HealthcareService erbracht wird
 
-**Hinweis:** Diese Fachrichtung sollte stets auch in Appointment.specialty und Schedule.specialty angegeben werden.
+**Hinweis:** Diese Fachrichtung SOLL stets auch in Appointment.specialty und Schedule.specialty angegeben werden.
 
 ### `HealthcareService.name`
 
@@ -84,7 +84,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
 1. Der Suchparameter "active" MUSS unterstützt werden:
 
@@ -92,7 +92,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?active=true```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.active" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.active" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "service-type" MUSS unterstützt werden:
 
@@ -100,7 +100,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?service-type=http://example.org/fhir/CodeSystem/ScheduleServiceType|CT```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.type" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.type" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "specialty" MUSS unterstützt werden:
 
@@ -108,7 +108,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?specialty=urn:oid:1.2.276.0.76.5.114|535```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 1. Der Suchparameter "name" MUSS unterstützt werden:
 
@@ -116,7 +116,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     ```GET [base]/HealthcareService?name=Medizinische Behandlungseinheit Des Fachbereichs 0100```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "string"](https://www.hl7.org/fhir/search.html#string).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "string"](https://www.hl7.org/fhir/R4/search.html#string).
 
 ---
 

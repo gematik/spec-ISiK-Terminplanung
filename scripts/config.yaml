@@ -1,0 +1,26 @@
+package.json:
+  - type: version
+    regex: '("version":\s*")([\d\.]+.*)(")'
+sushi-config.yaml:
+  - type: version
+    regex: '(version:\s*)(\d+\.\d+\.\d+.*)()'
+ruleset.fsh:
+  - type: version
+    regex:
+      - '(\*\s*version\s*=\s*")([\d\.]+.*)(")'
+      - '(\*\s*\^version\s*=\s*")([\d\.]+.*)(")'
+      - '(\*\s*implementationGuide\s*=\s*".*\|)([\d\.]+.*)(")'
+  - type: date
+    regex: 
+      - '(\*\s*date\s*=\s*")(\d+\-\d+\-\d+)(")'
+      - '(\*\s*\^date\s*=\s*")(\d+\-\d+\-\d+)(")'
+    format: '%Y-%m-%d'
+Einfuehrung.md:
+  - type: version
+    regex: '(Version: \s*)(\d+\.\d+\.\d+.*)()'
+  - type: date
+    regex: '(Datum:\s*)(\d+\.\d+\.\d+.*)()'
+    format: '%d.%m.%Y'
+ImplementierungsleitfadenIsiK_Terminplanung.json:
+  - type: version
+    regex: '("version":\s*")(\d+\.\d+\.\d+.*)(",)'

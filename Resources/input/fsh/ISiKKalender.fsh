@@ -18,6 +18,7 @@ Id: ISiKKalender
   * ^slicing.rules = #open
 * actor contains Akteur 0..1 MS
 * actor[Akteur] only Reference(Practitioner or HealthcareService)
+* actor[Akteur] ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
 * actor[Akteur].reference 1..1 MS
 * extension MS
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name named KalenderName 0..1 MS
@@ -27,6 +28,7 @@ Id: ISiKKalender
 //WIP
 Extension: ScheduleName
 Id: ScheduleName
+* insert Meta
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name"
 * value[x] only string
 * valueString 0..1

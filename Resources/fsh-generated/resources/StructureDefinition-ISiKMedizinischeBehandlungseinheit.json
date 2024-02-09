@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKMedizinischeBehandlungseinheit",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "name": "ISiKMedizinischeBehandlungseinheit",
   "status": "active",
   "experimental": false,
-  "date": "2023-07-01",
+  "date": "2024-01-03",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [

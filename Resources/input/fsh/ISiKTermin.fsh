@@ -19,6 +19,8 @@ Id: ISiKTermin
 * start 1..1 MS
 * end 1..1 MS
 * slot 0..* MS
+  * reference 1.. MS
+* slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Das Termin-Repository muss so gestaltet sein, dass es aus Perspektive des Clients nur eine Service-BaseUrl gibt." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
@@ -27,14 +29,17 @@ Id: ISiKTermin
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "actor.resolve()"
   * ^slicing.rules = #open
+* participant ^comment = "Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren."
 * participant contains AkteurPatient 1.. MS
 * participant[AkteurPatient].actor only Reference(Patient)
 * participant[AkteurPatient].actor MS
 * participant[AkteurPatient].actor.reference 1..1 MS
+* participant[AkteurPatient] ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein."
 * participant contains AkteurPersonImGesundheitsberuf 0.. MS
 * participant[AkteurPersonImGesundheitsberuf].actor only Reference(Practitioner)
 * participant[AkteurPersonImGesundheitsberuf].actor MS
 * participant[AkteurPersonImGesundheitsberuf].actor.reference 1..1 MS
+* participant[AkteurPersonImGesundheitsberuf] ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
 * participant contains AkteurMedizinischeBehandlungseinheit 0.. MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor only Reference(HealthcareService)
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
@@ -52,16 +57,18 @@ Id: ISiKTermin
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension
+* insert Meta
 * value[x] only Reference(ISiKNachricht)
 
 Extension: ISiKTerminPriorityExtension
 Id: ISiKTerminPriorityExtension
+* insert Meta
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from ISiKTerminPriority (required)
 
 Invariant: ISiK-app-1
-Description: "Der Endzeitpunkt eines Termins sollte nach dem Startzeitpunkt liegen"
+Description: "Der Endzeitpunkt eines Termins MUSS nach dem Startzeitpunkt liegen"
 Severity: #error
 Expression: "start <= end"
 
@@ -88,5 +95,6 @@ Usage: #example
 // This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
 Extension: AppointmentReplaces
 Id: AppointmentReplaces
+* insert Meta
 * ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces"
 * value[x] only Reference(Appointment)
