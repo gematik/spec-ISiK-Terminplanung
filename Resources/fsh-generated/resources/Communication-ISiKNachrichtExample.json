@@ -3,7 +3,7 @@
   "id": "ISiKNachrichtExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht"
+      "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachricht"
     ]
   },
   "status": "completed",

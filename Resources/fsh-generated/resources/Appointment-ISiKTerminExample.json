@@ -9,12 +9,12 @@
       }
     ],
     "profile": [
-      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
+      "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTermin"
     ]
   },
   "extension": [
     {
-      "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
+      "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
       "valueReference": {
         "reference": "Communication/ISiKNachrichtExample"
       }
@@ -61,7 +61,7 @@
   "_priority": {
     "extension": [
       {
-        "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
+        "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
         "valueCodeableConcept": {
           "coding": [
             {

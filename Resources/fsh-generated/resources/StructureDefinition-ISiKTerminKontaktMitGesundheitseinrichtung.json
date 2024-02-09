@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminKontaktMitGesundheitseinrichtung",
-  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
+  "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
   "version": "3.0.2",
   "name": "ISiKTerminKontaktMitGesundheitseinrichtung",
   "status": "active",

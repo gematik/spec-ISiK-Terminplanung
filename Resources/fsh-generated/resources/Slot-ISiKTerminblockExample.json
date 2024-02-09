@@ -3,7 +3,7 @@
   "id": "ISiKTerminblockExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock"
+      "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminblock"
     ]
   },
   "schedule": {
