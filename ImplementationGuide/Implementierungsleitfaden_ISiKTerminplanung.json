@@ -2,12 +2,12 @@
   "resourceType": "ImplementationGuide",
   "url": "https://gematik.de/fhir/ISiK/v4/Terminplanung/ImplementationGuide/ISiK-Terminplanung",
   "name": "Implementierungsleitfaden ISiK-Terminplanung",
-  "version": "3.9.9",
+  "version": "4.0.0",
   "status": "active",
   "fhirVersion": [
     "4.0.1"
   ],
-  "packageId": "de.gematik.isik-terminplanung-stufe-3",
+  "packageId": "de.gematik.isik-terminplanung-stufe-4",
   "definition": {
     "resource": [
       {
@@ -54,12 +54,12 @@
           ]
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/UebergreifendeFestlegungen.md",
+          "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
           "title": "Übergreifende Festlegungen",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/BestaetigungsrelevanteSysteme.md",
+              "nameUrl": "ImplementationGuide/markdown/BestaetigungsrelevanteSysteme.md",
               "title": "Bestätigungsrelevante Systeme",
               "generation": "markdown"
             },
