@@ -7,7 +7,7 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "packageId": "de.gematik.isik-terminplanung-stufe-4",
+  "packageId": "de.gematik.isik-terminplanung",
   "definition": {
     "resource": [
       {
@@ -31,11 +31,6 @@
           "title": "Zusammenfassung",
           "generation": "markdown",
           "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
-              "title": "Motivation",
-              "generation": "markdown"
-            },
             {
               "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
               "title": "Anwendungsfälle (Use Cases)",
