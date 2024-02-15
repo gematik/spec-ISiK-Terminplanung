@@ -22,11 +22,11 @@
 ' TODO:
 ' Vervollständigen im Sinne  von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
 
-@startuml infomodell
+@startuml resourcediagram
 'verhindere Probleme mit gewinkelten Krähenfüßen
 'skinparam linetype ortho
 
-'together enhancement
+'Namespace enhancement
 set separator none
 
 
@@ -36,7 +36,8 @@ set separator none
 'ISiK_Medikation.ISiKMedikationTransactionResponse --|> R4_Core.Bundle
 
 
-together ISiK_Terminplanung {
+
+namespace ISiK_Terminplanung {
 
    class ISiKKalender <Schedule><<(P,#8DA5C4)>>{
    extension : **ScheduleName**
@@ -122,15 +123,73 @@ together ISiK_Terminplanung {
    }
 }
 
-together MII_Kerndatensatz {
-   
+namespace MII_Kerndatensatz {
+   class Extension_Wirkstofftyp <<(E,#7A8495)>>{
+      Dokumentation auf Simplifier 
+      [[https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp MII Wirkstofftyp]]
+   }
 }
 
-together R4_Core {
-   
+namespace R4_Core {
+   class Foundation_Modul <<(M,#FFAAAA)>>{
+      Dokumentation auf HL7 Org
+      [[https://hl7.org/fhir/R4/ HL7 FHIR R4 Core Foundation]]
+   }
+   class Bundle <<(P,#FFAAAA)>>{
+      Dokumentation [[https://hl7.org/fhir/R4/bundle.html R4 Bundle]]
+      --
+      identifier
+      type : BundleType
+      timestamp
+      total
+      link
+      |_ relation
+      |_ url
+      entry
+      |_ link
+      |_ fullUrl
+      |_ resource : ** Resource **
+      |_ search
+         |_ mode
+         |_ score
+      |_ request
+         |_ method
+         |_ url
+         |_ ifNoneMatch
+         |_ ifModifiedSince
+         |_ ifMatch
+         |_ ifNoneExist
+      |_ response
+         |_ status
+         |_ location
+         |_ etag
+         |_ lastModified
+         |_ outcome
+   }
+   class List <<(P,#FFAAAA)>>{
+      Dokumentation [[https://hl7.org/fhir/R4/list.html R4 List]]
+      --
+      identifier
+      status : ListStatus
+      mode : ListMode
+      title 
+      code
+      subject : Reference (**Patient** |\n Group | Device | Location)
+      encounter : Reference (**Encounter**)
+      date
+      source : Reference (**Practitioner** |\n PractitionerRole | **Patient** | Device)
+      orderedBy
+      note
+      entry
+      |_ flag
+      |_ deleted
+      |_ date
+      |_ item : Reference(Any)
+      emptyReason
+   }
 }
 
-together ISiK_Basis {
+namespace ISiK_Basis {
    class Basismodul_Stufe_3 <<(M,#FFDC36)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-basis-v3/~introduction ISiK Basis Stufe 3]]
@@ -161,37 +220,8 @@ together ISiK_Basis {
    }  
 }
 
-'Realtions
 
-'diamonds
-together {
-<> MultiRef_PracPatRel
-MultiRef_PracPatRel -- ISiKPractitioner
-MultiRef_PracPatRel -- ISiKPatient
-MultiRef_PracPatRel -- ISiKAngehoeriger
-<> MultiRef_KDLXDS
-MultiRef_KDLXDS -- vsKDL
-MultiRef_KDLXDS -- IHEXDStypeCode
-}
-
-'Relations
-ISiKDokumentenSuchergebnisse::DocumentReference -down- "  1..1  "   ISiKDokumentenMetadaten 
-
-
-ISiKDokumentenMetadaten::type -- "  1..1  " MultiRef_KDLXDS
-ISiKDokumentenMetadaten::category -- "  0..1  " IHEXDSclassCode
-
-ISiKDokumentenMetadaten::subject --> "  1..1  " ISiKPatient
-ISiKDokumentenMetadaten::author <--> "  0..1  " MultiRef_PracPatRel
-ISiKDokumentenMetadaten::securityLabel -up- "  1..*  "ISiKConfidentialityCodes  
-ISiKDokumentenMetadaten::content -- "  1..1  " IHEXDSformatCodeDE
-ISiKDokumentenMetadaten::encounter -- "  0..1  " ISiKKontaktGesundheitseinrichtung
-ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDSeventCodeList
-ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDShealthcareFacilityTypeCode
-ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDSpracticeSettingCode
-
-
-'together dummy {
+'namespace dummy {
 '   class Foo {
 '   + field1
 '   + field2

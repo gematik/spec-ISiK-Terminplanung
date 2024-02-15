@@ -8,6 +8,10 @@ Da es sich um eine Zusammenfassung handelt, werden nur folgende Profile und Feld
 * Nur Unter-Elemente (MS) bis zu zweiten oder dritten Tiefe, abhängig von Umfang und Systematik. D.h. Keine bedingten Wiederholungen (repeat) oder Rekursionen (part-of).
 
 
-## Informationsmodell
+## Ressourcen Diagramm
+
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/rc/main-stufe-4/Material/images/diagrams/resourcediagram.svg" alt="Ressourcen Diagram" width="90%"/>
+
+## Informationsmodell Diagramm
 
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/rc/main-stufe-4/Material/images/diagrams/infomodell.svg" alt="Informationsmodell" width="90%"/>
