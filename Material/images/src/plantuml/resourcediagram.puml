@@ -40,154 +40,150 @@ set separator none
 namespace ISiK_Terminplanung {
 
    class ISiKKalender <Schedule><<(P,#8DA5C4)>>{
-   extension : **ScheduleName**
-   |_ (All Slices)
-      |_ <s> extension </s>
-      |_ KalenderName : **Extension**
-   active
-   serviceType
-   specialty
-   |_ Fachrichtung : **IHEXDSauthorSpeciality**
-   actor : Reference ( **Patient** | **Practitioner** | PractitionerRole | \n\t**RelatedPerson** | Device | HealthcareService | Location)
-   |_ identifier
-   |_ display
-   |_ Akteur : Reference (**Practitioner** | HealthcareService)
-      |_ reference
+      extension : **ScheduleName**
+      |_ (All Slices)
+         |_ <s> extension </s>
+         |_ KalenderName : **Extension**
+      active
+      serviceType
+      specialty
+      |_ Fachrichtung : **IHEXDSauthorSpeciality**
+      actor : Reference ( **Patient** | **Practitioner** | PractitionerRole | \n\t**RelatedPerson** | Device | **HealthcareService** | Location)
+      |_ identifier
+      |_ display
+      |_ Akteur : Reference (**Practitioner** | **HealthcareService**)
+         |_ reference
    }
 
    class ISiKMedizinischeBehandlungseinheit <HealthcareService><<(P,#8DA5C4)>>{
-   active
-   type
-   specialty
-   |_ Fachrichtung : **IHEXDSauthorSpeciality**
-   name
+      active
+      type
+      specialty
+      |_ Fachrichtung : **IHEXDSauthorSpeciality**
+      name
    }
 
    class ISiKNachricht <Communication><<(P,#8DA5C4)>>{
-   inResponseTo : Reference (Communication)
-   status
-   subject : Reference ( **Patient** )
-   sent
-   recipient : Reference ( Device | Organization | **Patient** | **Practitioner** | \n\tPractitionerRole | **RelatedPerson** | Group | CareTeam | HealthcareService)
-   |_ identifier
-   |_ display
-   |_ ISiKRecipient : Reference ( **Practitioner** | HealthcareService)
+      inResponseTo : Reference (Communication)
+      status
+      subject : Reference ( **Patient** )
+      sent
+      recipient : Reference ( Device | Organization | **Patient** | **Practitioner** | \n\tPractitionerRole | **RelatedPerson** | Group | CareTeam | **HealthcareService**)
+      |_ identifier
+      |_ display
+      |_ ISiKRecipient : Reference ( **Practitioner** | **HealthcareService**)
+         |_ reference
+      sender : Reference ( Device | Organization | **Patient** | **Practitioner** | \n\tPractitionerRole | **RelatedPerson** | **HealthcareService**)
       |_ reference
-   sender : Reference ( Device | Organization | **Patient** | **Practitioner** | \n\tPractitionerRole | **RelatedPerson** | HealthcareService)
-   |_ reference
-   payload : BackboneElement
-   |_ content[x]
-      |_ contentString
-      |_ contentAttachment
-         |_ contentType
-         |_ <s>data</s>
-         |_ url
-         |_ creation
+      payload : BackboneElement
+      |_ content[x]
+         |_ contentString
+         |_ contentAttachment
+            |_ contentType
+            |_ <s>data</s>
+            |_ url
+            |_ creation
    }
 
    class ISiKTermin <Appointment><<(P,#8DA5C4)>>{
-
+      meta
+      |_ tag
+         |_ Source : **VS_CommonMetaTag_De**
+      extension
+      |_ Nachricht : Extension ( Reference ( **ISiKNachricht** ) )
+      |_ replaces : Extension ( Reference ( **Appointment** ) )
+      status
+      cancelationReason	: **ISiKTerminCancelationReason**
+      serviceType
+      specialty
+      |_ Fachrichtung : **IDEXDSauthorSpeciality**
+      priority
+      |_ extension Extension
+         |_ Priority	: Extension ( **ISiKTerminPriorityExtension** )
+      start
+      end
+      slot : Reference ( **Slot** )
+      |_ reference
+      patientInstruction
+      participant
+      |_ actor	: Reference ( **Patient** | **Practitioner** | PractitionerRole \n\t| **RelatedPerson** | Device | **HealthcareService** | Location)
+         |_ display
+      |_ status
+      |_ AkteurPatient
+         |_ actor : Reference ( **Patient** )
+            |_ reference
+      |_ AkteurPersonImGesundheitsberuf
+         |_ actor : Reference ( **Practitioner** )
+            |_ reference
+      |_ AkteurMedizinischeBehandlungseinheit
+         |_ actor : Reference ( **HealthcareService** )
+            |_ reference
    }
 
    class ISiKTerminblock <Slot><<(P,#8DA5C4)>>{
-
+      schedule	: Reference ( **Schedule** )
+      |_ reference
+      status
+      start
+      end
    }
 
-   class ISiKTerminKontaktMitGesundheitseinrichtung <Encounter><<(P,#8DA5C4)>>{
-
+   class ISiKTerminKontaktMitGesundheitseinrichtung <ISiKKontaktMitGesundheitseinrichtung, \nEncounter><<(P,#8DA5C4)>>{
+      Dokumentation der Basisressource auf Simplifier 
+      [[https://simplifier.net/isik-basis-v4/isikkontaktgesundheitseinrichtung ISiK Kontakt Gesundheitseinrichtung]]
+      ---
+      **Elemente wie in der Basisressource** und 
+      appointment : Reference ( **Appointment** )
    }
 
    'Extensions
 
    class ScheduleName <<(E,#7A8495)>>{
-   Dokumentation auf Simplifier 
-   [[https://simplifier.net/isik-terminplanung-v4/schedulename ScheduleName]]
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-terminplanung-v4/schedulename ScheduleName]]
    }
 
    class AppointmentReplaces <<(E,#7A8495)>>{
-   Dokumentation auf Simplifier 
-   [[https://simplifier.net/isik-terminplanung-v4/appointmentreplaces AppointmentReplaces]]
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-terminplanung-v4/appointmentreplaces AppointmentReplaces]]
    }
 
    class ISiKNachrichtExtension <<(E,#7A8495)>>{
-   Dokumentation auf Simplifier 
-   [[https://simplifier.net/isik-terminplanung-v4/isiknachrichtextension ISiK Nachricht Extension]]
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-terminplanung-v4/isiknachrichtextension ISiK Nachricht Extension]]
+   }
+
+   class ISiKTerminCancelationReason <<(E,#7A8495)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/isik-terminplanung-v3/isiktermincancelationreason ISiK Nachricht Extension]]
+      Includes codes defined in the code system [[https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/81887 AppointmentCancellationReason]]
+      ---
+      pat	
+      prov	
+      maint	
+      meds-inc	
+      other
    }
 
    class ISiKTerminPriorityExtension <<(E,#7A8495)>>{
-   Dokumentation auf Simplifier 
-   [[https://simplifier.net/isik-terminplanung-v4/isikterminpriorityextension ISiKTermin Priority Extension]]
-   ---
-   value[x] : **ISiKTerminPriority (required)**
-   |_ valueCodeableConcept
-   }
-}
-
-namespace MII_Kerndatensatz {
-   class Extension_Wirkstofftyp <<(E,#7A8495)>>{
       Dokumentation auf Simplifier 
-      [[https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp MII Wirkstofftyp]]
+      [[https://simplifier.net/isik-terminplanung-v4/isikterminpriorityextension ISiKTermin Priority Extension]]
+      ---
+      value[x] : **ISiKTerminPriority (required)**
+      |_ valueCodeableConcept
    }
-}
 
-namespace R4_Core {
-   class Foundation_Modul <<(M,#FFAAAA)>>{
+namespace DE_Basisprofile_R4 {
+   class Basisprofile_Modul <<(M,#FFAAAA)>>{
       Dokumentation auf HL7 Org
-      [[https://hl7.org/fhir/R4/ HL7 FHIR R4 Core Foundation]]
+      [[https://simplifier.net/basisprofil-de-r4 Basisprofil DE (RE4)]]
    }
-   class Bundle <<(P,#FFAAAA)>>{
-      Dokumentation [[https://hl7.org/fhir/R4/bundle.html R4 Bundle]]
-      --
-      identifier
-      type : BundleType
-      timestamp
-      total
-      link
-      |_ relation
-      |_ url
-      entry
-      |_ link
-      |_ fullUrl
-      |_ resource : ** Resource **
-      |_ search
-         |_ mode
-         |_ score
-      |_ request
-         |_ method
-         |_ url
-         |_ ifNoneMatch
-         |_ ifModifiedSince
-         |_ ifMatch
-         |_ ifNoneExist
-      |_ response
-         |_ status
-         |_ location
-         |_ etag
-         |_ lastModified
-         |_ outcome
+   class VS_CommonMetaTag_De <ValueSet><<(V,#8DA5C4)>>{
+      Dokumentation auf Simplifier 
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656812 VS Common Meta Tag DE]]
+      Includes codes from the underlying code System
+      [[https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656725 CS Common Meta Tag DE]]
    }
-   class List <<(P,#FFAAAA)>>{
-      Dokumentation [[https://hl7.org/fhir/R4/list.html R4 List]]
-      --
-      identifier
-      status : ListStatus
-      mode : ListMode
-      title 
-      code
-      subject : Reference (**Patient** |\n Group | Device | Location)
-      encounter : Reference (**Encounter**)
-      date
-      source : Reference (**Practitioner** |\n PractitionerRole | **Patient** | Device)
-      orderedBy
-      note
-      entry
-      |_ flag
-      |_ deleted
-      |_ date
-      |_ item : Reference(Any)
-      emptyReason
-   }
-}
 
 namespace ISiK_Basis {
    class Basismodul_Stufe_3 <<(M,#FFDC36)>>{
@@ -205,14 +201,6 @@ namespace ISiK_Basis {
    class ISiKPractitioner <Practitioner><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-basis-v3/isikpersonimgesundheitsberuf ISiK Person im Gesundheitsberuf]]
-   }
-   class ISiKDiagnose <Condition><<(P,#8DA5C4)>>{
-      Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikdiagnose ISiK Diagnose]]
-   }
-   class ISiKProzedur <Procedure><<(P,#8DA5C4)>>{
-      Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikprozedur ISiK Prozedur]]
    }
    class ISiKAngehoeriger <RelatedPerson><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
