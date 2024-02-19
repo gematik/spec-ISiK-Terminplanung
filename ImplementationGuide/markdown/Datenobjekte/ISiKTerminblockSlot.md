@@ -74,29 +74,25 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
-
-3. Der Suchparameter "status" MUSS unterstützt werden:
-
-    Beispiele:
-
-    ```GET [base]/Slot?status=busy```
-
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
-
-4. Der Suchparameter "start" MUSS unterstützt werden:
-
-    Beispiele:
-
-    ```GET [base]/Slot?start=2022-12-10T09:00:00Z```
-
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](https://hl7.org/fhir/R4/search.html#date).
-
-5. Abfrage aller verfügbaren Slots für einen Kalender:
-
-    ```GET https://example.org/fhir/Slot?schedule=<Schedule/ISiKKalenderExample>```
-
     Anwendungshinweise: In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
+    Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
+
+3. Der Suchparameter "status" MUSS in Kombination mit einer Chaining-Abfrage auf Schedule unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Slot?status=free&schedule.actor:Practitioner.name=Musterarzt```
+
+    Anwendungshinweise: Der Suchparameter MUSS NICHT alleinstehend unterstützt werden. Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
+
+4. Der Suchparameter "start" MUSS in Kombination mit einer Chaining-Abfrage auf Schedule unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Slot?start=2022-12-10T09:00:00Z&schedule.actor:Practitioner.name=Musterarzt```
+
+    Anwendungshinweise: Der Suchparameter MUSS NICHT alleinstehend unterstützt werden. Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](https://hl7.org/fhir/R4/search.html#date).
+
 ---
 
 ### Beispiele
