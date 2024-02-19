@@ -8,7 +8,7 @@ Version: 3.0.3
 
 Datum: tbd.
 
-* Präzisieren der Suchparameter-Anforderungen für Slot : 
+* Präzisieren der Suchparameter-Anforderungen für Slot : https://github.com/gematik/spec-ISiK-Terminplanung/pull/167/commits/eec6e5d5b3a621bfebb74a24e37c035baf97d2b2
 * Präzisieren der Anforderungen für Encounter: https://github.com/gematik/spec-ISiK-Terminplanung/commit/d596744d910fd39b421fc7f6f97f73edf471d47a 
 
 ----
