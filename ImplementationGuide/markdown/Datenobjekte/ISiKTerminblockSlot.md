@@ -77,7 +77,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
     Anwendungshinweise: In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
     Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
 
-3. Der Suchparameter "status" MUSS in Kombination ('&') mit einer Abfrage auf Schedule unterstützt werden. Diese Abfrage kann entweder eine direkt Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
+3. Der Suchparameter "status" MUSS in Kombination ('&') mit einer Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
 
     Beispiele:
 
@@ -85,7 +85,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Der Suchparameter MUSS NICHT alleinstehend unterstützt werden. Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
-4. Der Suchparameter "start" MUSS in Kombination ('&') mit einer Parameter-Abfrage auf Schedule unterstützt werden:
+4. Der Suchparameter "start" MUSS in Kombination ('&') mit einer Parameter-Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
 
     Beispiele:
 
