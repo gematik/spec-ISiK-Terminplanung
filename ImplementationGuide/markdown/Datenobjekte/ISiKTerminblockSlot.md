@@ -83,6 +83,9 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     ```GET [base]/Slot?status=free&schedule=Schedule/ISiKTerminExample```
 
+    ```GET [base]/Slot?status=free&schedule.actor:Practitioner.name=Musterarzt```
+
+
     Anwendungshinweise: Der Suchparameter MUSS NICHT alleinstehend unterstützt werden. Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
 4. Der Suchparameter "start" MUSS in Kombination ('&') mit einer Parameter-Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
@@ -90,6 +93,8 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
     Beispiele:
 
     ```GET [base]/Slot?start=2022-12-10T09:00:00Z&schedule=Schedule/ISiKTerminExample```
+
+    ```GET [base]/Slot?start=2022-12-10T09:00:00Z&schedule.actor:Practitioner.name=Musterarzt```
 
     Anwendungshinweise: Der Suchparameter MUSS NICHT alleinstehend unterstützt werden. Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](https://hl7.org/fhir/R4/search.html#date).
 
