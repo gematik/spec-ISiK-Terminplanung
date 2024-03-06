@@ -1,5 +1,5 @@
 ---
-canonical: https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKFormulardaten
+canonical: https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKFormulardaten
 expand: 2
 --- 
 
