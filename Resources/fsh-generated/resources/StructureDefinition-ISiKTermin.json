@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
-  "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTermin",
+  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTermin",
   "version": "3.0.2",
   "name": "ISiKTermin",
   "status": "active",
@@ -52,7 +52,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Termins MUSS nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTermin"
+            "source": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTermin"
           }
         ]
       },
@@ -90,6 +90,16 @@
       {
         "id": "Appointment.extension",
         "path": "Appointment.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -102,7 +112,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
+              "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
             ]
           }
         ],
@@ -135,7 +145,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/v4/Terminplanung/ValueSet/ISiKTerminCancelationReason"
+          "valueSet": "https://gematik.de/fhir/isik/Terminplanung/ValueSet/ISiKTerminCancelationReason"
         }
       },
       {
@@ -178,6 +188,16 @@
       {
         "id": "Appointment.priority.extension",
         "path": "Appointment.priority.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -190,7 +210,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
+              "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
             ]
           }
         ],

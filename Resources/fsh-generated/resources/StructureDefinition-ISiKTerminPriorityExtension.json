@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminPriorityExtension",
-  "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
+  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
   "version": "3.0.2",
   "name": "ISiKTerminPriorityExtension",
   "status": "active",
@@ -37,7 +37,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
+        "fixedUri": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
       },
       {
         "id": "Extension.value[x]",
@@ -51,7 +51,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/v4/Terminplanung/ValueSet/ISiKTerminPriority"
+          "valueSet": "https://gematik.de/fhir/isik/Terminplanung/ValueSet/ISiKTerminPriority"
         }
       }
     ]
