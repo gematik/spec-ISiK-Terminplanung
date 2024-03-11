@@ -46,7 +46,7 @@ Id: ISiKFormulardaten
       * ^comment = "Um die Komplexität bei der Darstellung der ausgefüllten Formulare zu reduzieren, wurde die Anzahl der erlaubten Datentypen reduziert."
     * item MS
       * ^short = "Der Antwort zugeordnetes Sub-Item"
-      * ^comment = [["Wenn ein übergeordnetes Item (Mehrfach-)Antworten zulässt, müssen Sub-Items der/den Antwort/en des übergeordneten Items zugeordnet werden. (Im Gegensatz zu item.item)]]"
+      * ^comment = "Wenn ein übergeordnetes Item (Mehrfach-)Antworten zulässt, müssen Sub-Items der/den Antwort/en des übergeordneten Items zugeordnet werden. (Im Gegensatz zu item.item)"
   * item MS 
     * ^short = "Gruppierte Sub-Items"
-    * ^comment = [["Wenn ein übergeordnetes Item keine Antworten zulässt (nur der Gruppierung dient), müssen Sub-Items unmittelbar dem übergeordneten Item zugeordnet werden. (Im Gegensatz zu item.answer.item)]]"
+    * ^comment = "Wenn ein übergeordnetes Item keine Antworten zulässt (nur der Gruppierung dient), müssen Sub-Items unmittelbar dem übergeordneten Item zugeordnet werden. (Im Gegensatz zu item.answer.item)"
