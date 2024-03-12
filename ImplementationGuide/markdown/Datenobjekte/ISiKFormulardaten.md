@@ -8,7 +8,7 @@ expand: 2
 ### Motivation
 ISiKQuestionnaireResponse dient im Kontext der Terminplanung dazu strukturierte, formularbasierte Zusatzinformationen vom Termin-Requestor an das Termin-Repository zu übermitteln (vgl. {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKNachrichtCommunication.md, text:'ISiKCommunication.payload.contentAttachment'}}).
 
-Konkret kann die QuestionnaireResponse dazu genutzt werden, vom Patienten bzw. dem Benutzer eines Terminbuchunsportals erhobene Informationen zu übermitteln, die für die Terminplanung von Relevanz sind, z.B. Fragen zu Symptomen, Anamnese, benötigten Mobilitätshilfen usw.
+Konkret kann die QuestionnaireResponse dazu genutzt werden, vom Patienten bzw. dem Benutzer eines Terminbuchungsportals erhobene Informationen zu übermitteln, die für die Terminplanung von Relevanz sind, z.B. Fragen zu Symptomen, Anamnese, benötigten Mobilitätshilfen usw.
 
 Die Questionnaire-Ressource dient in FHIR dazu, solche Fragen im Sinne eines Formulars zu spezifizieren, Antwortmöglichkeiten vorzugeben, gegebene Antworten zu validieren, und diese Formulare in standardisierter Form zwischen verschiedenen Systemen austauschbar zu machen.
 
@@ -18,7 +18,7 @@ Für künftige Ausbaustufen ist angedacht, dieses Szenario um folgende Funktiona
 * Formulardefinitionen zwischen Termin-Repository und Termin-Requestor austauschbar machen ("KIS gibt vor, welche Informationen im Portal vom Patienten abgefragt werden sollen")
 * Formulardefinitionen an bestimmte Terminarten (Appointment.serviceType) binden ("Bei Impfterminen müssen andere Informationen vom Patienten erhoben werden als bei Check-Ups")
 * Weiternutzbare und -verarbeitbare FHIR-Ressourcen aus den QuestionnaireResponses extrahieren ("Aus den Angaben des Patienten zu seinen Allergien werden AllergyIntolerance-Ressourcen erstellt und in die Patientenakte übernommen") gem. SDC-Spezifikation.
-* Formularfelder mittels der über einen FHIR-Endpunkt verfügbaren Daten automatisch vorbelegen um redundante Datenerfassung zu minimieren ("Wenn der Patient bereits im Haus war, muss er seine benötigten Mobilitätshilfen nicht erneut eingegben, er muss lediglich bestätigen, dass die zuvor erfassten Daten weiterhin aktuell sind.")
+* Formularfelder mittels der über einen FHIR-Endpunkt verfügbaren Daten automatisch vorbelegen, um redundante Datenerfassung zu minimieren ("Wenn der Patient bereits im Haus war, muss er seine benötigten Mobilitätshilfen nicht erneut eingegeben, er muss lediglich bestätigen, dass die zuvor erfassten Daten weiterhin aktuell sind.")
 
 
 ---
