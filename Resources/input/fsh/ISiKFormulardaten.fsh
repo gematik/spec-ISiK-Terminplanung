@@ -154,7 +154,7 @@ InstanceOf: ISiKFormulardaten
 Usage: #example
 * status = #completed
 * authored = "2024-03-12T11:53:19.968Z"
-* questionnaire = "http://gefyra.de/fhir/sdc/Questionnaire/Terminplanung"
+* questionnaire = "https://gematik.de/fhir/isik/Terminplanung/Questionnaire/TestFragebogen"
 * subject.display = "Testy McTestface"
 * item[+] insert qritem("1", "Dies ist ein Display-Item. Es gibt keine Antwort. Der Text kann mehrzeilig sein\r und Umbrüche enthalten. Display-Items haben keine Sub-Items!")
 * item[+] insert qritem("2", "Item mit Boolean")
