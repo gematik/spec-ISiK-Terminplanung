@@ -28,6 +28,6 @@ Der Use Case rund um die Benachrichtigung, in Folge "Kommunikation", lässt sich
 - Formulare: z.B. Einwilligung, Anamnese-Bogen -> ISiK, Questionnaire
 - Patientenhinweise: "Bitte nüchtern erscheinen, etc." -> ISiK, Appointment.patientInstruction
 - Administrative Hinweise zum Termin: z.B. Anfahrtsskizze -> ISiK, Appointment.supportingInformation
-1. Externe Kommunikation von Patient an Krankenhaus:
+1. Externe Kommunikation von Patient an Krankenhaus/Arzt:
 - Antworten auf Fragebögen / Formulare -> ISiK, QuestionnaireResponse
-- Fragen und Hinweise zum Termin -> Über ISiK möglich, ISiKNachricht (Communication)
+- Fragen und Hinweise zum Termin -> Über ISiK möglich, ISiKNachricht (Communication) u.a. in Communication.inResponseTo für bidirektionale Kommunikation
