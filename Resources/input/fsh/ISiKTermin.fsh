@@ -21,6 +21,14 @@ Id: ISiKTermin
 * slot 0..* MS
   * reference 1.. MS
 * slot ^comment = "Zur Referenzierung auf eine Slot-Ressource MUSS eine Reference.reference mit einer URL verwendet werden. Das Termin-Repository muss so gestaltet sein, dass es aus Perspektive des Clients nur eine Service-BaseUrl gibt." //Zur Begründung: verschiedene Referenzierungs-Arten (z.B. mit Business-Identifiern) sind ggf. nicht interoperabel
+* comment MS
+  * ^comment = "Im ISiK Kontext sollte dieses Feld zur internen Kommunikation zwischen Leistungserbringern verwendet werden, z.B. für interne Notizen rund um den Termin.
+
+Es gilt weiterhin die Semantik des Elements nach FHIR-Kernspezifikation:
+
+'Additional text to aid in facilitating the appointment. For instance, a comment might be, 'patient should proceed immediately to infusion room upon arrival'
+
+Where this is a planned appointment and the start/end dates are not set then this field can be used to provide additional guidance on the details of the appointment request, including any restrictions on when to book it.'"
 * patientInstruction 0..1 MS
 * participant 1..* MS
   * actor 1..1 MS
