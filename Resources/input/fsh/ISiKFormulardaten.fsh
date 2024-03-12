@@ -68,7 +68,11 @@ Usage: #example
 * authored = "2024-03-12T11:53:19.968Z"
 * questionnaire = "http://gefyra.de/fhir/sdc/Questionnaire/Terminplanung"
 * subject.display = "Testy McTestface"
-* item[0].answer.valueCoding.display = "gut"
+* item[+].linkId = "0"
+* item[=].text = "Dies ist ein Beispiel für einen Fragebogen, wie er im Kontext der ISiK-Terminplanung eingesetzt werden könnte. 
+Ziel ist es nicht, plausible und inhaltlich korrekte Fragestellungen zu formulieren, sondern die verschiedenen Formatierungsmöglichkeiten für Fragen 
+und insbesondere deren Darstellung in der QuestionnaireResponse zu testen."
+* item[+].answer.valueCoding.display = "gut"
 * item[=].linkId = "1"
 * item[=].text = "Wie geht es Ihnen?"
 * item[+].answer.valueDate = "2024-03-13"
@@ -144,3 +148,63 @@ Usage: #example
 * item[+].answer.valueString = "Nettes Formular!"
 * item[=].linkId = "8"
 * item[=].text = "Anmerkungen"
+
+Instance: TestFragebogen
+InstanceOf: ISiKFormulardaten
+Usage: #example
+* status = #completed
+* authored = "2024-03-12T11:53:19.968Z"
+* questionnaire = "http://gefyra.de/fhir/sdc/Questionnaire/Terminplanung"
+* subject.display = "Testy McTestface"
+* item[+] insert qritem("1", "Dies ist ein Display-Item. Es gibt keine Antwort. Der Text kann mehrzeilig sein\r und Umbrüche enthalten. Display-Items haben keine Sub-Items!")
+* item[+] insert qritem("2", "Item mit Boolean")
+  * answer.valueBoolean = true
+* item[+] insert qritem("3", "Item mit Integer: wiederholbar")
+  * answer.valueInteger = 1
+  * answer.valueInteger = 123456
+  * answer.valueInteger = -3723
+  * answer.valueInteger = 2147483647
+  * answer.valueInteger = 0
+* item[+] insert qritem("4", "Item mit Decimal")
+  * answer.valueDecimal = 12.3456
+* item[+] insert qritem("5", "Item mit Date: wiederholbar")
+  * answer.valueDate = "2024-03-12"
+  * answer.valueDate = "1970-01"
+  * answer.valueDate = "1984"
+* item[+] insert qritem("6", "Item mit DateTime")
+  * answer.valueDateTime = 2024-03-12T11:53:19+01:00
+* item[+] insert qritem("7", "Item mit Coding")
+  * answer.valueCoding = $ops#9-984.7 "Pflegebedürftig nach Pflegegrad 2"
+* item[+] insert qritem("8", "Item mit kurzem String")
+  * answer.valueString = "kurzer String"
+* item[+] insert qritem("9", "Item mit langem String")
+  * answer.valueString = "langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String langer String ENDE!!!"
+* item[+] insert qritem("10", "Gruppe mit Sub-Items")
+  * item[+] insert qritem("10.1", "Sub-Item 1")
+    * answer.valueBoolean = true
+  * item[+] insert qritem("10.2", "Sub-Item 2")
+    * answer.valueBoolean = true
+  * item[+] insert qritem("10.3", "Sub-Item 3")
+    * answer.valueBoolean = false
+* item[+] insert qritem("11", "Gruppe mit Sub-Items: wiederholbar")
+  * item[+] insert qritem("11.1", "Sub-Item 1")
+    * answer.valueInteger = 1
+  * item[+] insert qritem("11.2", "Sub-Item 2")
+    * answer.valueBoolean = true
+* item[+] insert qritem("11", "Gruppe mit Sub-Items: wiederholbar")
+  * item[+] insert qritem("11.1", "Sub-Item 1")
+    * answer.valueInteger = 2
+  * item[+] insert qritem("11.2", "Sub-Item 2")
+    * answer.valueBoolean = false
+* item[+] insert qritem("12", "Item mit Sub-Items: wiederholbar")
+  * answer.valueInteger = 1
+  * answer.item[+] insert qritem("12.1", "Sub-Item 1")
+    * answer.valueBoolean = true
+* item[+] insert qritem("12", "Item mit Sub-Items: wiederholbar")
+  * answer.valueInteger = 2
+  * answer.item[+] insert qritem("12.1", "Sub-Item 1")
+    * answer.valueBoolean = false
+
+RuleSet: qritem (id, text)
+* linkId = {id}
+* text = {text}
