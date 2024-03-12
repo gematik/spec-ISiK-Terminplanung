@@ -1,0 +1,176 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKFormulardaten",
+  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKFormulardaten",
+  "version": "3.0.2",
+  "name": "ISiKFormulardaten",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-01-03",
+  "publisher": "gematik GmbH",
+  "description": "Vereinfachtes QuestionnaireResponse-Profil, \r\ndas die Mindestanforderungen für empfangende Systeme zur Erzeugung \r\neiner geeigneten Darstellung eines ausgefüllten Formulars beschreibt.\r\nSendende Systeme MÜSSEN bei der Definition von Questionnaires \r\ndie entsprechenden funktionellen Einschränkungen berücksichtigen.\r\nElemente zu deren Darstellung und Interpretation empfangende Systeme mindestens in der Lage sein müssen, sind mit `Must-Support`-Flags gekennzeichnet.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "short": "Formulardefinition",
+        "comment": "Kanonischer Name der Formulardefinition, die hier ausgefüllt wurde. \r\n  Die entsprechende Formulardefinition muss in dieser Ausbaustufe vom Termin-Requestor nicht bereitgestellt, bzw. im Termin-Repository nicht bekannt/verfügbar sein.\r\n  Formulardefinitionen sollten jedoch vom festlegenden System mit einem eindeutigen Namen versehen werden.",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.status",
+        "path": "QuestionnaireResponse.status",
+        "short": "Status der Fomularbearbeitung",
+        "comment": "Im Kontext der Terminplanung werden nur vollständig ausgefüllte Formulare übermittelt.",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "short": "Patientenbezug",
+        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum ISIKPatient des Basismoduls sein. \r\n  Der Patientenkontext des Questionnaires ist identisch mit dem Patientenbezug des Appointments in dessen Kontext das Formular ausgefüllt wurde.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "short": "Formulardatum",
+        "comment": "Datum, an dem das Formular ausgefüllt/vervollständigt wurde.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item",
+        "path": "QuestionnaireResponse.item",
+        "short": "ausgefülltes Formularfeld",
+        "comment": "Optionale Felder eines Formulars, in die keine Eingaben gemacht wurden, haben kein entsprechendes Item in der QuestionnaireResponse.",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.linkId",
+        "path": "QuestionnaireResponse.item.linkId",
+        "short": "Referenz zur Definition des Formularfeldes im Questionnaire",
+        "comment": "Wenn keine Formulardefinition verfügbar ist, so müssen dennoch alle Formularfelder über eine eindeutige ID referenziert werden.",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.text",
+        "path": "QuestionnaireResponse.item.text",
+        "short": "Fragestellung/Text",
+        "comment": "Fragestellung/Text gem. Fragebogendefinition. \r\n      Da in der ersten Ausbaustufe der Zugriff auf die Fragebodendefinition/Questionnaire nicht gewährleistet ist, \r\n      müssen die Texte in der QuestionanireResponse zwingend mitgeführt werden, \r\n      damit das empfangende System die gegebenen Antworten in geeigneter Form visualisieren kann.\r\n      Der Inhalt kann aus einer knappen Fragestellung aber auch aus mehrzeiligen Hinweistexten bestehen.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer",
+        "path": "QuestionnaireResponse.item.answer",
+        "short": "Antwort",
+        "comment": "Enthält die Daten, die beim Ausfüllen in das Formularfeld mit der jeweiligen linkId eingegeben wurden.\r\n        Der Datentyp von value ist abhängig von der Art der Fragestellung. Je nach Definition des items im Questionnaire sind Mehrfachantworten möglich.\r\n        Items enthalten keine Antwort, wenn sie im Questionnaire als `group` oder `text` definiert sind.",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]",
+        "path": "QuestionnaireResponse.item.answer.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Wert der Antwort",
+        "comment": "Um die Komplexität bei der Darstellung der ausgefüllten Formulare zu reduzieren, wurde die Anzahl der erlaubten Datentypen reduziert.",
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]:valueCoding",
+        "path": "QuestionnaireResponse.item.answer.value[x]",
+        "sliceName": "valueCoding",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]:valueCoding.display",
+        "path": "QuestionnaireResponse.item.answer.value[x].display",
+        "short": "Anzeigetext zum Code",
+        "comment": "Da der ausgewählte Code auch ohne Kenntnis des verwendeten CodeSystems darstellbar sein muss, ist die Angabe des Display-Wertes verpflichtend",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.item",
+        "path": "QuestionnaireResponse.item.answer.item",
+        "short": "Der Antwort zugeordnetes Sub-Item",
+        "comment": "Wenn ein übergeordnetes Item (Mehrfach-)Antworten zulässt, müssen Sub-Items der/den Antwort/en des übergeordneten Items zugeordnet werden. (Im Gegensatz zu item.item)",
+        "mustSupport": true
+      },
+      {
+        "id": "QuestionnaireResponse.item.item",
+        "path": "QuestionnaireResponse.item.item",
+        "short": "Gruppierte Sub-Items",
+        "comment": "Wenn ein übergeordnetes Item keine Antworten zulässt (nur der Gruppierung dient), müssen Sub-Items unmittelbar dem übergeordneten Item zugeordnet werden. (Im Gegensatz zu item.answer.item)",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -124,6 +124,11 @@
               "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKBinary.md",
               "title": "ISiKBinary (Binary)",
               "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/ISiKFormulardaten.md",
+              "title": "ISiKFormulardaten (QuestionnaireResponse)",
+              "generation": "markdown"
             }
           ]
         }
