@@ -29,7 +29,13 @@ Es gilt weiterhin die Semantik des Elements nach FHIR-Kernspezifikation:
 'Additional text to aid in facilitating the appointment. For instance, a comment might be, 'patient should proceed immediately to infusion room upon arrival'
 
 Where this is a planned appointment and the start/end dates are not set then this field can be used to provide additional guidance on the details of the appointment request, including any restrictions on when to book it.'"
-* patientInstruction 0..1 MS
+* patientInstruction MS
+  * ^comment = "Dieses Feld sollte im Kontext von ISIK verwendet werden für die Kommunikation im Sinne der Definition der FHIR-Kernspezifikation - sowohl von Systemseite (administrativ) als auch von Seiten des medizinischen Fachpersonals.
+
+Beispiel für eine Nachricht: 'Bitte nüchtern erscheinen' etc.
+
+Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
+'Note that FHIR strings SHALL NOT exceed 1MB in size'"
 * participant 1..* MS
   * actor 1..1 MS
   * actor.display 1..1 MS
