@@ -19,6 +19,7 @@ Id: ISiKFormulardaten
   * ^comment = "Im Kontext der Terminplanung werden nur vollständig ausgefüllte Formulare übermittelt."
 * subject 1..1 MS
   * ^short = "Patientenbezug"
+  * ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum ISIKPatient des Basismoduls sein."
 * authored 1..1 MS
   * ^short = "Formulardatum"
   * ^comment = "Datum, an dem das Formular ausgefüllt/vervollständigt wurde."
