@@ -3,7 +3,7 @@ fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 status: active
-version: 4.0.0
+version: 4.0.0-rc
 dependencies:
-  de.gematik.isik-basismodul: 4.0.0
+  de.gematik.isik-basismodul: 4.0.0-rc
   hl7.fhir.extensions.r5: 4.0.1
