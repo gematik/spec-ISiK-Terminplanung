@@ -1,14 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementTerminplanungServer",
-  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server",
+  "url": "https://gematik.de/fhir/isik/ISiKCapabilityStatementTerminplanungServer",
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
   "version": "4.0.0-rc",
   "date": "2024-03-13",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|4.0.0-rc"
+    "https://gematik.de/fhir/isik/Implementierungsleitfaden_ISiKTerminplanung"
   ],
   "name": "ISiKCapabilityStatementTerminplanungServer",
   "title": "ISiK CapabilityStatement Terminplanung Server",
@@ -41,7 +41,7 @@
     "application/fhir+json"
   ],
   "instantiates": [
-    "https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server"
+    "https://gematik.de/fhir/isik/ISiKCapabilityStatementTerminplanungServer"
   ],
   "rest": [
     {

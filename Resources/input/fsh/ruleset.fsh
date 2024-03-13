@@ -12,5 +12,6 @@ RuleSet: Meta-Inst
 * date = "2024-03-13"
 
 RuleSet: Meta-CapabilityStatement
-* implementationGuide = "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|4.0.0-rc"
-* url = "https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server"
+* insert MetaInstance
+* implementationGuide = "https://gematik.de/fhir/isik/https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
+* url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminplanungServer"
