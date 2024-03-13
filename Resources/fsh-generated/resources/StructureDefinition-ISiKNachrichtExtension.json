@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKNachrichtExtension",
-  "url": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
-  "version": "3.0.2",
+  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
+  "version": "4.0.0-rc",
   "name": "ISiKNachrichtExtension",
   "status": "active",
   "experimental": false,
-  "date": "2024-01-03",
+  "date": "2024-03-13",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -37,7 +37,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
+        "fixedUri": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
       },
       {
         "id": "Extension.value[x]",
@@ -46,7 +46,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://gematik.de/fhir/isik/v4/Terminplanung/StructureDefinition/ISiKNachricht"
+              "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKNachricht"
             ]
           }
         ]
