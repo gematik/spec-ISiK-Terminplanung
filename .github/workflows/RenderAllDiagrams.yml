@@ -5,6 +5,7 @@ on:
     paths:
     - '**/Material/images/src/**/*.puml'
     - '**/Material/images/src/**/*.drawio'
+    - '**/Material/images/src/**/*.bpmn'
     branches-ignore:
     - 'main**'
   

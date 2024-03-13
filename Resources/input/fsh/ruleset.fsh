@@ -13,5 +13,5 @@ RuleSet: MetaInstance
 
 RuleSet: Meta-CapabilityStatement
 * insert MetaInstance
-* implementationGuide = "https://gematik.de/fhir/isik/https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
+* implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
 * url = "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminplanungServer"

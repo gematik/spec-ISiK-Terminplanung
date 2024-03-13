@@ -13,6 +13,6 @@ Damit diese Akteure sinnvoll miteinander kommunizieren, wird im Folgenden ein gr
 Da es sich um eine Zusammenfassung handelt, gelten Bedingungen für die gezeigten Inhalte:
 * Alle Must-Support Elemente einer Componente müssen von den entsprechenden Systemen suchbar sein. Diese sind hier nicht erneut aufgezählt.
 * Ein Doppelpunkt meint den Zugriff auf ein Element des beinhaltenden Profils.
-* Das Elemente hinter einem Doppelpunkt besitzt wiederum die Sucharameter (alle Must-Support Elemente!), die hier in die Suchsyntax zu inkludieren sind.
+* Das Elemente hinter einem Doppelpunkt besitzt wiederum die Suchparameter (alle Must-Support Elemente!), die hier in die Suchsyntax zu inkludieren sind.
 
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/rc/main-stufe-4/Material/images/diagrams/search_includes.svg" class="center" alt="Searchtypes" width="90%"/>

@@ -155,7 +155,7 @@ namespace ISiK_Terminplanung {
 
    class ISiKTerminCancelationReason <<(E,#7A8495)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-terminplanung-v3/isiktermincancelationreason ISiK Nachricht Extension]]
+      [[https://simplifier.net/isik-terminplanung-v4/isiktermincancelationreason ISiK Nachricht Extension]]
       Includes codes defined in the code system [[https://simplifier.net/packages/hl7.fhir.r4.core/4.0.1/files/81887 AppointmentCancellationReason]]
       ---
       pat	
@@ -174,7 +174,7 @@ namespace ISiK_Terminplanung {
    }
 
 namespace DE_Basisprofile_R4 {
-   class Basisprofile_Modul <<(M,#FFAAAA)>>{
+   class Basisprofile_DE <<(M,#FFAAAA)>>{
       Dokumentation auf HL7 Org
       [[https://simplifier.net/basisprofil-de-r4 Basisprofil DE (RE4)]]
    }
@@ -186,25 +186,25 @@ namespace DE_Basisprofile_R4 {
    }
 
 namespace ISiK_Basis {
-   class Basismodul_Stufe_3 <<(M,#FFDC36)>>{
+   class Basismodul_Stufe_4 <<(M,#FFDC36)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/~introduction ISiK Basis Stufe 3]]
+      [[https://simplifier.net/isik-basis-v4/~introduction ISiK Basis Stufe 4]]
    }
    class ISiKPatient <Patient><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikpatient ISiK Patient]]
+      [[https://simplifier.net/isik-basis-v4/isikpatient ISiK Patient]]
    }
    class ISiKKontaktGesundheitseinrichtung <Encounter><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikkontaktgesundheitseinrichtung ISiK Kontakt Gesundheitseinrichtung]]
+      [[https://simplifier.net/isik-basis-v4/isikkontaktgesundheitseinrichtung ISiK Kontakt Gesundheitseinrichtung]]
    }
    class ISiKPractitioner <Practitioner><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikpersonimgesundheitsberuf ISiK Person im Gesundheitsberuf]]
+      [[https://simplifier.net/isik-basis-v4/isikpersonimgesundheitsberuf ISiK Person im Gesundheitsberuf]]
    }
    class ISiKAngehoeriger <RelatedPerson><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v3/isikangehoeriger ISiK Angehoeriger]]
+      [[https://simplifier.net/isik-basis-v4/isikangehoeriger ISiK Angehoeriger]]
    }  
 }
 
