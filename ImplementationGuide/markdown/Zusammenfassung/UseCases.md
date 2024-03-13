@@ -3,9 +3,9 @@ Im Folgenden wird ein grafischer Überblick über möglichst viele in diesem Mod
 Da es sich um eine Zusammenfassung handelt, werden nur folgende Use Case und dafür hinreichende Funktionen dargestellt:
 * Allgemeine und intuitiv verständliche Use Cases.
   * Kombinationen und weitere Details sind möglich.
-  * Übergreifende Use Cases und und ihre Sub Use Cases können in einem separaten Diagram auf den entsprechenden Seiten gefunden werden.
+  * Übergreifende Use Cases und und ihre Sub Use Cases können in einem separaten Diagramm auf den entsprechenden Seiten gefunden werden.
 * Allgemeine und intuitiv Adverse Use Cases. Diese gilt es zu vermeiden.
-* In den Funktionen werde triviale Suchen einer Ressource anhand ihrer eigenen Properties nicht dargestellt, z.B. Suche einer Ressource anhand der ID, Name, Code usw.
+* In den Funktionen werden triviale Suchen einer Ressource anhand ihrer eigenen Properties nicht dargestellt, z.B. Suche einer Ressource anhand der ID, Name, Code usw.
 
 
 ## Use Case Diagramm
@@ -15,11 +15,11 @@ Da es sich um eine Zusammenfassung handelt, werden nur folgende Use Case und daf
 
 ## Use Case - Benachrichtigung (Kommunikation)
 
-Der Use Case rund um die Benachrichtigung, in Folge "Kommunikation", lässt sich ausdifferenzieren in folgende, die nicht alle durch ISiK sinnvollerweise abgedeckt werden kann, sondern wofür ggf. andere Anwendungen geeigneter erscheinen - wie hier dokumentiert: 
+Der Use Case rund um die Benachrichtigung, im Folgenden "Kommunikation" genannt, lässt sich in folgende Szenarien ausdifferenzieren. Sofern ISiK an bestimmten Stellen nicht geeignet erscheint wird nachfolgend eine Alternative vorgeschlagen:
 
 1. Interne Kommunikation eines Leistungserbringers mit einem anderen Leistungserbringers während der Buchung eines internen Termins:
-    - Absprache des Termins: "Anfrage des Leistungserbringers: Gibt es an diesem Datum noch einen freien Termin?" -> TIM (?)
-    - Rückfragen: Rückfrage des Leistungserbringers zur Terminanfrage -> TIM (?)
+    - Absprache des Termins: "Anfrage des Leistungserbringers: Gibt es an diesem Datum noch einen freien Termin?" -> TI-Messenger (?)
+    - Rückfragen: Rückfrage des Leistungserbringers zur Terminanfrage -> TI-Messenger (?)
     - Notizen: Interne Notizen rund um den Termin -> ISiK, Appointment.comment
     - Formulare: z.B. Interner Anforderungsschein -> ISiK, Questionnaire
 1. Externe Kommunikation von Leistungserbringers an Patient:
