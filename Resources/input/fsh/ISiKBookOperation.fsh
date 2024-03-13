@@ -1,7 +1,7 @@
 Instance: Book
 InstanceOf: OperationDefinition
 Usage: #example
-* insert Meta-Inst
+* insert MetaInstance
 * id = "ISiKAppointmentBookOperation"
 * name = "ISiKAppointmentBookOperation"
 * url = "https://gematik.de/fhir/isik/v3/Terminplanung/OperationDefinition/AppointmentBook"

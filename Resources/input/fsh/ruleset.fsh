@@ -4,7 +4,7 @@ RuleSet: Meta
 * ^version = "4.0.0-rc"
 * ^date = "2024-03-13"
 
-RuleSet: Meta-Inst
+RuleSet: MetaInstance
 * status = #active
 * experimental = false
 * publisher = "gematik GmbH"
