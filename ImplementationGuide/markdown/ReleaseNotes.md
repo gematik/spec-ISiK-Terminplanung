@@ -8,6 +8,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Datum: xx.xx.2024
 
+* Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
 * Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
   * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
 
