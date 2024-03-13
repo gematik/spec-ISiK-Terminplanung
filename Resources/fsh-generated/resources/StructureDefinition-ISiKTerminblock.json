@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminblock",
-  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTerminblock",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminblock",
   "version": "4.0.0-rc",
   "name": "ISiKTerminblock",
   "status": "active",
@@ -42,7 +42,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Terminsblocks MUSS nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKTerminblock"
+            "source": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminblock"
           }
         ]
       },

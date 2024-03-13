@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKKalender",
-  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKKalender",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender",
   "version": "4.0.0-rc",
   "name": "ISiKKalender",
   "status": "active",

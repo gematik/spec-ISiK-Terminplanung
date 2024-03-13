@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKNachricht",
-  "url": "https://gematik.de/fhir/isik/Terminplanung/StructureDefinition/ISiKNachricht",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKNachricht",
   "version": "4.0.0-rc",
   "name": "ISiKNachricht",
   "status": "active",
