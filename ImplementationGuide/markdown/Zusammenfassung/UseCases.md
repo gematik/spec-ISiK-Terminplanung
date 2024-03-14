@@ -25,9 +25,9 @@ Der Use Case rund um die Benachrichtigung, im Folgenden "Kommunikation" genannt,
 1. Externe Kommunikation von Leistungserbringers an Patient:
     - Patientenhinweise: "Bitte nüchtern erscheinen, etc." -> ISiK, Appointment.patientInstruction
 1. Externe Kommunikation von Systemen an Patient:
-- Formulare: z.B. Einwilligung, Anamnese-Bogen -> ISiK, Questionnaire
-- Patientenhinweise: "Bitte nüchtern erscheinen, etc." -> ISiK, Appointment.patientInstruction
-- Administrative Hinweise zum Termin: z.B. Anfahrtsskizze -> ISiK, Appointment.supportingInformation
+    - Formulare: z.B. Einwilligung, Anamnese-Bogen -> ISiK, Questionnaire
+    - Patientenhinweise: "Bitte nüchtern erscheinen, etc." -> ISiK, Appointment.patientInstruction
+    - Administrative Hinweise zum Termin: z.B. Anfahrtsskizze -> ISiK, Appointment.supportingInformation
 1. Externe Kommunikation von Patient an Krankenhaus/Arzt:
-- Antworten auf Fragebögen / Formulare -> ISiK, QuestionnaireResponse
-- Fragen und Hinweise zum Termin -> Über ISiK möglich, ISiKNachricht (Communication) u.a. in Communication.inResponseTo für bidirektionale Kommunikation
+    - Antworten auf Fragebögen / Formulare -> ISiK, QuestionnaireResponse
+    - Fragen und Hinweise zum Termin -> Über ISiK möglich, ISiKNachricht (Communication) u.a. in Communication.inResponseTo für bidirektionale Kommunikation
