@@ -12,7 +12,7 @@ Es liegt in der Verantwortung des bestätigungsrelevanten Systems, eine dem Schu
 
 #### Normativer Status und Bestätigung
 
-Dieses Profil MUSS im Rahmen der Bestätigung NICHT unterstützt werden. Falls das Profil unterstützt werden soll, MÜSSEN die hier definierten Festlegungen greifen (auch im Bestätigungsverfahren). 
+Dieses Profil MUSS im Rahmen der Bestätigung NICHT unterstützt werden. Falls das Profil unterstützt werden soll, MÜSSEN die hier definierten Festlegungen greifen (auch im Bestätigungsverfahren; in diesem Sinn sind auch die SHALL-Vorgaben im CapabilityStatement als bedingte zu verstehen).
 
 ---
 
