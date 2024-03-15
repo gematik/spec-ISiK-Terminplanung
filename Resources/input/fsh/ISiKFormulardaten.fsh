@@ -13,6 +13,9 @@ Id: ISiKFormulardaten
   * ^comment = "Kanonischer Name der Formulardefinition, die hier ausgefüllt wurde. 
   Die entsprechende Formulardefinition muss in dieser Ausbaustufe vom Termin-Requestor nicht bereitgestellt, bzw. im Termin-Repository nicht bekannt/verfügbar sein.
   Formulardefinitionen sollten jedoch vom festlegenden System mit einem eindeutigen Namen versehen werden."
+  * extension contains http://hl7.org/fhir/StructureDefinition/display named display 1..1
+    * ^short = "Name des Formulars"
+    * ^comment = "Menschenlesbarer Name/Titel des Formulars, entsprechend Questionnaire.title"
 * status MS
 * status = #completed
   * ^short = "Status der Fomularbearbeitung"  
@@ -67,6 +70,7 @@ Usage: #example
 * status = #completed
 * authored = "2024-03-12T11:53:19.968Z"
 * questionnaire = "http://gefyra.de/fhir/sdc/Questionnaire/Terminplanung"
+  * extension[display].valueString = "Beispielfragebogen"
 * subject.display = "Testy McTestface"
 * item[+].linkId = "0"
 * item[=].text = "Dies ist ein Beispiel für einen Fragebogen, wie er im Kontext der ISiK-Terminplanung eingesetzt werden könnte. 
@@ -155,6 +159,7 @@ Usage: #example
 * status = #completed
 * authored = "2024-03-12T11:53:19.968Z"
 * questionnaire = "https://gematik.de/fhir/isik/Terminplanung/Questionnaire/TestFragebogen"
+  * extension[display].valueString = "Testfragebogen"
 * subject.display = "Testy McTestface"
 * item[+] insert qritem("1", "Dies ist ein Display-Item. Es gibt keine Antwort. Der Text kann mehrzeilig sein\r und Umbrüche enthalten. Display-Items haben keine Sub-Items!")
 * item[+] insert qritem("2", "Item mit Boolean")
