@@ -8,7 +8,7 @@
   "version": "4.0.0-rc",
   "date": "2024-03-13",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
+    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
   ],
   "name": "ISiKCapabilityStatementTerminplanungServer",
   "title": "ISiK CapabilityStatement Terminplanung Server",
