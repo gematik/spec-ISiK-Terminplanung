@@ -4,7 +4,7 @@
 
 ### Motivation
 
-Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfügung stehenden Ressourcen (z.B. Räume / Geräte), zum Zweck der Ausübung einer Behandlungsleistung, verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden.
+Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfügung stehenden Ressourcen (z.B. Räume / Geräte), zum Zweck der Ausübung einer Behandlungsleistung, verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden. Im Kontext der Terminplanung können somit angebotene Leistungen (z.B. CT/MRT-Untersuchungen) in Kombination mit Ärtzen, Pflegepersonal, sowie weiteren notwendigen Terminressourcen (z.B. Räume) als Akteur eines Termins agieren.
 
 ---
 
