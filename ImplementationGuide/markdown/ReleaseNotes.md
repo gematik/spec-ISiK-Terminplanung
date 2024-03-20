@@ -6,8 +6,11 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 ----
 
-Datum: xx.xx.2024
+Version 4.0.0-rc
 
+Datum: tbd.
+
+* Dependency zu IHE Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
 * Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
 * Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
   * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
@@ -51,11 +54,7 @@ Mit dem Release der Stufe 3.0.1 werden die unten gelisteten Änderungen normativ
 
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v.2.0.3...v3.0.1
 
-Version 4.0.0-rc
 
-Datum: tbd.
-
-* Dependency zu IHE Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
 
 ----
 Version: 3.0.0
