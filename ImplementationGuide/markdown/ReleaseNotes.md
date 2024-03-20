@@ -51,6 +51,12 @@ Mit dem Release der Stufe 3.0.1 werden die unten gelisteten Änderungen normativ
 
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v.2.0.3...v3.0.1
 
+Version 4.0.0-rc
+
+Datum: tbd.
+
+* Dependency zu IHE Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
+
 ----
 Version: 3.0.0
 
