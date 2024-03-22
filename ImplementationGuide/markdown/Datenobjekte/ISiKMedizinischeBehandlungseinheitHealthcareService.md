@@ -4,7 +4,14 @@
 
 ### Motivation
 
-Unter einer medizinischen Behandlungseinheit wird innerhalb dieser Spezifikation ein (virtueller) Zusammenschluss von Fachabteilungen, darin agierenden Personen im Gesundheitswesen und zur Verfügung stehenden Ressourcen (z.B. Räume / Geräte), zum Zweck der Ausübung einer Behandlungsleistung, verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden. Im Kontext der Terminplanung können somit angebotene Leistungen (z.B. CT/MRT-Untersuchungen) in Kombination mit Ärtzen, Pflegepersonal, sowie weiteren notwendigen Terminressourcen (z.B. Räume) als Akteur eines Termins agieren.
+Unter einer medizinischen Behandlungseinheit wird hier im weiten Sinne eine Dienstleistung (diagnostisch, therapeutisch, im weiten Sinne gesundheitsfördernd etc.) zum Zweck einer Terminbuchung verstanden. Hierfür können von der Fachabteilung (Organization) unabhängige Kalender gepflegt werden. Im Kontext der Terminplanung können somit angebotene Leistungen (z.B. CT/MRT-Untersuchungen, chirurgische Eingriffe, Beratungsstunden zur Geburt etc.) abgebildet werden.
+
+Der Kontext zu diesem Profil wird mit folgender User Story veranschaulicht: 
+
+**User Story**: Ein Patient erhält von seiner Hausärztin einen Überweisungsschein für eine weitere diagnostische Untersuchung in Form einer Kapselendoskopie der Speiseröhre. Der Patient nutzt ein Patientenportal, um unter Angabe der benötigten diagnostische Leistung nach einem Verfügbaren Termin zu suchen und findet einen passenden Termin bei der Fachabteilung für Gastroenterologie eines örtlichen Krankenhauses.
+
+Hintergrund: Die Suche über die Dienstleistung entspricht der Angabe des Überweisungsscheins, ermöglicht hier zugleich eine präzisere Suche und vergrößert darüber hinaus den Raum möglicher Termine über verschiedene Institutionen hinweg.
+
 
 ---
 
@@ -25,6 +32,10 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplan
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit' for differential.element.constraint select key, severity, human, expression```
+
+
+Die Verknüpfung mit anderen Parametern, wie beteiligten Akteuren, erfolgt über ISiKTermin (Appointment) oder ISiKKalender (Schedule).
+
 
 ---
 
