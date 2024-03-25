@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 3.0.3
 
-Datum: tbd.
+Datum: 25.3.2024
 
 * Reduzierung der Anforderung für ISiKNachricht https://github.com/gematik/spec-ISiK-Terminplanung/pull/172
 * Präzisieren der Suchparameter-Anforderungen für Slot : https://github.com/gematik/spec-ISiK-Terminplanung/pull/168
