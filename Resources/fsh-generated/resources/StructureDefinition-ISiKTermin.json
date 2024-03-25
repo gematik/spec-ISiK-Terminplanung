@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "name": "ISiKTermin",
   "status": "active",
   "experimental": false,
-  "date": "2023-10-30",
+  "date": "2024-01-03",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -237,6 +237,7 @@
           ],
           "rules": "open"
         },
+        "comment": "Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren.",
         "mustSupport": true
       },
       {
