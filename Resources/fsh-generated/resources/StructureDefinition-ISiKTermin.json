@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "name": "ISiKTermin",
   "status": "active",
   "experimental": false,
-  "date": "2024-01-03",
+  "date": "2024-03-25",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
