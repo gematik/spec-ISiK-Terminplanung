@@ -154,7 +154,7 @@ Usage: #definition
 * rest.resource[=].searchInclude[=].extension.url = $capabilitystatement-expectation
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].extension.valueCode = #SHALL
+* rest.resource[=].extension.valueCode = #MAY
 * rest.resource[=].type = #Communication
 * rest.resource[=].supportedProfile = "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht"
 * rest.resource[=].interaction[0].extension.url = $capabilitystatement-expectation

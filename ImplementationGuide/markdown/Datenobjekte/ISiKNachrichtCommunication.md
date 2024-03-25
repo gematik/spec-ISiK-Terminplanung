@@ -4,11 +4,17 @@
 
 ### Motivation
 
-Die Communication-Ressource dient als Datenobjekt für den bidirektionalen Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten. Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden.
+Die Communication-Ressource dient als Datenobjekt für den bidirektionalen Austausch von Nachrichten zwischen einem Leistungserbringer und einem Patienten.  Es können sowohl Textnachrichten als auch Binärdateien ausgetauscht werden. 
+
+Zu einer Liste angrenzender Use Cases siehe Abschnitt zur Benachrichtigung unter {{pagelink:ImplementationGuide/markdown/Zusammenfassung/UseCases.md}} - hier wird der spezifische Use Case für dieses Profil von anderen abgegrenzt.
 
 Es liegt in der Verantwortung des bestätigungsrelevanten Systems, eine dem Schutzbedarf der ausgetauschten Nachrichten angemessene Sicherheit in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit herzustellen. Die Vorgaben des BSI, z. B. aus der TR-03161, sind zu beachten. Grundsätzlich liegen der vorliegenden Definition von ISiKNachricht die folgenden Annahmen zugrunde, die auch eine Nutzung einfach umsetzbarer Sicherheitsmaßnahmen ermöglichen:
 * ISiKNachricht SOLL ausschließlich für den Austausch administrativer, nicht personenbezogener Informationen im Kontext der Terminbuchung verwendet werden, z. B. zur Übermittlung von Coronahinweisen oder Lageplänen.
 * Der Austausch personenbezogener medizinischer Daten SOLL ausschließlich über die dafür vorgesehenen sicheren Dienste der Telematikinfrastruktur, wie z. B. ePA und zukünftig auch den TI-Messenger, erfolgen.
+
+#### Normativer Status und Bestätigung
+
+Dieses Profil MUSS im Rahmen der Bestätigung NICHT unterstützt werden. Falls das Profil unterstützt werden soll, MÜSSEN die hier definierten Festlegungen greifen (auch im Bestätigungsverfahren; in diesem Sinn sind auch die SHALL-Vorgaben im CapabilityStatement als bedingte zu verstehen).
 
 ---
 
@@ -21,14 +27,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKNachricht' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKNachricht, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKNachricht' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -58,7 +64,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Inhalt der Communication
 
-**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-3/ImplementationGuide-markdown-Einfuehrung?version=current) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine [ISiKBinary](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current) Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
+**Hinweis:** Es MÜSSEN sowohl Freitext, als auch base64-kodierte Inhalte unterstützt werden. Falls strukturierte Metadaten über das zu übermittelnde Dokument verfügbar sind, KANN es als DocumentReference-Ressource abgelegt werden. Für die Anlage einer solchen Ressource wird auf das [ISiK Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-4/ImplementationGuide-markdown-Einfuehrung?version=current) verwiesen. Die erzeugte Ressource ist anschließend unter dem contentReference-Element als Referenz anzugeben. Jegliche Funktionalität bezogen auf das Modul Dokumentenaustausch ist nicht bestätigungsrelevant. Dokumente welche als Attachment angegeben werden, MÜSSEN in ihrer URL auf eine [ISiKBinary](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current) Ressource verweisen. Diese Binary-Ressource sollte per CREATE-Interaktion angelegt werden im empfangenden System.
 
 ---
 
