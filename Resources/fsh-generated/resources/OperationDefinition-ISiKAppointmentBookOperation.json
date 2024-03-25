@@ -32,7 +32,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "Für die vorliegende Spezifikation ist die Absage eines Termin ein zwei-stufiger Prozess, bei dem ein Termin storniert und ein neuer Termin neu gebucht wird. Dieser Parameter repräsentiert die Ressourcen-Id des stornierten Appointments. Der uri-Parameter kann eine absoulte URL enthalten, Server SOLLEN jedoch nur Termine für ihre eigene Domäne verwalten. Im neu-angelegten Appointment MUSS eine Reference auf den abgesagten Termin hinterlegt werden (vgl. Appointment.extension:replaces). Der Status der abgesagten Ressource MUSS durch den Server angepasst werden.",
+      "documentation": "Für die vorliegende Spezifikation ist die Verschiebung eines Termin eins zwei-stufiger Prozess, bei dem ein Termin storniert und ein neuer Termin neu gebucht wird. Dieser Parameter repräsentiert die Ressourcen-Id des stornierten Appointments. Der uri-Parameter kann eine absoulte URL enthalten, Server SOLLEN jedoch nur Termine für ihre eigene Domäne verwalten. Im neu-angelegten Appointment MUSS eine Reference auf den abgesagten Termin hinterlegt werden (vgl. Appointment.extension:replaces). Der Status der abgesagten Ressource MUSS durch den Server angepasst werden. Die Verschiebung ist als transaktionale Operation zu verstehen, d.h. die Absage des originalen Termins ist durch den Server nur bestätigt werden, wenn der neue vorgeschlagene Termin angenommen werden kann. Andernfalls ist die Terminverschiebung mit einem entsprechenden Hinweis abzulehnen.",
       "type": "uri"
     },
     {
