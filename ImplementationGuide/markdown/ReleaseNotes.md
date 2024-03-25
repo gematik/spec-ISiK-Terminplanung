@@ -11,6 +11,7 @@ Datum: tbd.
 * Reduzierung der Anforderung für ISiKNachricht https://github.com/gematik/spec-ISiK-Terminplanung/pull/172
 * Präzisieren der Suchparameter-Anforderungen für Slot : https://github.com/gematik/spec-ISiK-Terminplanung/pull/168
 * Präzisieren der Anforderungen für Encounter: https://github.com/gematik/spec-ISiK-Terminplanung/commit/d596744d910fd39b421fc7f6f97f73edf471d47a 
+* Präzisierung informativ zu ISiKMedizinischeBehandlungseinheit (HealthcareService) https://github.com/gematik/spec-ISiK-Terminplanung/pull/176
 * Update Dependency des Basismoduls auf 3.0.4
 
 ----
