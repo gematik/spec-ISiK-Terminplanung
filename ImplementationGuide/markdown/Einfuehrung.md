@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/main-stufe-3/Material/images/Gematik_Logo_Flag.svg" alt="gematik logo" width="400"/>
 
 ----
-Version: 3.0.2
+Version: 3.0.3
 
-Datum: 03.01.2024
+Datum: 25.03.2024
 
 Status: Aktiv
 
@@ -39,3 +39,4 @@ Zugunsten des Leseflusses wird in dieser Publikation meist die
 männliche Form verwendet. Wir bitten, dies nicht als Zeichen einer
 geschlechtsspezifischen Wertung zu deuten. Diese Variante deckt auch alle
 weiteren Geschlechter, neben männlich und weiblich, ab.
+
