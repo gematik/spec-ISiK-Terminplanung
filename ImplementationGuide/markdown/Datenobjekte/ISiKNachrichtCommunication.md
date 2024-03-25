@@ -12,6 +12,10 @@ Es liegt in der Verantwortung des bestätigungsrelevanten Systems, eine dem Schu
 * ISiKNachricht SOLL ausschließlich für den Austausch administrativer, nicht personenbezogener Informationen im Kontext der Terminbuchung verwendet werden, z. B. zur Übermittlung von Coronahinweisen oder Lageplänen.
 * Der Austausch personenbezogener medizinischer Daten SOLL ausschließlich über die dafür vorgesehenen sicheren Dienste der Telematikinfrastruktur, wie z. B. ePA und zukünftig auch den TI-Messenger, erfolgen.
 
+#### Normativer Status und Bestätigung
+
+Dieses Profil MUSS im Rahmen der Bestätigung NICHT unterstützt werden. Falls das Profil unterstützt werden soll, MÜSSEN die hier definierten Festlegungen greifen (auch im Bestätigungsverfahren; in diesem Sinn sind auch die SHALL-Vorgaben im CapabilityStatement als bedingte zu verstehen).
+
 ---
 
 ### Kompabilität
