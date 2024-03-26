@@ -162,7 +162,8 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Location"
             ]
           }
         ],
