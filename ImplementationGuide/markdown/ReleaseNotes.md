@@ -13,7 +13,7 @@ Datum: tbd.
 * Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
 * Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
   * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
-* Präzisierung bool-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
+* Präzisierung book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
 
 ----
 
