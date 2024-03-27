@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKNachricht",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "name": "ISiKNachricht",
   "status": "active",
   "experimental": false,
-  "date": "2024-03-25",
+  "date": "2024-03-27",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
