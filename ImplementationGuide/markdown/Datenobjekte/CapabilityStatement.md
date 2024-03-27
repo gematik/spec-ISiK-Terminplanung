@@ -15,6 +15,6 @@ Die Verwendung der [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/ext
 
 ## CapabilityStatement (Requirement) ISiK-Terminplanung
 
-[Link Simplifier Profil Übersicht](https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server)
+[Link Simplifier Profil Übersicht](https://simplifier.net/isik-terminplanung-v4/isikcapabilitystatementterminplanungserver)
 
-{{render:https://gematik.de/fhir/isik/v3/Terminplanung/CapabilityStatement/terminplanung-server}}
+{{render:https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminplanungServer}}
