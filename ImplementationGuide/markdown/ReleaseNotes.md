@@ -9,10 +9,11 @@ Version 4.0.0-rc
 
 Datum: tbd.
 
-* Dependency zu IHE Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
+* Dependency zu IHE-Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
 * Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
 * Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
   * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
+* Location als Target von Schedule.actor als Must-Support hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/178
 * Präzisierung book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
 
 ----
