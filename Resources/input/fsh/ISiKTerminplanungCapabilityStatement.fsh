@@ -245,14 +245,14 @@ Usage: #definition
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[+]
   * extension.url = $capabilitystatement-expectation
-  * extension.valueCode = #SHALL
+  * extension.valueCode = #MAY
   * type = #Binary
   * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
-    * extension.valueCode = #SHALL
+    * extension.valueCode = #MAY
     * code = #read
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
-    * extension.valueCode = #SHALL
+    * extension.valueCode = #MAY
     * code = #create
