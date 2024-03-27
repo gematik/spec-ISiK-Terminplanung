@@ -13,3 +13,5 @@ Durch ISiK Terminplanung sollen folgende Möglichkeiten eröffnet werden:
 * Buchungsmanagement von verfügbaren Terminen
 * Benachrichtigungen bei Terminänderungen
 * Anlage eines neuen Patienten im terminführenden System (Übermittlung Patient/Versicherungsinformationen)
+
+{{index:current}}

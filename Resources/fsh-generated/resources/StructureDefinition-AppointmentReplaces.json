@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "AppointmentReplaces",
   "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces",
-  "version": "3.0.1",
+  "version": "4.0.0-rc",
   "name": "AppointmentReplaces",
   "status": "active",
   "experimental": false,
-  "date": "2023-10-30",
+  "date": "2024-03-13",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [

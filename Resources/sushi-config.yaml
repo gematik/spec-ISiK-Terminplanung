@@ -1,9 +1,10 @@
-canonical: https://gematik.de/fhir/isik/v3/Terminplanung
+canonical: https://gematik.de/fhir/isik
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
 status: active
-version: 3.0.3
+version: 4.0.0-rc
 dependencies:
-  de.gematik.isik-basismodul: 3.0.4
+  de.gematik.isik-basismodul: 4.0.0-rc
+  de.ihe-d.terminology: 3.0.0
   hl7.fhir.extensions.r5: 4.0.1

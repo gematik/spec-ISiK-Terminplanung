@@ -4,9 +4,23 @@ Im Rahmen der ISiK-Veröffentlichungen wird das [Semantic Versioning](https://se
 
 Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.
 
-Version: 3.0.3
+
+Version 4.0.0-rc
 
 Datum: tbd.
+
+* Dependency zu IHE-Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
+* Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
+* Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
+  * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
+* Location als Target von Schedule.actor als Must-Support hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/178
+* Präzisierung book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
+
+----
+
+Version: 3.0.3
+
+Datum: 25.3.2024
 
 * Reduzierung der Anforderung für ISiKNachricht https://github.com/gematik/spec-ISiK-Terminplanung/pull/172
 * Präzisieren der Suchparameter-Anforderungen für Slot : https://github.com/gematik/spec-ISiK-Terminplanung/pull/168
@@ -15,6 +29,7 @@ Datum: tbd.
 * Update Dependency des Basismoduls auf 3.0.4
 
 ----
+
 Version: 3.0.2
 
 Datum: 03.01.2024
@@ -51,6 +66,8 @@ Mit dem Release der Stufe 3.0.1 werden die unten gelisteten Änderungen normativ
 
 
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v.2.0.3...v3.0.1
+
+
 
 ----
 Version: 3.0.0

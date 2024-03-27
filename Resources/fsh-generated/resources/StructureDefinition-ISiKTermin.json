@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ISiKTermin",
-  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin",
-  "version": "3.0.1",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin",
+  "version": "4.0.0-rc",
   "name": "ISiKTermin",
   "status": "active",
   "experimental": false,
-  "date": "2023-10-30",
+  "date": "2024-03-13",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -52,7 +52,7 @@
             "severity": "error",
             "human": "Der Endzeitpunkt eines Termins MUSS nach dem Startzeitpunkt liegen",
             "expression": "start <= end",
-            "source": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
+            "source": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin"
           }
         ]
       },
@@ -102,7 +102,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension"
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKNachrichtExtension"
             ]
           }
         ],
@@ -135,7 +135,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/v3/Terminplanung/ValueSet/ISiKTerminCancelationReason"
+          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ISiKTerminCancelationReason"
         }
       },
       {
@@ -190,7 +190,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension"
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminPriorityExtension"
             ]
           }
         ],
@@ -221,8 +221,15 @@
         "mustSupport": true
       },
       {
+        "id": "Appointment.comment",
+        "path": "Appointment.comment",
+        "comment": "Im ISiK Kontext sollte dieses Feld zur internen Kommunikation zwischen Leistungserbringern verwendet werden, z.B. für interne Notizen rund um den Termin.\n\nEs gilt weiterhin die Semantik des Elements nach FHIR-Kernspezifikation:\n\n'Additional text to aid in facilitating the appointment. For instance, a comment might be, 'patient should proceed immediately to infusion room upon arrival'\n\nWhere this is a planned appointment and the start/end dates are not set then this field can be used to provide additional guidance on the details of the appointment request, including any restrictions on when to book it.'",
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.patientInstruction",
         "path": "Appointment.patientInstruction",
+        "comment": "Dieses Feld sollte im Kontext von ISIK verwendet werden für die Kommunikation im Sinne der Definition der FHIR-Kernspezifikation - sowohl von Systemseite (administrativ) als auch von Seiten des medizinischen Fachpersonals.\n\nBeispiel für eine Nachricht: 'Bitte nüchtern erscheinen' etc.\n\nEs gilt weiterhin der Hinweis der FHIR Kernspezifikation:\n'Note that FHIR strings SHALL NOT exceed 1MB in size'",
         "mustSupport": true
       },
       {
@@ -237,6 +244,7 @@
           ],
           "rules": "open"
         },
+        "comment": "Die Kardinalität von actor.display und das MS-Flag von .status wird an die Slices vererbt und diese sind entsprechend zu implementieren.",
         "mustSupport": true
       },
       {
