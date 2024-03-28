@@ -4,7 +4,7 @@ ISiKBinary dient im Kontext der Terminplanung dazu Zusatzinformationen an das Te
 
 ### Normativer Status
 
-Da die ISiKNachricht NICHT unterstützt werden MUSS, gilt für die ISiKBinary: diese SOLL unterstützt werden, falls eine ISiKNachricht unterstützt wird.
+Da die ISiKNachricht NICHT unterstützt werden MUSS, gilt für die ISiKBinary: diese MUSS unterstützt werden, falls eine ISiKNachricht unterstützt wird.
 
 ---
 
