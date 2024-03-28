@@ -4,7 +4,7 @@ Usage: #example
 * insert MetaInstance
 * id = "ISiKAppointmentBookOperation"
 * name = "ISiKAppointmentBookOperation"
-* url = "https://gematik.de/fhir/isik/v3/Terminplanung/OperationDefinition/AppointmentBook"
+* url = "https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook"
 * kind = #operation
 * name = "book"
 * code = #book
