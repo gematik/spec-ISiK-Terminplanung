@@ -250,7 +250,7 @@ Usage: #definition
   * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
-    * extension.valueCode = #MAY
+    * extension.valueCode = #SHALL
     * code = #read
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
