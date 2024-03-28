@@ -245,7 +245,7 @@ Usage: #definition
 * rest.resource[=].searchRevInclude[=].extension.valueCode = #SHALL
 * rest.resource[+]
   * extension.url = $capabilitystatement-expectation
-  * extension.valueCode = #MAY
+  * extension.valueCode = #SHALL
   * type = #Binary
   * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
   * interaction[+]
