@@ -394,7 +394,7 @@
                 }
               ],
               "name": "book",
-              "definition": "https://gematik.de/fhir/isik/v3/Terminplanung/OperationDefinition/AppointmentBook"
+              "definition": "https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook"
             }
           ],
           "searchInclude": [

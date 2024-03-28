@@ -7,7 +7,7 @@
   "version": "4.0.0-rc",
   "date": "2024-03-13",
   "name": "book",
-  "url": "https://gematik.de/fhir/isik/v3/Terminplanung/OperationDefinition/AppointmentBook",
+  "url": "https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook",
   "kind": "operation",
   "code": "book",
   "resource": [
