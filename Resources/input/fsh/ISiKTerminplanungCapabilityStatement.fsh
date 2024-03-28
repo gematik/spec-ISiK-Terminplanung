@@ -254,5 +254,5 @@ Usage: #definition
     * code = #read
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
-    * extension.valueCode = #MAY
+    * extension.valueCode = #SHALL
     * code = #create
