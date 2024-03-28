@@ -662,7 +662,7 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "MAY"
+              "valueCode": "SHALL"
             }
           ],
           "type": "Binary",
