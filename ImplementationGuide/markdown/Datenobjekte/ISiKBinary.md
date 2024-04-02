@@ -4,7 +4,7 @@ ISiKBinary dient im Kontext der Terminplanung dazu Zusatzinformationen an das Te
 
 ### Normativer Status
 
-Da die ISiKNachricht NICHT unterstützt werden MUSS, gilt für die ISiKBinary: diese MUSS unterstützt werden, falls eine ISiKNachricht unterstützt wir. Iin diesem Sinne sind auch die Vorgaben 'SHALL' im CapabilityStatement als bedingte zu verstehen.
+Da die ISiKNachricht NICHT unterstützt werden MUSS, gilt für die ISiKBinary: diese MUSS unterstützt werden, falls eine ISiKNachricht unterstützt wir. In diesem Sinne sind auch die Vorgaben 'SHALL' im CapabilityStatement als bedingte zu verstehen.
 
 ---
 
