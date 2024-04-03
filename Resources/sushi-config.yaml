@@ -2,7 +2,6 @@ canonical: https://gematik.de/fhir/isik
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false
-status: active
 version: 4.0.0-rc
 dependencies:
   de.gematik.isik-basismodul: 4.0.0-rc

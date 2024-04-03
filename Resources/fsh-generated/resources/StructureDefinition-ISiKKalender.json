@@ -4,28 +4,11 @@
   "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender",
   "version": "4.0.0-rc",
   "name": "ISiKKalender",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2024-03-13",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "ical",
-      "uri": "http://ietf.org/rfc/2445",
-      "name": "iCalendar"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Schedule",
