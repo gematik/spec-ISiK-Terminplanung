@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementTerminplanungServer",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminplanungServer",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "gematik GmbH",
   "version": "4.0.0-rc",
