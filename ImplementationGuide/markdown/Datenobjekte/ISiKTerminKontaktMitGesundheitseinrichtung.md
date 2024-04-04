@@ -34,7 +34,7 @@ from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefi
 
 **Hinweise:** Die Referenz auf Appointment ermöglicht Portalen den Fallbezug aus dem Termin zu ermitteln und Dokumente an ein KIS zu senden. 
 
-Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der entsprechende [Implementation Guide zum Modul Dokumentenaustausch](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Modul-Dokumentenaustausch-Stufe-3/ImplementationGuide-markdown-Einfuehrung?version=current) zu beachten.
+Zur Umsetzung der Funktionalität zum Dokumentenaustausch gemäß ISiK ist der entsprechende [Implementation Guide zum Modul Dokumentenaustausch](https://simplifier.net/guide/isik-dokumentenaustausch-v4?version=current) zu beachten.
 
 ---
 
@@ -50,6 +50,6 @@ Der Suchparameter "appointment" MUSS unterstützt werden:
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "appointment" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Reference Search"](https://www.hl7.org/fhir/R4/search.html#reference).
 
-### Weitere
+### Weiteres
 
 Siehe für weitere Anmerkungen und Vorgaben den [ISiK-Basis-Encounters (ISiKKontaktGesundheitseinrichtung)](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt?version=current)
