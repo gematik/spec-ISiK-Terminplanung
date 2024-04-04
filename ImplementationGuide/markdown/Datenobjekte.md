@@ -1,9 +1,9 @@
 # Datenobjekte
 
-Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 3](https://simplifier.net/guide/implementierungsleitfaden-isik-basismodul-stufe-3?version=current) werden in diesem Modul verwendet:
-* [Patient](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Patient?version=current)
-* [Practitioner](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-Datenobjekte-Datenobjekte-PersonImGesundheitsberuf?version=current)
-* [Binary](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current)
+Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 3](https://simplifier.net/guide/isik-basis-v4?version=current) werden in diesem Modul verwendet:
+* [Patient](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient?version=current)
+* [Practitioner](https://simplifier.net/guide/isik-basis-v4/markdown-Datenobjekte-Datenobjekte_PersonImGesundheitsberuf?version=current)
+* [Binary](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Binary?version=current)
 
 Die Verwendung in diesem Modul bedeutet:
 Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein. 

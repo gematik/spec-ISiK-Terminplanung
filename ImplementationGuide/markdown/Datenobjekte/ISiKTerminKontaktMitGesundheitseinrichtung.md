@@ -52,4 +52,4 @@ Der Suchparameter "appointment" MUSS unterstützt werden:
 
 ### Weitere
 
-Siehe für weitere Anmerkungen und Vorgaben den [ISiK-Basis-Encounters (ISiKKontaktGesundheitseinrichtung)](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Kontakt?version=current)
+Siehe für weitere Anmerkungen und Vorgaben den [ISiK-Basis-Encounters (ISiKKontaktGesundheitseinrichtung)](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt?version=current)

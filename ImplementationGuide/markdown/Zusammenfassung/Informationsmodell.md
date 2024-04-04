@@ -13,5 +13,5 @@ Da es sich um eine Zusammenfassung handelt, werden nur folgende Profile und Feld
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/rc/main-stufe-4/Material/images/diagrams/resourcediagram.svg" alt="Ressourcen Diagram" width="90%"/>
 
 ## Informationsmodell Diagramm
-
-<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Terminplanung/rc/main-stufe-4/Material/images/diagrams/infomodell.svg" alt="Informationsmodell" width="90%"/>
+ 
+ WIP
