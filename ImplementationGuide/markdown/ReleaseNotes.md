@@ -7,15 +7,20 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 4.0.0-rc
 
-Datum: tbd.
+Datum: 4.4.2024
 
+* Location als Aktuer eines Kalenders hinzugefügt, da in ISiK Basis Stufe 4 vorhanden by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/178
+* Update $book: Verschiebung eines Termins by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/174
 * Dependency zu IHE-Package zwecks Auflösung von ValueSets hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/175
 * Erweiterung von ISiKTermin zur Abdeckung der Kommunikations-Use-Cases und Hinweise zu letzteren https://github.com/gematik/spec-ISiK-Terminplanung/pull/173
 * Klarstellung hinzugefügt, dass Terminkalender im Kontext eines Leistungserbringers abgefragt werden können
   * Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Behandlers @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/87
-* Location als Target von Schedule.actor als Must-Support hinzugefügt https://github.com/gematik/spec-ISiK-Terminplanung/pull/178
 * Präzisierung book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
+* Hinweis zur Abfrage von Behandlungsleistungen im Kontext eines Leistungserbringers by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/144
+* Fix CpS by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/179
+* Klarstellung cancelled-appt-id by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
 
+**Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v3.0.3...v.4.0.0-rc
 ----
 
 Version: 3.0.3
