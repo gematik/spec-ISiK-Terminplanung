@@ -56,7 +56,7 @@
           ],
           "type": "Schedule",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender"
           ],
           "interaction": [
             {
@@ -171,7 +171,7 @@
           ],
           "type": "Slot",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminblock"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminblock"
           ],
           "interaction": [
             {
@@ -275,7 +275,7 @@
           ],
           "type": "Appointment",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin"
           ],
           "interaction": [
             {
@@ -429,7 +429,7 @@
           ],
           "type": "Communication",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachricht"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKNachricht"
           ],
           "interaction": [
             {
@@ -547,7 +547,7 @@
           ],
           "type": "HealthcareService",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
+            "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedizinischeBehandlungseinheit"
           ],
           "interaction": [
             {

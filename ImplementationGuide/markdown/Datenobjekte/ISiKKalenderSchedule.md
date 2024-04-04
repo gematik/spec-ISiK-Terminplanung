@@ -17,14 +17,14 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender, hybrid}}
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -32,7 +32,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender' )
+where url in ('https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender' )
 for differential.element
 select
 Path: path,

@@ -17,16 +17,16 @@ Siehe {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Kompati
 ### FHIR-Profil
 
 @```
-from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin' select Name: name, Canonical: url
 ```
 
-{{tree:https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin, hybrid}}
+{{tree:https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin, hybrid}}
 
 **Hinweis:** Die Kardinalität von participant.actor.display und das MS-Flag von participant.status wird an die Slices vererbt und diese sind entsprechend zu implementieren.
 
 Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
-@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
+@``` from StructureDefinition where url = 'https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin' for differential.element.constraint select key, severity, human, expression```
 
 ---
 
@@ -34,7 +34,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 @```
 from StructureDefinition
-where url in ('https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin' )
+where url in ('https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin' )
 for differential.element
 select
 Path: path,

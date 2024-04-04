@@ -12,11 +12,11 @@ Es gelten die allgemeinen Vorgaben der FHIR-Kernspezifikation für die Ausführu
 
 Folgende Schritte KÖNNEN notwendig sein, sodass ein Termin durch einen Termin-Requestor innerhalb eines Termin-Repository eingestellt wird. Es ist zu beachten, dass für spezielle Implementierungen nicht alle Schritte hiervon relevant sind und übersprungen werden können.
 
-Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung und Autorisierung zu implementieren ist. Es wird hierzu auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/implementierungsleitfaden-isik-sicherheit-stufe-3?version=current) verwiesen.
+Generell wird darauf hingewiesen, dass abhängig davon, welcher Client oder Benutzer eine Interaktion ausführt, unterschiedliche Ergebnisse zurückgeliefert werden können. Die vorliegende Spezifikation macht keine Vorgaben, wie eine Authentifizierung und Autorisierung zu implementieren ist. Es wird hierzu auf das [ISiK-Modul 'Sicherheit'](https://simplifier.net/guide/isik-sicherheit-v3?version=current) verwiesen.
 
 User Story für die folgenden Beispiele: Ein Patient bucht über ein externes Patientenportal einen Termin in der allgemeinmedizinischen Ambulanz eines Krankenhauses. Da der Patient seit Tagen Bauchschmerzen hat, die in den letzten Stunden stärker werden, wählt er die Priorität "Notfall".
 
-1. Abfrage aller Kodierungen der angebotenen gesundheitlichen Dienstleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService` bzw. `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/v3/Terminplanung/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|Schedule`
+1. Abfrage aller Kodierungen der angebotenen gesundheitlichen Dienstleistungen durch den Termin-Requestor: `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|HealthcareService` bzw. `GET https://example.org/fhir/CodeSystem?context-type-value=https://gematik.de/fhir/isik/CodeSystem/ContextType|ResourceUsage$http://hl7.org/fhir/resource-types|Schedule`
 
 Das Termin-Repository MUSS alle CodeSysteme exponieren, welche für die Kodierung einer verfügbaren gesundheitlichen Dienstleistungen relevant sind. Die Anfrage ist nicht auf HealthcareService beschränkt, weitere Ressourcen-Kontexte können hierfür relevant sein. Beispielsweise erfolgt die Kodierung der Leistungen für einen Behandler im Kontext eines Schedules (vgl. {{pagelink:ImplementationGuide/markdown/Datenobjekte/ISiKKalenderSchedule.md, text:Schedule.serviceType}}). Alle verwendeten CodeSysteme MÜSSEN exponiert werden, insoweit diese sich als CodeSystem-Ressourcen ausdrücken lassen.
 
@@ -61,12 +61,12 @@ In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `
       }
     ],
     "profile": [
-      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin"
     ]
   },
   "extension": [
     {
-      "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
+      "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKNachrichtExtension",
       "valueReference": {
         "reference": "Communication/ISiKNachrichtExample"
       }
@@ -112,7 +112,7 @@ In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `
   "_priority": {
     "extension": [
       {
-        "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
+        "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminPriorityExtension",
         "valueCodeableConcept": {
           "coding": [
             {
@@ -141,12 +141,12 @@ Antwort des Termin-Repository:
       }
     ],
     "profile": [
-      "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTermin"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin"
     ]
   },
   "extension": [
     {
-      "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKNachrichtExtension",
+      "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKNachrichtExtension",
       "valueReference": {
         "reference": "Communication/ISiKNachrichtExample"
       }
@@ -192,7 +192,7 @@ Antwort des Termin-Repository:
   "_priority": {
     "extension": [
       {
-        "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
+        "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminPriorityExtension",
         "valueCodeableConcept": {
           "coding": [
             {
