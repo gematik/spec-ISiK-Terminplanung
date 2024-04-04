@@ -5,7 +5,7 @@
   "experimental": false,
   "publisher": "gematik GmbH",
   "version": "4.0.0-rc",
-  "date": "2024-03-13",
+  "date": "2024-04-04",
   "name": "book",
   "url": "https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook",
   "kind": "operation",
