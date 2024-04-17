@@ -1,26 +1,3 @@
-@startuml dummy
-' package Dummy{
-' entity Entität01 {
-'    optionales Attribut
-'    **optionales fettes Attribut**
-'    * **vorgeschriebens fettes Attribut**
-' }
-' 
-' entity Entität01 {
-'    optionales Attribut : text
-'    **optionales fettes Attribut** nummer <<auto>>
-'    * **vorgeschriebens fettes Attribut**
-' }
-' Entität01 }|..|| Entität02
-' Entität03 }o..o| Entität04
-' Entität05 ||--o{ Entität06
-' Entität07 |o--|| Entität08
-' }
-@enduml
-
-
-' TODO:
-' Vervollständigen im Sinne  von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
 
 @startuml resourcediagram
 'verhindere Probleme mit gewinkelten Krähenfüßen

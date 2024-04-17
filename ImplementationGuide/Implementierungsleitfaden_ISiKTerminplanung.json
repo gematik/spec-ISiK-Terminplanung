@@ -22,31 +22,14 @@
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
-          "title": "Release Notes",
+          "nameUrl": "ImplementationGuide/markdown/Motivation.md",
+          "title": "Motivation",
           "generation": "markdown"
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
-          "title": "Zusammenfassung",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
-              "title": "Anwendungsfälle (Use Cases)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
-              "title": "Informationsmodell",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
-              "title": "Interaktionen Und SearchTypes",
-              "generation": "markdown"
-            }
-          ]
+          "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
+          "title": "ReleaseNotes",
+          "generation": "markdown"
         },
         {
           "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
@@ -64,12 +47,34 @@
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Akteure.md",
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/RestApi.md",
+              "title": "REST-API",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Suchparameter.md",
+              "title": "Suchparameter",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung.md",
+          "title": "Zusammenfassung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md",
+              "title": "Anwendungsfälle (Use Cases)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/Akteure.md",
               "title": "Akteure",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Interaktionen.md",
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/Interaktionen.md",
               "title": "Interaktionen",
               "generation": "markdown"
             }

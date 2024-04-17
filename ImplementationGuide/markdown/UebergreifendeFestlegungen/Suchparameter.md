@@ -1,0 +1,5 @@
+# Allgemeine Hinweise zu Suchparametern
+
+Generell gültige Aussagen und einführende Erklärungen zu den Suchparametern sind [im Basismodul](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen_Suchparameter) zu finden.
+
+Innerhalb der jeweiligen Abschnitte 'Interaktionen' der Profilbeschreibungen (Siehe {{pagelink:ImplementationGuide/markdown/Datenobjekte/Datenobjekte.md}}) werden für alle innerhalb dieses Implementierungsleitfadens spezifizierten FHIR-Ressourcen Suchparameter bestimmt, welche im Rahmen des Bestätigungsverfahrens von ISiK unterstützt werden MÜSSEN. Der fachliche Zusammenhang zwischen den {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:Use Cases}} und den verketteten Suchparametern wird für das Modul exemplarisch und in der Profilbeschreibung für jede entsprechende Anforderung aufgezeigt.

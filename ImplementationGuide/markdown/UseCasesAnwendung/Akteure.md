@@ -1,10 +1,15 @@
-## {{page-title}}
+# {{page-title}}
 
 Innerhalb des ISiK Moduls Terminplanung kann ein beteiligtes System verschiedene Rollen einnehmen und somit unterschiedliche Aufgaben innerhalb der im Abschnitt {{pagelink:ImplementationGuide/markdown/UebergreifendeFestlegungen/Interaktionen.md}} definierten Arbeitsabläufe übernehmen. Im Weiteren werden diese Rollen mithilfe der Definition von Akteuren formalisiert, sodass eine Zuordnung von relevanten Interaktionen zum jeweiligen Akteur erfolgen kann.
 
+Es ist zu beachten, dass in vielen Fällen ein Terminmangementsystem aus unterschiedlichen Modulen besteht, die mehreren oder allen der genannten Akteure entsprechen:
+* Ein **Termin Repository**, da das System das terminführende System ist
+* Ein **Termin Requestor**, um intern im System einen Termin zu vereinbaren
+* Ein **Termin Consumer** um eine Übersicht der vereinbarten Termine anzuzeigen
+
 Grundsätzlich wird als Terminblock eine für einen Termin buchbare Zeiteinheit verstanden, in der bestimmte Ressourcen (z.B. Fachabteilungen, Personen im Gesundheitswesen, Geräten, Räumen) zur Verfügung stehen. Übergreifend über ein oder mehrere Terminblöcke hinweg kann für diese Ressourcen anschließend ein Termin vereinbart werden.
 
-### Termin Repository
+## Termin Repository
 
 **Definition:**
 
@@ -17,7 +22,7 @@ Das Termin Repository kann intern in ein Repository für die Termine und ein sep
 * Patientenportal im Falle, dass das System selbst terminführend ist
 * KIS / KAS inkl. Terminverwaltung 
 
-### Termin Requestor / Termin Source
+## Termin Requestor / Termin Source
 
 **Definition:**
 
@@ -27,7 +32,7 @@ Als Termin Requestor (in Anlehnung an die IHE Terminologie auch als Termin Sourc
 
 * Patientenportal im Falle, dass ein externes System das terminführende System ist
 
-### Termin Consumer
+## Termin Consumer
 
 **Definition:**
 
@@ -39,7 +44,7 @@ Als Termin Consumer werden alle System definiert, die Termininformationen abfrag
 * Backendsysteme zum Versenden von Benachrichtigungen im Kontext eines Termins
 * Ressourcenmanagementsoftware
 
-### Übersicht der Akteure
+## Übersicht der Akteure
 
 Es sei zu beachten, dass in vielen Fällen ein Terminmangementsystem aus unterschiedlichen Modulen besteht, die mehreren oder allen der genannten Akteure entsprechen:
 1. Ein Termin Repository, da das System das terminführende System ist
