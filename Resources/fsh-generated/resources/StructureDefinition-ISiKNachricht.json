@@ -29,7 +29,7 @@
       {
         "id": "Communication.subject",
         "path": "Communication.subject",
-        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.",
+        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein.",
         "min": 1,
         "type": [
           {
@@ -58,7 +58,7 @@
           ],
           "rules": "open"
         },
-        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.",
+        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.",
         "min": 1,
         "mustSupport": true
       },

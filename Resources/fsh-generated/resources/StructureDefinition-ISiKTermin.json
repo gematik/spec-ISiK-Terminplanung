@@ -241,7 +241,7 @@
         "id": "Appointment.participant:AkteurPatient",
         "path": "Appointment.participant",
         "sliceName": "AkteurPatient",
-        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein.",
+        "comment": "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein.",
         "min": 1,
         "max": "*",
         "mustSupport": true
@@ -268,7 +268,7 @@
         "id": "Appointment.participant:AkteurPersonImGesundheitsberuf",
         "path": "Appointment.participant",
         "sliceName": "AkteurPersonImGesundheitsberuf",
-        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.",
+        "comment": "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein.",
         "min": 0,
         "max": "*",
         "mustSupport": true
