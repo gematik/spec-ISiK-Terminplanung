@@ -247,7 +247,7 @@ Usage: #definition
   * extension.url = $capabilitystatement-expectation
   * extension.valueCode = #SHALL
   * type = #Binary
-  * supportedProfile = "https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKBinary"
+  * supportedProfile = "https://gematik.de/fhir/isik/StructureDefinition/ISiKBinary"
   * interaction[+]
     * extension.url = $capabilitystatement-expectation
     * extension.valueCode = #SHALL

@@ -6,7 +6,7 @@ Id: ISiKNachricht
 * status MS
 * subject 1..1 MS
 * subject only Reference(Patient)
-* subject ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein."
+* subject ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein."
 * sent MS
 * recipient 1..* MS
   * identifier 0..1 MS
@@ -17,7 +17,7 @@ Id: ISiKNachricht
 * recipient contains ISiKRecipient 1.. MS
 * recipient[ISiKRecipient] only Reference(Practitioner or HealthcareService)
 * recipient[ISiKRecipient].reference 1..1 MS
-* recipient ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
+* recipient ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
 * payload 1..* MS
   * content[x] MS
   * contentString MS

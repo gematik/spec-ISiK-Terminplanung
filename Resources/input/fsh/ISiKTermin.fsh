@@ -48,12 +48,12 @@ Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
 * participant[AkteurPatient].actor only Reference(Patient)
 * participant[AkteurPatient].actor MS
 * participant[AkteurPatient].actor.reference 1..1 MS
-* participant[AkteurPatient] ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein."
+* participant[AkteurPatient] ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient) des Basismoduls sein."
 * participant contains AkteurPersonImGesundheitsberuf 0.. MS
 * participant[AkteurPersonImGesundheitsberuf].actor only Reference(Practitioner)
 * participant[AkteurPersonImGesundheitsberuf].actor MS
 * participant[AkteurPersonImGesundheitsberuf].actor.reference 1..1 MS
-* participant[AkteurPersonImGesundheitsberuf] ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
+* participant[AkteurPersonImGesundheitsberuf] ^comment = "Im ISIK-Kontext MUSS die referenzierte Practitioner-Ressource konform zum [ISiKPersonImGesundheitsberuf](https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf) des Basismoduls sein."
 * participant contains AkteurMedizinischeBehandlungseinheit 0.. MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor only Reference(HealthcareService)
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
