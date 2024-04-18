@@ -41,6 +41,7 @@ storage gnrlUC as "Allgemein" {
     (Schließzeiten)
     (Terminhistorie)
     (Personalplanung)
+    (Schicht-System)
     storage booKUC as "Buchung von Terminen"{
         (Absage) 
         (Verschieben)

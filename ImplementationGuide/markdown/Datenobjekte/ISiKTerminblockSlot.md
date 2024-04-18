@@ -112,7 +112,7 @@ Die folgenden Suchparameter des Profils ```Slot``` KÖNNEN die Angabe von weiter
 
 1. Der Suchparameter "schedule" KANN Ausgangspunkt für eine Angabe von weiteren Chaining-Parametern sein:
 
-    Um ....
+    Um in der Versorgung eine {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:Verwechslung}} zwischen verschiedenen Patienten vermeiden und die {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:benötigte Expertise}} durch den Leistungserbringer sicherheitzustellen.
 
     Beispiele:
 
@@ -120,7 +120,7 @@ Die folgenden Suchparameter des Profils ```Slot``` KÖNNEN die Angabe von weiter
 
 2. Der Suchparameter "status" KANN Ausgangspunkt für eine Angabe von weiteren Chaining-Parametern sein:
     
-    Um ....
+    Um sicherzustellen, dass die {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:benötigte Expertise}} durch einen entsprechenden Leistungserbringer aus der aktuellen {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:Schicht}} abgedeckt werden kann.
     
     Beispiele:
 
@@ -128,7 +128,7 @@ Die folgenden Suchparameter des Profils ```Slot``` KÖNNEN die Angabe von weiter
 
 3. Der Suchparameter "start" KANN Ausgangspunkt für eine Angabe von weiteren Chaining-Parametern sein:
 
-    Um ....
+    Um sicherzustellen, dass die {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:benötigte Expertise}} des Leistungserbringers zum Start des Termins nicht {{pagelink:ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md, text:mehrfach belegt}} ist.
     
     Beispiele:
 
