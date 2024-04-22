@@ -47,11 +47,6 @@
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/RestApi.md",
-              "title": "REST-API",
-              "generation": "markdown"
-            },
-            {
               "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Suchparameter.md",
               "title": "Suchparameter",
               "generation": "markdown"
