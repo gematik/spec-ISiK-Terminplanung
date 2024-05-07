@@ -37,4 +37,4 @@ jobs:
             with:
               committer_name: GitHub Actions Bot
               committer_email: ActionBot@github.com
-              message: auto-generated file update of TC version by GitHub Actions (CI FSH to FHIR Validation)
+              message: auto-generated file update of TC version by GitHub Actions
