@@ -6,7 +6,7 @@
         "4.0.1"
     ],
     "dependencies": {
-        "de.gematik.isik-basismodul": "3.0.4"
+        "de.gematik.isik-basismodul": "3.0.x"
       }
 }
 
