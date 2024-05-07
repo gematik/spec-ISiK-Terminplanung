@@ -2,14 +2,14 @@ RuleSet: Meta
 * ^experimental = false
 * ^publisher = "gematik GmbH"
 * ^version = "3.0.4"
-* ^date = "2024-03-27"
+* ^date = "2024-05-07"
 
 RuleSet: Meta-Inst
 * status = #active
 * experimental = false
 * publisher = "gematik GmbH"
 * version = "3.0.4"
-* date = "2024-03-27"
+* date = "2024-05-07"
 
 RuleSet: Meta-CapabilityStatement
 * implementationGuide = "https://gematik.de/fhir/isik/v3/Terminplanung/ImplementationGuide|3.0.4"
