@@ -2,20 +2,13 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminPriorityExtension",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKTerminPriorityExtension",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "name": "ISiKTerminPriorityExtension",
   "status": "active",
   "experimental": false,
-  "date": "2024-03-25",
+  "date": "2024-05-07",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

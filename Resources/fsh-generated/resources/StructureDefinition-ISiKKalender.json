@@ -2,30 +2,13 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKKalender",
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/StructureDefinition/ISiKKalender",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "name": "ISiKKalender",
   "status": "active",
   "experimental": false,
-  "date": "2024-03-25",
+  "date": "2024-05-07",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "ical",
-      "uri": "http://ietf.org/rfc/2445",
-      "name": "iCalendar"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Schedule",
