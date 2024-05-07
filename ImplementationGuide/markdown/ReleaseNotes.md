@@ -10,6 +10,7 @@ Version: 3.0.4
 Datum: 7.5.2024
 
 * Update ISIK Basismodul Dependency to Wildcard
+* Schwächung der Anforderung für ISiKBinary https://github.com/gematik/spec-ISiK-Terminplanung/pull/181
 
 ----
 Version: 3.0.3
