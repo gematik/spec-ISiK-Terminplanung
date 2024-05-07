@@ -7,6 +7,9 @@ on:
         - 'TC-*'
         - 'TC_*'
 
+    
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:        
 
 # setup python and run script 
 jobs:
