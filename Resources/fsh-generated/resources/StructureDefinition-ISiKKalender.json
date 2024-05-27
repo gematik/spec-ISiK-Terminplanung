@@ -105,7 +105,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCodeDoctoral"
+          "valueSet": "http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode"
         }
       },
       {
