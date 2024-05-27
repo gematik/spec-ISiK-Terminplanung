@@ -99,11 +99,7 @@ Usage: #example
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
-<<<<<<< HEAD
 * specialty = $IHEAerztlicheFachrichtungen#ALLG
-=======
-* specialty = $IHEpracticeSettingCS#ALLG
->>>>>>> 8444e1b529d89602e92c0525edee0f8bd4ae0d31
 * participant
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
