@@ -22,7 +22,7 @@
       "coding": [
         {
           "code": "ALLG",
-          "system": "http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCodeDoctoral"
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }
