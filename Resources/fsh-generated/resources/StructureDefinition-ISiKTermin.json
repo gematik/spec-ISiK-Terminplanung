@@ -135,6 +135,7 @@
         "id": "Appointment.specialty:Fachrichtung",
         "path": "Appointment.specialty",
         "sliceName": "Fachrichtung",
+        "comment": "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:27.5.2024).",
         "min": 0,
         "max": "1",
         "mustSupport": true,
