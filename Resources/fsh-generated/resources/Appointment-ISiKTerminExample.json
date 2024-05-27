@@ -28,7 +28,6 @@
       "reference": "ISiKSlotExample"
     }
   ],
-  "comment": "Dies ist ein Test Kommentar!",
   "serviceType": [
     {
       "coding": [
@@ -43,8 +42,8 @@
     {
       "coding": [
         {
-          "code": "010",
-          "system": "urn:oid:1.2.276.0.76.5.114"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCodeDoctoral"
         }
       ]
     }
