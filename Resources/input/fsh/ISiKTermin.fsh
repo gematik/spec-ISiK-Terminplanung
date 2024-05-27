@@ -105,10 +105,3 @@ Usage: #example
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
   * status = #accepted
-
-// This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
-Extension: AppointmentReplaces
-Id: AppointmentReplaces
-* insert Meta
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces"
-* value[x] only Reference(Appointment)
