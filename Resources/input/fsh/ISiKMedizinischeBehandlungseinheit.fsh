@@ -17,5 +17,5 @@ InstanceOf: ISiKMedizinischeBehandlungseinheit
 Usage: #example
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty[Fachrichtung] = http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCodeDoctoral#ALLG
+* specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#ALLG
 * name = "Allgemeine Beratungsstelle der Fachabteilung 0100"
