@@ -9,7 +9,7 @@ Id: ISiKMedizinischeBehandlungseinheit
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1.. MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
 * name 1.. MS
 
 Instance: ISiKMedizinischeBehandlungseinheitExample

@@ -63,7 +63,7 @@ Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 0..1 MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
 * serviceType 1..* MS 
 * priority MS
 * priority.extension MS

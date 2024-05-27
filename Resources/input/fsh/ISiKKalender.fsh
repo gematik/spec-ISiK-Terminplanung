@@ -9,7 +9,7 @@ Id: ISiKKalender
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
 * actor 1..* MS  
   * identifier 0..1 MS
   * display 1..1 MS
