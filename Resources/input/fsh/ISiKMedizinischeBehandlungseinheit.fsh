@@ -10,6 +10,7 @@ Id: ISiKMedizinischeBehandlungseinheit
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1.. MS
 * specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+  * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:27.5.2024)."
 * name 1.. MS
 
 Instance: ISiKMedizinischeBehandlungseinheitExample

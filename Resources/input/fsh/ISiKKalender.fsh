@@ -10,6 +10,7 @@ Id: ISiKKalender
   * ^slicing.rules = #open
 * specialty contains Fachrichtung 1..1 MS
 * specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+  * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:27.5.2024)."
 * actor 1..* MS  
   * identifier 0..1 MS
   * display 1..1 MS
