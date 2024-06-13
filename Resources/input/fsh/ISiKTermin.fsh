@@ -54,7 +54,7 @@ Id: ISiKTermin
 * specialty[Fachspezialisierung] from $authorSpecialtyVS (required)
   * ^comment = "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden (Stand:13.06.2024)."
 * specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
-  * ^comment = "Dieses ValueSet hat KANN über ein Mapping mit ValueSet der Fachrichtung gemapped werden und darüber ggf. die Integration von Systemen erleichtern."
+  * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * serviceType 1..* MS
 * priority MS
 * priority.extension MS
