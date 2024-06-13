@@ -8,8 +8,13 @@ Id: ISiKMedizinischeBehandlungseinheit
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* specialty contains Fachrichtung 1.. MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty contains 
+  Fachrichtung 1..1 MS and 
+  Fachspezialisierung 0..1
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+  * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:13.06.2024)."
+* specialty[Fachspezialisierung] 
+  * ^comment = "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden (Stand:13.06.2024)."
 * name 1.. MS
 
 Instance: ISiKMedizinischeBehandlungseinheitExample
@@ -17,5 +22,5 @@ InstanceOf: ISiKMedizinischeBehandlungseinheit
 Usage: #example
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty = urn:oid:1.2.276.0.76.5.114#010
+* specialty = $IHEAerztlicheFachrichtungen#ALLG
 * name = "Allgemeine Beratungsstelle der Fachabteilung 0100"
