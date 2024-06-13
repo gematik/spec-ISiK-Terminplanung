@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ISiKTerminblock",
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/StructureDefinition/ISiKTerminblock",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "name": "ISiKTerminblock",
   "status": "active",
   "experimental": false,
-  "date": "2023-11-29",
+  "date": "2024-06-13",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
