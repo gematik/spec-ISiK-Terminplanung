@@ -10,11 +10,14 @@ Id: ISiKKalender
   * ^slicing.rules = #open
 * specialty contains 
   Fachrichtung 1..1 MS and 
-  Fachspezialisierung 0..1
+  Fachspezialisierung 0..1 and 
+  ErweiterterFachabteilungsschluessel 0..1
 * specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
   * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:13.06.2024)."
-* specialty[Fachspezialisierung] 
+* specialty[Fachspezialisierung] from $authorSpecialtyVS (required)
   * ^comment = "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden (Stand:13.06.2024)."
+* specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
+  * ^comment = "Dieses ValueSet hat KANN über ein Mapping mit ValueSet der Fachrichtung gemapped werden und darüber ggf. die Integration von Systemen erleichtern."
 * actor 1..* MS  
   * identifier 0..1 MS
   * display 1..1 MS
