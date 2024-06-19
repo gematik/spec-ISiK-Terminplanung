@@ -1,12 +1,14 @@
 Output File                                                          Name                                        Type       FSH File                                        Lines
 Appointment-ISiKTerminExample.json                                   ISiKTerminExample                           Instance   ISiKTermin.fsh                                  83 - 100
+Appointment-ISiKTerminExampleExtendedICU.json                        ISiKTerminExampleExtendedICU                Instance   ISiKTermin.fsh                                  102 - 120
+Appointment-ISiKTerminExampleOld.json                                ISiKTerminExampleOld                        Instance   ISiKTermin.fsh                                  122 - 139
 CapabilityStatement-ISiKCapabilityStatementTerminplanungServer.json  ISiKCapabilityStatementTerminplanungServer  Instance   ISiKTerminplanungCapabilityStatement.fsh        1 - 332
 Communication-ISiKNachrichtExample.json                              ISiKNachrichtExample                        Instance   ISiKNachricht.fsh                               30 - 39
 HealthcareService-ISiKMedizinischeBehandlungseinheitExample.json     ISiKMedizinischeBehandlungseinheitExample   Instance   ISiKMedizinischeBehandlungseinheit.fsh          26 - 32
 OperationDefinition-ISiKAppointmentBookOperation.json                Book                                        Instance   ISiKBookOperation.fsh                           1 - 45
 Schedule-ISiKKalenderExample.json                                    ISiKKalenderExample                         Instance   ISiKKalender.fsh                                46 - 53
 Slot-ISiKTerminblockExample.json                                     ISiKTerminblockExample                      Instance   ISiKTerminblock.fsh                             19 - 25
-StructureDefinition-AppointmentReplaces.json                         AppointmentReplaces                         Extension  ISiKTermin.fsh                                  104 - 108
+StructureDefinition-AppointmentReplaces.json                         AppointmentReplaces                         Extension  ISiKTermin.fsh                                  143 - 147
 StructureDefinition-ISiKKalender.json                                ISiKKalender                                Profile    ISiKKalender.fsh                                1 - 35
 StructureDefinition-ISiKMedizinischeBehandlungseinheit.json          ISiKMedizinischeBehandlungseinheit          Profile    ISiKMedizinischeBehandlungseinheit.fsh          1 - 24
 StructureDefinition-ISiKNachricht.json                               ISiKNachricht                               Profile    ISiKNachricht.fsh                               1 - 28

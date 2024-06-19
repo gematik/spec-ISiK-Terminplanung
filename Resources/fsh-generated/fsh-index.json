@@ -8,6 +8,22 @@
     "endLine": 100
   },
   {
+    "outputFile": "Appointment-ISiKTerminExampleExtendedICU.json",
+    "fshName": "ISiKTerminExampleExtendedICU",
+    "fshType": "Instance",
+    "fshFile": "ISiKTermin.fsh",
+    "startLine": 102,
+    "endLine": 120
+  },
+  {
+    "outputFile": "Appointment-ISiKTerminExampleOld.json",
+    "fshName": "ISiKTerminExampleOld",
+    "fshType": "Instance",
+    "fshFile": "ISiKTermin.fsh",
+    "startLine": 122,
+    "endLine": 139
+  },
+  {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementTerminplanungServer.json",
     "fshName": "ISiKCapabilityStatementTerminplanungServer",
     "fshType": "Instance",
@@ -60,8 +76,8 @@
     "fshName": "AppointmentReplaces",
     "fshType": "Extension",
     "fshFile": "ISiKTermin.fsh",
-    "startLine": 104,
-    "endLine": 108
+    "startLine": 143,
+    "endLine": 147
   },
   {
     "outputFile": "StructureDefinition-ISiKKalender.json",
