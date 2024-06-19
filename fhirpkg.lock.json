@@ -1,0 +1,9 @@
+{
+  "updated": "2024-06-19T14:11:50.1713297+02:00",
+  "dependencies": {
+    "de.gematik.isik-basismodul": "2.0.6",
+    "de.basisprofil.r4": "1.4.0",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}

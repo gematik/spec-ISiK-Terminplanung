@@ -6,6 +6,7 @@
         "4.0.1"
     ],
     "dependencies": {
-        "de.gematik.isik-basismodul": "2.0.x"
+        "de.gematik.isik-basismodul": "2.0.x",
+        "de.ihe-d.terminology": "3.0.0"
       }
 }
