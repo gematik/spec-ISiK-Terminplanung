@@ -48,6 +48,6 @@ InstanceOf: ISiKKalender
 Usage: #example
 * active = true
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty = urn:oid:1.2.276.0.76.5.114#010
+* specialty = $IHEAerztlicheFachrichtungen#ALLG
 * actor.reference = "Practitioner/example"
 * actor.display = "Dr. Fleming"
