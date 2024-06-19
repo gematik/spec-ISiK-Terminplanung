@@ -99,6 +99,45 @@ Usage: #example
   * actor.reference = "Patient/example"
   * status = #accepted
 
+Instance: ISiKTerminExampleExtendedICU
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
+* specialty = $IHEAerztlicheFachrichtungen#INTM
+* specialty = $FachabteilungsschluesselErweitertCS#0100
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
+Instance: ISiKTerminExampleOld
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
+* specialty = urn:oid:1.2.276.0.76.5.114#010
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
 
 // This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
 Extension: AppointmentReplaces
