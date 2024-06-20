@@ -6,9 +6,10 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 2.0.5
 
-Datum t.b.d
+Datum: 20.06.2024
 
 * Ändern der ValueSets von IHE https://github.com/gematik/spec-ISiK-Terminplanung/pull/186
+* Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern https://github.com/gematik/spec-ISiK-Terminplanung/pull/190
 
 
 Version: 2.0.4
