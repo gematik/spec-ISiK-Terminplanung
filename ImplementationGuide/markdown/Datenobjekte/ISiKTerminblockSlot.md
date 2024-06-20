@@ -69,7 +69,7 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
     Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"]https://hl7.org/fhir/R4/search.html#all).
 
 2. Der Suchparameter "schedule" MUSS in Kombination mit einem definierten Startzeitpunkt mittels Suchparameter "start" unterstützt werden. Der Suchparameter "schedule" KANN alleinstehend unterstützt werden.
-Beim Fehlen des start-Suchparameters SOLL der aktuelle Zeitpunkt des Servers als Startzeitpunkt per Default verwendet werden (Slots aus der Vergangenheit wären somit nur dann zu liefern, wenn ein Client Slot.start explizit auf ein Datum aus der Vergangenheit setzt).
+Beim Fehlen des "start"-Suchparameters SOLL der aktuelle Zeitpunkt des Servers als Startzeitpunkt per Default verwendet werden.
 
     Beispiele:
 
