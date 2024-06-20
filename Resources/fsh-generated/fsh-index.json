@@ -4,8 +4,8 @@
     "fshName": "ISiKTerminExample",
     "fshType": "Instance",
     "fshFile": "ISiKTermin.fsh",
-    "startLine": 89,
-    "endLine": 107
+    "startLine": 90,
+    "endLine": 108
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementTerminplanungServer.json",
@@ -60,8 +60,8 @@
     "fshName": "AppointmentReplaces",
     "fshType": "Extension",
     "fshFile": "ISiKTermin.fsh",
-    "startLine": 110,
-    "endLine": 114
+    "startLine": 111,
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-ISiKKalender.json",
@@ -92,8 +92,8 @@
     "fshName": "ISiKNachrichtExtension",
     "fshType": "Extension",
     "fshFile": "ISiKTermin.fsh",
-    "startLine": 72,
-    "endLine": 75
+    "startLine": 73,
+    "endLine": 76
   },
   {
     "outputFile": "StructureDefinition-ISiKTermin.json",
@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKTermin.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-ISiKTerminKontaktMitGesundheitseinrichtung.json",
@@ -116,8 +116,8 @@
     "fshName": "ISiKTerminPriorityExtension",
     "fshType": "Extension",
     "fshFile": "ISiKTermin.fsh",
-    "startLine": 77,
-    "endLine": 82
+    "startLine": 78,
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-ISiKTerminblock.json",
