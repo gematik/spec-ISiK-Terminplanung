@@ -12,6 +12,7 @@ Id: ISiKTermin
 * insert Meta
 * extension MS
 * extension contains ISiKNachrichtExtension named Nachricht 0..* MS
+  * ^definition = "Conditional Must Support - Einschränkung der übergreifenden MS-Definition: Falls ein bestätigungsrelevantes System das ISiK-Profil ISiKNachricht implementiert, MUSS das System auch dieses Element unterstützten. Andernfalls KANN das System dieses Element unterstützen."
 * extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.replaces named replaces 0..1 MS
 * status 1..1 MS
 * cancelationReason 0..1 MS
