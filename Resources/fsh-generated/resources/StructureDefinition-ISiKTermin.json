@@ -63,6 +63,7 @@
       {
         "id": "Appointment.extension",
         "path": "Appointment.extension",
+        "definition": "Conditional Must Support - Einschränkung der übergreifenden MS-Definition: Falls ein bestätigungsrelevantes System das ISiK-Profil ISiKNachricht implementiert, MUSS das System auch dieses Element unterstützten. Andernfalls KANN das System dieses Element unterstützen.",
         "mustSupport": true
       },
       {
