@@ -113,7 +113,7 @@ Usage: #example
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
 * specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
-* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#0100
+* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
 * participant
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
