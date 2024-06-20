@@ -1,11 +1,12 @@
 {
     "name": "de.gematik.isik-terminplanung",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "description": "Package Release des ISiK Modul Terminplanung",
     "fhirVersions": [
         "4.0.1"
     ],
     "dependencies": {
-        "de.gematik.isik-basismodul": "2.0.5"
+        "de.gematik.isik-basismodul": "2.0.x",
+        "de.ihe-d.terminology": "3.0.0"
       }
 }

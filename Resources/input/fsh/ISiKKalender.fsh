@@ -8,8 +8,19 @@ Id: ISiKKalender
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* specialty contains Fachrichtung 1..1 MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty contains 
+  Fachrichtung 0..1 MS and 
+  Fachspezialisierung 0..1 and 
+  ErweiterterFachabteilungsschluessel 0..1
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+  * ^definition = "Conditional Must Support - Einschränkung der übergreifenden MS-Definition: ein bestätigungsrelevantes System SOLL das ValueSet (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) implementieren, MUSS es jedoch NICHT."
+  * ^comment = "Hintergrund zum MS: die MS-Änderung erfolgt als Technical Correction in Stufe 2 spät während der Implementierungsphase, daher ist die Abbildung dieses ValueSets nicht verpflichtend.
+
+  Hintergrund zum ValueSet: Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:13.06.2024)."
+* specialty[Fachspezialisierung] from $authorSpecialtyVS (required)
+  * ^comment = "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden. Es SOLL dagegen das  ValueSet durch den Slice 'Fachrichtung' (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) umgesetzt werden (Stand:13.06.2024)."
+* specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
+  * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * actor 1..* MS  
   * identifier 0..1 MS
   * display 1..1 MS
@@ -37,6 +48,6 @@ InstanceOf: ISiKKalender
 Usage: #example
 * active = true
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
-* specialty = urn:oid:1.2.276.0.76.5.114#010
+* specialty = $IHEAerztlicheFachrichtungen#ALLG
 * actor.reference = "Practitioner/example"
 * actor.display = "Dr. Fleming"

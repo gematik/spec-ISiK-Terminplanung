@@ -1,6 +1,6 @@
 {
   "resourceType": "Appointment",
-  "id": "ISiKTerminExample",
+  "id": "ISiKTerminExampleOld",
   "meta": {
     "tag": [
       {
@@ -42,8 +42,8 @@
     {
       "coding": [
         {
-          "code": "ALLG",
-          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
+          "code": "010",
+          "system": "urn:oid:1.2.276.0.76.5.114"
         }
       ]
     }
