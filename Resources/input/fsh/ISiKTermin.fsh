@@ -66,7 +66,7 @@ Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
   Fachrichtung 1..1 MS and
   ErweiterterFachabteilungsschluessel 0..1
 * specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
-  * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:27.5.2024)."
+  * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.6.2024)."
 * specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
   * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * serviceType 1..* MS 
@@ -105,6 +105,26 @@ Usage: #example
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
 * specialty = $IHEAerztlicheFachrichtungen#ALLG
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
+Instance: ISiKTerminExampleExtendedICU
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
+* specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
+* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
 * participant
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
