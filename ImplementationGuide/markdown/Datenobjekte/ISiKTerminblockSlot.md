@@ -68,14 +68,18 @@ Für die Ressource Slot MUSS die REST-Interaktion "READ" implementiert werden.
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
-2. Der Suchparameter "schedule" MUSS unterstützt werden:
+2. Der Suchparameter "schedule" MUSS in Kombination mit einem definierten Startzeitpunkt mittels Suchparameter "start" unterstützt werden. Der Suchparameter "schedule" KANN alleinstehend unterstützt werden.
+Beim Fehlen des "start"-Suchparameters SOLL der aktuelle Zeitpunkt des Servers als Startzeitpunkt per Default verwendet werden.
 
     Beispiele:
 
+    ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample:start=2022-12-10T09:00:00Z```
+
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
-    Anwendungshinweise: In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
-    Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
+
+    In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 
 3. Der Suchparameter "status" MUSS in Kombination ('&') mit einer Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
 
