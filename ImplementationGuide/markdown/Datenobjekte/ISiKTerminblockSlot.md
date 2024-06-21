@@ -73,7 +73,7 @@ Beim Fehlen des "start"-Suchparameters SOLL der aktuelle Zeitpunkt des Servers a
 
     Beispiele:
 
-    ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample:start=2022-12-10T09:00:00Z```
+    ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample&start=2022-12-10T09:00:00Z```
 
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
