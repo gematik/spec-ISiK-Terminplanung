@@ -81,6 +81,8 @@ Beim Fehlen des "start"-Suchparameters SOLL der aktuelle Zeitpunkt des Servers a
 
     In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 
+Dies kann notwendig sein, falls interdisziplinäre Kalender durch das Termin-Repository gepflegt werden (z.B. ein Kalender pro Station). In solchen Fälle SOLLTE das Termin-Repository einem Termin-Requestor eine Verknüpfung zwischen Kalender (Schedule) und Behandlungsleistung (HealthcareService) bereitstellen.
+
 3. Der Suchparameter "status" MUSS in Kombination ('&') mit einer Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein:
 
     Beispiele:
