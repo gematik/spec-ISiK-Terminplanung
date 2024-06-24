@@ -6,11 +6,13 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 4.0.0-rc2
 
-Datum: 20.6.2024
+Datum: tbd.
 
 * Anpassen der MS-Definition für Appointment.communication https://github.com/gematik/spec-ISiK-Terminplanung/pull/191
 * Update der IHE ValueSets zu "practiceSetting" in ISiKTermin, ISiKKalender und ISiK MedizinischeBehandlungseinheit https://github.com/gematik/spec-ISiK-Terminplanung/pull/184/files
+* Klarstellung, dass unbekannte Kodierungen in .serviceType abgewiesen werden können https://github.com/gematik/spec-ISiK-Terminplanung/pull/195
 * Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern
+
 
 
 ----
