@@ -9,12 +9,8 @@ Version 4.0.0-rc2
 Datum: 20.6.2024
 
 * Anpassen der MS-Definition für Appointment.communication https://github.com/gematik/spec-ISiK-Terminplanung/pull/191
-
-Version 4.0.0-rc2
-
-Datum: tbd.
-
 * Update der IHE ValueSets zu "practiceSetting" in ISiKTermin, ISiKKalender und ISiK MedizinischeBehandlungseinheit https://github.com/gematik/spec-ISiK-Terminplanung/pull/184/files
+* Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern
 
 
 ----
