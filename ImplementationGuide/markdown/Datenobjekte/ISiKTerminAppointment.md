@@ -86,7 +86,9 @@ Alle Statuswerte MÜSSEN durch ein bestätigungsrelevantes System unterstützt w
 
 **Bedeutung:** Kodierung der Behandlungsleistung des Termins
 
-**Hinweis:** Dies SOLL der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird.
+**Hinweis:** Dies SOLL der Kodierung des serviceType eines Schedules entsprechen, der innerhalb des Termins gebucht wird. Ein Termin-Repository SOLL einen Termin abweisen, falls unbekannte Kodierungen in .serviceType durch den Termin-Requestor übermittelt werden, sodass ein Termin-Repository sicherstellen kann, dass alle Ressourcen für die Behandlungsleistung(en) bereitgestellt werden können. Hierzu ist eine Interpretation der Behandlungsleistung notwendig. Ein Termin KANN für mehrere Behandlungsleistungen gebucht werden, falls dies durch die Fachlogik des Termin-Repositories unterstüzt wird.
+
+
 
 ### `Appointment.specialty`
 
