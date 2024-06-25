@@ -32,6 +32,7 @@ Datum: 4.4.2024
 * Klarstellung cancelled-appt-id by @alexzautke in https://github.com/gematik/spec-ISiK-Terminplanung/pull/177
 
 **Full Changelog**: https://github.com/gematik/spec-ISiK-Terminplanung/compare/v3.0.3...v.4.0.0-rc
+
 ----
 
 Version: 3.0.4
