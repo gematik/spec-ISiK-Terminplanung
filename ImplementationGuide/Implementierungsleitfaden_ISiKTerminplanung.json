@@ -32,23 +32,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
-          "title": "Zusammenfassung",
+          "nameUrl": "ImplementationGuide/markdown/UseCases.md",
+          "title": "Use Cases",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
+              "nameUrl": "ImplementationGuide/markdown/UseCases/UseCases.md",
               "title": "Anwendungsfälle (Use Cases)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
-              "title": "Informationsmodell",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
-              "title": "Interaktionen Und SearchTypes",
               "generation": "markdown"
             }
           ]
