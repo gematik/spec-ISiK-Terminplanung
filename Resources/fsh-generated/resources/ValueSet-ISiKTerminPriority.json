@@ -7,8 +7,8 @@
   "url": "https://gematik.de/fhir/isik/v3/Terminplanung/ValueSet/ISiKTerminPriority",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "3.0.4",
-  "date": "2024-05-07",
+  "version": "3.0.5",
+  "date": "2024-07-02",
   "compose": {
     "include": [
       {
