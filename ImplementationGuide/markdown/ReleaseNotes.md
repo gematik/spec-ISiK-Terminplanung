@@ -8,7 +8,7 @@ Version: 3.0.5
 
 Datum: tbd.
 
-* Update der IHE ValueSets zu "practiceSetting" in ISiKTermin, ISiKKalender und ISiK MedizinischeBehandlungseinheit (Analog zu Stufe 2) 
+* Update der IHE ValueSets zu "practiceSetting" in ISiKTermin, ISiKKalender und ISiK MedizinischeBehandlungseinheit (Analog zu Stufe 2) https://github.com/gematik/spec-ISiK-Terminplanung/pull/199/commits/7218c4f9f085604e311761d5e76647d09aea04d1
 ----
 
 
