@@ -103,6 +103,26 @@ Usage: #example
   * actor.reference = "Patient/example"
   * status = #accepted
 
+Instance: ISiKTerminExampleExtendedICU
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
+* specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
+* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
 Instance: ISiKTerminExampleOld
 InstanceOf: ISiKTermin
 Usage: #example
