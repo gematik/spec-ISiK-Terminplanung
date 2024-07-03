@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 3.0.5
 
-Datum: tbd.
+Datum: 03.07.2024
 
 * Update der IHE ValueSets zu "practiceSetting" in ISiKTermin, ISiKKalender und ISiK MedizinischeBehandlungseinheit (analog zu 2.0.5 und 4.0.0-rc2) https://github.com/gematik/spec-ISiK-Terminplanung/pull/199/commits/7218c4f9f085604e311761d5e76647d09aea04d1
 
