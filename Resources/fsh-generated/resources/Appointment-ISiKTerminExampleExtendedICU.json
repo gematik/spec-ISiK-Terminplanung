@@ -1,6 +1,6 @@
 {
   "resourceType": "Appointment",
-  "id": "ISiKTerminExample",
+  "id": "ISiKTerminExampleExtendedICU",
   "meta": {
     "tag": [
       {
@@ -22,18 +22,17 @@
   ],
   "status": "proposed",
   "start": "2022-12-10T09:00:00Z",
-  "end": "2022-12-10T11:00:00Z",
+  "end": "2022-12-10T09:30:00Z",
   "slot": [
     {
       "reference": "ISiKSlotExample"
     }
   ],
-  "comment": "Dies ist ein Test Kommentar!",
   "serviceType": [
     {
       "coding": [
         {
-          "code": "124",
+          "code": "174",
           "system": "http://terminology.hl7.org/CodeSystem/service-type"
         }
       ]
@@ -43,8 +42,16 @@
     {
       "coding": [
         {
-          "code": "ALLG",
+          "code": "INTM",
           "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "3600",
+          "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"
         }
       ]
     }

@@ -48,8 +48,19 @@ Id: ISiKTermin
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* specialty contains Fachrichtung 0..1 MS
-* specialty[Fachrichtung] from $authorSpecialtyVS (required)
+* specialty contains 
+  Fachrichtung 0..1 MS and 
+  Fachspezialisierung 0..1 and 
+  ErweiterterFachabteilungsschluessel 0..1
+* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+  * ^definition = "Einschränkung der übergreifenden MS-Definition: ein bestätigungsrelevantes System SOLL das ValueSet (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) implementieren, MUSS es jedoch NICHT."
+  * ^comment = "Hintergrund zum MS: die MS-Änderung erfolgt als Technical Correction in Stufe 3 während der Implementierungsphase, daher ist die Abbildung dieses ValueSets nicht verpflichtend.
+
+  Hintergrund zum ValueSet: Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.06.2024)."
+* specialty[Fachspezialisierung] from $authorSpecialtyVS (required)
+  * ^comment = "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden. Es SOLL dagegen das  ValueSet durch den Slice 'Fachrichtung' (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) umgesetzt werden (Stand:13.06.2024)."
+* specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
+  * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * serviceType 1..* MS 
 * priority MS
 * priority.extension MS
@@ -85,6 +96,45 @@ Usage: #example
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * comment = "Dies ist ein Test Kommentar!"
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
+* specialty = $IHEAerztlicheFachrichtungen#ALLG
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
+Instance: ISiKTerminExampleExtendedICU
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
+* specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
+* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
+* participant
+  * actor.display = "Test Patient"
+  * actor.reference = "Patient/example"
+  * status = #accepted
+
+Instance: ISiKTerminExampleOld
+InstanceOf: ISiKTermin
+Usage: #example
+* meta
+  * tag = http://fhir.de/CodeSystem/common-meta-tag-de#external
+* extension[ISiKNachrichtExtension].valueReference = Reference(ISiKNachrichtExample)
+* status = $appointmentStatus#proposed
+* start = "2022-12-10T09:00:00Z"
+* end = "2022-12-10T09:30:00Z"
+* slot = Reference(ISiKSlotExample)
+* priority
+  * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
 * specialty = urn:oid:1.2.276.0.76.5.114#010
 * participant
