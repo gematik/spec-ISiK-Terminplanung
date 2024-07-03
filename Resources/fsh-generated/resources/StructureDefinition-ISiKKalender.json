@@ -100,7 +100,8 @@
         "id": "Schedule.specialty:Fachrichtung",
         "path": "Schedule.specialty",
         "sliceName": "Fachrichtung",
-        "comment": "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) abgestimmt (Stand:13.06.2024).",
+        "definition": "Einschränkung der übergreifenden MS-Definition: ein bestätigungsrelevantes System SOLL das ValueSet (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) implementieren, MUSS es jedoch NICHT.",
+        "comment": "Hintergrund zum MS: die MS-Änderung erfolgt als Technical Correction in Stufe 3 während der Implementierungsphase, daher ist die Abbildung dieses ValueSets nicht verpflichtend.\n\n  Hintergrund zum ValueSet: Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.06.2024).",
         "min": 0,
         "max": "1",
         "mustSupport": true,
@@ -113,7 +114,7 @@
         "id": "Schedule.specialty:Fachspezialisierung",
         "path": "Schedule.specialty",
         "sliceName": "Fachspezialisierung",
-        "comment": "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden (Stand:13.06.2024).",
+        "comment": "Dieses Slice SOLL NICHT genutzt werden und ist nur aufgrund der Kompatibilität beibehalten worden. Es SOLL dagegen das  ValueSet durch den Slice 'Fachrichtung' (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) umgesetzt werden (Stand:13.06.2024).",
         "min": 0,
         "max": "1",
         "binding": {
@@ -130,7 +131,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"
+          "valueSet": "http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert"
         }
       },
       {
