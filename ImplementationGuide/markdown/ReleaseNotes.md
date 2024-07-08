@@ -8,7 +8,7 @@ Version: 3.0.6
 
 Datum: tbd.
 
-* Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern (u.a. in Bezug auf Start-Vorgabe)
+* Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern (u.a. in Bezug auf Start-Vorgabe) https://github.com/gematik/spec-ISiK-Terminplanung/pull/200
 
 ----
 
