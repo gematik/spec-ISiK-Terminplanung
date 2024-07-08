@@ -6,6 +6,14 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 ----
 
+Version 2.0.6
+
+Datum: tbd.
+
+* Ernuete Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern im Sinne einer Verfeinerung der Anforderung und Anpassung an Stufe 3 und 4 
+
+----
+
 Version 2.0.5
 
 Datum: 20.06.2024

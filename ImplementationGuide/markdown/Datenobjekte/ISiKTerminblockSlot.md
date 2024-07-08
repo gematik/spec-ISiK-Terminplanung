@@ -46,7 +46,7 @@ Folgende FHIRPath-Constraints sind im Profil zu beachten:
 
 **Bedeutung:** Startdatum des Slots (sekundengenau).
 
-**Hinweise:** Falls sich ein Appoinment über mehrere Slots erstreckt, kann mit Hilfe des Startdatums der Beginn eines zu vereinbarenden Termins gefunden werden.
+**Hinweise:** Falls sich ein Appointment über mehrere Slots erstreckt, kann mit Hilfe des Startdatums der Beginn eines zu vereinbarenden Termins gefunden werden.
 
 ### `Slot.end`
 
@@ -73,27 +73,31 @@ Beim Fehlen des "start"-Suchparameters SOLL der aktuelle Zeitpunkt des Servers a
 
     Beispiele:
 
-    ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample:start=2022-12-10T09:00:00Z```
+    ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample&&start=2022-12-10T09:00:00Z```
 
     ```GET [base]/Slot?schedule=Schedule/ISiKKalenderExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.schedule" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"]https://hl7.org/fhir/R4/search.html#reference).
-    
+
     In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `GET https://example.org/fhir/Slot?schedule.actor:HealthcareService.type=https://example.org/fhir/CodeSystem/Behandlungsleistung|CT`
 
-3. Der Suchparameter "status" MUSS unterstützt werden:
+    Dies kann notwendig sein, falls interdisziplinäre Kalender durch das Termin-Repository gepflegt werden (z.B. ein Kalender pro Station). In solchen Fälle wäre es sinnvoll, wenn das Termin-Repository einem Termin-Requestor eine Verknüpfung zwischen Kalender (Schedule) und Behandlungsleistung (HealthcareService) bereitstellen würde.
+
+3. Der Suchparameter "status" MUSS in Kombination ('&') mit einer Abfrage auf Schedule unterstützt werden. Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein. Der Suchparameter "status" MUSS NICHT alleinstehend unterstützt werden.
 
     Beispiele:
 
-    ```GET [base]/Slot?status=busy```
+    ```GET [base]/Slot?status=free&schedule=Schedule/ISiKTerminExample```
+    ```GET [base]/Slot?status=free&schedule.actor:Practitioner.name=Musterarzt```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"]https://hl7.org/fhir/R4/search.html#token).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
-4. Der Suchparameter "start" MUSS alleinstehend unterstützt werden:
+4. Der Suchparameter "start" MUSS in Kombination ('&') mit einer Parameter-Abfrage auf Schedule unterstützt werden (s.o.). Diese Abfrage KANN entweder eine direkte Angabe einer Referenz oder eine Angabe von weiteren Chaining-Parametern sein.
 
     Beispiele:
 
-    ```GET [base]/Slot?start=2022-12-10T09:00:00Z```
+    ```GET [base]/Slot?start=2022-12-10T09:00:00Z&schedule=Schedule/ISiKTerminExample```
+    ```GET [base]/Slot?start=2022-12-10T09:00:00Z&schedule.actor:Practitioner.name=Musterarzt```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Slot.start" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"]https://hl7.org/fhir/R4/search.html#date).
     
