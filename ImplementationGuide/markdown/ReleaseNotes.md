@@ -10,7 +10,7 @@ Version 2.0.6
 
 Datum: tbd.
 
-* Erneute Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern im Sinne einer Verfeinerung der Anforderung und Anpassung an Stufe 3 und 4 
+* Erneute Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern im Sinne einer Verfeinerung der Anforderung und Anpassung an Stufe 3 und 4 https://github.com/gematik/spec-ISiK-Terminplanung/pull/202
 
 ----
 
