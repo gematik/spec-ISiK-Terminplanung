@@ -31,7 +31,7 @@
       {
         "id": "HealthcareService.specialty",
         "path": "HealthcareService.specialty",
-        "comment": "Kodierung alle Fachbereiche unter die die Behandlungseinheit fällt.",
+        "comment": "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt.",
         "min": 1,
         "mustSupport": true
       },
