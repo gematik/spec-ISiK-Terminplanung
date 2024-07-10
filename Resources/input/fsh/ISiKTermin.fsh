@@ -60,15 +60,16 @@ Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
 * specialty 0..* MS
+* specialty.coding 1..* MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* specialty contains 
+* specialty.coding contains 
   Fachrichtung 1..1 MS and
   ErweiterterFachabteilungsschluessel 0..1
-* specialty[Fachrichtung] from $IHEpracticeSettingVS (required)
+* specialty.coding[Fachrichtung] from $IHEpracticeSettingVS (required)
   * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.6.2024)."
-* specialty[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertCS (required)
+* specialty.coding[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
   * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * serviceType 1..* MS 
 * priority MS
@@ -124,8 +125,8 @@ Usage: #example
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
-* specialty[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
-* specialty[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
+* specialty.coding[Fachrichtung] = $IHEAerztlicheFachrichtungen#INTM
+* specialty.coding[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
 * participant
   * actor.display = "Test Patient"
   * actor.reference = "Patient/example"
