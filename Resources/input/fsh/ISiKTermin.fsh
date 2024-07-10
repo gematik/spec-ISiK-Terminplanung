@@ -60,7 +60,7 @@ Es gilt weiterhin der Hinweis der FHIR Kernspezifikation:
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
 * specialty 0..* MS
-  * ^comment = "Optionale Angabe aller Fachbereiche aus denen ein oder mehere Akteuere die für die Durchführung des Termins benötigt werden. KANN auch anhand des Kalenders in dem ein Termin gebucht wird ermittelt werden."
+  * ^comment = "Optionale Angabe aller Fachbereiche aus denen ein oder mehere Akteuere die für die Durchführung des Termins benötigt werden. KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden."
 * specialty.coding 1..* MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
