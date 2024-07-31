@@ -31,7 +31,7 @@
       {
         "id": "HealthcareService.specialty",
         "path": "HealthcareService.specialty",
-        "comment": "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt.",
+        "comment": "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken.",
         "min": 1,
         "mustSupport": true
       },
