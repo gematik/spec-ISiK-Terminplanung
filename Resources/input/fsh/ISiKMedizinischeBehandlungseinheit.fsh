@@ -5,7 +5,7 @@ Id: ISiKMedizinischeBehandlungseinheit
 * active 1..1 MS
 * type 1.. MS
 * specialty 1.. MS
-  * ^comment = "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt."
+  * ^comment = "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken."
 * specialty.coding 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
