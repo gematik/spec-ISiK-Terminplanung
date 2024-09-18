@@ -23,7 +23,8 @@ Id: ISiKKalender
   * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * actor 1..* MS  
   * identifier 0..1 MS
-  * display 1..1 MS
+  * display 0..1 MS
+    * ^comment = "Hinweis: Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden."  
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
