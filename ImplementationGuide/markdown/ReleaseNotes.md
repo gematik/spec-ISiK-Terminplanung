@@ -9,6 +9,7 @@ Version 4.0.0
 Datum: 09.09.2024
 
 * Releaseversion, keine inhaltlichen Änderungen zu 4.0.0-rc2
+* Implizites ValueSet expandiert https://github.com/gematik/spec-ISiK-Terminplanung/pull/207
 
 ----
 
