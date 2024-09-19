@@ -103,7 +103,7 @@ Usage: #example
 * status = $appointmentStatus#proposed
 * start = "2022-12-10T09:00:00Z"
 * end = "2022-12-10T11:00:00Z"
-* slot = Reference(ISiKSlotExample)
+* slot = Reference(ISiKTerminblockExample)
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#124
@@ -122,7 +122,7 @@ Usage: #example
 * status = $appointmentStatus#proposed
 * start = "2022-12-10T09:00:00Z"
 * end = "2022-12-10T09:30:00Z"
-* slot = Reference(ISiKSlotExample)
+* slot = Reference(ISiKTerminblockExample)
 * priority
   * extension[ISiKTerminPriorityExtension].valueCodeableConcept = http://snomed.info/sct#25876001
 * serviceType = http://terminology.hl7.org/CodeSystem/service-type#174
