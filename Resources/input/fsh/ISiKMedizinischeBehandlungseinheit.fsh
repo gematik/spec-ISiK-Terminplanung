@@ -5,11 +5,19 @@ Id: ISiKMedizinischeBehandlungseinheit
 * active 1..1 MS
 * type 1.. MS
 * specialty 1.. MS
-  * ^comment = "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken."
+  * ^comment = "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. 
+  
+  Begründung Kardinalität: Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken. Sie muss jedoch mindestens einem Fachbereich zugeordnet sein."
 * specialty.coding 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
+  * ^comment = "Begründung Kardinalität: Eine Behandlungseinheit kann mehrere Codierungen haben, muss jedoch mindestens eine Codierung besitzen.
+  
+  Begründung Kardinalität Fachrichtung: Eine Fachrichtung muss als Code eindeutig zugeordnet sein.
+
+  Begründung Kardinalität ErweiterterFachabteilungsschluessel: Eine erweiterte Fachabteilungsschlüssel kann als Code optional zugeordnet sein.
+  "
 * specialty.coding contains 
   Fachrichtung 1..1 MS and
   ErweiterterFachabteilungsschluessel 0..1
@@ -18,6 +26,7 @@ Id: ISiKMedizinischeBehandlungseinheit
 * specialty.coding[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
   * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * name 1.. MS
+ * ^comment = "Begründung Kardinalität: Eine Behandlungseinheit muss mindestens einen Namen haben." 
 
 Instance: ISiKMedizinischeBehandlungseinheitExample
 InstanceOf: ISiKMedizinischeBehandlungseinheit
