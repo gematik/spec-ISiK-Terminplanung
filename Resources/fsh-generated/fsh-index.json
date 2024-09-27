@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "ISiKTerminplanungCapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 258
+    "endLine": 395
   },
   {
     "outputFile": "Communication-ISiKNachrichtExample.json",
@@ -52,8 +52,8 @@
     "fshName": "ISiKKalenderExample",
     "fshType": "Instance",
     "fshFile": "ISiKKalender.fsh",
-    "startLine": 44,
-    "endLine": 51
+    "startLine": 45,
+    "endLine": 52
   },
   {
     "outputFile": "Slot-ISiKTerminblockExample.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKKalender.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-ISiKMedizinischeBehandlungseinheit.json",
@@ -104,14 +104,6 @@
     "endLine": 78
   },
   {
-    "outputFile": "StructureDefinition-ISiKTerminKontaktMitGesundheitseinrichtung.json",
-    "fshName": "ISiKTerminKontaktMitGesundheitseinrichtung",
-    "fshType": "Profile",
-    "fshFile": "ISiKTerminKontaktMitGesundheitseinrichtung.fsh",
-    "startLine": 1,
-    "endLine": 5
-  },
-  {
     "outputFile": "StructureDefinition-ISiKTerminPriorityExtension.json",
     "fshName": "ISiKTerminPriorityExtension",
     "fshType": "Extension",
@@ -132,8 +124,8 @@
     "fshName": "ScheduleName",
     "fshType": "Extension",
     "fshFile": "ISiKKalender.fsh",
-    "startLine": 37,
-    "endLine": 42
+    "startLine": 38,
+    "endLine": 43
   },
   {
     "outputFile": "ValueSet-ISiKTerminCancelationReason.json",
