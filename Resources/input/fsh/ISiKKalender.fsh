@@ -20,7 +20,8 @@ Id: ISiKKalender
 * actor 1..* MS
   * ^comment = "Ein dezidierter Kalender ist für jeden Akteur zu pflegen."  
   * identifier 0..1 MS
-  * display 1..1 MS
+  * display 0..1 MS
+    * ^comment = "Hinweis: Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden, sodass Systeme eine Übersicht der am Termin beteiligten Akteure anzeigen können ohne die Referenzen auflösen zu müssen."  
   * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
