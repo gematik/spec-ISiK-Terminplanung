@@ -65,11 +65,13 @@
       {
         "id": "Communication.recipient.identifier",
         "path": "Communication.recipient.identifier",
+        "comment": "Begründung Kardinalität und Must Support: Die Kardinalität der identifier-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass ein Empfänger eindeutig identifiziert werden kann. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Identifier zu unterstützen, wenn er vorhanden ist.",
         "mustSupport": true
       },
       {
         "id": "Communication.recipient.display",
         "path": "Communication.recipient.display",
+        "comment": "Begründung Kardinalität und Must Support: Die Kardinalität der display-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass ein Empfänger immer eindeutig benannt wird. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Empfänger anzuzeigen, wenn er vorhanden ist.",
         "min": 1,
         "mustSupport": true
       },
@@ -99,6 +101,7 @@
       {
         "id": "Communication.sender",
         "path": "Communication.sender",
+        "comment": "Begründung Kardinalität und Must Support: Die Kardinalität der sender-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass mindestens ein Sender vorhanden ist. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Sender zu unterstützen, wenn er vorhanden ist.",
         "min": 1,
         "mustSupport": true
       },
@@ -111,6 +114,7 @@
       {
         "id": "Communication.payload",
         "path": "Communication.payload",
+        "comment": "Begründung Kardinalität und Must Support: Die Kardinalität der payload-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass ein Inhalt vorhanden ist. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Inhalt zu unterstützen, wenn er vorhanden ist.",
         "min": 1,
         "mustSupport": true
       },
