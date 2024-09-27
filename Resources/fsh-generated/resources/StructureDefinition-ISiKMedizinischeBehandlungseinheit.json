@@ -31,7 +31,7 @@
       {
         "id": "HealthcareService.specialty",
         "path": "HealthcareService.specialty",
-        "comment": "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken.",
+        "comment": "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. \n  \n  Begründung Kardinalität: Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken. Sie muss jedoch mindestens einem Fachbereich zugeordnet sein.",
         "min": 1,
         "mustSupport": true
       },
@@ -47,6 +47,7 @@
           ],
           "rules": "open"
         },
+        "comment": "Begründung Kardinalität: Eine Behandlungseinheit kann mehrere Codierungen haben, muss jedoch mindestens eine Codierung besitzen.\n  \n  Begründung Kardinalität Fachrichtung: Eine Fachrichtung muss als Code eindeutig zugeordnet sein.\n\n  Begründung Kardinalität ErweiterterFachabteilungsschluessel: Eine erweiterte Fachabteilungsschlüssel kann als Code optional zugeordnet sein.\n  ",
         "min": 1,
         "mustSupport": true
       },
@@ -78,6 +79,7 @@
       {
         "id": "HealthcareService.name",
         "path": "HealthcareService.name",
+        "comment": "Begründung Kardinalität: Eine Behandlungseinheit muss mindestens einen Namen haben.",
         "min": 1,
         "mustSupport": true
       }
