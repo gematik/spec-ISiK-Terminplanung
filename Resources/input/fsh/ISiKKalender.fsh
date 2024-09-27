@@ -12,15 +12,18 @@ Id: ISiKKalender
   Begründung Kardinalität: Die Kardinalität 1..* und das Must-Support-Flag (MS) für das 'specialty'-Element stellen sicher, dass jeder Kalender mindestens eine Fachrichtung angibt. Dies ist wichtig für die Ressourcenplanung und die Verfügbarkeit von Terminen, insbesondere wenn ein Kalender pro Fachbereich gepflegt wird.
   "
 * specialty.coding 1..* MS
-* ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-  * ^comment = "Begründung Kardinalität: Die Kardinalität der specialty.coding-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass mindestens eine Fachrichtungscodierung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Kalenders eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten."
+  * ^comment = "Begründung Kardinalität: Die Kardinalität der specialty.coding-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass mindestens eine Fachrichtungscodierung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Kalenders eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.
+  
+  Begründung Kardinalität Fachrichtung: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung vorhanden ist. Dies ist notwendig, um die Spezialisierung des Kalenders eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.
+  
+  Begründung Kardinalität ErweiterterFachabteilungsschluessel: Die Kardinalität der ErweiterterFachabteilungsschluessel-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional eine erweiterte Fachabteilungsschlüssel vorhanden sein kann."
 * specialty.coding contains 
   Fachrichtung 1..1 MS and
-  * ^comment = "Begründung Kardinalität: Die Kardinalität der Fachrichtung-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass genau eine Fachrichtung vorhanden ist."
   ErweiterterFachabteilungsschluessel 0..1
-  * ^comment = "Begründung Kardinalität: Die Kardinalität der ErweiterterFachabteilungsschluessel-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional eine erweiterte Fachabteilungsschlüssel vorhanden sein kann."
+  * ^comment = ""
 * specialty.coding[Fachrichtung] from $IHEpracticeSettingVS (required)
   * ^comment = "Die Wahl des hinterlegten ValueSets (http://ihe-d.de/ValueSets/IHEXDSpracticeSettingCode) wurde mit einem Mitglied der IHE Deutschland Arbeitsgruppe XDS ValueSets (https://www.ihe-d.de/projekte/xds-value-sets-fuer-deutschland/) sowie mit der KBV abgestimmt (Stand:13.6.2024)."
 * specialty.coding[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
@@ -30,7 +33,7 @@ Id: ISiKKalender
   
   Begründung Kardinalität: Die Kardinalität der actor-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass mindestens ein Akteur vorhanden ist."
   * identifier 0..1 MS
-  * ^comment = "Begründung Kardinalität: Die Kardinalität der identifier-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional ein Identifier vorhanden ist.
+    * ^comment = "Begründung Kardinalität: Die Kardinalität der identifier-Eigenschaft wird auf 0..1 festgelegt, um sicherzustellen, dass optional ein Identifier vorhanden ist.
   Das Must-Support-Flag (MS) für das 'identifier'-Element stellt sicher, dass Systeme in der Lage sind, einen Identifier zu unterstützen, wenn er vorhanden ist. Dies ist wichtig für die eindeutige Identifizierung und Verknüpfung von Akteuren in verschiedenen Systemen."
   * display 0..1 MS
     * ^comment = "Hinweis: Für alle Target-Ressourcen SOLL ein Displaywert für die Referenz angegeben werden, sodass Systeme eine Übersicht der am Termin beteiligten Akteure anzeigen können ohne die Referenzen auflösen zu müssen.
