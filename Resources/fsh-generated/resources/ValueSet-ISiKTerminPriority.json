@@ -8,7 +8,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/ISiKTerminPriority",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-09-09",
+  "date": "2024-10-01",
   "compose": {
     "include": [
       {
