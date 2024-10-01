@@ -124,7 +124,7 @@
       {
         "id": "Appointment.specialty",
         "path": "Appointment.specialty",
-        "comment": "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.\n  \n  Begründung zu Kardinalität und Must Support: Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\n  ",
+        "comment": "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. \n  \n  Begründung zu Kardinalität und Must Support: KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.\n  Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.\n  ",
         "mustSupport": true
       },
       {
@@ -176,6 +176,7 @@
       {
         "id": "Appointment.priority.extension",
         "path": "Appointment.priority.extension",
+        "comment": "Hinweis: In R5 ist die Priority ein CodeableConcept. \n  \n  Begründung zu Must Support: Dieses Element ist optional (0..1), muss jedoch implementiert werden (MS), um besonders einen Notfall als solchen ausweisen zu können.",
         "mustSupport": true
       },
       {
