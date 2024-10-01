@@ -198,7 +198,7 @@
       {
         "id": "Appointment.start",
         "path": "Appointment.start",
-        "comment": "Begründung zu Kardinalität und Must Support : Der Startzeitpunkt eines Termins ist von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..1) und muss unterstützt werden (MS).",
+        "comment": "Begründung zu Kardinalität und Must Support: Der Startzeitpunkt eines Termins ist von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..1) und muss unterstützt werden (MS).",
         "min": 1,
         "mustSupport": true
       },
