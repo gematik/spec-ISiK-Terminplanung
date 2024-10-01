@@ -3,11 +3,23 @@ Parent: HealthcareService
 Id: ISiKMedizinischeBehandlungseinheit
 * insert Meta
 * active 1..1 MS
-* type 1.. MS
-* specialty 1.. MS
-  * ^comment = "Kodierung aller Fachbereiche unter die die Behandlungseinheit fällt. 
+  * ^comment = "Bedeutung: Ist der HealthcareService in aktiver Verwendung.
   
-  Begründung Kardinalität: Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken. Sie muss jedoch mindestens einem Fachbereich zugeordnet sein."
+  Hinweis: Historische HealthcareServices können ebenfalls über die ISiK-Schnittstelle ausgetauscht werden. Für diese dürfen jedoch keine Termine vereinbart werden. Das terminführende System MUSS dies bei der Buchung überprüfen.
+  
+  Begründung Kardinalität und Must-Support-Flag (MS): Die Kardinalität 1..1 und das Must-Support-Flag (MS) für das 'active'-Element stellen sicher, dass jede Behandlungseinheit eindeutig als aktiv oder inaktiv gekennzeichnet ist. Dies ist entscheidend für die Ressourcenplanung und Verfügbarkeit von Behandlungseinheiten."
+* type 1.. MS
+  * ^comment = "**Bedeutung:** Klassifikation der Behandlungsleistung welche durch den HealthcareService erbracht wird
+
+**Hinweis:** Diese Klassifikation SOLL stets auch in Appointment.serviceType und Schedule.serviceType angegeben werden. Seitens der aktuellen Spezifikation werden keine Vorgaben bezüglich der zu verwendenden Terminologie gemacht. Entsprechend verwendete Kataloge müssen als CodeSystem- und ValueSet-Ressourcen exponiert werden. Siehe [Suchparameter "context-type-value" in ISiK Basis - Datenobjekt ValueSet](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_ValueSet?version=current).
+
+**Begründung Kardinalität:** Eine Behandlungseinheit muss mindestens einen Typ haben."
+* specialty 1.. MS
+  * ^comment = "**Bedeutung:** Fachrichtung der Behandlungsleistung welche durch den HealthcareService erbracht wird
+
+**Hinweis:** Diese Fachrichtung SOLL stets auch in Appointment.specialty und Schedule.specialty angegeben werden.
+  
+**Begründung Kardinalität:** Eine Behandlungseinheit kann multiprofessionell sein und mehere Fachbereiche abdecken. Sie muss jedoch mindestens einem Fachbereich zugeordnet sein."
 * specialty.coding 1.. MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -26,7 +38,11 @@ Id: ISiKMedizinischeBehandlungseinheit
 * specialty.coding[ErweiterterFachabteilungsschluessel] from $FachabteilungsschluesselErweitertVS (required)
   * ^comment = "Dieses ValueSet KANN über ein Mapping (siehe Abschnitt https://wiki.hl7.de/index.php?title=IG:Value_Sets_f%C3%BCr_XDS#DocumentEntry.practiceSettingCode) mit dem ValueSet der Fachrichtung verknüpft werden und darüber ggf. die Integration von Systemen erleichtern."  
 * name 1.. MS
-  * ^comment = "Begründung Kardinalität: Eine Behandlungseinheit muss mindestens einen Namen haben." 
+  * ^comment = "**Bedeutung:** Informeller Name der Behandlungseinheit
+
+**Hinweis:** Es wird im Rahmen dieser Spezifikation davon ausgegangen, dass für einen HealthcareService keine natürlichen Identifier vorliegen, die in einem realen Kontext vergeben werden. Somit kann durch den Namen ein informeller, jedoch identifizierender Bezeichner vergeben werden.
+
+**Begründung Kardinalität:** Eine Behandlungseinheit muss mindestens einen Namen haben." 
 
 Instance: ISiKMedizinischeBehandlungseinheitExample
 InstanceOf: ISiKMedizinischeBehandlungseinheit

@@ -20,7 +20,7 @@ Id: ISiKTermin
   * ^comment = "Begründung zu Kardinalität und Must Support: Dieses Feld ist optional (0..1), muss jedoch implemtiert werden (MS), um die Möglichkeit zu bieten, einen Grund für die Absage eines Termins zu hinterlegen."
 * cancelationReason from ISiKTerminCancelationReason (required)
 * start 1..1 MS
-  * ^comment = "Begründung zu Kardinalität und Must Support : Der Startzeitpunkt eines Termins ist von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..1) und muss unterstützt werden (MS)."
+  * ^comment = "Begründung zu Kardinalität und Must Support: Der Startzeitpunkt eines Termins ist von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..1) und muss unterstützt werden (MS)."
 * end 1..1 MS
   * ^comment = "Begründung zu Kardinalität und Must Support : Der Endzeitpunkt eines Termins ist von entscheidender Bedeutung, um die Verfügbarkeit und Planung des Termins zu gewährleisten. Daher ist dieses Feld verpflichtend (1..1) und muss unterstützt werden (MS)."
 * slot 0..* MS
