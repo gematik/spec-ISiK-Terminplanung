@@ -1,4 +1,3 @@
-//TODO add documentation
 Instance: ISiKCapabilityStatementTerminplanungServer
 InstanceOf: CapabilityStatement
 Usage: #definition

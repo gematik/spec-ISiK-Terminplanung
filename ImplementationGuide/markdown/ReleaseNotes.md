@@ -9,6 +9,8 @@ Version 4.0.1
 Datum: tbd.
 
 * Implizites ValueSet expandiert https://github.com/gematik/spec-ISiK-Terminplanung/pull/207
+* Dokumentation zur Begründung der Kardinalitäten und Must-Support-Flags ergänzt https://github.com/gematik/spec-ISiK-Terminplanung/pull/209
+* Für ISiKTermin Verschiebung des Slicing auf .specialty.coding. https://github.com/gematik/spec-ISiK-Terminplanung/pull/204
 
 ----
 

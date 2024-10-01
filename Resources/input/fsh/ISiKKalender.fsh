@@ -10,6 +10,8 @@ Id: ISiKKalender
   * ^comment = "Hinweis: Ein Kalender kann für einen Akteur gepflegt werden. Dieser Akteur kann in einer oder mehreren Fachrichtungen agieren. Für die Ressourcenplanung (z.B. welche Akteure sind für einen Termin verfügbar) sollte auch auf die Speciality des Akteurs zurückgegriffen werden für den Fall, dass ein Kalender pro Fachbereich gepflegt wird. 
   
   Begründung Kardinalität: Die Kardinalität 1..* und das Must-Support-Flag (MS) für das 'specialty'-Element stellen sicher, dass jeder Kalender mindestens eine Fachrichtung angibt. Dies ist wichtig für die Ressourcenplanung und die Verfügbarkeit von Terminen, insbesondere wenn ein Kalender pro Fachbereich gepflegt wird.
+
+  Hintergrund: Die Festlegung hat in einer Expertengruppe am 4.6.2024 stattgefunden. Diese war zuvor in einer ISiK Arbeitsgruppe bekanntgegeben worden und stand damit allen Beteiligten offen. 
   "
 * specialty.coding 1..* MS
   * ^slicing.discriminator.type = #pattern

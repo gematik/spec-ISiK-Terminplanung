@@ -76,9 +76,10 @@ Begründung zu Kardinalität und Must Support: Die teilnehmenden Personen mit ei
 * participant[AkteurMedizinischeBehandlungseinheit].actor MS
 * participant[AkteurMedizinischeBehandlungseinheit].actor.reference 1..1 MS
 * specialty 0..* MS
-  * ^comment = "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.
+  * ^comment = "Optionale Angabe aller Fachbereiche aus denen ein oder mehrere Akteure für die Durchführung des Termins benötigt werden. 
   
-  Begründung zu Kardinalität und Must Support: Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.
+  Begründung zu Kardinalität und Must Support: KANN auch anhand des Kalenders, in dem ein Termin gebucht wird, ermittelt werden.
+  Die Angabe der Fachbereiche ist optional (0..*), muss jedoch implementiert werden (MS), um die Spezialisierung hinsichtlich der zugeordneten Behandlungseinheit des Termins eindeutig zu definieren und eine korrekte Zuordnung zu gewährleisten.
   "
 * specialty.coding 1..* MS
   * ^slicing.discriminator.type = #pattern
@@ -99,7 +100,9 @@ Begründung zu Kardinalität und Must Support: Die teilnehmenden Personen mit ei
   * ^comment = "Begründung zu Kardinalität und Must Support: Die Priorität eines Termins ist von entscheidender Bedeutung, um die Dringlichkeit und Relevanz des Termins zu kommunizieren und zu priorisieren. Eeine Priorität ist nicht zweingend erforderlich, muss jedoch implementiert werden (MS), um die Möglichkeit zu bieten, die Dringlichkeit und Relevanz des Termins abzurufen."
 * priority.extension MS
 * priority.extension contains ISiKTerminPriorityExtension named Priority 0..1 MS
-// TODO Klärung zur Extension
+  * ^comment = "Hinweis: In R5 ist die Priority ein CodeableConcept. 
+  
+  Begründung zu Must Support: Dieses Element ist optional (0..1), muss jedoch implementiert werden (MS), um besonders einen Notfall als solchen ausweisen zu können."
 
 Extension: ISiKNachrichtExtension
 Id: ISiKNachrichtExtension

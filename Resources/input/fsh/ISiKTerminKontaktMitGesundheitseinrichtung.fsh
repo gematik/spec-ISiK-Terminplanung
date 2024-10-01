@@ -1,4 +1,3 @@
-//TODO add documentation
 Profile: ISiKTerminKontaktMitGesundheitseinrichtung
 Parent: ISiKKontaktGesundheitseinrichtung
 Id: ISiKTerminKontaktMitGesundheitseinrichtung

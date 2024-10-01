@@ -4,9 +4,8 @@ Id: ISiKNachricht
 * insert Meta
 * inResponseTo MS
 * status MS
-* subject 1..1 MS
+* subject 1.. MS
 * subject ^comment = "Begründung Kardinalität: Das Element 'subject' ist obligatorisch (1..1) und muss immer angegeben werden, um sicherzustellen, dass jede Nachricht eindeutig auf einen Patienten bezogen wird."
-// TODO : Warum ist das nur 1..1 und nicht 1..*? 
 * subject only Reference(Patient)
 * subject ^comment = "Im ISIK-Kontext MUSS der referenzierte Patient konform zum [ISIKPatient](https://gematik.de/fhir/isik/v3/Basismodul/StructureDefinition/ISiKPatient) des Basismoduls sein."
 * sent MS
