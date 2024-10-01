@@ -1,0 +1,26 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKTerminKontaktMitGesundheitseinrichtung",
+  "url": "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminKontaktMitGesundheitseinrichtung",
+  "version": "4.0.0",
+  "name": "ISiKTerminKontaktMitGesundheitseinrichtung",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-01",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.appointment",
+        "path": "Encounter.appointment",
+        "mustSupport": true
+      }
+    ]
+  }
+}
