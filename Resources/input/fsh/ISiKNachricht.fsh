@@ -35,6 +35,7 @@ Id: ISiKNachricht
 * sender 1.. MS
   * ^comment = "Begründung Kardinalität und Must Support: Die Kardinalität der sender-Eigenschaft wird auf 1..* festgelegt, um sicherzustellen, dass mindestens ein Sender vorhanden ist. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Sender zu unterstützen, wenn er vorhanden ist."
   * reference 1..1 MS
+    * ^comment = "Begründung Kardinalität und Must Support: Die Kardinalität der reference-Eigenschaft wird auf 1..1 festgelegt, um sicherzustellen, dass ein Sender eindeutig referenziert und identifiziert werden kann. Das Must Support wird auf 'true' gesetzt, um sicherzustellen, dass Systeme in der Lage sind, einen Sender zu unterstützen."
 
 Instance: ISiKNachrichtExample
 InstanceOf: ISiKNachricht
