@@ -9,6 +9,7 @@ Version: 3.0.6
 Datum: tbd.
 
 * Änderung der Anforderung für Suchanfrage zu Terminblöcken aus Kalendern (u.a. in Bezug auf Start-Vorgabe) https://github.com/gematik/spec-ISiK-Terminplanung/pull/200
+* Änderung des Slicings der .specialty auf .specialty.coding für ISiKKalender, ISiKMedizinischeBehandlungseinheit und ISiKTermin + Schwächung Schedule.actor.display + Zulassen der .actor Reference auf Location + Schedule Schwächung des MS für ISiKNachricht https://github.com/gematik/spec-ISiK-Terminplanung/pull/215
 
 ----
 
