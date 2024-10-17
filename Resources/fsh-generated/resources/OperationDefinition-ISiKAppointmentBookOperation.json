@@ -5,7 +5,7 @@
   "experimental": false,
   "version": "2.0.5",
   "publisher": "gematik GmbH",
-  "date": "2024-06-13",
+  "date": "2024-06-20",
   "name": "book",
   "url": "https://gematik.de/fhir/isik/v2/Terminplanung/OperationDefinition/AppointmentBook",
   "kind": "operation",
