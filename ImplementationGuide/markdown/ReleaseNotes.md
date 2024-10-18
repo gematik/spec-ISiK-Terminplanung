@@ -9,7 +9,7 @@ Version 4.0.1
 Datum: tbd.
 
 * Implizites ValueSet expandiert https://github.com/gematik/spec-ISiK-Terminplanung/pull/207
-
+* Kardinalität für Schedule.actor.display geschwächt https://github.com/gematik/spec-ISiK-Terminplanung/pull/206
 ----
 
 Version 4.0.0
