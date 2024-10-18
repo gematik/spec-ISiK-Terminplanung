@@ -50,7 +50,7 @@
     {
       "coding": [
         {
-          "code": "0100",
+          "code": "3600",
           "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert"
         }
       ]
