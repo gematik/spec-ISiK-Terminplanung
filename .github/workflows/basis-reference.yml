@@ -12,6 +12,6 @@ jobs:
   call-tool-update:
     uses: gematik/spec-isik-basismodul/.github/workflows/main.yml@Update-dependency-trigger
     secrets:
-      WORKFLOW_PERMISSION_GITHUB: ${{ secrets.WORKFLOW_PERMISSION_GITHUB }}
-
-#test      
+      SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+      SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+      WORKFLOW_PERMISSION_GITHUB: ${{ secrets.WORKFLOW_PERMISSION_GITHUB }}     
