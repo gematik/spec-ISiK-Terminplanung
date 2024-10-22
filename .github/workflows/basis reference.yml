@@ -1,0 +1,24 @@
+name: Use Tool Update Workflow
+
+on:
+  push:
+    branches:
+      - TC_4.0.1
+
+  # Allows you to run this workflow manually from the Actions tab      
+  workflow_dispatch: 
+
+jobs:
+  call-tool-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run external workflow
+        uses: spec-isik-basismodul/.github/workflows/ToolUpdate.yml@TC_4.0.1
+        with:
+          # Optional: provide inputs if the external workflow requires them
+          input_name: input_value
+        secrets:
+          WORKFLOW_PERMISSION_GITHUB: ${{ secrets.WORKFLOW_PERMISSION_GITHUB }}
