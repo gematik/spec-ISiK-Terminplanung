@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-tool-update:
-    uses: spec-isik-basismodul/.github/workflows/ToolUpdate.yml@Update-dependency-trigger
+    uses: gematik/spec-isik-basismodul/.github/workflows/ToolUpdate.yml@Update-dependency-trigger
     secrets:
       WORKFLOW_PERMISSION_GITHUB: ${{ secrets.WORKFLOW_PERMISSION_GITHUB }}
