@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Schedule-KalenderName
+  filename: Schedule-KalenderName.page.md
+- name: Appointment-Nachricht
+  filename: Appointment-Nachricht.page.md
+- name: Appointment-replaces
+  filename: Appointment-replaces.page.md
+- name: Appointment-Priority
+  filename: Appointment-Priority.page.md
