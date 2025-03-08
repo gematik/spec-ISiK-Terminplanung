@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Akteure
+  filename: Akteure.page.md
+- name: Interaktionen
+  filename: Interaktionen.page.md
+- name: Kompatibilität
+  filename: Kompatibilitaet.page.md
+- name: Prozesse
+  filename: Prozesse.page.md
