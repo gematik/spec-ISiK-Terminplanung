@@ -7,12 +7,12 @@
 - name: Extensions
   filename: Extensions
 - name: ISiKKalender (Schedule)
-  filename: Datenobjekt_ISiKKalender
+  filename: Datenobjekt_Kalender
 - name: ISiKTerminblock (Slot)
-  filename: Datenobjekt_ISiKTerminblock
+  filename: Datenobjekt_Terminblock
 - name: ISiKTermin (Appointment)
-  filename: Datenobjekt_ISiKTermin
+  filename: Datenobjekt_Termin
 - name: ISiKNachricht (Communication)
-  filename: Datenobjekt_ISiKNachricht
+  filename: Datenobjekt_Nachricht
 - name: ISiKMedizinischeBehandlungseinheit (HealthcareService)
-  filename: Datenobjekt_ISiKMedizinischeBehandlungseinheit
+  filename: Datenobjekt_MedizinischeBehandlungseinheit
