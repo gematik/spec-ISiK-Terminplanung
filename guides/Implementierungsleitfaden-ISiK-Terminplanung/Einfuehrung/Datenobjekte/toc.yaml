@@ -18,3 +18,5 @@
   filename: Datenobjekt_Nachricht
 - name: ISiKMedizinischeBehandlungseinheit (HealthcareService)
   filename: Datenobjekt_MedizinischeBehandlungseinheit
+- name: ISiKBinary
+  filename: Datenobjekt_Binary
