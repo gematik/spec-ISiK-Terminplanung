@@ -1,4 +1,7 @@
-### {{page-title}}
+---
+topic: ISiKAppointmentBookOperation
+canonical: https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook
+---
 
 Es gelten die allgemeinen Vorgaben der FHIR-Kernspezifikation für die Ausführung von [Custom Operations](https://www.hl7.org/fhir/R4/operations.html).
 

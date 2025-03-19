@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: CapabilityStatements
   filename: CapabilityStatements
+- name: Operations (Appointment/$book)
+  filename: Operations
 - name: Terminologien
   filename: Terminologien
 - name: Extensions
