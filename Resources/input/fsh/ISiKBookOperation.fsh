@@ -39,7 +39,7 @@ Usage: #example
 * parameter[+]
   * name = #patient
   * use = #in
-  * min = 1
+  * min = 0
   * max = "1"
   * documentation	= "Dieser Parameter KANN unterstützt werden. Wird der Parameter unterstützt, dann gelten folgende Festlegungen: Eine Patient-Ressource, die die Person identifiziert, für die der Termin gemäß dem Parameter 'appt-resource' gebucht werden soll. Die Ressource KANN vom ISiKPatient-Profil abweichen, falls für die Terminbuchung irrelevante Pflichtangaben aus dem Profil nicht bekannt sind. Invalide Ressourcen MÜSSEN vom Termin-Repository abgelehnt werden (zur Form der Ablehnung s.u.). Dieser Parameter dient der Übermittlung der Patienteninformationen, falls diese dem Termin-Repository noch nicht bekannt sind. Das Termin-Repository SOLL im bestätigten Termin eine Referenz auf einen Patienten zurückgeben, sofern kein Patient unter Appointment.participant im 'appt-resource'-Parameter referenziert ist."
   * type = #Patient
