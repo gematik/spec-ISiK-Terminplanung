@@ -8,6 +8,7 @@
   "experimental": false,
   "date": "2025-03-19",
   "publisher": "gematik GmbH",
+  "description": "Die Slot-Ressource repräsentiert die Verbindung eines Termins (Appointment) und den dazugehörigen Ressourcen (z.B. HealthcareService, Device, Practitioner). Für diese Ressourcen können separate Kalender (Schedules) verwaltet werden. Der Slot agiert als Verbindungsstück zwischen diesen Ressourcen.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
