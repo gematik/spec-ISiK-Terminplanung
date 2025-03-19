@@ -6,7 +6,7 @@
   "name": "ISiKTerminblock",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-24",
+  "date": "2025-03-19",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
