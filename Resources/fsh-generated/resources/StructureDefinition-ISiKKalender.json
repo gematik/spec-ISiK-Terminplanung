@@ -8,6 +8,7 @@
   "experimental": false,
   "date": "2025-03-19",
   "publisher": "gematik GmbH",
+  "description": "Das Datenobjekt ISiKKalender bietet die Möglichkeit Kalender für verschiedene Akteure (Practitioner, Device, HealthcareService) zu exponieren, sodass für die Ressourcen Termine gebucht werden können. ",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

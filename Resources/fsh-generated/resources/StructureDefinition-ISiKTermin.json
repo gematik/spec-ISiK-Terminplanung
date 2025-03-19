@@ -8,6 +8,7 @@
   "experimental": false,
   "date": "2025-03-19",
   "publisher": "gematik GmbH",
+  "description": "Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen Terminvorschlag.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
