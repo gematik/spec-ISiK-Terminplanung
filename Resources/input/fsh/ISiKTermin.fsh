@@ -1,6 +1,7 @@
 Profile: ISiKTermin
 Parent: Appointment
 Id: ISiKTermin
+Description: "Das Datenobjekte ISiKTermin repräsentiert einen gebuchten Termin, sowie einen Terminvorschlag."
 * obeys ISiK-app-1
 * meta MS
   * tag 0..* MS

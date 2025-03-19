@@ -1,6 +1,7 @@
 Profile: ISiKTerminblock
 Parent: Slot
 Id: ISiKTerminblock
+Description: "Die Slot-Ressource repräsentiert die Verbindung eines Termins (Appointment) und den dazugehörigen Ressourcen (z.B. HealthcareService, Device, Practitioner). Für diese Ressourcen können separate Kalender (Schedules) verwaltet werden. Der Slot agiert als Verbindungsstück zwischen diesen Ressourcen."
 * insert Meta
 * obeys ISiK-slot-1
 * schedule MS
