@@ -4,10 +4,6 @@ canonical: https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminKontaktMit
 ---
 ## {{link}}
 
-## ISiKTerminKontaktMitGesundheitseinrichtung [(Encounter)](https://hl7.org/fhir/R4/encounter.html)
-
----
-
 ### Motivation
 
 Das Datenobjekt ISiKKontaktMitGesundheitseinrichtung dient der Verknüpfung des ISiK-Basis-Encounters (ISiKKontaktMitGesundheitseinrichtung) mit einem Termin (Appointment) und - darauf aufbauend - der Dokumentenkommunikation.
