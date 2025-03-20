@@ -18,8 +18,8 @@
   filename: Datenobjekt_Nachricht
 - name: ISiKMedizinischeBehandlungseinheit (HealthcareService)
   filename: Datenobjekt_MedizinischeBehandlungseinheit
-- name: ISiKTerminKontaktMitGesundheitseinrichtung
+- name: ISiKTerminKontaktMitGesundheitseinrichtung (Encounter)
   filename: Datenobjekt_Kontakt
-- name: ISiKBinary
+- name: ISiKBinary (Binary)
   filename: Datenobjekt_Binary
 
