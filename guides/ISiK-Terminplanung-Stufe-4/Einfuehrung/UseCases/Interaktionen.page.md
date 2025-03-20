@@ -1,3 +1,7 @@
+---
+topic: Interaktionen
+---
+
 ## {{page-title}}
 
 Für folgende Interaktionen werden im vorliegenden Implementierungsleitfaden Vorgaben für die Umsetzung innerhalb der ISiK-Schnittstelle definiert:
