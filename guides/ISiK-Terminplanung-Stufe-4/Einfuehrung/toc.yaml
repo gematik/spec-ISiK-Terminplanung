@@ -6,7 +6,7 @@
   filename: ReleaseNotes.page.md
 - name: Use Cases
   filename: UseCases
-- name: Übergreifende Festlegungen
-  filename: UebergreifendeFestlegungen.page.md
+- name: Festlegungen
+  filename: Festlegungen
 - name: Datenobjekte
   filename: Datenobjekte
