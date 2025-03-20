@@ -1,3 +1,8 @@
+---
+topic: Akteure
+---
+
+
 ## {{page-title}}
 
 Innerhalb des ISiK Moduls Terminplanung kann ein beteiligtes System verschiedene Rollen einnehmen und somit unterschiedliche Aufgaben innerhalb der im Abschnitt {{pagelink:ImplementationGuide/markdown/UseCases/Interaktionen.md}} definierten Arbeitsabläufe übernehmen. Im Weiteren werden diese Rollen mithilfe der Definition von Akteuren formalisiert, sodass eine Zuordnung von relevanten Interaktionen zum jeweiligen Akteur erfolgen kann.

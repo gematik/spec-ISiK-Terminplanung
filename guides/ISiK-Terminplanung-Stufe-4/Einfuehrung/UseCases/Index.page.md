@@ -1,3 +1,7 @@
+---
+topic: UseCases
+---
+
 # Use Cases
 
 Das Modul Terminplanung umfasst die Datenobjekte die notwendig sind, um eine Abfrage für eine Behandlungsleistung inkl. anschließender Terminvereinbarung durchzuführen. 
