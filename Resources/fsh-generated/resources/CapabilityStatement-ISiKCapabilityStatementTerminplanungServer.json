@@ -5,8 +5,8 @@
   "status": "active",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "4.0.2",
-  "date": "2025-02-20",
+  "version": "4.0.3",
+  "date": "2025-04-08",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Terminplanung"
   ],
