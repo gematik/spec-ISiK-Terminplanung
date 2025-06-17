@@ -49,6 +49,9 @@ In diesem Fall ist auch ein Chaining auf weitere verknüpfte Akteure möglich: `
 
 5. Aufruf der $book-Operation durch den Termin-Requestor: `POST https://example.org/fhir/Appointment/$book`
 
+**Hinweis:**  Bei Anlage eines neuen Appointments, besteht keine Pflicht zur Angabe einer ```id```, die Angabe der ```id``` ist allerdings auch nicht verboten.
+Im Falle der Übergabe einer Appointment Ressource durch einen Client, SOLL der Server die ```id```, analog zur Create-Interaktion, ignorieren (siehe [FHIR-Core spec](https://hl7.org/fhir/R4/http.html#create)).
+
 ```json
 {
   "resourceType": "Appointment",
