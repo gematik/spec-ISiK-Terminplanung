@@ -161,7 +161,7 @@ Id: AppointmentReplaces
 Instance: PatientinMinimal
 InstanceOf: ISiKPatient
 Usage: #example
-* identifier[Patientennummer].type = "http://terminology.hl7.org/CodeSystem/v2-0203#MR"
+* identifier[Patientennummer].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 * identifier[Patientennummer].system = "https://fhir.krankenhaus.example/sid/PID" 
 * identifier[Patientennummer].value = "TestPID1"
 * name[Name]
