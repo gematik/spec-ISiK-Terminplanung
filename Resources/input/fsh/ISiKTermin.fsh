@@ -128,7 +128,7 @@ Usage: #example
 * specialty.coding[ErweiterterFachabteilungsschluessel] = $FachabteilungsschluesselErweitertCS#3600
 * participant
   * actor.display = "Test Patient"
-  * actor.reference = "Patient/example"
+  * actor.reference = "Patient/PatientinMinimal"
   * status = #accepted
 
 Instance: ISiKTerminExampleOld
@@ -147,7 +147,7 @@ Usage: #example
 * specialty = urn:oid:1.2.276.0.76.5.114#010
 * participant
   * actor.display = "Test Patient"
-  * actor.reference = "Patient/example"
+  * actor.reference = "Patient/PatientinMinimal"
   * status = #accepted
 
 // This extension can be safely removed as soon as a package for R5 backport extensions is published and referenced by this project
