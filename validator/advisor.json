@@ -1,0 +1,60 @@
+{
+  "suppress" : [
+    //All filters containing: `#dom-6` - ISiK resources do not contain a narrative.
+    // Ignore this best practice warning for now.
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    //In FHIR R5 "pattern" discriminator has been deprecated and is being
+    //  consolidated with the "value" discriminator. To avoid unintended side effects in R4, we will keep
+    //  the current slicing.
+    "SD_PATH_SLICING_DEPRECATED",
+    // filters expected resolving errors for canonical urls
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.implementationGuide",
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@CapabilityStatement.rest[0].resource[16].extension[1].value.ofType(canonical)",
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE@Bundle.entry[0].resource/*Parameters/SubscriptionNotification*/.parameter[1].value.ofType(canonical)",
+    // masks the warning for artifacts (e.g. CodeSystems) which have a draft status in the FHIR-Core-Standard.
+    "MSG_DRAFT@Subscription.channel.type",
+    "MSG_DRAFT@Encounter.status",
+    "MSG_DRAFT@Bundle.entry[4].resource/*Encounter/SZ1Vorstationaer*/.status",
+    "MSG_DRAFT@Bundle.entry[5].resource/*Encounter/SZ1Stationaer*/.status",
+    "MSG_DRAFT@Bundle.entry[6].resource/*Encounter/SZ1Nachstationaer*/.status",
+    "MSG_DRAFT@Bundle.entry[3].resource/*Encounter/SZ2Encounter*/.status",
+    // filters expected information messages for the violation of preferred bindings.
+    "Terminology_TX_NoValid_3_CC@Coverage.type",
+    "Terminology_TX_NoValid_3_CC@Encounter.hospitalization.admitSource",
+    "Terminology_TX_NoValid_3_CC@Encounter.diagnosis[0].use",
+    "Terminology_TX_NoValid_3_CC@Bundle.entry[5].resource/*Coverage/SZ2VersicherungGesetzlich*/.type",
+    "Terminology_TX_NoValid_3_CC@Bundle.entry[2].resource/*Coverage/SZ1VersicherungGesetzlich*/.type",
+    "Terminology_TX_NoValid_3_CC@Bundle.entry[3].resource/*Coverage/SZ1VersicherungSelbstzahler*/.type",
+    // filters expected information messages for the violation of extensible bindings.
+    "Terminology_TX_NoValid_2_CC@Coverage.subscriber.identifier.type",
+    "Terminology_TX_NoValid_2_CC@Encounter.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Organization.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@RelatedPerson.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[6].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[5].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[2].resource/*Encounter/FachabteilungskontaktMinimal*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[6].resource/*Encounter/SZ1Nachstationaer*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[4].resource/*Encounter/SZ1Vorstationaer*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[2].resource/*Coverage/SZ1VersicherungGesetzlich*/.subscriber.identifier.type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[3].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[4].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[2].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[14].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[2].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[4].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[3].resource/*Encounter/SZ2Encounter*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[1].resource/*RelatedPerson/SZ1Mutter*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[5].resource/*Encounter/SZ1Stationaer*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@Bundle.entry[4].resource/*Account/SZ2DRGFall*/.identifier[0].type",
+    "Terminology_TX_NoValid_2_CC@StructureDefinition.differential.element[9].pattern.ofType(Identifier).type",
+    "Terminology_TX_NoValid_2_CC@Location.type[0]",
+    // filters an unexpected error because http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration cannot be expanded correctly
+    "Terminology_TX_Confirm_4a@MedicationAdministration.dosage.route.coding[0]",
+    // filters expected information messages for the usage of deprecated elements.
+    "MSG_DEPENDS_ON_DEPRECATED_NOTE@ValueSet.compose.include[0].concept[0].extension[0]",
+    // filters expected information messages for the usage of wrong fullUrl in a Bundle.
+    "BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU@Bundle.entry[0].resource/*Parameters/SubscriptionNotification*/.parameter[5].part[2].value.ofType(Reference)",
+    // filters expected information messages for the usage of non-existing ValueSets.
+    "Terminology_TX_ValueSet_NotFound@Bundle.entry[0].resource/*Parameters/SubscriptionNotification*/.parameter[3].value.ofType(code)"
+  ]
+}
