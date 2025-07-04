@@ -78,11 +78,11 @@ Für die Ressource Communication MÜSSEN die REST-Interaktionen "READ", "CREATE"
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](https://hl7.org/fhir/R4/search.html#all).
 
-1. Der Suchparameter "subject" MUSS unterstützt werden:
+1. Der Suchparameter "patient" MUSS unterstützt werden:
 
     Beispiele
 
-    ```GET [base]/Communication?subject=Patient/ISiKPatientExample```
+    ```GET [base]/Communication?patient=Patient/ISiKPatientExample```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference)
 
@@ -102,6 +102,13 @@ Für die Ressource Communication MÜSSEN die REST-Interaktionen "READ", "CREATE"
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference)
 
+1. Der Suchparameter "subject" KANN unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Communication?subject=Patient/ISiKPatientExample```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Communication.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](https://hl7.org/fhir/R4/search.html#reference)
 
 ---
 
