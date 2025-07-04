@@ -6,10 +6,10 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 3.0.8
 
-Datum: 03.07.2025
+Datum: 04.07.2025
 
 * `documentation` Verbesserung der Dokumentation der Interaktionen auf der Communication-Ressource nach Anpassung der Suchparameter `subject` und `patient`  https://github.com/gematik/spec-ISiK-Terminplanung/pull/273
-* `improve`: Hinweis auf Umgang mit ```id``` im Falle der Anlage einer Appointment Ressource durch die Book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/282
+* `improve`: Hinweis auf Umgang mit ```id``` im Falle der Anlage einer Appointment Ressource durch die Book-Operation https://github.com/gematik/spec-ISiK-Terminplanung/pull/282 
 
 ---
 
