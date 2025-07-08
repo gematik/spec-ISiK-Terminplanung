@@ -7,6 +7,10 @@
     ],
     "dependencies": {
         "de.gematik.isik-basismodul": "3.0.x"
-      }
+    },
+    "devDependencies": {
+    "bfarm.terminologien.icd10gm": "2024.0.0",
+    "bfarm.terminologien.ops": "2024.0.0"
+  } 
 }
 
