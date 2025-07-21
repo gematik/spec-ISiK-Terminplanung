@@ -263,6 +263,8 @@ Beispiel: Absage eines Termins
 
 Ein Termin Repository MUSS die Anlage (Create-Interaktion) einer Patient-Ressource entsprechend der Vorgaben des [ISiK-Basismoduls](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current) unterstützen.
 
+**Hinweis:** In diesem Kontext sind die Anpassungen zur Basis Stufe 3.1.0 hinsichtlich der Nutzung des Patient.identifier  (insbesondere für Clients) zu berücksichtigen (vgl. https://github.com/gematik/spec-ISiK-Basismodul/pull/810).
+
 
 ---
 
