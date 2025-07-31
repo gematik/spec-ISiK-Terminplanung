@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version 3.0.9
 
-Datum: tbd
+Datum: 31.07.2025
 
 * `add` Add Info on CREATE Patient using .identifier
 * `improve` Klarstellung welche Fehler zu einem HTTP 422 Response Code bei der Verarbeitung der $book-Operation führen https://github.com/gematik/spec-ISiK-Terminplanung/pull/286
