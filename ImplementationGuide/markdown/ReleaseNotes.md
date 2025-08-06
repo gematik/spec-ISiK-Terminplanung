@@ -156,7 +156,6 @@ Datum: 04.04.2023
 * ISiKBookOperation : Für die Abbildung eines manuellen Buchungsprozesses wurden die Vorgaben zu den Return Values beim Appointment.status um "pending" erweitert
   * in  Enhancement/appointment by @jcaumann in <https://github.com/gematik/spec-ISiK-Terminplanung/pull/79>
 
-**Full Changelog**: <https://github.com/gematik/spec-ISiK-Terminplanung/compare/master...3.0.0-rc1>
 
 ____
 Version: 2.0.3
