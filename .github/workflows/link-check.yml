@@ -1,0 +1,8 @@
+name: Use Basis link check Stufe 5
+
+on: 
+  workflow_dispatch:
+jobs:
+  call-tool-link-check:
+    uses: gematik/spec-isik-basismodul/.github/workflows/link-check.yml@main-stufe-5
+   

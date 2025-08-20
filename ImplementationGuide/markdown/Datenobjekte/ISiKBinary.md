@@ -11,6 +11,6 @@ Da die ISiKNachricht NICHT unterstützt werden MUSS, gilt für die ISiKBinary: d
 ### FHIR-Profil
 
 Es gelten bis auf weiteres die Vorgaben des ISiK Basismoduls für das Profil ['ISiKBinary'](https://simplifier.net/guide/isik-basis-v3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Binary?version=current).
-Ein Termin Repository SOLL die Anlage (Create-Interaktion) einer Binary-Ressource entsprechend der Vorgaben des [ISiK-Basismoduls](https://simplifier.net/guide/isik-basis-v3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest?version=current) unterstützen.
+Ein Termin Repository SOLL die Anlage (Create-Interaktion) einer Binary-Ressource entsprechend der Vorgaben des [ISiK-Basismoduls](https://simplifier.net/guide/isik-basis-v3/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen-Rest?version=current) unterstützen.
 Die Binary-Ressource SOLL in ihrem originalen Repräsentationsformat, sowie als FHIR-Ressource abgerufen werden können (vgl. [Serving Binary Resources using the RESTful API](https://www.hl7.org/fhir/R4/binary.html#rest)).
 
