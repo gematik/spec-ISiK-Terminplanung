@@ -5,6 +5,6 @@ applyExtensionMetadataToRoot: false
 status: active
 version: 3.0.9
 dependencies:
-  de.gematik.isik-basismodul: 3.0.x
+  de.gematik.isik-basismodul: 3.1.x
   hl7.fhir.extensions.r5: 4.0.1
 
