@@ -112,7 +112,7 @@ Für die Ressource Schedule MUSS die REST-Interaktion "READ" implementiert werde
 
     Beispiele:
 
-    ```GET [base]/Schedule?specialty=urn:oid:1.2.276.0.76.5.114|535```
+    ```GET [base]/Schedule?specialty=http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren|535```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Schedule.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
