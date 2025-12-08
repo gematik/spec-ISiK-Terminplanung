@@ -97,8 +97,8 @@ Im Falle der Übergabe einer Appointment Ressource durch einen Client, SOLL der 
     {
       "coding": [
         {
-          "code": "010",
-          "system": "urn:oid:1.2.276.0.76.5.114"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }
@@ -177,8 +177,8 @@ Antwort des Termin-Repository:
     {
       "coding": [
         {
-          "code": "010",
-          "system": "urn:oid:1.2.276.0.76.5.114"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }

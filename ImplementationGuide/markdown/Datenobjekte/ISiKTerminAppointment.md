@@ -167,7 +167,7 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 
     Beispiele:
 
-    ```GET [base]/Appointment?specialty=urn:oid:1.2.276.0.76.5.114|535```
+    ```GET [base]/Appointment?specialty=http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen|ALLG```
 
     Anwendungshinweise: Bei einer Suche mit dem ":not"-Modifier MÜSSEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, im Suchergebnis enthalten sein. Bei einer Suche ohne den ":not"-Modifier DÜRFEN Ressourcen, die keinen Wert für "Appointment.specialty" enthalten, NICHT im Suchergebnis enthalten sein. Weitere Informationen zur Suche nach "Appointment.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
@@ -201,3 +201,5 @@ Für die Ressource Appointment MÜSSEN die REST-Interaktionen "READ" und "PATCH"
 ### Beispiele
 
 {{json:ISiKTerminExample}}
+
+
