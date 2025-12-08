@@ -117,7 +117,7 @@ Für die Ressource HealthcareService MUSS die REST-Interaktion "READ" implementi
 
     Beispiele:
 
-    ```GET [base]/HealthcareService?specialty=http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren|535```
+    ```GET [base]/HealthcareService?specialty=http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen|ALLG```
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "HealthcareService.specialty" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](https://hl7.org/fhir/R4/search.html#token).
 
