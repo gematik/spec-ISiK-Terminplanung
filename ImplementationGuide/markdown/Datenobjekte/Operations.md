@@ -97,8 +97,8 @@ Im Falle der Übergabe einer Appointment Ressource durch einen Client, SOLL der 
     {
       "coding": [
         {
-          "code": "010",
-          "system": "http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }
@@ -177,8 +177,8 @@ Antwort des Termin-Repository:
     {
       "coding": [
         {
-          "code": "010",
-          "system": "http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }
