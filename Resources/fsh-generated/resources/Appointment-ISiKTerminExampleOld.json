@@ -42,8 +42,8 @@
     {
       "coding": [
         {
-          "code": "010",
-          "system": "http://ihe-d.de/CodeSystems/ProzessrollenFuerAutoren"
+          "code": "ALLG",
+          "system": "http://ihe-d.de/CodeSystems/AerztlicheFachrichtungen"
         }
       ]
     }
